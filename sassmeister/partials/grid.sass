@@ -5,119 +5,102 @@
     display: flex
     flex-wrap: wrap
 
-.column, .columns
+    @media screen and (max-width: $mob-lg-screen)
+        flex-direction: column
+
+.col
+    display: flex
+    flex-direction: column
     width: 100%
-    box-sizing: border-box
+    margin-left: 4%
 
-/* For devices larger than 550px
-@media (min-width: 640px)
+    @media screen and (max-width: $mob-lg-screen)
+        width: 100% !important
+        margin: 0%
+        margin-bottom: 4%
 
-    .column, .columns
-        margin-left: 4%
+        &:last-child
+            margin-bottom: 0%
 
-    .column:first-child, .columns:first-child
+    &:first-child
         margin-left: 0
 
-    .one
-        &.column, &.columns
-            width: 4.66666666667%
+    &.one, &.one-twelfth
+        width: 4.66666666667%
 
-    .two.columns
+    &.two, &.one-sixth, &.two-twelfths
         width: 13.3333333333%
 
-    .three.columns
+    &.three, &.one-quarter, &.three-twelfths
         width: 22%
 
-    .four.columns
+    &.four, &.one-third, &.four-twelfths
         width: 30.6666666667%
 
-    .five.columns
+    &.five, &.five-twelfths
         width: 39.3333333333%
 
-    .six.columns
+    &.six, &.one-half, &.six-twelfths
         width: 48%
 
-    .seven.columns
+    &.seven, &.seven-twelfths
         width: 56.6666666667%
 
-    .eight.columns
+    &.eight, &.two-thirds, &.eight-twelfths
         width: 65.3333333333%
 
-    .nine.columns
+    &.nine, &.three-quarters, &.nine-twelfths
         width: 74.0%
 
-    .ten.columns
+    &.ten, &.five-sixths, &.ten-twelfths
         width: 82.6666666667%
 
-    .eleven.columns
+    &.eleven, &.eleven-twelfths
         width: 91.3333333333%
 
-    .twelve.columns
+    &.twelve, &.full, &.whole
         width: 100%
         margin-left: 0
 
-    .one-third.column
-        width: 30.6666666667%
-
-    .two-thirds.column
-        width: 65.3333333333%
-
-    .one-half.column
-        width: 48%
-
     /* Offsets
-    .offset-by-one
-        &.column, &.columns
-            margin-left: 8.66666666667%
+    &.offset-by-one
+        margin-left: 8.66666666667%
 
-    .offset-by-two
-        &.column, &.columns
-            margin-left: 17.3333333333%
+    &.offset-by-two
+        margin-left: 17.3333333333%
 
-    .offset-by-three
-        &.column, &.columns
-            margin-left: 26%
+    &.offset-by-three
+        margin-left: 26%
 
-    .offset-by-four
-        &.column, &.columns
-            margin-left: 34.6666666667%
+    &.offset-by-four
+        margin-left: 34.6666666667%
 
-    .offset-by-five
-        &.column, &.columns
-            margin-left: 43.3333333333%
+    &.offset-by-five
+        margin-left: 43.3333333333%
 
-    .offset-by-six
-        &.column, &.columns
-            margin-left: 52%
+    &.offset-by-six
+        margin-left: 52%
 
-    .offset-by-seven
-        &.column, &.columns
-            margin-left: 60.6666666667%
+    &.offset-by-seven
+        margin-left: 60.6666666667%
 
-    .offset-by-eight
-        &.column, &.columns
-            margin-left: 69.3333333333%
+    &.offset-by-eight
+        margin-left: 69.3333333333%
 
-    .offset-by-nine
-        &.column, &.columns
-            margin-left: 78.0%
+    &.offset-by-nine
+        margin-left: 78.0%
 
-    .offset-by-ten
-        &.column, &.columns
-            margin-left: 86.6666666667%
+    &.offset-by-ten
+        margin-left: 86.6666666667%
 
-    .offset-by-eleven
-        &.column, &.columns
-            margin-left: 95.3333333333%
+    &.offset-by-eleven
+        margin-left: 95.3333333333%
 
-    .offset-by-one-third
-        &.column, &.columns
-            margin-left: 34.6666666667%
+    &.offset-by-one-third
+        margin-left: 34.6666666667%
 
-    .offset-by-two-thirds
-        &.column, &.columns
-            margin-left: 69.3333333333%
+    &.offset-by-two-thirds
+        margin-left: 69.3333333333%
 
-    .offset-by-one-half
-        &.column, &.columns
-            margin-left: 52%
+    &.offset-by-one-half
+        margin-left: 52%

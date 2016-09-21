@@ -1,0 +1,24 @@
+#grid-pg #grid h1 {
+  text-align: center;
+  margin-bottom: 20px; }
+#grid-pg #grid .grid-option {
+  margin-bottom: 50px; }
+  #grid-pg #grid .grid-option .row {
+    margin: 10px 0px; }
+    #grid-pg #grid .grid-option .row:first-of-type {
+      margin-top: 0px; }
+    #grid-pg #grid .grid-option .row:last-of-type {
+      margin-bottom: 0px; }
+    #grid-pg #grid .grid-option .row .col {
+      background-color: #dedede;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 7pt;
+      letter-spacing: 2pt;
+      text-align: center;
+      justify-content: center;
+      padding: 10px 0px;
+      transition: all 0.3s ease-in-out; }
+      #grid-pg #grid .grid-option .row .col:hover {
+        background-color: #bbbbbb;
+        cursor: help; }

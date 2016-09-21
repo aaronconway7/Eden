@@ -1,9 +1,7 @@
-html,
-body,
-ul,
-ol {
-  margin: 0;
-  padding: 0; }
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
 
 .container {
   position: relative;
@@ -28,107 +26,79 @@ ol {
 .row {
   display: flex;
   flex-wrap: wrap; }
+  @media screen and (max-width: 425px) {
+    .row {
+      flex-direction: column; } }
 
-.column, .columns {
+.col {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  box-sizing: border-box; }
-
-/* For devices larger than 550px */
-@media (min-width: 640px) {
-  .column, .columns {
-    margin-left: 4%; }
-
-  .column:first-child, .columns:first-child {
+  margin-left: 4%;
+  /* Offsets */ }
+  @media screen and (max-width: 425px) {
+    .col {
+      width: 100% !important;
+      margin: 0%;
+      margin-bottom: 4%; }
+      .col:last-child {
+        margin-bottom: 0%; } }
+  .col:first-child {
     margin-left: 0; }
-
-  .one.column, .one.columns {
+  .col.one, .col.one-twelfth {
     width: 4.6666666667%; }
-
-  .two.columns {
+  .col.two, .col.one-sixth, .col.two-twelfths {
     width: 13.3333333333%; }
-
-  .three.columns {
+  .col.three, .col.one-quarter, .col.three-twelfths {
     width: 22%; }
-
-  .four.columns {
+  .col.four, .col.one-third, .col.four-twelfths {
     width: 30.6666666667%; }
-
-  .five.columns {
+  .col.five, .col.five-twelfths {
     width: 39.3333333333%; }
-
-  .six.columns {
+  .col.six, .col.one-half, .col.six-twelfths {
     width: 48%; }
-
-  .seven.columns {
+  .col.seven, .col.seven-twelfths {
     width: 56.6666666667%; }
-
-  .eight.columns {
+  .col.eight, .col.two-thirds, .col.eight-twelfths {
     width: 65.3333333333%; }
-
-  .nine.columns {
+  .col.nine, .col.three-quarters, .col.nine-twelfths {
     width: 74%; }
-
-  .ten.columns {
+  .col.ten, .col.five-sixths, .col.ten-twelfths {
     width: 82.6666666667%; }
-
-  .eleven.columns {
+  .col.eleven, .col.eleven-twelfths {
     width: 91.3333333333%; }
-
-  .twelve.columns {
+  .col.twelve, .col.full, .col.whole {
     width: 100%;
     margin-left: 0; }
-
-  .one-third.column {
-    width: 30.6666666667%; }
-
-  .two-thirds.column {
-    width: 65.3333333333%; }
-
-  .one-half.column {
-    width: 48%; }
-
-  /* Offsets */
-  .offset-by-one.column, .offset-by-one.columns {
+  .col.offset-by-one {
     margin-left: 8.6666666667%; }
-
-  .offset-by-two.column, .offset-by-two.columns {
+  .col.offset-by-two {
     margin-left: 17.3333333333%; }
-
-  .offset-by-three.column, .offset-by-three.columns {
+  .col.offset-by-three {
     margin-left: 26%; }
-
-  .offset-by-four.column, .offset-by-four.columns {
+  .col.offset-by-four {
     margin-left: 34.6666666667%; }
-
-  .offset-by-five.column, .offset-by-five.columns {
+  .col.offset-by-five {
     margin-left: 43.3333333333%; }
-
-  .offset-by-six.column, .offset-by-six.columns {
+  .col.offset-by-six {
+    margin-left: 52%; }
+  .col.offset-by-seven {
+    margin-left: 60.6666666667%; }
+  .col.offset-by-eight {
+    margin-left: 69.3333333333%; }
+  .col.offset-by-nine {
+    margin-left: 78%; }
+  .col.offset-by-ten {
+    margin-left: 86.6666666667%; }
+  .col.offset-by-eleven {
+    margin-left: 95.3333333333%; }
+  .col.offset-by-one-third {
+    margin-left: 34.6666666667%; }
+  .col.offset-by-two-thirds {
+    margin-left: 69.3333333333%; }
+  .col.offset-by-one-half {
     margin-left: 52%; }
 
-  .offset-by-seven.column, .offset-by-seven.columns {
-    margin-left: 60.6666666667%; }
-
-  .offset-by-eight.column, .offset-by-eight.columns {
-    margin-left: 69.3333333333%; }
-
-  .offset-by-nine.column, .offset-by-nine.columns {
-    margin-left: 78%; }
-
-  .offset-by-ten.column, .offset-by-ten.columns {
-    margin-left: 86.6666666667%; }
-
-  .offset-by-eleven.column, .offset-by-eleven.columns {
-    margin-left: 95.3333333333%; }
-
-  .offset-by-one-third.column, .offset-by-one-third.columns {
-    margin-left: 34.6666666667%; }
-
-  .offset-by-two-thirds.column, .offset-by-two-thirds.columns {
-    margin-left: 69.3333333333%; }
-
-  .offset-by-one-half.column, .offset-by-one-half.columns {
-    margin-left: 52%; } }
 html {
   font-family: "Lato", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300; }

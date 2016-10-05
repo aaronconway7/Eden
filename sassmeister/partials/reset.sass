@@ -9,3 +9,22 @@
     margin: 0px
     padding: 0px
     box-sizing: border-box
+
+a
+    text-decoration: none
+    color: currentColor
+
+.float-left
+    float: left
+
+.float-right
+    float: right
+
+.clear
+
+    &:before, &:after
+        content: " "
+        display: table
+
+    &:after
+        clear: both

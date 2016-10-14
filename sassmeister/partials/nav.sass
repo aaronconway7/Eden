@@ -3,12 +3,14 @@
     height: 70px
     padding: 0px 15px
     z-index: 99
+    font-size: 0.9rem
 
     &.fixed
         position: fixed
 
     &.skinny
         height: 50px
+        font-size: 0.8rem
 
         .brand
             line-height: 50px
@@ -47,16 +49,25 @@
         .mob-nav
             line-height: 90px
 
+    &.uppercase
+
+        ul
+
+            li
+                text-transform: uppercase
+
     .brand
         line-height: 70px
         margin-right: 15px
         text-transform: uppercase
-        font-weight: 900
         transition: opacity 0.3s ease-in-out
 
         &:hover
             opacity: 0.75
             cursor: pointer
+
+        span
+            font-weight: 900
 
         img.logo
             height: 35px
@@ -83,7 +94,7 @@
 
         & > li
             padding: 0px 12px
-            margin-left: -4px
+            margin-left: -5px
 
             &.active
                 background-color: rgba(255, 255, 255, 0.25)
@@ -98,14 +109,16 @@
 
             .dropdown-content
                 position: absolute
-                min-width: 160px
+                min-width: 200px
                 list-style: none
+                text-align: center
                 z-index: 99
+                font-size: 0.9em
                 display: none
 
                 li
                     padding: 0px 12px
-                    text-align: center
+                    // text-align: center
 
         &.float-left
 
@@ -158,3 +171,4 @@
 
             li
                 display: block
+                padding: 0px 65px

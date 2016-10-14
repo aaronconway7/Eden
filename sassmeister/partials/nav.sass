@@ -1,182 +1,160 @@
-// .nav
-//     padding: 15px
-//
-//     &.skinny
-//         padding: 10px
-//
-//     &.fat
-//         padding: 20px
-//
-//     &.clear
-//
-//         &:before, &:after
-//             content: " "
-//             display: table
-//
-//         &:after
-//             clear: both
-//
-//     ul
-//         list-style: none
-//
-//         li
-//
-//             &.brand
-//                 text-transform: uppercase
-//                 font-weight: 900
-//
-//             a
-//                 transition: all 0.2s ease-in-out
-//
-//                 &:hover
-//                     opacity: 0.75
-//
-//     .mob-nav
-//         display: none
-//
-//         @media screen and (max-width: $mob-lg-screen)
-//             display: block
-//
-// .nav-top
-//     width: 100%
-//
-//     ul
-//         display: inline-block
-//
-//         li
-//             display: inline
-//             margin: 0px 5px
-//             position: relative
-//
-//             &:hover
-//
-//                 & > ul.dropdown
-//
-//                     li
-//                         display: block
-//
-//             &.logo
-//
-//                 img
-//                     height: 20px
-//                     vertical-align: middle
-//
-//             ul.dropdown
-//                 position: absolute
-//                 top: 100%
-//                 left: 0%
-//                 width: 100%
-//
-//                 li
-//                     display: none
-//
-//         &.options-left
-//             float: left
-//
-//             li
-//
-//                 &:first-of-type
-//                     margin-left: 0px
-//
-//         &.options-right
-//             float: right
-//
-//             li
-//
-//                 &:last-of-type
-//                     margin-right: 0px
-
-// .nav
-//
-//     ul
-//         list-style: none
-//
-//     .nav-options
-//
-//         a
-//             display: inline-block
-//             padding: 15px 20px
-//             height: 40px
-//             line-height: 40px
-//             transition: all 0.2s ease-in-out
-//
-//             &:hover
-//                 opacity: 0.75
-//
-// .nav-top
-//     width: 100%
-//     height: 70px
-//
-//     &.skinny
-//         height: 50px
-//
-//     &.fat
-//         height: 90px
-//
-//
-//     .brand
-//         height: 40px
-//         padding: 15px 30px
-//         line-height: 40px
-//
-//     & > ul
-//
-//         & > li
-//             display: inline
-//
-//     .dropdown
-//         position: absolute
-//         top: 70px
-//         overflow: hidden
-
 .nav
     width: 100%
     height: 70px
-    padding: 0px 10px
+    padding: 0px 15px
+    z-index: 99
+
+    &.fixed
+        position: fixed
+
+    &.skinny
+        height: 50px
+
+        .brand
+            line-height: 50px
+
+            img.logo
+                height: 25px
+
+        .nav-options
+            line-height: 50px
+
+        ul
+
+            li
+                height: 50px
+
+        .mob-nav
+            line-height: 50px
+
+    &.fat
+        height: 90px
+
+        .brand
+            line-height: 90px
+
+            img.logo
+                height: 45px
+
+        .nav-options
+            line-height: 90px
+
+        ul
+
+            li
+                height: 90px
+
+        .mob-nav
+            line-height: 90px
 
     .brand
         line-height: 70px
-        margin-right: 10px
+        margin-right: 15px
         text-transform: uppercase
         font-weight: 900
+        transition: opacity 0.3s ease-in-out
+
+        &:hover
+            opacity: 0.75
+            cursor: pointer
+
+        img.logo
+            height: 35px
+            vertical-align: middle
+            margin-right: 10px
 
     ul
 
         li
+            display: inline-block
+            height: 70px
+
             a
                 transition: opacity 0.3s ease-in-out
 
                 &:hover
                     opacity: 0.75
 
-    & > ul
+    .nav-options
+        line-height: 70px
 
-        &.nav-options
-            line-height: 70px
+        @media screen and (max-width: $tab-screen)
+            display: none
 
-            & > li
-                display: inline
-                margin: 0px 10px
+        & > li
+            padding: 0px 12px
+            margin-left: -4px
 
-                &:first-of-type
-                    margin-left: 0px
+            &.active
+                background-color: rgba(255, 255, 255, 0.25)
 
-                &:last-of-type
-                    margin-right: 0px
+        .dropdown
+            position: relative
 
-            .dropdown
-                display: inline-block
-
-                &:hover
-
-                    .dropdown-content
-                        display: block
+            &:hover
 
                 .dropdown-content
-                    position: absolute
-                    min-width: 160px
-                    list-style: none
-                    display: none
+                    display: block
 
-                    li
-                        padding: 0px 12px
+            .dropdown-content
+                position: absolute
+                min-width: 160px
+                list-style: none
+                z-index: 99
+                display: none
+
+                li
+                    padding: 0px 12px
+                    text-align: center
+
+        &.float-left
+
+            .dropdown
+
+                .dropdown-content
+                    left: 0px
+                    text-align: left
+
+        &.float-right
+
+            .dropdown
+
+                .dropdown-content
+                    right: 0px
+                    text-align: right
+
+    .mob-nav
+        display: none
+        line-height: 70px
+
+        @media screen and (max-width: $tab-screen)
+            display: block
+
+        .mob-toggle
+            display: none
+
+            &:checked
+
+                & ~ .nav-options
+                    display: block
+
+        .hamburger
+
+            span
+                font-size: 20pt
+                transition: opacity 0.3s ease-in-out
+
+                &:hover
+                    opacity: 0.75
+                    cursor: pointer
+
+        ul.nav-options
+            display: none
+            width: 100vw
+            position: absolute
+            left: 0px
+            z-index: 99
+            background-color: black
+
+            li
+                display: block

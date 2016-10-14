@@ -140,6 +140,15 @@
         text-transform: uppercase
         font-weight: 900
 
+    ul
+
+        li
+            a
+                transition: opacity 0.3s ease-in-out
+
+                &:hover
+                    opacity: 0.75
+
     & > ul
 
         &.nav-options
@@ -154,3 +163,20 @@
 
                 &:last-of-type
                     margin-right: 0px
+
+            .dropdown
+                display: inline-block
+
+                &:hover
+
+                    .dropdown-content
+                        display: block
+
+                .dropdown-content
+                    position: absolute
+                    min-width: 160px
+                    list-style: none
+                    display: none
+
+                    li
+                        padding: 0px 12px

@@ -44,6 +44,6 @@
 #nav-pg #nav .nav {
   background-color: black;
   color: white; }
-  #nav-pg #nav .nav .dropdown {
-    background-color: grey;
+  #nav-pg #nav .nav .dropdown .dropdown-content {
+    background-color: #bbbbbb;
     color: black; }

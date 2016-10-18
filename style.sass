@@ -72,11 +72,30 @@
     #nav
 
         .nav
-            background-color: black
+            background-color: #1d1d1d
             color: white
+            margin-bottom: 10px
+
+            &:first-of-type
+                margin-top: 0px
+
+            &:last-of-type
+                margin-bottom: 0px
+
+            &:nth-of-type(2)
+                background-color: #ececec
+                color: black
+
+            &:nth-of-type(3)
+                background-color: transparent
+                color: black
+
+                .nav-options
+                    background-color: grey
+                    color: white
 
             .dropdown
 
                 .dropdown-content
                     background-color: #bbbbbb
-                    color: black
+                    color: #1d1d1d

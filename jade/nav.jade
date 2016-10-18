@@ -7,13 +7,13 @@ html(lang='en')
   body
     .universe#nav-pg
         #nav
-            .nav.uppercase.clear
+            .nav.clear.skinny
                 .brand.float-left
                     a(href="index.html")
                         img.logo(alt="", src="images/icon.ico")
                         span brand
                 ul.nav-options.float-left
-                    li.active
+                    li
                         a(href="#") option
                     li.dropdown option
                         ul.dropdown-content
@@ -34,12 +34,14 @@ html(lang='en')
                         a(href="#") option
                     li
                         a(href="#") option
+                    li
+                        a(href="#")
+                            button.full(type="button") Sign In
                 
                 .mob-nav.float-right
                     input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
                     label(for="mob-toggle")
                         .hamburger
-                            span ☰
                     ul.nav-options.text-center
                         li
                             a(href="#") option
@@ -47,7 +49,62 @@ html(lang='en')
                             a(href="#") option
                         li
                             a(href="#") option
-                        
+                    
+            .nav.fat.uppercase.centered
+                ul.nav-options
+                    li
+                        a(href="#") option
+                    li.dropdown option
+                        ul.dropdown-content
+                            li
+                                a(href="#") dropdown option
+                            li
+                                a(href="#") dropdown option
+                    li
+                        a(href="#") option
+                .brand
+                    a(href="index.html")
+                        img.logo(alt="", src="images/icon.ico")
+                ul.nav-options
+                    li
+                        a(href="#") option
+                    li.dropdown option
+                        ul.dropdown-content
+                            li
+                                a(href="#") dropdown option
+                            li
+                                a(href="#") dropdown option
+                    li
+                        a(href="#") option
+                
+                .mob-nav.float-right
+                    //- input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
+                    label(for="mob-toggle")
+                        .hamburger
+                    ul.nav-options.text-center
+                        li
+                            a(href="#") option
+                        li
+                            a(href="#") option
+                        li
+                            a(href="#") option  
+            
+            .nav.clear.mobile
+                .brand.float-left
+                    a(href="index.html")
+                        img.logo(alt="", src="images/icon.ico")
+                        span brand
+                .mob-nav.float-right
+                    //- input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
+                    label(for="mob-toggle")
+                        .hamburger
+                    ul.nav-options.text-center
+                        li
+                            a(href="#") option
+                        li
+                            a(href="#") option
+                        li
+                            a(href="#") option  
         
         section#content
             .container

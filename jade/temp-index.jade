@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+    head
+        include ../include/head
+        title="Eden"
+    body
+        .universe#home-pg
+            include ../include/header
+            .nav.fat.uppercase-and-space.centered.transparent
+                ul.nav-options
+                    li
+                        a(href="#") Get Started
+                    li
+                        a(href="#") About
+                .brand
+                    a(href="index.html")
+                        img.logo(alt="", src="images/icon.ico")
+                ul.nav-options
+                    li
+                        a(href="#") Components
+                    li
+                        a(href="#")
+                            button.uppercase-and-space(type="button") Download
+                
+                .mob-nav.float-right
+                    input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
+                    label(for="mob-toggle")
+                        .hamburger
+                    ul.nav-options.text-center
+                        li
+                            a(href="#") Get Started
+                        li
+                            a(href="#") About
+                        li
+                            a(href="#") Components
+                        li
+                            a(href="#") Download

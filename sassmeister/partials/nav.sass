@@ -2,9 +2,8 @@
     width: 100%
     height: 70px
     padding: 0px 15px
-    z-index: 99
+    z-index: 98
     font-size: 0.9rem
-    overflow: hidden
 
     &.fixed
         position: fixed !important
@@ -95,20 +94,44 @@
             line-height: 90px
 
     &.dark
-        background-color: black
-        color: white
+        background-color: $eden-charcoal
+        color: $eden-light-grey
+
+        .nav-options
+
+            button
+                background-color: $eden-light-grey
+                color: $eden-charcoal
 
     &.light
-        background-color: white
-        color: black
+        background-color: $eden-light-grey
+        color: $eden-charcoal
 
-    &.uppercase
+        .nav-options
 
-        ul
+            button
+                background-color: $eden-dark-grey
+                color: $eden-charcoal
 
-            li
-                text-transform: uppercase
-                letter-spacing: 0.1em
+    &.transparent
+        background-color: transparent
+        color: $eden-charcoal
+
+        .nav-options
+
+            button
+                background-color: $eden-dark-grey
+                color: $eden-charcoal
+
+    // &.uppercase
+    //     text-transform: uppercase
+    //     letter-spacing: 0.1em
+    //
+    //     // ul
+    //     //
+    //     //     li
+    //     //         text-transform: uppercase
+    //     //         letter-spacing: 0.1em
 
     .brand
         line-height: 70px
@@ -139,6 +162,9 @@
             display: inline-block
             height: 70px
 
+            &.nav-text
+                opacity: 0.5
+
             a
                 transition: opacity 0.3s ease-in-out
 
@@ -167,10 +193,7 @@
         button
             height: 50%
             padding: 0px 20px
-            text-transform: uppercase
-            letter-spacing: 0.1em
             font-weight: 700
-            background-color: #ececec
             border: none
             transition: all 0.3s ease-in-out
 
@@ -187,6 +210,7 @@
 
             &:after
                 content: "▿"
+                opacity: 0.5
 
             &:hover
                 cursor: pointer
@@ -221,6 +245,9 @@
 
         &.float-left
 
+            &.push-to-end
+                margin-left: -15px
+
             .dropdown
 
                 .dropdown-content
@@ -228,6 +255,9 @@
                     text-align: left
 
         &.float-right
+
+            &.push-to-end
+                margin-right: -15px
 
             .dropdown
 

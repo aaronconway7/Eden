@@ -42,20 +42,12 @@
         cursor: help; }
 
 #nav-pg #nav .nav {
-  background-color: #1d1d1d;
-  color: white;
   margin-bottom: 10px; }
   #nav-pg #nav .nav:first-of-type {
     margin-top: 0px; }
   #nav-pg #nav .nav:last-of-type {
     margin-bottom: 0px; }
-  #nav-pg #nav .nav:nth-of-type(2) {
-    background-color: #ececec;
-    color: black; }
-  #nav-pg #nav .nav:nth-of-type(3) {
-    background-color: transparent;
-    color: black; }
-    #nav-pg #nav .nav:nth-of-type(3) .nav-options {
+    #nav-pg #nav .nav:last-of-type .nav-options {
       background-color: grey;
       color: white; }
   #nav-pg #nav .nav .dropdown .dropdown-content {

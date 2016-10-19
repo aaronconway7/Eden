@@ -40,6 +40,13 @@ button {
 .text-justify {
   text-align: justify; }
 
+.uppercase {
+  text-transform: uppercase; }
+
+.uppercase-and-space {
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+
 .container {
   position: relative;
   width: 80%;
@@ -195,9 +202,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 70px;
   padding: 0px 15px;
-  z-index: 99;
-  font-size: 0.9rem;
-  overflow: hidden; }
+  z-index: 98;
+  font-size: 0.9rem; }
   .nav.fixed {
     position: fixed !important;
     top: 0px; }
@@ -256,14 +262,23 @@ h1, h2, h3, h4, h5, h6 {
     .nav.fat .mob-nav {
       line-height: 90px; }
   .nav.dark {
-    background-color: black;
-    color: white; }
+    background-color: #2f2f2f;
+    color: #ececec; }
+    .nav.dark .nav-options button {
+      background-color: #ececec;
+      color: #2f2f2f; }
   .nav.light {
-    background-color: white;
-    color: black; }
-  .nav.uppercase ul li {
-    text-transform: uppercase;
-    letter-spacing: 0.1em; }
+    background-color: #ececec;
+    color: #2f2f2f; }
+    .nav.light .nav-options button {
+      background-color: #bbbbbb;
+      color: #2f2f2f; }
+  .nav.transparent {
+    background-color: transparent;
+    color: #2f2f2f; }
+    .nav.transparent .nav-options button {
+      background-color: #bbbbbb;
+      color: #2f2f2f; }
   .nav .brand {
     line-height: 70px;
     text-transform: uppercase;
@@ -284,6 +299,8 @@ h1, h2, h3, h4, h5, h6 {
   .nav ul li {
     display: inline-block;
     height: 70px; }
+    .nav ul li.nav-text {
+      opacity: 0.5; }
     .nav ul li a {
       transition: opacity 0.3s ease-in-out; }
       .nav ul li a:hover {
@@ -305,10 +322,7 @@ h1, h2, h3, h4, h5, h6 {
     .nav .nav-options button {
       height: 50%;
       padding: 0px 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
       font-weight: 700;
-      background-color: #ececec;
       border: none;
       transition: all 0.3s ease-in-out; }
       .nav .nav-options button.full {
@@ -320,7 +334,8 @@ h1, h2, h3, h4, h5, h6 {
     .nav .nav-options .dropdown {
       position: relative; }
       .nav .nav-options .dropdown:after {
-        content: "▿"; }
+        content: "▿";
+        opacity: 0.5; }
       .nav .nav-options .dropdown:hover {
         cursor: pointer; }
         .nav .nav-options .dropdown:hover .dropdown-content {
@@ -346,9 +361,13 @@ h1, h2, h3, h4, h5, h6 {
               background-color: black;
               color: white;
               cursor: pointer; }
+    .nav .nav-options.float-left.push-to-end {
+      margin-left: -15px; }
     .nav .nav-options.float-left .dropdown .dropdown-content {
       left: 0px;
       text-align: left; }
+    .nav .nav-options.float-right.push-to-end {
+      margin-right: -15px; }
     .nav .nav-options.float-right .dropdown .dropdown-content {
       right: 0px;
       text-align: right; }

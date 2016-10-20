@@ -19,7 +19,7 @@
         .nav-options
 
             & > li
-                padding: 0px 12px !important
+                padding: 0px 20px !important
 
             .dropdown
 
@@ -65,6 +65,9 @@
         .nav-options
             line-height: 50px
 
+            button
+                padding: 0.5em 1.5em
+
         ul
 
             li
@@ -80,7 +83,7 @@
             line-height: 90px
 
             img.logo
-                height: 45px
+                height: 60px
 
         .nav-options
             line-height: 90px
@@ -103,6 +106,33 @@
                 background-color: $eden-light-grey
                 color: $eden-charcoal
 
+            .dropdown
+
+                .dropdown-content
+                    background-color: $eden-dark-grey
+                    color: $eden-charcoal
+
+                    li
+
+                        a
+                            &:hover
+                                opacity: 1
+                                background-color: $eden-charcoal
+                                color: $eden-light-grey
+
+        .mob-nav
+
+            .nav-options
+                background-color: $eden-dark-grey
+
+                li
+                    a
+
+                        &:hover
+                            opacity: 1
+                            background-color: rgba($eden-charcoal, 0.75)
+                            color: $eden-light-grey
+
     &.light
         background-color: $eden-light-grey
         color: $eden-charcoal
@@ -113,6 +143,33 @@
                 background-color: $eden-dark-grey
                 color: $eden-charcoal
 
+            .dropdown
+
+                .dropdown-content
+                    background-color: $eden-dark-grey
+                    color: $eden-charcoal
+
+                    li
+
+                        a
+                            &:hover
+                                opacity: 1
+                                background-color: $eden-light-grey
+                                color: $eden-charcoal
+
+        .mob-nav
+
+            .nav-options
+                background-color: $eden-dark-grey
+
+                li
+                    a
+
+                        &:hover
+                            opacity: 1
+                            background-color: $eden-light-grey
+                            color: $eden-charcoal
+
     &.transparent
         background-color: transparent
         color: $eden-charcoal
@@ -120,18 +177,34 @@
         .nav-options
 
             button
-                background-color: $eden-dark-grey
+                background-color: $eden-light-grey
                 color: $eden-charcoal
 
-    // &.uppercase
-    //     text-transform: uppercase
-    //     letter-spacing: 0.1em
-    //
-    //     // ul
-    //     //
-    //     //     li
-    //     //         text-transform: uppercase
-    //     //         letter-spacing: 0.1em
+            .dropdown
+
+                .dropdown-content
+                    background-color: $eden-light-grey
+
+                    li
+
+                        a
+                            &:hover
+                                opacity: 1
+                                background-color: $eden-dark-grey
+                                color: $eden-charcoal
+
+        .mob-nav
+
+            .nav-options
+                background-color: $eden-light-grey
+
+                li
+                    a
+
+                        &:hover
+                            opacity: 1
+                            background-color: $eden-dark-grey
+                            color: $eden-charcoal
 
     .brand
         line-height: 70px
@@ -169,7 +242,7 @@
                 transition: opacity 0.3s ease-in-out
 
                 &:hover
-                    opacity: 0.75
+                    opacity: 0.5
 
     .nav-options
         line-height: 70px
@@ -191,9 +264,7 @@
                 padding-right: 0px
 
         button
-            height: 50%
-            padding: 0px 20px
-            font-weight: 700
+            padding: 1.5em 2em
             border: none
             transition: all 0.3s ease-in-out
 
@@ -201,9 +272,15 @@
                 height: 100%
                 transform: translate3d(0px,-1px,0px)
 
+            &.skinny
+                padding: 1em 2em
+
+            &.fat
+                padding: 2em 2em
+
             &:hover
                 cursor: pointer
-                letter-spacing: 0.2em
+                letter-spacing: 0.3em
 
         .dropdown
             position: relative
@@ -311,12 +388,10 @@
             position: absolute
             left: 0px
             z-index: 99
-            background-color: #bbbbbb
-            color: black
 
             li
                 display: block
-                padding: 0px
+                padding: 0px !important
 
                 a
                     width: 100%
@@ -326,6 +401,5 @@
                     transition: all 0.3s ease-in-out
 
                     &:hover
-                        background-color: black
                         color: white
                         cursor: pointer

@@ -40,16 +40,3 @@
       #grid-pg #grid .grid-option .row .col:hover {
         background-color: #bbbbbb;
         cursor: help; }
-
-#nav-pg #nav .nav {
-  margin-bottom: 10px; }
-  #nav-pg #nav .nav:first-of-type {
-    margin-top: 0px; }
-  #nav-pg #nav .nav:last-of-type {
-    margin-bottom: 0px; }
-    #nav-pg #nav .nav:last-of-type .nav-options {
-      background-color: grey;
-      color: white; }
-  #nav-pg #nav .nav .dropdown .dropdown-content {
-    background-color: #bbbbbb;
-    color: #1d1d1d; }

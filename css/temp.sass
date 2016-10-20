@@ -1,0 +1,81 @@
+$eden-light-green: rgb(98, 180, 128)
+$tab-screen: 768px
+
+#nav
+    margin: 25px 0px
+
+    .nav
+
+        .nav-options
+
+            &>li
+                padding: 0px 35px !important
+
+.hero
+    background-image: url(../images/photo-1444798188341-13aa3650c7db.jpg)
+    height: 100vh
+    width: 100vw
+    margin-left: auto
+    margin-right: auto
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+    &.short
+        height: 50vh
+
+    &.tall
+        height: 75vh
+
+    &.skinny
+        width: 50vw
+
+        @media screen and (max-width: $tab-screen)
+            width: 100vw
+
+    &.fat
+        width: 75vw
+
+        @media screen and (max-width: $tab-screen)
+            width: 100vw
+
+    &.overlay, .overlay-dark, &.overlay-light, &.overlay-eden
+        position: relative
+        z-index: 0
+
+        &:after
+            content: ""
+            position: absolute
+            left: 0px
+            top: 0px
+            width: 100%
+            height: 100%
+            z-index: -1
+
+    &.overlay-dark
+
+        &:after
+            background-color: rgba(0,0,0,0.75)
+
+    &.overlay-light
+
+        &:after
+            background-color: rgba(255,255,255,0.75)
+
+    &.overlay-eden
+
+        &:after
+            background-color: rgba($eden-light-green, 0.75)
+
+    .content
+        color: white
+        justify-content: center
+        height: 100%
+        align-items: center
+
+        h1
+
+            &:nth-of-type(2)
+                font-family: Pacifico
+                text-transform: lowercase
+                font-size: 3.5rem

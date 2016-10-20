@@ -36,6 +36,31 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
+	"\/css\/temp.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/temp.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/temp.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/temp.sass",
+		"outputAbbreviatedPath": "\/css\/temp.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
 	"\/images\/eden-coming-soon.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -43,6 +68,17 @@
 		"initialSize": 1.10962e+06,
 		"inputAbbreviatedPath": "\/images\/eden-coming-soon.jpg",
 		"outputAbbreviatedPath": "\/images\/eden-coming-soon.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/photo-1444798188341-13aa3650c7db.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.39014e+06,
+		"inputAbbreviatedPath": "\/images\/photo-1444798188341-13aa3650c7db.jpg",
+		"outputAbbreviatedPath": "\/images\/photo-1444798188341-13aa3650c7db.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

@@ -1,0 +1,54 @@
+#nav {
+  margin: 25px 0px; }
+  #nav .nav .nav-options > li {
+    padding: 0px 35px !important; }
+
+.hero {
+  background-image: url(../images/photo-1444798188341-13aa3650c7db.jpg);
+  height: 100vh;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hero.short {
+    height: 50vh; }
+  .hero.tall {
+    height: 75vh; }
+  .hero.skinny {
+    width: 50vw; }
+    @media screen and (max-width: 768px) {
+      .hero.skinny {
+        width: 100vw; } }
+  .hero.fat {
+    width: 75vw; }
+    @media screen and (max-width: 768px) {
+      .hero.fat {
+        width: 100vw; } }
+  .hero.overlay, .hero .overlay-dark, .hero.overlay-light, .hero.overlay-eden {
+    position: relative;
+    z-index: 0; }
+    .hero.overlay:after, .hero .overlay-dark:after, .hero.overlay-light:after, .hero.overlay-eden:after {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: -1; }
+  .hero.overlay-dark:after {
+    background-color: rgba(0, 0, 0, 0.75); }
+  .hero.overlay-light:after {
+    background-color: rgba(255, 255, 255, 0.75); }
+  .hero.overlay-eden:after {
+    background-color: rgba(98, 180, 128, 0.75); }
+  .hero .content {
+    color: white;
+    justify-content: center;
+    height: 100%;
+    align-items: center; }
+    .hero .content h1:nth-of-type(2) {
+      font-family: Pacifico;
+      text-transform: lowercase;
+      font-size: 3.5rem; }

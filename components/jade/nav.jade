@@ -1,16 +1,16 @@
 doctype html
 html(lang='en')
   head
-    include ../include/head
+    include ../../include/head
     title Navbar by Eden.
-    link(href='css/style.css', rel='stylesheet')
+    link(href='../css/style.css', rel='stylesheet')
   body
     .universe#nav-pg
         #nav
             .nav.clear.skinny.dark
                 .brand.float-left
                     a(href="index.html")
-                        img.logo(alt="", src="images/icon.ico")
+                        img.logo(alt="", src="../assets/img/icon.ico")
                         span brand
                 ul.nav-options.float-left
                     li
@@ -65,7 +65,7 @@ html(lang='en')
                         a(href="#") option
                 .brand
                     a(href="index.html")
-                        img.logo(alt="", src="images/icon.ico")
+                        img.logo(alt="", src="../assets/img/icon.ico")
                 ul.nav-options
                     li
                         a(href="#") option
@@ -94,7 +94,7 @@ html(lang='en')
             .nav.clear.mobile.transparent
                 .brand.float-left
                     a(href="index.html")
-                        img.logo(alt="", src="images/icon.ico")
+                        img.logo(alt="", src="../assets/img/icon.ico")
                         span brand
                 .mob-nav.float-right
                     //- input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")

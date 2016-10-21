@@ -1,0 +1,53 @@
+.hero
+    height: 100vh
+    width: 100vw
+    margin-left: auto
+    margin-right: auto
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+    &.short
+        height: 50vh
+
+    &.tall
+        height: 75vh
+
+    &.skinny
+        width: 50vw
+
+    &.fat
+        width: 75vw
+
+    &.skinny, &.fat
+
+        @media screen and (max-width: $tab-screen)
+            width: 100vw
+
+    &.overlay
+        position: relative
+        z-index: 0
+
+        &:after
+            content: ""
+            position: absolute
+            left: 0px
+            top: 0px
+            width: 100%
+            height: 100%
+            z-index: -1
+
+        &.dark
+
+            &:after
+                background-color: rgba(0, 0, 0, 0.75)
+
+        &.light
+
+            &:after
+                background-color: rgba(255, 255, 255, 0.75)
+
+        &.eden
+
+            &:after
+                background-color: rgba($eden-dark-green, 0.75)

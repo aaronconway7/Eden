@@ -55,6 +55,129 @@ button {
 .x-bold {
   font-weight: 900; }
 
+.row.center-center, .col.center-center {
+  height: 100%;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+.row.left-top, .col.left-top {
+  height: 100%;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+.row.right-bottom, .col.right-bottom {
+  height: 100%;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.row.left-center {
+  height: 100%;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+.row.left-bottom {
+  height: 100%;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+.row.center-top {
+  height: 100%;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+.row.center-bottom {
+  height: 100%;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+.row.right-top {
+  height: 100%;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+.row.right-center {
+  height: 100%;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.col.left-center {
+  height: 100%;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+.col.left-bottom {
+  height: 100%;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+.col.center-top {
+  height: 100%;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+.col.center-bottom {
+  height: 100%;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+.col.right-top {
+  height: 100%;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+.col.right-center {
+  height: 100%;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
 .container {
   position: relative;
   width: 80%;
@@ -496,3 +619,40 @@ h1, h2, h3, h4, h5, h6 {
           .nav .mob-nav ul.nav-options li a:hover {
             color: white;
             cursor: pointer; }
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hero.short {
+    height: 50vh; }
+  .hero.tall {
+    height: 75vh; }
+  .hero.skinny {
+    width: 50vw; }
+  .hero.fat {
+    width: 75vw; }
+  @media screen and (max-width: 768px) {
+    .hero.skinny, .hero.fat {
+      width: 100vw; } }
+  .hero.overlay {
+    position: relative;
+    z-index: 0; }
+    .hero.overlay:after {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: -1; }
+    .hero.overlay.dark:after {
+      background-color: rgba(0, 0, 0, 0.75); }
+    .hero.overlay.light:after {
+      background-color: rgba(255, 255, 255, 0.75); }
+    .hero.overlay.eden:after {
+      background-color: rgba(20, 184, 125, 0.75); }

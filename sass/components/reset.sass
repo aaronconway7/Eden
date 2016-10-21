@@ -1,0 +1,140 @@
+\:root
+    font-size: 12pt
+
+*
+    margin: 0px
+    padding: 0px
+    box-sizing: border-box
+    // font-weight: normal
+    // -webkit-font-smoothing: antialiased
+    // -moz-osx-font-smoothing: grayscale
+
+a
+    text-decoration: none
+    color: currentColor
+
+button
+    appearance: none
+    -webkit-appearance: none
+    -moz-appearance: none
+
+.float-left
+    float: left
+
+.float-right
+    float: right
+
+.clear
+
+    &:before, &:after
+        content: " "
+        display: table
+
+    &:after
+        clear: both
+
+.text-left
+    text-align: left
+
+.text-center
+    text-align: center
+
+.text-right
+    text-align: right
+
+.text-justify
+    text-align: justify
+
+.uppercase
+    text-transform: uppercase
+
+.uppercase-and-space
+    text-transform: uppercase
+    letter-spacing: 0.2em
+
+.bold
+    font-weight: 700
+
+.x-bold
+    font-weight: 900
+
+.row, .col
+
+    &.center-center
+        height: 100%
+        justify-content: center
+        align-items: center
+
+    &.left-top
+        height: 100%
+        justify-content: flex-start
+        align-items: flex-start
+
+    &.right-bottom
+        height: 100%
+        justify-content: flex-end
+        align-items: flex-end
+
+.row
+
+    &.left-center
+        height: 100%
+        justify-content: center
+        align-items: flex-start
+
+    &.left-bottom
+        height: 100%
+        justify-content: center
+        align-items: flex-end
+
+    &.center-top
+        height: 100%
+        justify-content: flex-start
+        align-items: center
+
+    &.center-bottom
+        height: 100%
+        justify-content: flex-end
+        align-items: center
+
+    &.right-top
+        height: 100%
+        justify-content: flex-start
+        align-items: flex-end
+
+    &.right-center
+        height: 100%
+        justify-content: center
+        align-items: flex-end
+
+.col
+
+    &.left-center
+        height: 100%
+        justify-content: center
+        align-items: flex-start
+
+    &.left-bottom
+        height: 100%
+        justify-content: center
+        align-items: flex-end
+
+    &.center-top
+        height: 100%
+        justify-content: flex-start
+        align-items: center
+
+    &.center-bottom
+        height: 100%
+        justify-content: flex-end
+        align-items: center
+
+    &.right-top
+        height: 100%
+        justify-content: flex-start
+        align-items: flex-end
+
+    &.right-center
+        height: 100%
+        justify-content: center
+        align-items: flex-end

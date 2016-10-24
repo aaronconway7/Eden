@@ -11,64 +11,6 @@
 
 .hero .content h1:nth-of-type(2) { font-family: Pacifico; text-transform: lowercase; font-size: 3.5rem; }
 
-a.button { appearance: none; -webkit-appearance: none; -moz-appearance: none; display: inline-block; text-align: center; padding: 1.25em 3em; border-radius: 0.2em; transition: all 0.3s ease-in-out; }
-
-a.button:hover { opacity: 0.75; cursor: pointer; }
-
-a.button.solid-on-hover:hover { opacity: 1; }
-
-a.button.skinny { padding-left: 1em; padding-right: 1em; }
-
-a.button.fat { padding-left: 4em; padding-right: 4em; }
-
-a.button.short { padding-top: 1em; padding-bottom: 1em; }
-
-a.button.tall { padding-top: 2em; padding-bottom: 2em; }
-
-a.button.full { width: 100%; height: 100%; }
-
-a.button.round { border-radius: 100%; }
-
-a.button.sharp { border-radius: 0em; }
-
-a.button.curved { border-radius: 0.5em; }
-
-a.button.pill { border-radius: 2em; }
-
-a.button.border-skinny { border: 0.1em solid #2f2f2f; }
-
-a.button.border { border: 0.2em solid #2f2f2f; }
-
-a.button.border-fat { border: 0.3em solid #2f2f2f; }
-
-a.button.no-border { border: none; }
-
-a.button.dark { background-color: #2f2f2f; color: #ececec; }
-
-a.button.dark.invert-on-hover:hover { background-color: #ececec; color: #2f2f2f; }
-
-a.button.light { background-color: #ececec; color: #2f2f2f; }
-
-a.button.light.invert-on-hover:hover { background-color: #2f2f2f; color: #ececec; }
-
-a.button.eden { background-color: #52ae76; color: #ececec; }
-
-a.button.eden.invert-on-hover:hover { background-color: #ececec; color: #52ae76; }
-
-a.button.eden.transparent { color: #52ae76; }
-
-a.button.eden.transparent.invert-on-hover:hover { background-color: #52ae76; color: #ececec; }
-
-a.button.eden.transparent.border, a.button.eden.transparent.border-fat, a.button.eden.transparent.border-skinny { border-color: #52ae76; }
-
-a.button.transparent { background-color: transparent; }
-
-a.button.shadow { box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.75); }
-
-a.button.shadow:hover { box-shadow: none; }
-
-a.button.shadow-on-hover:hover { box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.75); }
-
 #about h1 { font-size: 2rem; font-weight: 300; margin-bottom: 20px; }
 
 #about span.curly { color: #52ae76; }

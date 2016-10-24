@@ -629,6 +629,12 @@ a.button {
   a.button.eden {
     background-color: #52ae76;
     color: #ececec; }
+    a.button.eden.border-skinny {
+      border: 0.1em solid #52ae76; }
+    a.button.eden.border {
+      border: 0.2em solid #52ae76; }
+    a.button.eden.border-fat {
+      border: 0.3em solid #52ae76; }
     a.button.eden.invert-on-hover:hover {
       background-color: #ececec;
       color: #52ae76;

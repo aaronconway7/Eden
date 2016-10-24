@@ -29,6 +29,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/img\/aaronconway-b&w.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 81841,
+		"inputAbbreviatedPath": "\/assets\/img\/aaronconway-b&w.png",
+		"outputAbbreviatedPath": "\/assets\/img\/aaronconway-b&w.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/eden-coming-soon.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -36,6 +47,39 @@
 		"initialSize": 1.10962e+06,
 		"inputAbbreviatedPath": "\/assets\/img\/eden-coming-soon.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/eden-coming-soon.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/fdis-b&w.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 50872,
+		"inputAbbreviatedPath": "\/assets\/img\/fdis-b&w.png",
+		"outputAbbreviatedPath": "\/assets\/img\/fdis-b&w.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/frecibo-b&w.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32560,
+		"inputAbbreviatedPath": "\/assets\/img\/frecibo-b&w.png",
+		"outputAbbreviatedPath": "\/assets\/img\/frecibo-b&w.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/lushheat-b&w.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3269,
+		"inputAbbreviatedPath": "\/assets\/img\/lushheat-b&w.png",
+		"outputAbbreviatedPath": "\/assets\/img\/lushheat-b&w.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -51,6 +95,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/tutorial-b&w.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 39449,
+		"inputAbbreviatedPath": "\/assets\/img\/tutorial-b&w.png",
+		"outputAbbreviatedPath": "\/assets\/img\/tutorial-b&w.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/sass\/main.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -62,7 +117,7 @@
 		"outputAbbreviatedPath": "\/assets\/css\/main.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": false
@@ -130,8 +185,8 @@
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/README.md",
 		"outputAbbreviatedPath": "\/README.html",
 		"outputPathIsOutsideProject": 0,

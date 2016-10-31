@@ -4,7 +4,7 @@
 
 	<style>
 		svg{
-			opacity: 0.5;
+			opacity: 0.75;
 			transition: opacity 0.3s ease-in-out;
 		}
 
@@ -15,7 +15,7 @@
 		}
 
 		path{
-			stroke: white;
+			stroke: black;
 			stroke-width: 5;
 			stroke-dasharray: 1200;
 		}

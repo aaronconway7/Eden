@@ -117,6 +117,115 @@ $tab-screen: 768px
 
         p
             opacity: 0.75
+            margin-right: 10px
+            font-size: 0.8rem
+
+            a
+                transition: all 0.3s ease-in-out
+
+                &:hover
+                    color: $eden-dark-green
 
         object
-            height: 50px
+            height: 30px
+
+.banner
+
+    &.eden
+        background-color: rgba($eden-green, 0.75)
+
+    & > .container
+        padding-top: 25px
+        padding-bottom: 25px
+
+        h1
+            color: white
+            font-weight: 300
+            display: inline-block
+            font-size: 1.75rem
+
+        ul
+            list-style: none
+            display: inline-block
+
+            li
+                display: inline-block
+                color: black
+                opacity: 0.5
+                font-size: 0.9em
+                transition: all 0.3s ease-in-out
+
+                &:last-of-type
+                    &::after
+                        content: ""
+
+                &:after
+                    content: "/"
+                    margin-left: 0.3em
+                    opacity: 0.4
+
+                &:hover
+                    opacity: 1
+
+#components-pg
+
+    .component
+        margin-bottom: 100px
+
+        &:last-of-type
+            margin-bottom: 0px
+
+        & > h2
+            margin-bottom: 10px
+            text-align: center
+
+        .code
+            margin-top: 10px
+            position: relative
+            background-color: $eden-charcoal
+            color: white
+            padding: 75px
+            font-family: monospace
+
+            &.short
+                padding: 50px
+
+            @media screen and (max-width: $tab-screen)
+                padding: 25px !important
+                font-size: 0.8rem
+
+            .tab
+                margin: 1em 0em
+                margin-left: 2em
+
+            .copy-text-btn
+                position: absolute
+                top: 0px
+                right: 0px
+                font-size: 0.5rem
+                font-family: Lato
+                font-weight: 500
+
+    #container-component
+
+        .wrapper
+            background-color: $eden-light-grey
+
+        .container
+            background-color: $eden-dark-grey
+
+    #grid-component
+
+        .row
+            margin-bottom: 10px
+
+            &:last-of-type
+                margin-bottom: 0px
+
+        .col
+            background-color: $eden-light-grey
+            transition: all 0.3s ease-in-out
+
+            &:hover
+                background-color: $eden-dark-grey
+                cursor: help

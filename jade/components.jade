@@ -1,0 +1,90 @@
+doctype html
+html(lang="en")
+    head
+        include ../include/head
+        title="Eden Components"
+        link(rel='stylesheet', href='assets/css/temp.css')
+    body
+        .universe#components-pg
+            include ../include/header
+            .page-content
+                section#banner
+                    .banner.eden
+                        .container
+                            h1.uppercase-and-space Components
+                            ul
+                                li 
+                                    a(href="#container-component") Container
+                                li
+                                    a(href="#grid-component") Grid
+                                li
+                                    a(href="#nav-component") Nav
+                section#components
+                    .container
+                        .component#container-component
+                            h2 Container
+                            .wrapper
+                                .container
+                            .code.short
+                                &ltdiv class="container"&gt
+                                .tab ...
+                                &lt/div&gt
+                                include ../include/copy-code-btn
+                        .component#grid-component
+                            h2 Grid
+                            .row
+                                .col.one &nbsp
+                                .col.eleven &nbsp
+                            .row
+                                .col.two &nbsp
+                                .col.ten &nbsp
+                            .row
+                                .col.three &nbsp
+                                .col.nine &nbsp
+                            .row
+                                .col.four &nbsp
+                                .col.eight &nbsp
+                            .row
+                                .col.five &nbsp
+                                .col.seven &nbsp
+                            .row
+                                .col.six &nbsp
+                                .col.six &nbsp
+                            .code
+                                &ltdiv class="row"&gt
+                                .tab &ltdiv class="col five"&gt
+                                .tab
+                                    .tab ...
+                                .tab &lt/div&gt
+                                .tab &ltdiv class="col seven"&gt
+                                .tab
+                                    .tab ...
+                                .tab &lt/div&gt
+                                &lt/div&gt
+                                include ../include/copy-code-btn
+                        .component#nav-component
+                            h2 Nav
+                            .nav.clear.skinny.dark.uppercase-and-space
+                                .brand.float-left
+                                    a(href="#")
+                                        span brand
+                                ul.nav-options.float-left
+                                    li
+                                        a(href="#") option
+                                    li.dropdown LOST
+                                        ul.dropdown-content
+                                            li
+                                                a(href="") 4
+                                                a(href="") 8
+                                                a(href="") 15
+                                                a(href="") 16
+                                                a(href="") 23
+                                                a(href="") 42
+                                ul.nav-options.float-right
+                                    li.nav-text signed in as Desmond
+                                    li
+                                        a(href="")
+                                            button.uppercase-and-space(type="button") Sign Out
+            
+            include ../include/footer
+                

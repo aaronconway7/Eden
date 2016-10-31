@@ -4,7 +4,6 @@ html(lang="en")
         include ../include/head
         title="Eden"
         link(rel='stylesheet', href='assets/css/temp.css')
-        link(rel="stylesheet", href="https://use.fontawesome.com/0fee7aa685.css", media="all")
     body
         .universe#home-pg
             include ../include/header
@@ -52,10 +51,7 @@ html(lang="en")
                             a(class="github-button", href="https://github.com/aaronconway7/Eden", data-icon="octicon-star", data-count-href="/aaronconway7/Eden/stargazers", data-count-api="/repos/aaronconway7/Eden#stargazers_count", data-count-aria-label="# stargazers on GitHub", aria-label="Star aaronconway7/Eden on GitHub") Star
                             a(class="github-button", href="https://github.com/aaronconway7/Eden/fork", data-icon="octicon-repo-forked", data-count-href="/aaronconway7/Eden/network", data-count-api="/repos/aaronconway7/Eden#forks_count", data-count-aria-label="# forks on GitHub", aria-label="Fork aaronconway7/Eden on GitHub") Fork
                             span.version-number v1.0.0
-                section#footer
-                    .container
-                        .row.right-center
-                            p Designed for design by Aaron Conway. 
-                            object(data="assets/img/aaronconway.svg", type="image/svg+xml")
+            
+            include ../include/footer
 
         script(async defer src="https://buttons.github.io/buttons.js")

@@ -129,8 +129,7 @@ button {
       width: 85%; } }
   @media (max-width: 425px) {
     .container {
-      width: 100%;
-      padding: 100px 0px; } }
+      width: 80%; } }
 
 .wrapper {
   position: relative;
@@ -638,7 +637,7 @@ a.button {
     a.button.eden.invert-on-hover:hover {
       background-color: #ececec;
       color: #52ae76;
-      border: 2px solid #52ae76; }
+      border: 0.2em solid #52ae76; }
     a.button.eden.transparent {
       color: #52ae76; }
       a.button.eden.transparent.invert-on-hover:hover {

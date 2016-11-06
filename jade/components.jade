@@ -26,9 +26,12 @@ html(lang="en")
                             .wrapper
                                 .container
                             .code.short
-                                &ltdiv class="container"&gt
-                                .tab ...
-                                &lt/div&gt
+                                span.tag div 
+                                    span.attr class
+                                    span.val container
+                                .tab
+                                    span.content ...
+                                span.tag.close div
                                 include ../include/copy-code-btn
                         .component#grid-component
                             h2 Grid
@@ -51,22 +54,31 @@ html(lang="en")
                                 .col.six &nbsp
                                 .col.six &nbsp
                             .code
-                                &ltdiv class="row"&gt
-                                .tab &ltdiv class="col five"&gt
+                                span.tag div 
+                                    span.attr class
+                                    span.val row
                                 .tab
-                                    .tab ...
-                                .tab &lt/div&gt
-                                .tab &ltdiv class="col seven"&gt
+                                    span.tag div 
+                                        span.attr class
+                                        span.val col five
+                                    .tab
+                                        span.content ...
+                                    span.tag.close div
                                 .tab
-                                    .tab ...
-                                .tab &lt/div&gt
-                                &lt/div&gt
+                                    span.tag div 
+                                        span.attr class
+                                        span.val col seven
+                                    .tab
+                                        span.content ...
+                                    span.tag.close div
+                                span.tag.close div
                                 include ../include/copy-code-btn
                         .component#nav-component
                             h2 Nav
-                            .nav.clear.skinny.dark.uppercase-and-space
+                            .nav.clear.skinny.dark
                                 .brand.float-left
                                     a(href="#")
+                                        img.logo(alt="", src="assets/img/eden.png")
                                         span brand
                                 ul.nav-options.float-left
                                     li
@@ -85,17 +97,237 @@ html(lang="en")
                                     li
                                         a(href="")
                                             button.uppercase-and-space(type="button") Sign Out
+                                .mob-nav.float-right
+                                    input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
+                                    label(for="mob-toggle")
+                                        .hamburger
+                                    ul.nav-options.text-center
+                                        li
+                                            a(href="#") option
+                                        li
+                                            a(href="#") option
+                                        li
+                                            a(href="#") option
+                            t.nav.fat.uppercase-and-space.centered.light
+                                ul.nav-options
+                                    li
+                                        a(href="#") option
+                                    li.dropdown option
+                                        ul.dropdown-content
+                                            li
+                                                a(href="#") dropdown option
+                                            li
+                                                a(href="#") dropdown option
+                                    li
+                                        a(href="#") option
+                                .brand
+                                    a(href="index.html")
+                                        img.logo(alt="", src="../assets/img/icon.ico")
+                                ul.nav-options
+                                    li
+                                        a(href="#") option
+                                    li.dropdown option
+                                        ul.dropdown-content
+                                            li
+                                                a(href="#") dropdown option
+                                            li
+                                                a(href="#") dropdown option
+                                    li
+                                        a(href="#")
+                                            button.uppercase-and-space.skinny(type="button") Download
+                                
+                                .mob-nav.float-right
+                                    input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
+                                    label(for="mob-toggle")
+                                        .hamburger
+                                    ul.nav-options.text-center
+                                        li
+                                            a(href="#") option
+                                        li
+                                            a(href="#") option
+                                        li
+                                            a(href="#") option
+                            .nav.clear.mobile.transparent
+                                .brand.float-left
+                                    a(href="index.html")
+                                        img.logo(alt="", src="assets/img/eden.png")
+                                        span brand
+                                .mob-nav.float-right
+                                    input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
+                                    label(for="mob-toggle")
+                                        .hamburger
+                                    ul.nav-options.text-center
+                                        li
+                                            a(href="#") option
+                                        li
+                                            a(href="#") option
+                                        li
+                                            a(href="#") option
                             .code
-                                &ltdiv class="nav clear skinny dark uppercase-and-space"&gt
-                                .tab &ltdiv class="brand float-left"&gt
+                                span.tag div 
+                                    span.attr class
+                                    span.val nav clear skinny dark uppercase-and-space
                                 .tab
-                                    .tab &lta href="#"&gt
-                                .tab &lt/div&gt
-                                .tab &ltdiv class="col seven"&gt
+                                    span.tag div 
+                                        span.attr class
+                                        span.val brand float-left
+                                    .tab
+                                        span.tag a 
+                                            span.attr href
+                                            span.val #
+                                        .tab
+                                            span.tag span
+                                            span.content Brand
+                                            span.tag.close span
+                                        span.tag.close a
+                                    span.tag.close div
                                 .tab
-                                    .tab ...
-                                .tab &lt/div&gt
-                                &lt/div&gt
+                                    span.tag ul 
+                                        span.attr class
+                                        span.val nav-options float-left
+                                    .tab
+                                        span.tag li
+                                        span.tag a 
+                                            span.attr href
+                                            span.val #
+                                        span.content option
+                                        span.tag.close a
+                                        span.tag.close li
+                                    .tab
+                                        span.tag li
+                                        span.tag a 
+                                            span.attr href
+                                            span.val #
+                                        span.content option
+                                        span.tag.close a
+                                        span.tag.close li
+                                    span.tag.close ul
+                                .tab
+                                    span.tag ul 
+                                        span.attr class
+                                        span.val nav-options float-right
+                                    .tab
+                                        span.tag li 
+                                            span.attr class
+                                            span.val dropdown
+                                        span.content dropdown option
+                                        .tab
+                                            span.tag ul 
+                                                span.attr class
+                                                span.val dropdown-content
+                                            .tab
+                                                span.tag li
+                                                span.tag a 
+                                                    span.attr href
+                                                    span.val #
+                                                span.content option
+                                                span.tag.close a
+                                                span.tag.close li
+                                            .tab
+                                                span.tag li
+                                                span.tag a 
+                                                    span.attr href
+                                                    span.val #
+                                                span.content option
+                                                span.tag.close a
+                                                span.tag.close li
+                                            .tab
+                                                span.tag li
+                                                span.tag a 
+                                                    span.attr href
+                                                    span.val #
+                                                span.content option
+                                                span.tag.close a
+                                                span.tag.close li
+                                            .tab
+                                                span.tag li
+                                                span.tag a 
+                                                    span.attr href
+                                                    span.val #
+                                                span.content option
+                                                span.tag.close a
+                                                span.tag.close li
+                                            span.tag.close ul
+                                    .tab
+                                        span.tag.close li
+                                    .tab
+                                        span.tag li 
+                                            span.attr class
+                                            span.val nav-text
+                                        span.content signed in as Aaron
+                                        span.tag.close li
+                                    .tab
+                                        span.tag li
+                                        .tab
+                                            span.tag a 
+                                                span.attr href
+                                                span.val #
+                                            .tab
+                                                span.tag button 
+                                                    span.attr type
+                                                    span.val button
+                                                    span.attr class
+                                                    span.val uppercase-and-space
+                                                span.content Sign Out
+                                                span.tag.close button
+                                            span.tag.close a
+                                        span.tag.close li
+                                    span.tag.close ul
+                                .tab
+                                    span.tag div 
+                                        span.attr class
+                                        span.val mob-nav float-right
+                                    .tab
+                                        span.tag input 
+                                            span.attr.id id
+                                            span.val mob-toggle
+                                            span.attr class
+                                            span.val mob-toggle
+                                            span.attr type
+                                            span.val checkbox
+                                            span.attr name
+                                            span.val mob-toggle
+                                    .tab
+                                        span.tag label 
+                                            span.attr for
+                                            span.val mob-toggle
+                                        .tab
+                                            span.tag div 
+                                                span.attr class
+                                                span.val hamburger
+                                            span.tag.close div
+                                        span.tag.close label
+                                    .tab
+                                        span.tag ul 
+                                            span.attr class
+                                            span.val nav-options text-center
+                                        .tab
+                                            span.tag li
+                                            span.tag a 
+                                                span.attr href
+                                                span.val #
+                                            span.content option
+                                            span.tag.close a
+                                            span.tag.close li
+                                        .tab
+                                            span.tag li
+                                            span.tag a 
+                                                span.attr href
+                                                span.val #
+                                            span.content option
+                                            span.tag.close a
+                                            span.tag.close li
+                                        .tab
+                                            span.tag li
+                                            span.tag a 
+                                                span.attr href
+                                                span.val #
+                                            span.content option
+                                            span.tag.close a
+                                            span.tag.close li
+                                        span.tag.close ul
+                                    span.tag.close div
+                                span.tag.close div
                                 include ../include/copy-code-btn
             include ../include/footer
                 

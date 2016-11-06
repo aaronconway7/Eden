@@ -182,7 +182,7 @@ $tab-screen: 768px
         .code
             margin-top: 10px
             position: relative
-            background-color: $eden-charcoal
+            background-color: #282c34
             color: white
             padding: 75px
             font-family: monospace
@@ -197,6 +197,48 @@ $tab-screen: 768px
             .tab
                 margin: 1em 0em
                 margin-left: 2em
+
+            .tag
+                color: #e06c75
+
+                &:before, &:after
+                    color: white
+
+                &:before
+                    content: "<"
+
+                &:after
+                    content: ">"
+
+                &.close
+
+                    &:before
+                        content: "</"
+
+                .content
+                    color: #a2a9b6
+
+                .attr
+                    color: #cb9a66
+
+                    &:after
+                        content: "="
+                        color: white
+
+                    &.id
+                        color: #3992ef
+
+                .val
+                    color: #98c372
+                    margin-right: 0.4em
+
+                    &:before
+                        content: open-quote
+                    &:after
+                        content: close-quote
+
+                    &:last-of-type
+                        margin-right: 0px
 
             .copy-text-btn
                 position: absolute

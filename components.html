@@ -77,8 +77,8 @@
               <div class="wrapper">
                 <div class="container"></div>
               </div>
-              <div class="code short">&ltdiv class="container"&gt
-                <div class="tab">...</div>&lt/div&gt<a href="#" class="copy-text-btn button light short skinny uppercase-and-space sharp">Copy Text <i aria-hidden="true" class="fa fa-clone"></i></a>
+              <div class="code short"><span class="tag">div <span class="attr">class</span><span class="val">container</span></span>
+                <div class="tab"><span class="content">...</span></div><span class="tag close">div</span><a href="#" class="copy-text-btn button light short skinny uppercase-and-space sharp">Copy Text <i aria-hidden="true" class="fa fa-clone"></i></a>
               </div>
             </div>
             <div id="grid-component" class="component">
@@ -107,23 +107,19 @@
                 <div class="col six">&nbsp</div>
                 <div class="col six">&nbsp</div>
               </div>
-              <div class="code">&ltdiv class="row"&gt
-                <div class="tab">&ltdiv class="col five"&gt</div>
-                <div class="tab">
-                  <div class="tab">...</div>
+              <div class="code"><span class="tag">div <span class="attr">class</span><span class="val">row</span></span>
+                <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">col five</span></span>
+                  <div class="tab"><span class="content">...</span></div><span class="tag close">div</span>
                 </div>
-                <div class="tab">&lt/div&gt</div>
-                <div class="tab">&ltdiv class="col seven"&gt</div>
-                <div class="tab">
-                  <div class="tab">...</div>
-                </div>
-                <div class="tab">&lt/div&gt</div>&lt/div&gt<a href="#" class="copy-text-btn button light short skinny uppercase-and-space sharp">Copy Text <i aria-hidden="true" class="fa fa-clone"></i></a>
+                <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">col seven</span></span>
+                  <div class="tab"><span class="content">...</span></div><span class="tag close">div</span>
+                </div><span class="tag close">div</span><a href="#" class="copy-text-btn button light short skinny uppercase-and-space sharp">Copy Text <i aria-hidden="true" class="fa fa-clone"></i></a>
               </div>
             </div>
             <div id="nav-component" class="component">
               <h2>Nav</h2>
-              <div class="nav clear skinny dark uppercase-and-space">
-                <div class="brand float-left"><a href="#"><span>brand</span></a></div>
+              <div class="nav clear skinny dark">
+                <div class="brand float-left"><a href="#"><img alt="" src="assets/img/eden.png" class="logo"><span>brand</span></a></div>
                 <ul class="nav-options float-left">
                   <li><a href="#">option</a></li>
                   <li class="dropdown">LOST
@@ -137,18 +133,105 @@
                   <li><a href="">
                       <button type="button" class="uppercase-and-space">Sign Out</button></a></li>
                 </ul>
+                <div class="mob-nav float-right">
+                  <input id="mob-toggle" type="checkbox" name="mob-toggle" class="mob-toggle">
+                  <label for="mob-toggle">
+                    <div class="hamburger"></div>
+                  </label>
+                  <ul class="nav-options text-center">
+                    <li><a href="#">option</a></li>
+                    <li><a href="#">option</a></li>
+                    <li><a href="#">option</a></li>
+                  </ul>
+                </div>
               </div>
-              <div class="code">&ltdiv class="nav clear skinny dark uppercase-and-space"&gt
-                <div class="tab">&ltdiv class="brand float-left"&gt</div>
-                <div class="tab">
-                  <div class="tab">&lta href="#"&gt</div>
+              <t class="nav fat uppercase-and-space centered light">
+                <ul class="nav-options">
+                  <li><a href="#">option</a></li>
+                  <li class="dropdown">option
+                    <ul class="dropdown-content">
+                      <li><a href="#">dropdown option</a></li>
+                      <li><a href="#">dropdown option</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">option</a></li>
+                </ul>
+                <div class="brand"><a href="index.html"><img alt="" src="../assets/img/icon.ico" class="logo"></a></div>
+                <ul class="nav-options">
+                  <li><a href="#">option</a></li>
+                  <li class="dropdown">option
+                    <ul class="dropdown-content">
+                      <li><a href="#">dropdown option</a></li>
+                      <li><a href="#">dropdown option</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">
+                      <button type="button" class="uppercase-and-space skinny">Download</button></a></li>
+                </ul>
+                <div class="mob-nav float-right">
+                  <input id="mob-toggle" type="checkbox" name="mob-toggle" class="mob-toggle">
+                  <label for="mob-toggle">
+                    <div class="hamburger"></div>
+                  </label>
+                  <ul class="nav-options text-center">
+                    <li><a href="#">option</a></li>
+                    <li><a href="#">option</a></li>
+                    <li><a href="#">option</a></li>
+                  </ul>
                 </div>
-                <div class="tab">&lt/div&gt</div>
-                <div class="tab">&ltdiv class="col seven"&gt</div>
-                <div class="tab">
-                  <div class="tab">...</div>
+              </t>
+              <div class="nav clear mobile transparent">
+                <div class="brand float-left"><a href="index.html"><img alt="" src="assets/img/eden.png" class="logo"><span>brand</span></a></div>
+                <div class="mob-nav float-right">
+                  <input id="mob-toggle" type="checkbox" name="mob-toggle" class="mob-toggle">
+                  <label for="mob-toggle">
+                    <div class="hamburger"></div>
+                  </label>
+                  <ul class="nav-options text-center">
+                    <li><a href="#">option</a></li>
+                    <li><a href="#">option</a></li>
+                    <li><a href="#">option</a></li>
+                  </ul>
                 </div>
-                <div class="tab">&lt/div&gt</div>&lt/div&gt<a href="#" class="copy-text-btn button light short skinny uppercase-and-space sharp">Copy Text <i aria-hidden="true" class="fa fa-clone"></i></a>
+              </div>
+              <div class="code"><span class="tag">div <span class="attr">class</span><span class="val">nav clear skinny dark uppercase-and-space</span></span>
+                <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">brand float-left</span></span>
+                  <div class="tab"><span class="tag">a <span class="attr">href</span><span class="val">#</span></span>
+                    <div class="tab"><span class="tag">span</span><span class="content">Brand</span><span class="tag close">span</span></div><span class="tag close">a</span>
+                  </div><span class="tag close">div</span>
+                </div>
+                <div class="tab"><span class="tag">ul <span class="attr">class</span><span class="val">nav-options float-left</span></span>
+                  <div class="tab"><span class="tag">li</span><span class="tag">a <span class="attr">href</span><span class="val">#</span></span><span class="content">option</span><span class="tag close">a</span><span class="tag close">li</span></div>
+                  <div class="tab"><span class="tag">li</span><span class="tag">a <span class="attr">href</span><span class="val">#</span></span><span class="content">option</span><span class="tag close">a</span><span class="tag close">li</span></div><span class="tag close">ul</span>
+                </div>
+                <div class="tab"><span class="tag">ul <span class="attr">class</span><span class="val">nav-options float-right</span></span>
+                  <div class="tab"><span class="tag">li <span class="attr">class</span><span class="val">dropdown</span></span><span class="content">dropdown option</span>
+                    <div class="tab"><span class="tag">ul <span class="attr">class</span><span class="val">dropdown-content</span></span>
+                      <div class="tab"><span class="tag">li</span><span class="tag">a <span class="attr">href</span><span class="val">#</span></span><span class="content">option</span><span class="tag close">a</span><span class="tag close">li</span></div>
+                      <div class="tab"><span class="tag">li</span><span class="tag">a <span class="attr">href</span><span class="val">#</span></span><span class="content">option</span><span class="tag close">a</span><span class="tag close">li</span></div>
+                      <div class="tab"><span class="tag">li</span><span class="tag">a <span class="attr">href</span><span class="val">#</span></span><span class="content">option</span><span class="tag close">a</span><span class="tag close">li</span></div>
+                      <div class="tab"><span class="tag">li</span><span class="tag">a <span class="attr">href</span><span class="val">#</span></span><span class="content">option</span><span class="tag close">a</span><span class="tag close">li</span></div><span class="tag close">ul</span>
+                    </div>
+                  </div>
+                  <div class="tab"><span class="tag close">li</span></div>
+                  <div class="tab"><span class="tag">li <span class="attr">class</span><span class="val">nav-text</span></span><span class="content">signed in as Aaron</span><span class="tag close">li</span></div>
+                  <div class="tab"><span class="tag">li</span>
+                    <div class="tab"><span class="tag">a <span class="attr">href</span><span class="val">#</span></span>
+                      <div class="tab"><span class="tag">button <span class="attr">type</span><span class="val">button</span><span class="attr">class</span><span class="val">uppercase-and-space</span></span><span class="content">Sign Out</span><span class="tag close">button</span></div><span class="tag close">a</span>
+                    </div><span class="tag close">li</span>
+                  </div><span class="tag close">ul</span>
+                </div>
+                <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">mob-nav float-right</span></span>
+                  <div class="tab"><span class="tag">input <span class="attr id">id</span><span class="val">mob-toggle</span><span class="attr">class</span><span class="val">mob-toggle</span><span class="attr">type</span><span class="val">checkbox</span><span class="attr">name</span><span class="val">mob-toggle</span></span></div>
+                  <div class="tab"><span class="tag">label <span class="attr">for</span><span class="val">mob-toggle</span></span>
+                    <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">hamburger</span></span><span class="tag close">div</span></div><span class="tag close">label</span>
+                  </div>
+                  <div class="tab"><span class="tag">ul <span class="attr">class</span><span class="val">nav-options text-center</span></span>
+                    <div class="tab"><span class="tag">li</span><span class="tag">a <span class="attr">href</span><span class="val">#</span></span><span class="content">option</span><span class="tag close">a</span><span class="tag close">li</span></div>
+                    <div class="tab"><span class="tag">li</span><span class="tag">a <span class="attr">href</span><span class="val">#</span></span><span class="content">option</span><span class="tag close">a</span><span class="tag close">li</span></div>
+                    <div class="tab"><span class="tag">li</span><span class="tag">a <span class="attr">href</span><span class="val">#</span></span><span class="content">option</span><span class="tag close">a</span><span class="tag close">li</span></div><span class="tag close">ul</span>
+                  </div><span class="tag close">div</span>
+                </div><span class="tag close">div</span><a href="#" class="copy-text-btn button light short skinny uppercase-and-space sharp">Copy Text <i aria-hidden="true" class="fa fa-clone"></i></a>
               </div>
             </div>
           </div>

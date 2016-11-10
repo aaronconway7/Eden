@@ -169,6 +169,11 @@ $tab-screen: 768px
 
 #components-pg
 
+    #components
+
+        .container
+            position: static
+
     .component
         margin-bottom: 100px
 
@@ -176,19 +181,31 @@ $tab-screen: 768px
             margin-bottom: 0px
 
         & > h2
+            text-align: left
+        & > p
             margin-bottom: 10px
-            text-align: center
 
         .code
-            margin-top: 10px
-            position: relative
+            padding: 2px 4px
             background-color: #282c34
-            color: white
-            padding: 75px
+            color: $eden-light-grey
             font-family: monospace
 
-            &.short
-                padding: 50px
+            &.light
+                background-color: $eden-light-grey
+                color: $eden-charcoal
+
+            &.block
+                margin-top: 10px
+                position: relative
+                padding: 75px
+
+                &.short
+                    padding: 50px
+
+            &span
+                padding: 0px
+                margin: 0px
 
             @media screen and (max-width: $tab-screen)
                 padding: 25px !important
@@ -271,3 +288,17 @@ $tab-screen: 768px
             &:hover
                 background-color: $eden-dark-grey
                 cursor: help
+
+    #nav-component
+
+        .nav
+            margin-bottom: 10px
+
+            &:last-of-type
+                margin-bottom: 0px
+
+    #hero-component
+
+        .hero
+            position: absolute
+            left: 0px

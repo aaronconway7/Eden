@@ -40,6 +40,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/backgrounds\/hero1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 245065,
+		"inputAbbreviatedPath": "\/assets\/img\/backgrounds\/hero1.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/backgrounds\/hero1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/backgrounds\/hero2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 185066,
+		"inputAbbreviatedPath": "\/assets\/img\/backgrounds\/hero2.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/backgrounds\/hero2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/eden-coming-soon.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -88,7 +110,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3184,
+		"initialSize": 0,
 		"inputAbbreviatedPath": "\/assets\/img\/favicons\/android-icon-36x36.png",
 		"outputAbbreviatedPath": "\/assets\/img\/favicons\/android-icon-36x36.png",
 		"outputPathIsOutsideProject": 0,
@@ -99,7 +121,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4433,
+		"initialSize": 0,
 		"inputAbbreviatedPath": "\/assets\/img\/favicons\/android-icon-48x48.png",
 		"outputAbbreviatedPath": "\/assets\/img\/favicons\/android-icon-48x48.png",
 		"outputPathIsOutsideProject": 0,
@@ -110,7 +132,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 7463,
+		"initialSize": 0,
 		"inputAbbreviatedPath": "\/assets\/img\/favicons\/android-icon-72x72.png",
 		"outputAbbreviatedPath": "\/assets\/img\/favicons\/android-icon-72x72.png",
 		"outputPathIsOutsideProject": 0,
@@ -121,7 +143,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 11059,
+		"initialSize": 0,
 		"inputAbbreviatedPath": "\/assets\/img\/favicons\/android-icon-96x96.png",
 		"outputAbbreviatedPath": "\/assets\/img\/favicons\/android-icon-96x96.png",
 		"outputPathIsOutsideProject": 0,
@@ -381,6 +403,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/js\/function-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/function-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/function-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/function.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/function.js",
+		"outputAbbreviatedPath": "\/assets\/js\/function-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/sass\/main.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -409,7 +453,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
@@ -420,6 +464,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/include\/copy-code-btn.jade",
 		"outputAbbreviatedPath": "\/include\/copy-code-btn.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/include\/foot.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/include\/foot.jade",
+		"outputAbbreviatedPath": "\/include\/foot.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -497,15 +552,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/README.md",
 		"outputAbbreviatedPath": "\/README.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/temp-index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/temp-index.html",
-		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		}

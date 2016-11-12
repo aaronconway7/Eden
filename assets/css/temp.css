@@ -1,4 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Pacifico';
+@import 'https://fonts.googleapis.com/css?family=Dosis:300,400,600,800';
+@import 'https://fonts.googleapis.com/css?family=Dosis:300,400,600,800';
 .curly {
   font-family: Pacifico; }
 
@@ -64,8 +66,7 @@
     margin: 0px 20px;
     opacity: 0.5; }
   #open-source .github-stats iframe {
-    -webkit-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out; }
+    transition: all 0.3s ease-in-out; }
     #open-source .github-stats iframe:hover {
       opacity: 1; }
 
@@ -76,8 +77,7 @@
     margin-right: 10px;
     font-size: 0.8rem; }
     #footer .container p a {
-      -webkit-transition: all 0.3s ease-in-out;
-              transition: all 0.3s ease-in-out; }
+      transition: all 0.3s ease-in-out; }
       #footer .container p a:hover {
         color: #14b87d; }
   #footer .container object {
@@ -101,8 +101,7 @@
       color: black;
       opacity: 0.5;
       font-size: 0.9em;
-      -webkit-transition: all 0.3s ease-in-out;
-              transition: all 0.3s ease-in-out; }
+      transition: all 0.3s ease-in-out; }
       .banner > .container ul li:last-of-type::after {
         content: ""; }
       .banner > .container ul li:after {
@@ -112,94 +111,128 @@
       .banner > .container ul li:hover {
         opacity: 1; }
 
-#components-pg #components .container {
-  position: static; }
-#components-pg .component {
+#components-pg #components .component {
   margin-bottom: 100px; }
-  #components-pg .component:last-of-type {
+  #components-pg #components .component:first-of-type {
+    margin-top: 100px; }
+  #components-pg #components .component:last-of-type {
     margin-bottom: 0px; }
-  #components-pg .component > h2 {
-    text-align: left; }
-  #components-pg .component > p {
-    margin-bottom: 10px; }
-  #components-pg .component .code {
+  #components-pg #components .component > .container {
+    padding-top: 0px;
+    padding-bottom: 0px; }
+    #components-pg #components .component > .container > h2 {
+      text-align: left; }
+    #components-pg #components .component > .container > p {
+      margin-bottom: 10px; }
+  #components-pg #components .component .code {
     padding: 2px 4px;
     background-color: #282c34;
     color: #ececec;
-    font-family: monospace; }
-    #components-pg .component .code.light {
+    font-family: monospace;
+    margin-bottom: 50px; }
+    #components-pg #components .component .code:last-child {
+      margin-bottom: 0px; }
+    #components-pg #components .component .code.light {
       background-color: #ececec;
       color: #2f2f2f; }
-    #components-pg .component .code.block {
+    #components-pg #components .component .code.block {
       margin-top: 10px;
       position: relative;
       padding: 75px; }
-      #components-pg .component .code.block.short {
+      #components-pg #components .component .code.block.short {
         padding: 50px; }
-    #components-pg .component .codespan {
+    #components-pg #components .component .codespan {
       padding: 0px;
       margin: 0px; }
     @media screen and (max-width: 768px) {
-      #components-pg .component .code {
+      #components-pg #components .component .code {
         padding: 25px !important;
         font-size: 0.8rem; } }
-    #components-pg .component .code .tab {
+    #components-pg #components .component .code .tab {
       margin: 1em 0em;
       margin-left: 2em; }
-    #components-pg .component .code .tag {
+    #components-pg #components .component .code .tag {
       color: #e06c75; }
-      #components-pg .component .code .tag:before, #components-pg .component .code .tag:after {
+      #components-pg #components .component .code .tag:before, #components-pg #components .component .code .tag:after {
         color: white; }
-      #components-pg .component .code .tag:before {
+      #components-pg #components .component .code .tag:before {
         content: "<"; }
-      #components-pg .component .code .tag:after {
+      #components-pg #components .component .code .tag:after {
         content: ">"; }
-      #components-pg .component .code .tag.close:before {
+      #components-pg #components .component .code .tag.close:before {
         content: "</"; }
-      #components-pg .component .code .tag .content {
+      #components-pg #components .component .code .tag .content {
         color: #a2a9b6; }
-      #components-pg .component .code .tag .attr {
+      #components-pg #components .component .code .tag .attr {
         color: #cb9a66; }
-        #components-pg .component .code .tag .attr:after {
+        #components-pg #components .component .code .tag .attr:after {
           content: "=";
           color: white; }
-        #components-pg .component .code .tag .attr.id {
+        #components-pg #components .component .code .tag .attr.id {
           color: #3992ef; }
-      #components-pg .component .code .tag .val {
+      #components-pg #components .component .code .tag .val {
         color: #98c372;
         margin-right: 0.4em; }
-        #components-pg .component .code .tag .val:before {
+        #components-pg #components .component .code .tag .val:before {
           content: open-quote; }
-        #components-pg .component .code .tag .val:after {
+        #components-pg #components .component .code .tag .val:after {
           content: close-quote; }
-        #components-pg .component .code .tag .val:last-of-type {
+        #components-pg #components .component .code .tag .val:last-of-type {
           margin-right: 0px; }
-    #components-pg .component .code .copy-text-btn {
+    #components-pg #components .component .code .copy-text-btn {
       position: absolute;
       top: 0px;
       right: 0px;
       font-size: 0.5rem;
       font-family: Lato;
       font-weight: 500; }
-#components-pg #container-component .wrapper {
+#components-pg #components #container-component .wrapper {
   background-color: #ececec; }
-#components-pg #container-component .container {
-  background-color: #bbbbbb; }
-#components-pg #grid-component .row {
+  #components-pg #components #container-component .wrapper .container {
+    background-color: #bbbbbb; }
+#components-pg #components #grid-component .row {
   margin-bottom: 10px; }
-  #components-pg #grid-component .row:last-of-type {
+  #components-pg #components #grid-component .row:last-of-type {
     margin-bottom: 0px; }
-#components-pg #grid-component .col {
+#components-pg #components #grid-component .col {
   background-color: #ececec;
-  -webkit-transition: all 0.3s ease-in-out;
-          transition: all 0.3s ease-in-out; }
-  #components-pg #grid-component .col:hover {
+  transition: all 0.3s ease-in-out; }
+  #components-pg #components #grid-component .col:hover {
     background-color: #bbbbbb;
     cursor: help; }
-#components-pg #nav-component .nav {
+#components-pg #components #nav-component .nav {
   margin-bottom: 10px; }
-  #components-pg #nav-component .nav:last-of-type {
+  #components-pg #components #nav-component .nav:last-of-type {
     margin-bottom: 0px; }
-#components-pg #hero-component .hero {
-  position: absolute;
-  left: 0px; }
+  #components-pg #components #nav-component .nav:nth-of-type(3) {
+    font-family: Dosis; }
+  #components-pg #components #nav-component .nav:nth-of-type(4) {
+    font-family: Playfair Display; }
+#components-pg #components #hero-component .hero:nth-of-type(2) {
+  background-image: url(../img/backgrounds/hero1.jpg); }
+  #components-pg #components #hero-component .hero:nth-of-type(2) h1 {
+    font-family: Playfair Display;
+    font-size: 15rem; }
+    @media screen and (max-width: 768px) {
+      #components-pg #components #hero-component .hero:nth-of-type(2) h1 {
+        font-size: 8rem; } }
+    @media screen and (max-width: 425px) {
+      #components-pg #components #hero-component .hero:nth-of-type(2) h1 {
+        font-size: 4rem; } }
+#components-pg #components #hero-component .hero:nth-of-type(4) {
+  background-image: url(../img/backgrounds/hero2.jpg);
+  background-position: center 70%; }
+  #components-pg #components #hero-component .hero:nth-of-type(4) h1 {
+    font-family: Pacifico;
+    font-size: 2.5rem;
+    margin: 50px; }
+#components-pg #components #button-component .row {
+  margin-bottom: 10px; }
+  #components-pg #components #button-component .row:last-of-type {
+    margin-bottom: 0px; }
+#components-pg #components #button-component .button {
+  margin: 10px; }
+  #components-pg #components #button-component .button:first-of-type {
+    margin-left: 0px; }
+  #components-pg #components #button-component .button:last-of-type {
+    margin-right: 0px; }

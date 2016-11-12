@@ -1,4 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Pacifico'
+@import 'https://fonts.googleapis.com/css?family=Dosis:300,400,600,800'
+@import 'https://fonts.googleapis.com/css?family=Dosis:300,400,600,800'
 
 $eden-dark-green: rgb(20, 184, 125)
 $eden-green: rgb(82, 174, 118)
@@ -8,6 +10,7 @@ $eden-charcoal: rgb(47, 47, 47)
 $eden-dark-grey: rgb(187, 187, 187)
 $eden-light-grey: rgb(236, 236, 236)
 $tab-screen: 768px
+$mob-screen: 425px
 
 .curly
     font-family: Pacifico
@@ -171,134 +174,183 @@ $tab-screen: 768px
 
     #components
 
-        .container
-            position: static
+        .component
+            margin-bottom: 100px
 
-    .component
-        margin-bottom: 100px
+            &:first-of-type
+                margin-top: 100px
 
-        &:last-of-type
-            margin-bottom: 0px
+            &:last-of-type
+                margin-bottom: 0px
 
-        & > h2
-            text-align: left
-        & > p
-            margin-bottom: 10px
+            & > .container
+                padding-top: 0px
+                padding-bottom: 0px
 
-        .code
-            padding: 2px 4px
-            background-color: #282c34
-            color: $eden-light-grey
-            font-family: monospace
+                & > h2
+                    text-align: left
+                & > p
+                    margin-bottom: 10px
 
-            &.light
-                background-color: $eden-light-grey
-                color: $eden-charcoal
+            .code
+                padding: 2px 4px
+                background-color: #282c34
+                color: $eden-light-grey
+                font-family: monospace
+                margin-bottom: 50px
 
-            &.block
-                margin-top: 10px
-                position: relative
-                padding: 75px
+                &:last-child
+                    margin-bottom: 0px
 
-                &.short
-                    padding: 50px
+                &.light
+                    background-color: $eden-light-grey
+                    color: $eden-charcoal
 
-            &span
-                padding: 0px
-                margin: 0px
+                &.block
+                    margin-top: 10px
+                    position: relative
+                    padding: 75px
 
-            @media screen and (max-width: $tab-screen)
-                padding: 25px !important
-                font-size: 0.8rem
+                    &.short
+                        padding: 50px
 
-            .tab
-                margin: 1em 0em
-                margin-left: 2em
+                &span
+                    padding: 0px
+                    margin: 0px
 
-            .tag
-                color: #e06c75
+                @media screen and (max-width: $tab-screen)
+                    padding: 25px !important
+                    font-size: 0.8rem
 
-                &:before, &:after
-                    color: white
+                .tab
+                    margin: 1em 0em
+                    margin-left: 2em
 
-                &:before
-                    content: "<"
+                .tag
+                    color: #e06c75
 
-                &:after
-                    content: ">"
-
-                &.close
-
-                    &:before
-                        content: "</"
-
-                .content
-                    color: #a2a9b6
-
-                .attr
-                    color: #cb9a66
-
-                    &:after
-                        content: "="
+                    &:before, &:after
                         color: white
 
-                    &.id
-                        color: #3992ef
-
-                .val
-                    color: #98c372
-                    margin-right: 0.4em
-
                     &:before
-                        content: open-quote
+                        content: "<"
+
                     &:after
-                        content: close-quote
+                        content: ">"
 
-                    &:last-of-type
-                        margin-right: 0px
+                    &.close
 
-            .copy-text-btn
-                position: absolute
-                top: 0px
-                right: 0px
-                font-size: 0.5rem
-                font-family: Lato
-                font-weight: 500
+                        &:before
+                            content: "</"
 
-    #container-component
+                    .content
+                        color: #a2a9b6
 
-        .wrapper
-            background-color: $eden-light-grey
+                    .attr
+                        color: #cb9a66
 
-        .container
-            background-color: $eden-dark-grey
+                        &:after
+                            content: "="
+                            color: white
 
-    #grid-component
+                        &.id
+                            color: #3992ef
 
-        .row
-            margin-bottom: 10px
+                    .val
+                        color: #98c372
+                        margin-right: 0.4em
 
-            &:last-of-type
-                margin-bottom: 0px
+                        &:before
+                            content: open-quote
+                        &:after
+                            content: close-quote
 
-        .col
-            background-color: $eden-light-grey
-            transition: all 0.3s ease-in-out
+                        &:last-of-type
+                            margin-right: 0px
 
-            &:hover
-                background-color: $eden-dark-grey
-                cursor: help
+                .copy-text-btn
+                    position: absolute
+                    top: 0px
+                    right: 0px
+                    font-size: 0.5rem
+                    font-family: Lato
+                    font-weight: 500
 
-    #nav-component
+        #container-component
 
-        .nav
-            margin-bottom: 10px
+            .wrapper
+                background-color: $eden-light-grey
 
-            &:last-of-type
-                margin-bottom: 0px
+                .container
+                    background-color: $eden-dark-grey
 
-    #hero-component
+        #grid-component
 
-        .hero
-            position: absolute
-            left: 0px
+            .row
+                margin-bottom: 10px
+
+                &:last-of-type
+                    margin-bottom: 0px
+
+            .col
+                background-color: $eden-light-grey
+                transition: all 0.3s ease-in-out
+
+                &:hover
+                    background-color: $eden-dark-grey
+                    cursor: help
+
+        #nav-component
+
+            .nav
+                margin-bottom: 10px
+
+                &:last-of-type
+                    margin-bottom: 0px
+
+                &:nth-of-type(3)
+                    font-family: Dosis
+
+                &:nth-of-type(4)
+                    font-family: Playfair Display
+
+        #hero-component
+
+            .hero
+
+                &:nth-of-type(2)
+                    background-image: url(../img/backgrounds/hero1.jpg)
+
+                    h1
+                        font-family: Playfair Display
+                        font-size: 15rem
+
+                        @media screen and (max-width: $tab-screen)
+                            font-size: 8rem
+                        @media screen and (max-width: $mob-screen)
+                            font-size: 4rem
+
+                &:nth-of-type(4)
+                    background-image: url(../img/backgrounds/hero2.jpg)
+                    background-position: center 70%
+
+                    h1
+                        font-family: Pacifico
+                        font-size: 2.5rem
+                        margin: 50px
+
+        #button-component
+
+            .row
+                margin-bottom: 10px
+
+                &:last-of-type
+                    margin-bottom: 0px
+
+            .button
+                margin: 10px
+
+                &:first-of-type
+                    margin-left: 0px
+                &:last-of-type
+                    margin-right: 0px

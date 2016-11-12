@@ -22,12 +22,13 @@ html(lang="en")
                                 li
                                     a(href="#hero-component") Hero
                 section#components
-                    .container
-                        .component#container-component
+                    .component#container-component
+                        .container
                             h2 Container
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-                            .wrapper
-                                .container
+                        .wrapper
+                            .container
+                        .container
                             .code.block.short
                                 span.tag div 
                                     span.attr class
@@ -36,7 +37,8 @@ html(lang="en")
                                     span.content ...
                                 span.tag.close div
                                 include ../include/copy-code-btn
-                        .component#grid-component
+                    .component#grid-component
+                        .container
                             h2 Grid
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             .row
@@ -77,97 +79,126 @@ html(lang="en")
                                     span.tag.close div
                                 span.tag.close div
                                 include ../include/copy-code-btn
-                        .component#nav-component
+                    .component#nav-component
+                        .container
                             h2 Nav
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            .nav.clear.skinny.dark
-                                .brand.float-left
+                        .nav.clear.light
+                            .brand.float-left
+                                a(href="#")
+                                    img.logo(alt="", src="assets/img/eden.png")
+                                    span brand
+                            ul.nav-options.float-left
+                                li
+                                    a(href="#") option
+                                li.dropdown LOST
+                                    ul.dropdown-content
+                                        li
+                                            a(href="") 4
+                                            a(href="") 8
+                                            a(href="") 15
+                                            a(href="") 16
+                                            a(href="") 23
+                                            a(href="") 42
+                            ul.nav-options.float-right
+                                li.nav-text signed in as Desmond
+                                li
+                                    a(href="")
+                                        button.uppercase-and-space(type="button") Sign Out
+                            .mob-nav.float-right
+                                input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
+                                label(for="mob-toggle")
+                                    .hamburger
+                                ul.nav-options.text-center
+                                    li
+                                        a(href="#") option
+                                    li
+                                        a(href="#") option
+                                    li
+                                        a(href="#") option
+                        .nav.clear.skinny.transparent.padded
+                            .brand.float-left
+                                a(href="#")
+                                    span.lowercase brand
+                            ul.nav-options.float-left
+                                li
+                                    a(href="#") option
+                                li
+                                    a(href="#") option
+                            ul.nav-options.float-right
+                                li
+                                    a(href="#") option
+                                li
+                                    a(href="#") option
+                                li
+                                    a(href="#") option
+                            .mob-nav.float-right
+                                input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
+                                label(for="mob-toggle")
+                                    .hamburger
+                                ul.nav-options.text-center
+                                    li
+                                        a(href="#") option
+                                    li
+                                        a(href="#") option
+                                    li
+                                        a(href="#") option
+                        .nav.fat.uppercase-and-space.centered.dark
+                            ul.nav-options
+                                li
+                                    a(href="#") option
+                                li.dropdown option
+                                    ul.dropdown-content
+                                        li
+                                            a(href="#") dropdown option
+                                        li
+                                            a(href="#") dropdown option
+                                li
+                                    a(href="#") option
+                            .brand
+                                a(href="index.html")
+                                    img.logo(alt="", src="assets/img/eden.png")
+                            ul.nav-options
+                                li
+                                    a(href="#") option
+                                li.dropdown option
+                                    ul.dropdown-content
+                                        li
+                                            a(href="#") dropdown option
+                                        li
+                                            a(href="#") dropdown option
+                                li
                                     a(href="#")
-                                        img.logo(alt="", src="assets/img/eden.png")
-                                        span brand
-                                ul.nav-options.float-left
+                                        button.uppercase-and-space.skinny(type="button") Download
+                            
+                            .mob-nav.float-right
+                                input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
+                                label(for="mob-toggle")
+                                    .hamburger
+                                ul.nav-options.text-center
                                     li
                                         a(href="#") option
-                                    li.dropdown LOST
-                                        ul.dropdown-content
-                                            li
-                                                a(href="") 4
-                                                a(href="") 8
-                                                a(href="") 15
-                                                a(href="") 16
-                                                a(href="") 23
-                                                a(href="") 42
-                                ul.nav-options.float-right
-                                    li.nav-text signed in as Desmond
-                                    li
-                                        a(href="")
-                                            button.uppercase-and-space(type="button") Sign Out
-                                .mob-nav.float-right
-                                    input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
-                                    label(for="mob-toggle")
-                                        .hamburger
-                                    ul.nav-options.text-center
-                                        li
-                                            a(href="#") option
-                                        li
-                                            a(href="#") option
-                                        li
-                                            a(href="#") option
-                            .nav.fat.uppercase-and-space.centered.light
-                                ul.nav-options
                                     li
                                         a(href="#") option
-                                    li.dropdown option
-                                        ul.dropdown-content
-                                            li
-                                                a(href="#") dropdown option
-                                            li
-                                                a(href="#") dropdown option
                                     li
                                         a(href="#") option
-                                .brand
-                                    a(href="index.html")
-                                        img.logo(alt="", src="assets/img/eden.png")
-                                ul.nav-options
+                        .nav.clear.mobile.transparent
+                            .brand.float-left
+                                a(href="index.html")
+                                    img.logo(alt="", src="assets/img/eden.png")
+                                    span brand
+                            .mob-nav.float-right
+                                input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
+                                label(for="mob-toggle")
+                                    .hamburger
+                                ul.nav-options.text-center
                                     li
                                         a(href="#") option
-                                    li.dropdown option
-                                        ul.dropdown-content
-                                            li
-                                                a(href="#") dropdown option
-                                            li
-                                                a(href="#") dropdown option
                                     li
-                                        a(href="#")
-                                            button.uppercase-and-space.skinny(type="button") Download
-                                
-                                .mob-nav.float-right
-                                    input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
-                                    label(for="mob-toggle")
-                                        .hamburger
-                                    ul.nav-options.text-center
-                                        li
-                                            a(href="#") option
-                                        li
-                                            a(href="#") option
-                                        li
-                                            a(href="#") option
-                            .nav.clear.mobile.transparent
-                                .brand.float-left
-                                    a(href="index.html")
-                                        img.logo(alt="", src="assets/img/eden.png")
-                                        span brand
-                                .mob-nav.float-right
-                                    input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
-                                    label(for="mob-toggle")
-                                        .hamburger
-                                    ul.nav-options.text-center
-                                        li
-                                            a(href="#") option
-                                        li
-                                            a(href="#") option
-                                        li
-                                            a(href="#") option
+                                        a(href="#") option
+                                    li
+                                        a(href="#") option
+                        .container
                             .code.block
                                 span.tag div 
                                     span.attr class
@@ -334,12 +365,50 @@ html(lang="en")
                                     span.tag.close div
                                 span.tag.close div
                                 include ../include/copy-code-btn
-                        .component#hero-component
+                    .component#hero-component
+                        .container
                             h2 Hero
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            .hero
-                        .component#button-component
-                            h2 Button
+                        .hero
+                            .col.content.center-center
+                                h1 Beauty.
+                        .container
+                            .code.block.short
+                                span.tag div 
+                                    span.attr class
+                                    span.val hero
+                                .tab
+                                    span.tag div 
+                                        span.attr class
+                                        span.val col content center-center
+                                    .tab
+                                        span.tag h1
+                                        span.content Title.
+                                        span.tag.close h1
+                                    .tab
+                                        span.tag h4
+                                        span.content Subtitle.
+                                        span.tag.close h4
+                                    span.tag.close div
+                                span.tag.close div
+                                include ../include/copy-code-btn
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut #[span.code.light .short] et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        .hero.short.fat.overlay.dark
+                            .col.content.right-bottom
+                                h1 goals
+                    .component#button-component
+                        .container
+                            h2 Buttons
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            .row.center-center
+                                a.button.light.border(href="#") Button
+                                a.button.dark.short.pill.invert-on-hover(href="#") Button
+                                a.button.transparent.border-skinny.round(href="#") Button
+                                a.button.dark.shadow-on-hover.solid-on-hover(href="#") Button
+                                a.button.light.shadow(href="#") Button
+                            .row
+                                a.button.border.full.eden.sharp.invert-on-hover(href="#") Button
             include ../include/footer
+            
+        include ../include/foot
                 

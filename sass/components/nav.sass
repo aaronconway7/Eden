@@ -5,6 +5,25 @@
     z-index: 98
     font-size: 0.9rem
 
+    &.padded
+        padding: 0px 10%
+
+        @media screen and (max-width: $tab-screen)
+            padding: 0px 15px
+
+        .brand
+
+            &.float-left
+                margin-right: 3em
+
+            &.float-right
+                margin-left: 3em
+
+        .nav-options
+
+            & > li
+                padding: 0px 2em
+
     &.fixed
         position: fixed !important
         top: 0px
@@ -216,10 +235,10 @@
             cursor: pointer
 
         &.float-left
-            margin-right: 15px
+            margin-right: 1.5em
 
         &.float-right
-            margin-left: 15px
+            margin-left: 1.5em
 
         span
             font-weight: 900
@@ -251,7 +270,7 @@
             display: none
 
         & > li
-            padding: 0px 12px
+            padding: 0px 1em
             margin-left: -5px
 
             &.active

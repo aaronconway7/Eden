@@ -609,15 +609,15 @@ h1, h2, h3, h4, h5, h6 {
 .code.block.short {
   padding: 50px;
 }
-.codespan {
-  padding: 0px;
-  margin: 0px;
-}
 @media screen and (max-width: 768px) {
-  .code {
+  .code.block {
     padding: 25px !important;
     font-size: 0.8rem;
   }
+}
+.codespan {
+  padding: 0px;
+  margin: 0px;
 }
 .code .tab {
   margin: 1em 0em;

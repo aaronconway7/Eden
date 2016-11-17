@@ -192,82 +192,6 @@ $mob-screen: 425px
                 & > p
                     margin-bottom: 10px
 
-            .code
-                padding: 2px 4px
-                background-color: #282c34
-                color: $eden-light-grey
-                font-family: monospace
-                margin-bottom: 50px
-
-                &:last-child
-                    margin-bottom: 0px
-
-                &.light
-                    background-color: $eden-light-grey
-                    color: $eden-charcoal
-
-                &.block
-                    margin-top: 10px
-                    position: relative
-                    padding: 75px
-
-                    &.short
-                        padding: 50px
-
-                &span
-                    padding: 0px
-                    margin: 0px
-
-                @media screen and (max-width: $tab-screen)
-                    padding: 25px !important
-                    font-size: 0.8rem
-
-                .tab
-                    margin: 1em 0em
-                    margin-left: 2em
-
-                .tag
-                    color: #e06c75
-
-                    &:before, &:after
-                        color: white
-
-                    &:before
-                        content: "<"
-
-                    &:after
-                        content: ">"
-
-                    &.close
-
-                        &:before
-                            content: "</"
-
-                    .content
-                        color: #a2a9b6
-
-                    .attr
-                        color: #cb9a66
-
-                        &:after
-                            content: "="
-                            color: white
-
-                        &.id
-                            color: #3992ef
-
-                    .val
-                        color: #98c372
-                        margin-right: 0.4em
-
-                        &:before
-                            content: open-quote
-                        &:after
-                            content: close-quote
-
-                        &:last-of-type
-                            margin-right: 0px
-
                 .copy-text-btn
                     position: absolute
                     top: 0px
@@ -280,9 +204,20 @@ $mob-screen: 425px
 
             .wrapper
                 background-color: $eden-light-grey
+                transition: all 0.3s ease-in-out
+
+                &:hover
+                    background-color: $eden-dark-grey
+
+                .tool-tip-text
+                    margin-left: 20px
 
                 .container
                     background-color: $eden-dark-grey
+                    transition: all 0.3s ease-in-out
+
+                    &:hover
+                        background-color: $eden-charcoal
 
         #grid-component
 
@@ -354,3 +289,98 @@ $mob-screen: 425px
                     margin-left: 0px
                 &:last-of-type
                     margin-right: 0px
+
+.tool-tip
+    position: relative
+
+    .tool-tip-text
+        visibility: hidden
+        display: inline-block
+        font-size: 0.9em
+        // width: 120px
+        bottom: 100%
+        margin-bottom: 2.5px
+        // left: 50%
+        left: 0px
+        // margin-left: -60px
+        background-color: black
+        color: white
+        // text-align: center
+        // padding: 5px 0px
+        padding: 0.5em 1em
+        border-radius: 0.2em
+        white-space: nowrap
+        position: absolute
+        z-index: 1
+
+        &.center
+            left: 50%
+            transform: translate3d(-50%, 0px, 0px)
+
+            &:after
+                left: 50%
+
+        &.right
+            left: auto
+            right: 0px
+
+            &:after
+                left: auto
+                right: 20%
+
+        &.sharp
+            border-radius: 0px
+
+        &.short
+            padding-top: 0.25em
+            padding-bottom: 0.25em
+
+        &.tall
+            padding-top: 0.75em
+            padding-bottom: 0.75em
+
+        &.skinny
+            padding-left: 0.5em
+            padding-right: 0.5em
+
+        &.fat
+            padding-left: 1.5em
+            padding-right: 1.5em
+
+        &.dark
+            background-color: $eden-charcoal
+            color: $eden-light-grey
+
+            &:after
+                border-color: $eden-charcoal transparent transparent transparent
+
+        &.light
+            background-color: $eden-light-grey
+            color: $eden-charcoal
+
+            &:after
+                border-color: $eden-light-grey transparent transparent transparent
+
+        &.eden
+            background-color: $eden-green
+            color: $eden-light-grey
+
+            &:after
+                border-color: $eden-green transparent transparent transparent
+
+        &:after
+            content: " "
+            position: absolute
+            top: 100%
+            // left: 50%
+            left: 20%
+            margin-left: -5px
+            border-width: 5px
+            border-style: solid
+            border-color: black transparent transparent transparent
+
+    &:hover
+        cursor: help
+
+        &>.tool-tip-text
+            visibility: visible

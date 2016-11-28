@@ -665,6 +665,27 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 0px;
 }
 
+@-webkit-keyframes slideLeft {
+  0% {
+    -webkit-transform: translate3d(100%, 0px, 0px);
+            transform: translate3d(100%, 0px, 0px);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    -webkit-transform: translate3d(100%, 0px, 0px);
+            transform: translate3d(100%, 0px, 0px);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
 .nav {
   width: 100%;
   height: 70px;
@@ -1053,6 +1074,47 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   cursor: pointer;
 }
+.nav .mob-nav.side .mob-toggle:checked ~ label .hamburger {
+  -webkit-transform: translate3d(-120px, 0px, 0px);
+          transform: translate3d(-120px, 0px, 0px);
+}
+.nav .mob-nav.side .mob-toggle:checked ~ .sidebar {
+  display: block;
+}
+.nav .mob-nav.side label .hamburger {
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+          transition: transform 1s ease-in-out;
+}
+.nav .mob-nav.side .sidebar {
+  background-color: #2f2f2f;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 120px;
+  padding: 30px;
+  z-index: 99;
+  display: none;
+  -webkit-animation: slideLeft 1s ease-in-out;
+          animation: slideLeft 1s ease-in-out;
+}
+.nav .mob-nav.side .sidebar.is-open {
+  -webkit-animation: slideLeft 1s ease-in-out reverse;
+          animation: slideLeft 1s ease-in-out reverse;
+}
+.nav .mob-nav.side .sidebar .nav-options {
+  display: block;
+  background: none;
+  width: auto;
+  position: static;
+  left: auto;
+}
+.nav .mob-nav.side .sidebar .nav-options li a {
+  display: block;
+  padding: 0px;
+  width: auto;
+  height: auto;
+}
 
 .hero {
   height: 100vh;
@@ -1220,4 +1282,26 @@ a.button.shadow:hover {
 }
 a.button.shadow-on-hover:hover {
   box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.modal > .content {
+  position: relative;
+  background-color: #ececec;
+  width: 75vw;
+  box-shadow: 0px 0px 100px -10px rgba(0, 0, 0, 0.75);
+}
+.modal > .content > .close {
+  position: absolute;
+  right: -1.25em;
+  top: -1.25em;
+  color: rgba(255, 255, 255, 0.5);
 }

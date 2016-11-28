@@ -6,15 +6,102 @@
     top: 0px
     right: 0px
     bottom: 0px
+    display: none
+
+    &.is-open
+        display: block
+
+    &.row.is-open
+        display: flex
+
+    &.light
+
+        &>.content
+            background-color: $eden_light_grey
+            color: $eden-charcoal
+
+    &.dark
+
+        &>.content
+            background-color: $eden-charcoal
+
+
+    &.eden
+
+        &>.content
+            background-color: $eden-green
+
+    &.shadow
+
+        &>.content
+            box-shadow: 0px 0px 100px -10px rgba(0, 0, 0, 0.75)
+
+    &.rounded
+
+        &>.content
+            border-radius: 7.5px
+
+    &.border
+
+        &>.content
+            border: 1px solid black
+
+    &.row.center-top
+
+        &>.content
+            border-top-left-radius: 0px
+            border-top-right-radius: 0px
+            border-top: none
+
+            &>.close
+                color: white
+                right: -1.5em
+                top: 0.5em
 
     &>.content
         position: relative
-        background-color: $eden_light_grey
         width: 75vw
-        box-shadow: 0px 0px 100px -10px rgba(0, 0, 0, 0.75)
 
         &>.close
             position: absolute
-            right: -1.25em
-            top: -1.25em
-            color: rgba(255, 255, 255, 0.5)
+            opacity: 0.5
+            transition: all 0.3s ease-in-out
+
+            &:hover
+                opacity: 1
+                cursor: pointer
+
+            &.inside
+                right: 15px
+                top: 12px
+
+            &.outside
+                right: -1.25em
+                top: -1.25em
+                color: white
+
+            &.corner
+                right: -1em
+                top: -1em
+                background-color: black
+                border: 1px solid white
+                border-radius: 100%
+                color: white
+                width: 2em
+                height: 2em
+                text-align: center
+                opacity: 1
+                padding-top: 1px
+                transition: all 0.3s ease-in-out
+
+                span
+                    vertical-align: middle
+
+                &:hover
+                    opacity: 0.75
+                    cursor: pointer
+
+            &.rotate
+                right: -2em
+                top: 1em
+                transform: rotate3d(0, 0, 1, 90deg)

@@ -1292,16 +1292,93 @@ a.button.shadow-on-hover:hover {
   top: 0px;
   right: 0px;
   bottom: 0px;
+  display: none;
+}
+.modal.is-open {
+  display: block;
+}
+.modal.row.is-open {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.modal.light > .content {
+  background-color: #ececec;
+  color: #2f2f2f;
+}
+.modal.dark > .content {
+  background-color: #2f2f2f;
+}
+.modal.eden > .content {
+  background-color: #52ae76;
+}
+.modal.shadow > .content {
+  box-shadow: 0px 0px 100px -10px rgba(0, 0, 0, 0.75);
+}
+.modal.rounded > .content {
+  border-radius: 7.5px;
+}
+.modal.border > .content {
+  border: 1px solid black;
+}
+.modal.row.center-top > .content {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top: none;
+}
+.modal.row.center-top > .content > .close {
+  color: white;
+  right: -1.5em;
+  top: 0.5em;
 }
 .modal > .content {
   position: relative;
-  background-color: #ececec;
   width: 75vw;
-  box-shadow: 0px 0px 100px -10px rgba(0, 0, 0, 0.75);
 }
 .modal > .content > .close {
   position: absolute;
+  opacity: 0.5;
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+.modal > .content > .close:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.modal > .content > .close.inside {
+  right: 15px;
+  top: 12px;
+}
+.modal > .content > .close.outside {
   right: -1.25em;
   top: -1.25em;
-  color: rgba(255, 255, 255, 0.5);
+  color: white;
+}
+.modal > .content > .close.corner {
+  right: -1em;
+  top: -1em;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 100%;
+  color: white;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  opacity: 1;
+  padding-top: 1px;
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+.modal > .content > .close.corner span {
+  vertical-align: middle;
+}
+.modal > .content > .close.corner:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+.modal > .content > .close.rotate {
+  right: -2em;
+  top: 1em;
+  -webkit-transform: rotate3d(0, 0, 1, 90deg);
+          transform: rotate3d(0, 0, 1, 90deg);
 }

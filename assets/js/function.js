@@ -13,12 +13,9 @@ function animatedScroll() {
     });
 }
 
-var wScroll = 0;
-var bannerTop = $('#banner .banner').offset().top;
-
 function fixedBanner(){
-    console.log(wScroll);
-    if(wScroll > bannerTop){
+    var wScroll = $(window).scrollTop();
+    if(wScroll > 140){
         $('#banner .banner').addClass('is-fixed');
     } else {
         $('#banner .banner').removeClass('is-fixed');
@@ -27,10 +24,11 @@ function fixedBanner(){
 
 $(document).ready(function() {
     animatedScroll();
+    fixedBanner();
+    var bannerHeight = $('#banner .banner').height();
+    $('.page-content').css('padding-top',bannerHeight+'px');
 });
 
 $(window).scroll(function() {
-    wScroll = $(window).scrollTop();
-    animatedScroll();
     fixedBanner();
 });

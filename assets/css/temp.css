@@ -5,7 +5,7 @@
   font-family: Pacifico; }
 
 #nav {
-  margin: 25px 0px; }
+  padding: 25px 0px; }
   #nav .nav > .nav-options > li {
     padding: 0px 35px !important; }
 
@@ -90,7 +90,8 @@
   left: 0px;
   right: 0px;
   background-color: #52ae76 !important;
-  z-index: 99; }
+  z-index: 99;
+  transition: all 1s ease-in-out; }
 .banner.eden {
   background-color: rgba(82, 174, 118, 0.75); }
 .banner > .container {
@@ -119,26 +120,28 @@
       .banner > .container ul li:hover {
         opacity: 1; }
 
-#components-pg #components .component {
-  margin-bottom: 100px; }
-  #components-pg #components .component:first-of-type {
-    margin-top: 100px; }
-  #components-pg #components .component:last-of-type {
-    margin-bottom: 0px; }
-  #components-pg #components .component > .container {
-    padding-top: 0px;
-    padding-bottom: 0px; }
-    #components-pg #components .component > .container > h2 {
-      text-align: left; }
-    #components-pg #components .component > .container > p {
-      margin-bottom: 10px; }
-    #components-pg #components .component > .container .copy-text-btn {
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      font-size: 0.5rem;
-      font-family: Lato;
-      font-weight: 500; }
+#components-pg .page-content {
+  position: relative; }
+#components-pg #banner {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  z-index: 98; }
+#components-pg #components .component > .container {
+  padding-bottom: 0px; }
+  #components-pg #components .component > .container > h2 {
+    text-align: left; }
+  #components-pg #components .component > .container > p {
+    margin-bottom: 10px; }
+  #components-pg #components .component > .container .copy-text-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 0.5rem;
+    font-family: Lato;
+    font-weight: 500; }
+#components-pg #components .component .container.second {
+  padding-top: 0px; }
 #components-pg #components #container-component .wrapper {
   background-color: #ececec;
   transition: all 0.3s ease-in-out; }

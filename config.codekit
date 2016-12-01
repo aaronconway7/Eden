@@ -84,6 +84,26 @@
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
+	"\/components\/jade\/typography.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/components\/jade\/typography.jade",
+		"outputAbbreviatedPath": "\/components\/typography.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0
+		},
+	"\/components\/modal.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/components\/modal.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/components\/nav.html": {
 		"fileType": 8192,
 		"ignore": 1,

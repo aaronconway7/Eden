@@ -4,6 +4,19 @@
 .row
     display: flex
     flex-wrap: wrap
+    height: 100%
+
+    &.center-center
+        justify-content: center
+        align-items: center
+
+    &.left-top
+        justify-content: flex-start
+        align-items: flex-start
+
+    &.right-bottom
+        justify-content: flex-end
+        align-items: flex-end
 
 .col-1, .col-1-12, .col-2, .col-1-6, .col-2-12, .col-3, .col-1-4, .col-3-12, .col-4, .col-1-3, .col-4-12, .col-5, .col-5-12, .col-6, .col-1-2, .col-6-12, .col-7, .col-7-12, .col-8, .col-2-3, .col-8-12, .col-9, .col-3-4, .col-9-12, .col-10, .col-5-6, .col-10-12, .col-11, .col-11-12, .col-12, .col-12-12
     display: flex
@@ -57,3 +70,27 @@
         margin-left: 0
 
     @import include/col
+
+    &.left-center
+        justify-content: center
+        align-items: flex-start
+
+    &.left-bottom
+        justify-content: flex-end
+        align-items: flex-start
+
+    &.center-top
+        justify-content: flex-start
+        align-items: center
+
+    &.center-bottom
+        justify-content: flex-end
+        align-items: center
+
+    &.right-top
+        justify-content: flex-start
+        align-items: flex-end
+
+    &.right-center
+        justify-content: center
+        align-items: flex-end

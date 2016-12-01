@@ -1,18 +1,14 @@
 .modal
-    height: 100vh
-    background-color: rgba(0, 0, 0, 0.75)
+    width: 100%
+    height: 100%
     position: fixed
     left: 0px
     top: 0px
-    right: 0px
-    bottom: 0px
     display: none
+    overflow: auto
 
     &.is-open
         display: block
-
-    &.row.is-open
-        display: flex
 
     &.light
 
@@ -20,16 +16,34 @@
             background-color: $eden_light_grey
             color: $eden-charcoal
 
+            &>.close.outside
+                color: $eden-light-grey
+
     &.dark
 
         &>.content
             background-color: $eden-charcoal
+            color: $eden-light-grey
+
+            &>.close.outside
+                color: $eden-charcoal
 
 
     &.eden
 
         &>.content
             background-color: $eden-green
+            color: $eden-light-grey
+
+            &>.close.outside
+                color: $eden-green
+
+    &.dark-bg
+        background-color: rgba(0, 0, 0, 0.75)
+    &.light-bg
+        background-color: rgba(255, 255, 255, 0.75)
+    &.eden-bg
+        background-color: rgba($eden-green, 0.75)
 
     &.shadow
 
@@ -46,21 +60,22 @@
         &>.content
             border: 1px solid black
 
-    &.row.center-top
+    &.top
 
         &>.content
+            margin: 0% auto 7.5% auto
             border-top-left-radius: 0px
             border-top-right-radius: 0px
             border-top: none
 
-            &>.close
-                color: white
+            &>.close.outside
                 right: -1.5em
                 top: 0.5em
 
     &>.content
         position: relative
-        width: 75vw
+        width: 75%
+        margin: 7.6% auto
 
         &>.close
             position: absolute
@@ -71,14 +86,24 @@
                 opacity: 1
                 cursor: pointer
 
+            &.dark
+                color: $eden-charcoal !important
+
+            &.light
+                color: $eden-light-grey !important
+
+            &.eden
+                color: $eden-green !important
+
             &.inside
                 right: 15px
                 top: 12px
+                color: $eden-light-grey
 
             &.outside
                 right: -1.25em
                 top: -1.25em
-                color: white
+                color: $eden-charcoal
 
             &.corner
                 right: -1em

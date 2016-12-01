@@ -11,6 +11,11 @@
        box-sizing: border-box;
 }
 
+html.no-scroll, body.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
 a {
   text-decoration: none;
   color: currentColor;
@@ -1273,32 +1278,46 @@ a.button.shadow-on-hover:hover {
 }
 
 .modal {
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100%;
   position: fixed;
   left: 0px;
   top: 0px;
-  right: 0px;
-  bottom: 0px;
   display: none;
+  overflow: auto;
 }
 .modal.is-open {
   display: block;
-}
-.modal.row.is-open {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 .modal.light > .content {
   background-color: #ececec;
   color: #2f2f2f;
 }
+.modal.light > .content > .close.outside {
+  color: #ececec;
+}
 .modal.dark > .content {
   background-color: #2f2f2f;
+  color: #ececec;
+}
+.modal.dark > .content > .close.outside {
+  color: #2f2f2f;
 }
 .modal.eden > .content {
   background-color: #52ae76;
+  color: #ececec;
+}
+.modal.eden > .content > .close.outside {
+  color: #52ae76;
+}
+.modal.dark-bg {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.modal.light-bg {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.modal.eden-bg {
+  background-color: rgba(82, 174, 118, 0.75);
 }
 .modal.shadow > .content {
   box-shadow: 0px 0px 100px -10px rgba(0, 0, 0, 0.75);
@@ -1309,19 +1328,20 @@ a.button.shadow-on-hover:hover {
 .modal.border > .content {
   border: 1px solid black;
 }
-.modal.row.center-top > .content {
+.modal.top > .content {
+  margin: 0% auto 7.5% auto;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top: none;
 }
-.modal.row.center-top > .content > .close {
-  color: white;
+.modal.top > .content > .close.outside {
   right: -1.5em;
   top: 0.5em;
 }
 .modal > .content {
   position: relative;
-  width: 75vw;
+  width: 75%;
+  margin: 7.6% auto;
 }
 .modal > .content > .close {
   position: absolute;
@@ -1333,14 +1353,24 @@ a.button.shadow-on-hover:hover {
   opacity: 1;
   cursor: pointer;
 }
+.modal > .content > .close.dark {
+  color: #2f2f2f !important;
+}
+.modal > .content > .close.light {
+  color: #ececec !important;
+}
+.modal > .content > .close.eden {
+  color: #52ae76 !important;
+}
 .modal > .content > .close.inside {
   right: 15px;
   top: 12px;
+  color: #ececec;
 }
 .modal > .content > .close.outside {
   right: -1.25em;
   top: -1.25em;
-  color: white;
+  color: #2f2f2f;
 }
 .modal > .content > .close.corner {
   right: -1em;

@@ -1,30 +1,46 @@
 // Grid
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
+.center-center
+    justify-content: center
+    align-items: center
+
+.left-top
+    justify-content: flex-start
+    align-items: flex-start
+
+.right-bottom
+    justify-content: flex-end
+    align-items: flex-end
+
 .row
     display: flex
     flex-wrap: wrap
     height: 100%
 
-    &.center-center
-        justify-content: center
+    &.left-center
+        justify-content: flex-start
         align-items: center
 
-    &.left-top
+    &.left-bottom
         justify-content: flex-start
-        align-items: flex-start
-
-    &.right-bottom
-        justify-content: flex-end
         align-items: flex-end
 
-.col-1, .col-1-12, .col-2, .col-1-6, .col-2-12, .col-3, .col-1-4, .col-3-12, .col-4, .col-1-3, .col-4-12, .col-5, .col-5-12, .col-6, .col-1-2, .col-6-12, .col-7, .col-7-12, .col-8, .col-2-3, .col-8-12, .col-9, .col-3-4, .col-9-12, .col-10, .col-5-6, .col-10-12, .col-11, .col-11-12, .col-12, .col-12-12
-    display: flex
-    flex-direction: column
-    width: 100%
-    margin-left: 4%
+    &.center-top
+        justify-content: center
+        align-items: flex-start
 
-    @import include/col
+    &.center-bottom
+        justify-content: center
+        align-items: flex-end
+
+    &.right-top
+        justify-content: flex-end
+        align-items: flex-start
+
+    &.right-center
+        justify-content: flex-end
+        align-items: center
 
 .col
     display: flex
@@ -32,44 +48,135 @@
     width: 100%
     margin-left: 4%
 
-    &.one, &.one-twelfth, &-1, &-1-12
+    &:first-child
+        margin-left: 0
+
+    &.one
         width: 4.66666666667%
 
-    &.two, &.one-sixth, &.two-twelfths, &-2, &-1-6, &-2-12
+    &.two, &.sixth
         width: 13.3333333333%
 
-    &.three, &.one-quarter, &.three-twelfths, &-3, &-1-4, &-3-12
+    &.three, &.quarter
         width: 22%
 
-    &.four, &.one-third, &.four-twelfths, &-4, &-1-3, &-4-12
+    &.four, &.third
         width: 30.6666666667%
 
-    &.five, &.five-twelfths, &-5, &-5-12
+    &.five
         width: 39.3333333333%
 
-    &.six, &.half, &.one-half, &.six-twelfths, &-6, &-1-2, &-6-12
+    &.six, &.half
         width: 48%
 
-    &.seven, &.seven-twelfths, &-7, &-7-12
+    &.seven
         width: 56.6666666667%
 
-    &.eight, &.two-thirds, &.eight-twelfths, &-8, &-2-3, &-8-12
+    &.eight, &.two-thirds
         width: 65.3333333333%
 
-    &.nine, &.three-quarters, &.nine-twelfths, &-9, &-3-4, &-9-12
+    &.nine, &.three-quarters
         width: 74.0%
 
-    &.ten, &.five-sixths, &.ten-twelfths, &-10, &-5-6, &-10-12
+    &.ten, &.five-sixths
         width: 82.6666666667%
 
-    &.eleven, &.eleven-twelfths, &-11, &-11-12
+    &.eleven
         width: 91.3333333333%
 
-    &.twelve, &.full, &.whole, &.twelve-twelfths, &-12, &-12-12
+    &.twelve, &.full
         width: 100%
         margin-left: 0
 
-    @import include/col
+    @media screen and (max-width: $tab-screen)
+
+        &.tab-
+
+            &one
+                width: 4.66666666667% !important
+
+            &two, &sixth
+                width: 13.3333333333% !important
+
+            &three, &quarter
+                width: 22% !important
+
+            &four, &third
+                width: 30.6666666667% !important
+
+            &five
+                width: 39.3333333333% !important
+
+            &six, &half
+                width: 48% !important
+
+            &seven
+                width: 56.6666666667% !important
+
+            &eight, &two-thirds
+                width: 65.3333333333% !important
+
+            &nine, &three-quarters
+                width: 74.0% !important
+
+            &ten, &five-sixths
+                width: 82.6666666667% !important
+
+            &eleven
+                width: 91.3333333333% !important
+
+            &twelve, &full
+                width: 100% !important
+                margin-left: 0
+                margin-bottom: 3%
+
+                &:last-of-type
+                    margin-bottom: 0%
+
+    @media screen and (max-width: $mob-lg-screen)
+
+        &.mob-
+
+            &one
+                width: 4.66666666667% !important
+
+            &two, &sixth
+                width: 13.3333333333% !important
+
+            &three, &quarter
+                width: 22% !important
+
+            &four, &third
+                width: 30.6666666667% !important
+
+            &five
+                width: 39.3333333333% !important
+
+            &six, &half
+                width: 48% !important
+
+            &seven
+                width: 56.6666666667% !important
+
+            &eight, &two-thirds
+                width: 65.3333333333% !important
+
+            &nine, &three-quarters
+                width: 74.0% !important
+
+            &ten, &five-sixths
+                width: 82.6666666667% !important
+
+            &eleven
+                width: 91.3333333333% !important
+
+            &twelve, &full
+                width: 100% !important
+                margin-left: 0
+                margin-bottom: 3%
+
+                &:last-of-type
+                    margin-bottom: 0%
 
     &.left-center
         justify-content: center

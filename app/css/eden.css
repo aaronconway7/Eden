@@ -1,0 +1,1159 @@
+@charset "UTF-8";
+/* */
+/* Eden. V1.0.0 */
+/* Copyright 2016, Aaron Conway */
+/* http://www.designofeden.com */
+/* */
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, footer, header, nav, section {
+  display: block; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+figcaption, figure, main {
+  display: block; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+  a:active, a:hover {
+    outline-width: 0; }
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted; }
+
+b, strong {
+  font-weight: inherit; }
+
+b, strong {
+  font-weight: bolder; }
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+audio, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+img {
+  border-style: none; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0; }
+
+button, input {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button; }
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal; }
+
+progress {
+  display: inline-block;
+  vertical-align: baseline; }
+
+textarea {
+  overflow: auto; }
+
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; }
+  [type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit; }
+
+details, menu {
+  display: block; }
+
+summary {
+  display: list-item; }
+
+canvas {
+  display: inline-block; }
+
+template, [hidden] {
+  display: none; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+html.no-scroll, body.no-scroll {
+  overflow: hidden;
+  height: 100%; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.clear:before, .clear:after {
+  content: " ";
+  display: table; }
+
+.clear:after {
+  clear: both; }
+
+:root {
+  font-size: 12pt; }
+
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: "Source Sans Pro", "Lato", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.6; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900; }
+
+h1 {
+  font-size: 4rem; }
+
+h2 {
+  font-size: 3.5rem; }
+
+h3 {
+  font-size: 3rem; }
+
+h4 {
+  font-size: 2.5rem; }
+
+h5 {
+  font-size: 2rem; }
+
+h6 {
+  font-size: 1.5rem; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-justify {
+  text-align: justify; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.lowercase {
+  text-transform: lowercase; }
+
+.uppercase-and-space {
+  text-transform: uppercase;
+  letter-spacing: 0.2em; }
+
+.container {
+  position: relative;
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 100px 0;
+  box-sizing: border-box; }
+  @media (max-width: 640px) {
+    .container {
+      width: 85%; } }
+  @media (max-width: 425px) {
+    .container {
+      width: 80%; } }
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box; }
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%; }
+  .row.center-center {
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+  .row.left-top {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: start;
+        align-items: flex-start; }
+  .row.right-bottom {
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    -ms-flex-align: end;
+        align-items: flex-end; }
+
+.col-1, .col-1-12, .col-2, .col-1-6, .col-2-12, .col-3, .col-1-4, .col-3-12, .col-4, .col-1-3, .col-4-12, .col-5, .col-5-12, .col-6, .col-1-2, .col-6-12, .col-7, .col-7-12, .col-8, .col-2-3, .col-8-12, .col-9, .col-3-4, .col-9-12, .col-10, .col-5-6, .col-10-12, .col-11, .col-11-12, .col-12, .col-12-12 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%;
+  margin-left: 4%;
+  /* Offsets */ }
+  .col-1:first-child, .col-1-12:first-child, .col-2:first-child, .col-1-6:first-child, .col-2-12:first-child, .col-3:first-child, .col-1-4:first-child, .col-3-12:first-child, .col-4:first-child, .col-1-3:first-child, .col-4-12:first-child, .col-5:first-child, .col-5-12:first-child, .col-6:first-child, .col-1-2:first-child, .col-6-12:first-child, .col-7:first-child, .col-7-12:first-child, .col-8:first-child, .col-2-3:first-child, .col-8-12:first-child, .col-9:first-child, .col-3-4:first-child, .col-9-12:first-child, .col-10:first-child, .col-5-6:first-child, .col-10-12:first-child, .col-11:first-child, .col-11-12:first-child, .col-12:first-child, .col-12-12:first-child {
+    margin-left: 0; }
+  .col-1.offset-by-one, .col-1.offset-by-1, .col-1-12.offset-by-one, .col-1-12.offset-by-1, .col-2.offset-by-one, .col-2.offset-by-1, .col-1-6.offset-by-one, .col-1-6.offset-by-1, .col-2-12.offset-by-one, .col-2-12.offset-by-1, .col-3.offset-by-one, .col-3.offset-by-1, .col-1-4.offset-by-one, .col-1-4.offset-by-1, .col-3-12.offset-by-one, .col-3-12.offset-by-1, .col-4.offset-by-one, .col-4.offset-by-1, .col-1-3.offset-by-one, .col-1-3.offset-by-1, .col-4-12.offset-by-one, .col-4-12.offset-by-1, .col-5.offset-by-one, .col-5.offset-by-1, .col-5-12.offset-by-one, .col-5-12.offset-by-1, .col-6.offset-by-one, .col-6.offset-by-1, .col-1-2.offset-by-one, .col-1-2.offset-by-1, .col-6-12.offset-by-one, .col-6-12.offset-by-1, .col-7.offset-by-one, .col-7.offset-by-1, .col-7-12.offset-by-one, .col-7-12.offset-by-1, .col-8.offset-by-one, .col-8.offset-by-1, .col-2-3.offset-by-one, .col-2-3.offset-by-1, .col-8-12.offset-by-one, .col-8-12.offset-by-1, .col-9.offset-by-one, .col-9.offset-by-1, .col-3-4.offset-by-one, .col-3-4.offset-by-1, .col-9-12.offset-by-one, .col-9-12.offset-by-1, .col-10.offset-by-one, .col-10.offset-by-1, .col-5-6.offset-by-one, .col-5-6.offset-by-1, .col-10-12.offset-by-one, .col-10-12.offset-by-1, .col-11.offset-by-one, .col-11.offset-by-1, .col-11-12.offset-by-one, .col-11-12.offset-by-1, .col-12.offset-by-one, .col-12.offset-by-1, .col-12-12.offset-by-one, .col-12-12.offset-by-1 {
+    margin-left: 8.66666666667%; }
+  .col-1.offset-by-two, .col-1.offset-by-2, .col-1-12.offset-by-two, .col-1-12.offset-by-2, .col-2.offset-by-two, .col-2.offset-by-2, .col-1-6.offset-by-two, .col-1-6.offset-by-2, .col-2-12.offset-by-two, .col-2-12.offset-by-2, .col-3.offset-by-two, .col-3.offset-by-2, .col-1-4.offset-by-two, .col-1-4.offset-by-2, .col-3-12.offset-by-two, .col-3-12.offset-by-2, .col-4.offset-by-two, .col-4.offset-by-2, .col-1-3.offset-by-two, .col-1-3.offset-by-2, .col-4-12.offset-by-two, .col-4-12.offset-by-2, .col-5.offset-by-two, .col-5.offset-by-2, .col-5-12.offset-by-two, .col-5-12.offset-by-2, .col-6.offset-by-two, .col-6.offset-by-2, .col-1-2.offset-by-two, .col-1-2.offset-by-2, .col-6-12.offset-by-two, .col-6-12.offset-by-2, .col-7.offset-by-two, .col-7.offset-by-2, .col-7-12.offset-by-two, .col-7-12.offset-by-2, .col-8.offset-by-two, .col-8.offset-by-2, .col-2-3.offset-by-two, .col-2-3.offset-by-2, .col-8-12.offset-by-two, .col-8-12.offset-by-2, .col-9.offset-by-two, .col-9.offset-by-2, .col-3-4.offset-by-two, .col-3-4.offset-by-2, .col-9-12.offset-by-two, .col-9-12.offset-by-2, .col-10.offset-by-two, .col-10.offset-by-2, .col-5-6.offset-by-two, .col-5-6.offset-by-2, .col-10-12.offset-by-two, .col-10-12.offset-by-2, .col-11.offset-by-two, .col-11.offset-by-2, .col-11-12.offset-by-two, .col-11-12.offset-by-2, .col-12.offset-by-two, .col-12.offset-by-2, .col-12-12.offset-by-two, .col-12-12.offset-by-2 {
+    margin-left: 17.3333333333%; }
+  .col-1.offset-by-three, .col-1.offset-by-3, .col-1-12.offset-by-three, .col-1-12.offset-by-3, .col-2.offset-by-three, .col-2.offset-by-3, .col-1-6.offset-by-three, .col-1-6.offset-by-3, .col-2-12.offset-by-three, .col-2-12.offset-by-3, .col-3.offset-by-three, .col-3.offset-by-3, .col-1-4.offset-by-three, .col-1-4.offset-by-3, .col-3-12.offset-by-three, .col-3-12.offset-by-3, .col-4.offset-by-three, .col-4.offset-by-3, .col-1-3.offset-by-three, .col-1-3.offset-by-3, .col-4-12.offset-by-three, .col-4-12.offset-by-3, .col-5.offset-by-three, .col-5.offset-by-3, .col-5-12.offset-by-three, .col-5-12.offset-by-3, .col-6.offset-by-three, .col-6.offset-by-3, .col-1-2.offset-by-three, .col-1-2.offset-by-3, .col-6-12.offset-by-three, .col-6-12.offset-by-3, .col-7.offset-by-three, .col-7.offset-by-3, .col-7-12.offset-by-three, .col-7-12.offset-by-3, .col-8.offset-by-three, .col-8.offset-by-3, .col-2-3.offset-by-three, .col-2-3.offset-by-3, .col-8-12.offset-by-three, .col-8-12.offset-by-3, .col-9.offset-by-three, .col-9.offset-by-3, .col-3-4.offset-by-three, .col-3-4.offset-by-3, .col-9-12.offset-by-three, .col-9-12.offset-by-3, .col-10.offset-by-three, .col-10.offset-by-3, .col-5-6.offset-by-three, .col-5-6.offset-by-3, .col-10-12.offset-by-three, .col-10-12.offset-by-3, .col-11.offset-by-three, .col-11.offset-by-3, .col-11-12.offset-by-three, .col-11-12.offset-by-3, .col-12.offset-by-three, .col-12.offset-by-3, .col-12-12.offset-by-three, .col-12-12.offset-by-3 {
+    margin-left: 26%; }
+  .col-1.offset-by-four, .col-1.offset-by-4, .col-1-12.offset-by-four, .col-1-12.offset-by-4, .col-2.offset-by-four, .col-2.offset-by-4, .col-1-6.offset-by-four, .col-1-6.offset-by-4, .col-2-12.offset-by-four, .col-2-12.offset-by-4, .col-3.offset-by-four, .col-3.offset-by-4, .col-1-4.offset-by-four, .col-1-4.offset-by-4, .col-3-12.offset-by-four, .col-3-12.offset-by-4, .col-4.offset-by-four, .col-4.offset-by-4, .col-1-3.offset-by-four, .col-1-3.offset-by-4, .col-4-12.offset-by-four, .col-4-12.offset-by-4, .col-5.offset-by-four, .col-5.offset-by-4, .col-5-12.offset-by-four, .col-5-12.offset-by-4, .col-6.offset-by-four, .col-6.offset-by-4, .col-1-2.offset-by-four, .col-1-2.offset-by-4, .col-6-12.offset-by-four, .col-6-12.offset-by-4, .col-7.offset-by-four, .col-7.offset-by-4, .col-7-12.offset-by-four, .col-7-12.offset-by-4, .col-8.offset-by-four, .col-8.offset-by-4, .col-2-3.offset-by-four, .col-2-3.offset-by-4, .col-8-12.offset-by-four, .col-8-12.offset-by-4, .col-9.offset-by-four, .col-9.offset-by-4, .col-3-4.offset-by-four, .col-3-4.offset-by-4, .col-9-12.offset-by-four, .col-9-12.offset-by-4, .col-10.offset-by-four, .col-10.offset-by-4, .col-5-6.offset-by-four, .col-5-6.offset-by-4, .col-10-12.offset-by-four, .col-10-12.offset-by-4, .col-11.offset-by-four, .col-11.offset-by-4, .col-11-12.offset-by-four, .col-11-12.offset-by-4, .col-12.offset-by-four, .col-12.offset-by-4, .col-12-12.offset-by-four, .col-12-12.offset-by-4 {
+    margin-left: 34.6666666667%; }
+  .col-1.offset-by-five, .col-1.offset-by-5, .col-1-12.offset-by-five, .col-1-12.offset-by-5, .col-2.offset-by-five, .col-2.offset-by-5, .col-1-6.offset-by-five, .col-1-6.offset-by-5, .col-2-12.offset-by-five, .col-2-12.offset-by-5, .col-3.offset-by-five, .col-3.offset-by-5, .col-1-4.offset-by-five, .col-1-4.offset-by-5, .col-3-12.offset-by-five, .col-3-12.offset-by-5, .col-4.offset-by-five, .col-4.offset-by-5, .col-1-3.offset-by-five, .col-1-3.offset-by-5, .col-4-12.offset-by-five, .col-4-12.offset-by-5, .col-5.offset-by-five, .col-5.offset-by-5, .col-5-12.offset-by-five, .col-5-12.offset-by-5, .col-6.offset-by-five, .col-6.offset-by-5, .col-1-2.offset-by-five, .col-1-2.offset-by-5, .col-6-12.offset-by-five, .col-6-12.offset-by-5, .col-7.offset-by-five, .col-7.offset-by-5, .col-7-12.offset-by-five, .col-7-12.offset-by-5, .col-8.offset-by-five, .col-8.offset-by-5, .col-2-3.offset-by-five, .col-2-3.offset-by-5, .col-8-12.offset-by-five, .col-8-12.offset-by-5, .col-9.offset-by-five, .col-9.offset-by-5, .col-3-4.offset-by-five, .col-3-4.offset-by-5, .col-9-12.offset-by-five, .col-9-12.offset-by-5, .col-10.offset-by-five, .col-10.offset-by-5, .col-5-6.offset-by-five, .col-5-6.offset-by-5, .col-10-12.offset-by-five, .col-10-12.offset-by-5, .col-11.offset-by-five, .col-11.offset-by-5, .col-11-12.offset-by-five, .col-11-12.offset-by-5, .col-12.offset-by-five, .col-12.offset-by-5, .col-12-12.offset-by-five, .col-12-12.offset-by-5 {
+    margin-left: 43.3333333333%; }
+  .col-1.offset-by-six, .col-1.offset-by-6, .col-1-12.offset-by-six, .col-1-12.offset-by-6, .col-2.offset-by-six, .col-2.offset-by-6, .col-1-6.offset-by-six, .col-1-6.offset-by-6, .col-2-12.offset-by-six, .col-2-12.offset-by-6, .col-3.offset-by-six, .col-3.offset-by-6, .col-1-4.offset-by-six, .col-1-4.offset-by-6, .col-3-12.offset-by-six, .col-3-12.offset-by-6, .col-4.offset-by-six, .col-4.offset-by-6, .col-1-3.offset-by-six, .col-1-3.offset-by-6, .col-4-12.offset-by-six, .col-4-12.offset-by-6, .col-5.offset-by-six, .col-5.offset-by-6, .col-5-12.offset-by-six, .col-5-12.offset-by-6, .col-6.offset-by-six, .col-6.offset-by-6, .col-1-2.offset-by-six, .col-1-2.offset-by-6, .col-6-12.offset-by-six, .col-6-12.offset-by-6, .col-7.offset-by-six, .col-7.offset-by-6, .col-7-12.offset-by-six, .col-7-12.offset-by-6, .col-8.offset-by-six, .col-8.offset-by-6, .col-2-3.offset-by-six, .col-2-3.offset-by-6, .col-8-12.offset-by-six, .col-8-12.offset-by-6, .col-9.offset-by-six, .col-9.offset-by-6, .col-3-4.offset-by-six, .col-3-4.offset-by-6, .col-9-12.offset-by-six, .col-9-12.offset-by-6, .col-10.offset-by-six, .col-10.offset-by-6, .col-5-6.offset-by-six, .col-5-6.offset-by-6, .col-10-12.offset-by-six, .col-10-12.offset-by-6, .col-11.offset-by-six, .col-11.offset-by-6, .col-11-12.offset-by-six, .col-11-12.offset-by-6, .col-12.offset-by-six, .col-12.offset-by-6, .col-12-12.offset-by-six, .col-12-12.offset-by-6 {
+    margin-left: 52%; }
+  .col-1.offset-by-seven, .col-1.offset-by-7, .col-1-12.offset-by-seven, .col-1-12.offset-by-7, .col-2.offset-by-seven, .col-2.offset-by-7, .col-1-6.offset-by-seven, .col-1-6.offset-by-7, .col-2-12.offset-by-seven, .col-2-12.offset-by-7, .col-3.offset-by-seven, .col-3.offset-by-7, .col-1-4.offset-by-seven, .col-1-4.offset-by-7, .col-3-12.offset-by-seven, .col-3-12.offset-by-7, .col-4.offset-by-seven, .col-4.offset-by-7, .col-1-3.offset-by-seven, .col-1-3.offset-by-7, .col-4-12.offset-by-seven, .col-4-12.offset-by-7, .col-5.offset-by-seven, .col-5.offset-by-7, .col-5-12.offset-by-seven, .col-5-12.offset-by-7, .col-6.offset-by-seven, .col-6.offset-by-7, .col-1-2.offset-by-seven, .col-1-2.offset-by-7, .col-6-12.offset-by-seven, .col-6-12.offset-by-7, .col-7.offset-by-seven, .col-7.offset-by-7, .col-7-12.offset-by-seven, .col-7-12.offset-by-7, .col-8.offset-by-seven, .col-8.offset-by-7, .col-2-3.offset-by-seven, .col-2-3.offset-by-7, .col-8-12.offset-by-seven, .col-8-12.offset-by-7, .col-9.offset-by-seven, .col-9.offset-by-7, .col-3-4.offset-by-seven, .col-3-4.offset-by-7, .col-9-12.offset-by-seven, .col-9-12.offset-by-7, .col-10.offset-by-seven, .col-10.offset-by-7, .col-5-6.offset-by-seven, .col-5-6.offset-by-7, .col-10-12.offset-by-seven, .col-10-12.offset-by-7, .col-11.offset-by-seven, .col-11.offset-by-7, .col-11-12.offset-by-seven, .col-11-12.offset-by-7, .col-12.offset-by-seven, .col-12.offset-by-7, .col-12-12.offset-by-seven, .col-12-12.offset-by-7 {
+    margin-left: 60.6666666667%; }
+  .col-1.offset-by-eight, .col-1.offset-by-8, .col-1-12.offset-by-eight, .col-1-12.offset-by-8, .col-2.offset-by-eight, .col-2.offset-by-8, .col-1-6.offset-by-eight, .col-1-6.offset-by-8, .col-2-12.offset-by-eight, .col-2-12.offset-by-8, .col-3.offset-by-eight, .col-3.offset-by-8, .col-1-4.offset-by-eight, .col-1-4.offset-by-8, .col-3-12.offset-by-eight, .col-3-12.offset-by-8, .col-4.offset-by-eight, .col-4.offset-by-8, .col-1-3.offset-by-eight, .col-1-3.offset-by-8, .col-4-12.offset-by-eight, .col-4-12.offset-by-8, .col-5.offset-by-eight, .col-5.offset-by-8, .col-5-12.offset-by-eight, .col-5-12.offset-by-8, .col-6.offset-by-eight, .col-6.offset-by-8, .col-1-2.offset-by-eight, .col-1-2.offset-by-8, .col-6-12.offset-by-eight, .col-6-12.offset-by-8, .col-7.offset-by-eight, .col-7.offset-by-8, .col-7-12.offset-by-eight, .col-7-12.offset-by-8, .col-8.offset-by-eight, .col-8.offset-by-8, .col-2-3.offset-by-eight, .col-2-3.offset-by-8, .col-8-12.offset-by-eight, .col-8-12.offset-by-8, .col-9.offset-by-eight, .col-9.offset-by-8, .col-3-4.offset-by-eight, .col-3-4.offset-by-8, .col-9-12.offset-by-eight, .col-9-12.offset-by-8, .col-10.offset-by-eight, .col-10.offset-by-8, .col-5-6.offset-by-eight, .col-5-6.offset-by-8, .col-10-12.offset-by-eight, .col-10-12.offset-by-8, .col-11.offset-by-eight, .col-11.offset-by-8, .col-11-12.offset-by-eight, .col-11-12.offset-by-8, .col-12.offset-by-eight, .col-12.offset-by-8, .col-12-12.offset-by-eight, .col-12-12.offset-by-8 {
+    margin-left: 69.3333333333%; }
+  .col-1.offset-by-nine, .col-1.offset-by-9, .col-1-12.offset-by-nine, .col-1-12.offset-by-9, .col-2.offset-by-nine, .col-2.offset-by-9, .col-1-6.offset-by-nine, .col-1-6.offset-by-9, .col-2-12.offset-by-nine, .col-2-12.offset-by-9, .col-3.offset-by-nine, .col-3.offset-by-9, .col-1-4.offset-by-nine, .col-1-4.offset-by-9, .col-3-12.offset-by-nine, .col-3-12.offset-by-9, .col-4.offset-by-nine, .col-4.offset-by-9, .col-1-3.offset-by-nine, .col-1-3.offset-by-9, .col-4-12.offset-by-nine, .col-4-12.offset-by-9, .col-5.offset-by-nine, .col-5.offset-by-9, .col-5-12.offset-by-nine, .col-5-12.offset-by-9, .col-6.offset-by-nine, .col-6.offset-by-9, .col-1-2.offset-by-nine, .col-1-2.offset-by-9, .col-6-12.offset-by-nine, .col-6-12.offset-by-9, .col-7.offset-by-nine, .col-7.offset-by-9, .col-7-12.offset-by-nine, .col-7-12.offset-by-9, .col-8.offset-by-nine, .col-8.offset-by-9, .col-2-3.offset-by-nine, .col-2-3.offset-by-9, .col-8-12.offset-by-nine, .col-8-12.offset-by-9, .col-9.offset-by-nine, .col-9.offset-by-9, .col-3-4.offset-by-nine, .col-3-4.offset-by-9, .col-9-12.offset-by-nine, .col-9-12.offset-by-9, .col-10.offset-by-nine, .col-10.offset-by-9, .col-5-6.offset-by-nine, .col-5-6.offset-by-9, .col-10-12.offset-by-nine, .col-10-12.offset-by-9, .col-11.offset-by-nine, .col-11.offset-by-9, .col-11-12.offset-by-nine, .col-11-12.offset-by-9, .col-12.offset-by-nine, .col-12.offset-by-9, .col-12-12.offset-by-nine, .col-12-12.offset-by-9 {
+    margin-left: 78.0%; }
+  .col-1.offset-by-ten, .col-1.offset-by-10, .col-1-12.offset-by-ten, .col-1-12.offset-by-10, .col-2.offset-by-ten, .col-2.offset-by-10, .col-1-6.offset-by-ten, .col-1-6.offset-by-10, .col-2-12.offset-by-ten, .col-2-12.offset-by-10, .col-3.offset-by-ten, .col-3.offset-by-10, .col-1-4.offset-by-ten, .col-1-4.offset-by-10, .col-3-12.offset-by-ten, .col-3-12.offset-by-10, .col-4.offset-by-ten, .col-4.offset-by-10, .col-1-3.offset-by-ten, .col-1-3.offset-by-10, .col-4-12.offset-by-ten, .col-4-12.offset-by-10, .col-5.offset-by-ten, .col-5.offset-by-10, .col-5-12.offset-by-ten, .col-5-12.offset-by-10, .col-6.offset-by-ten, .col-6.offset-by-10, .col-1-2.offset-by-ten, .col-1-2.offset-by-10, .col-6-12.offset-by-ten, .col-6-12.offset-by-10, .col-7.offset-by-ten, .col-7.offset-by-10, .col-7-12.offset-by-ten, .col-7-12.offset-by-10, .col-8.offset-by-ten, .col-8.offset-by-10, .col-2-3.offset-by-ten, .col-2-3.offset-by-10, .col-8-12.offset-by-ten, .col-8-12.offset-by-10, .col-9.offset-by-ten, .col-9.offset-by-10, .col-3-4.offset-by-ten, .col-3-4.offset-by-10, .col-9-12.offset-by-ten, .col-9-12.offset-by-10, .col-10.offset-by-ten, .col-10.offset-by-10, .col-5-6.offset-by-ten, .col-5-6.offset-by-10, .col-10-12.offset-by-ten, .col-10-12.offset-by-10, .col-11.offset-by-ten, .col-11.offset-by-10, .col-11-12.offset-by-ten, .col-11-12.offset-by-10, .col-12.offset-by-ten, .col-12.offset-by-10, .col-12-12.offset-by-ten, .col-12-12.offset-by-10 {
+    margin-left: 86.6666666667%; }
+  .col-1.offset-by-eleven, .col-1.offset-by-11, .col-1-12.offset-by-eleven, .col-1-12.offset-by-11, .col-2.offset-by-eleven, .col-2.offset-by-11, .col-1-6.offset-by-eleven, .col-1-6.offset-by-11, .col-2-12.offset-by-eleven, .col-2-12.offset-by-11, .col-3.offset-by-eleven, .col-3.offset-by-11, .col-1-4.offset-by-eleven, .col-1-4.offset-by-11, .col-3-12.offset-by-eleven, .col-3-12.offset-by-11, .col-4.offset-by-eleven, .col-4.offset-by-11, .col-1-3.offset-by-eleven, .col-1-3.offset-by-11, .col-4-12.offset-by-eleven, .col-4-12.offset-by-11, .col-5.offset-by-eleven, .col-5.offset-by-11, .col-5-12.offset-by-eleven, .col-5-12.offset-by-11, .col-6.offset-by-eleven, .col-6.offset-by-11, .col-1-2.offset-by-eleven, .col-1-2.offset-by-11, .col-6-12.offset-by-eleven, .col-6-12.offset-by-11, .col-7.offset-by-eleven, .col-7.offset-by-11, .col-7-12.offset-by-eleven, .col-7-12.offset-by-11, .col-8.offset-by-eleven, .col-8.offset-by-11, .col-2-3.offset-by-eleven, .col-2-3.offset-by-11, .col-8-12.offset-by-eleven, .col-8-12.offset-by-11, .col-9.offset-by-eleven, .col-9.offset-by-11, .col-3-4.offset-by-eleven, .col-3-4.offset-by-11, .col-9-12.offset-by-eleven, .col-9-12.offset-by-11, .col-10.offset-by-eleven, .col-10.offset-by-11, .col-5-6.offset-by-eleven, .col-5-6.offset-by-11, .col-10-12.offset-by-eleven, .col-10-12.offset-by-11, .col-11.offset-by-eleven, .col-11.offset-by-11, .col-11-12.offset-by-eleven, .col-11-12.offset-by-11, .col-12.offset-by-eleven, .col-12.offset-by-11, .col-12-12.offset-by-eleven, .col-12-12.offset-by-11 {
+    margin-left: 95.3333333333%; }
+  .col-1.offset-by-one-third, .col-1.offset-by-1-3, .col-1-12.offset-by-one-third, .col-1-12.offset-by-1-3, .col-2.offset-by-one-third, .col-2.offset-by-1-3, .col-1-6.offset-by-one-third, .col-1-6.offset-by-1-3, .col-2-12.offset-by-one-third, .col-2-12.offset-by-1-3, .col-3.offset-by-one-third, .col-3.offset-by-1-3, .col-1-4.offset-by-one-third, .col-1-4.offset-by-1-3, .col-3-12.offset-by-one-third, .col-3-12.offset-by-1-3, .col-4.offset-by-one-third, .col-4.offset-by-1-3, .col-1-3.offset-by-one-third, .col-1-3.offset-by-1-3, .col-4-12.offset-by-one-third, .col-4-12.offset-by-1-3, .col-5.offset-by-one-third, .col-5.offset-by-1-3, .col-5-12.offset-by-one-third, .col-5-12.offset-by-1-3, .col-6.offset-by-one-third, .col-6.offset-by-1-3, .col-1-2.offset-by-one-third, .col-1-2.offset-by-1-3, .col-6-12.offset-by-one-third, .col-6-12.offset-by-1-3, .col-7.offset-by-one-third, .col-7.offset-by-1-3, .col-7-12.offset-by-one-third, .col-7-12.offset-by-1-3, .col-8.offset-by-one-third, .col-8.offset-by-1-3, .col-2-3.offset-by-one-third, .col-2-3.offset-by-1-3, .col-8-12.offset-by-one-third, .col-8-12.offset-by-1-3, .col-9.offset-by-one-third, .col-9.offset-by-1-3, .col-3-4.offset-by-one-third, .col-3-4.offset-by-1-3, .col-9-12.offset-by-one-third, .col-9-12.offset-by-1-3, .col-10.offset-by-one-third, .col-10.offset-by-1-3, .col-5-6.offset-by-one-third, .col-5-6.offset-by-1-3, .col-10-12.offset-by-one-third, .col-10-12.offset-by-1-3, .col-11.offset-by-one-third, .col-11.offset-by-1-3, .col-11-12.offset-by-one-third, .col-11-12.offset-by-1-3, .col-12.offset-by-one-third, .col-12.offset-by-1-3, .col-12-12.offset-by-one-third, .col-12-12.offset-by-1-3 {
+    margin-left: 34.6666666667%; }
+  .col-1.offset-by-two-thirds, .col-1.offset-by-2-3, .col-1-12.offset-by-two-thirds, .col-1-12.offset-by-2-3, .col-2.offset-by-two-thirds, .col-2.offset-by-2-3, .col-1-6.offset-by-two-thirds, .col-1-6.offset-by-2-3, .col-2-12.offset-by-two-thirds, .col-2-12.offset-by-2-3, .col-3.offset-by-two-thirds, .col-3.offset-by-2-3, .col-1-4.offset-by-two-thirds, .col-1-4.offset-by-2-3, .col-3-12.offset-by-two-thirds, .col-3-12.offset-by-2-3, .col-4.offset-by-two-thirds, .col-4.offset-by-2-3, .col-1-3.offset-by-two-thirds, .col-1-3.offset-by-2-3, .col-4-12.offset-by-two-thirds, .col-4-12.offset-by-2-3, .col-5.offset-by-two-thirds, .col-5.offset-by-2-3, .col-5-12.offset-by-two-thirds, .col-5-12.offset-by-2-3, .col-6.offset-by-two-thirds, .col-6.offset-by-2-3, .col-1-2.offset-by-two-thirds, .col-1-2.offset-by-2-3, .col-6-12.offset-by-two-thirds, .col-6-12.offset-by-2-3, .col-7.offset-by-two-thirds, .col-7.offset-by-2-3, .col-7-12.offset-by-two-thirds, .col-7-12.offset-by-2-3, .col-8.offset-by-two-thirds, .col-8.offset-by-2-3, .col-2-3.offset-by-two-thirds, .col-2-3.offset-by-2-3, .col-8-12.offset-by-two-thirds, .col-8-12.offset-by-2-3, .col-9.offset-by-two-thirds, .col-9.offset-by-2-3, .col-3-4.offset-by-two-thirds, .col-3-4.offset-by-2-3, .col-9-12.offset-by-two-thirds, .col-9-12.offset-by-2-3, .col-10.offset-by-two-thirds, .col-10.offset-by-2-3, .col-5-6.offset-by-two-thirds, .col-5-6.offset-by-2-3, .col-10-12.offset-by-two-thirds, .col-10-12.offset-by-2-3, .col-11.offset-by-two-thirds, .col-11.offset-by-2-3, .col-11-12.offset-by-two-thirds, .col-11-12.offset-by-2-3, .col-12.offset-by-two-thirds, .col-12.offset-by-2-3, .col-12-12.offset-by-two-thirds, .col-12-12.offset-by-2-3 {
+    margin-left: 69.3333333333%; }
+  .col-1.offset-by-one-half, .col-1.offset-by-1-2, .col-1-12.offset-by-one-half, .col-1-12.offset-by-1-2, .col-2.offset-by-one-half, .col-2.offset-by-1-2, .col-1-6.offset-by-one-half, .col-1-6.offset-by-1-2, .col-2-12.offset-by-one-half, .col-2-12.offset-by-1-2, .col-3.offset-by-one-half, .col-3.offset-by-1-2, .col-1-4.offset-by-one-half, .col-1-4.offset-by-1-2, .col-3-12.offset-by-one-half, .col-3-12.offset-by-1-2, .col-4.offset-by-one-half, .col-4.offset-by-1-2, .col-1-3.offset-by-one-half, .col-1-3.offset-by-1-2, .col-4-12.offset-by-one-half, .col-4-12.offset-by-1-2, .col-5.offset-by-one-half, .col-5.offset-by-1-2, .col-5-12.offset-by-one-half, .col-5-12.offset-by-1-2, .col-6.offset-by-one-half, .col-6.offset-by-1-2, .col-1-2.offset-by-one-half, .col-1-2.offset-by-1-2, .col-6-12.offset-by-one-half, .col-6-12.offset-by-1-2, .col-7.offset-by-one-half, .col-7.offset-by-1-2, .col-7-12.offset-by-one-half, .col-7-12.offset-by-1-2, .col-8.offset-by-one-half, .col-8.offset-by-1-2, .col-2-3.offset-by-one-half, .col-2-3.offset-by-1-2, .col-8-12.offset-by-one-half, .col-8-12.offset-by-1-2, .col-9.offset-by-one-half, .col-9.offset-by-1-2, .col-3-4.offset-by-one-half, .col-3-4.offset-by-1-2, .col-9-12.offset-by-one-half, .col-9-12.offset-by-1-2, .col-10.offset-by-one-half, .col-10.offset-by-1-2, .col-5-6.offset-by-one-half, .col-5-6.offset-by-1-2, .col-10-12.offset-by-one-half, .col-10-12.offset-by-1-2, .col-11.offset-by-one-half, .col-11.offset-by-1-2, .col-11-12.offset-by-one-half, .col-11-12.offset-by-1-2, .col-12.offset-by-one-half, .col-12.offset-by-1-2, .col-12-12.offset-by-one-half, .col-12-12.offset-by-1-2 {
+    margin-left: 52%; }
+  @media screen and (max-width: 768px) {
+    .col-1.tab-one, .col-1.tab-one-twelfth, .col-1.tab-1, .col-1.tab-1-12, .col-1-12.tab-one, .col-1-12.tab-one-twelfth, .col-1-12.tab-1, .col-1-12.tab-1-12, .col-2.tab-one, .col-2.tab-one-twelfth, .col-2.tab-1, .col-2.tab-1-12, .col-1-6.tab-one, .col-1-6.tab-one-twelfth, .col-1-6.tab-1, .col-1-6.tab-1-12, .col-2-12.tab-one, .col-2-12.tab-one-twelfth, .col-2-12.tab-1, .col-2-12.tab-1-12, .col-3.tab-one, .col-3.tab-one-twelfth, .col-3.tab-1, .col-3.tab-1-12, .col-1-4.tab-one, .col-1-4.tab-one-twelfth, .col-1-4.tab-1, .col-1-4.tab-1-12, .col-3-12.tab-one, .col-3-12.tab-one-twelfth, .col-3-12.tab-1, .col-3-12.tab-1-12, .col-4.tab-one, .col-4.tab-one-twelfth, .col-4.tab-1, .col-4.tab-1-12, .col-1-3.tab-one, .col-1-3.tab-one-twelfth, .col-1-3.tab-1, .col-1-3.tab-1-12, .col-4-12.tab-one, .col-4-12.tab-one-twelfth, .col-4-12.tab-1, .col-4-12.tab-1-12, .col-5.tab-one, .col-5.tab-one-twelfth, .col-5.tab-1, .col-5.tab-1-12, .col-5-12.tab-one, .col-5-12.tab-one-twelfth, .col-5-12.tab-1, .col-5-12.tab-1-12, .col-6.tab-one, .col-6.tab-one-twelfth, .col-6.tab-1, .col-6.tab-1-12, .col-1-2.tab-one, .col-1-2.tab-one-twelfth, .col-1-2.tab-1, .col-1-2.tab-1-12, .col-6-12.tab-one, .col-6-12.tab-one-twelfth, .col-6-12.tab-1, .col-6-12.tab-1-12, .col-7.tab-one, .col-7.tab-one-twelfth, .col-7.tab-1, .col-7.tab-1-12, .col-7-12.tab-one, .col-7-12.tab-one-twelfth, .col-7-12.tab-1, .col-7-12.tab-1-12, .col-8.tab-one, .col-8.tab-one-twelfth, .col-8.tab-1, .col-8.tab-1-12, .col-2-3.tab-one, .col-2-3.tab-one-twelfth, .col-2-3.tab-1, .col-2-3.tab-1-12, .col-8-12.tab-one, .col-8-12.tab-one-twelfth, .col-8-12.tab-1, .col-8-12.tab-1-12, .col-9.tab-one, .col-9.tab-one-twelfth, .col-9.tab-1, .col-9.tab-1-12, .col-3-4.tab-one, .col-3-4.tab-one-twelfth, .col-3-4.tab-1, .col-3-4.tab-1-12, .col-9-12.tab-one, .col-9-12.tab-one-twelfth, .col-9-12.tab-1, .col-9-12.tab-1-12, .col-10.tab-one, .col-10.tab-one-twelfth, .col-10.tab-1, .col-10.tab-1-12, .col-5-6.tab-one, .col-5-6.tab-one-twelfth, .col-5-6.tab-1, .col-5-6.tab-1-12, .col-10-12.tab-one, .col-10-12.tab-one-twelfth, .col-10-12.tab-1, .col-10-12.tab-1-12, .col-11.tab-one, .col-11.tab-one-twelfth, .col-11.tab-1, .col-11.tab-1-12, .col-11-12.tab-one, .col-11-12.tab-one-twelfth, .col-11-12.tab-1, .col-11-12.tab-1-12, .col-12.tab-one, .col-12.tab-one-twelfth, .col-12.tab-1, .col-12.tab-1-12, .col-12-12.tab-one, .col-12-12.tab-one-twelfth, .col-12-12.tab-1, .col-12-12.tab-1-12 {
+      width: 4.66666666667% !important; }
+    .col-1.tab-two, .col-1.tab-one-sixth, .col-1.tab-two-twelfths, .col-1.tab-2, .col-1.tab-1-6, .col-1.tab-2-12, .col-1-12.tab-two, .col-1-12.tab-one-sixth, .col-1-12.tab-two-twelfths, .col-1-12.tab-2, .col-1-12.tab-1-6, .col-1-12.tab-2-12, .col-2.tab-two, .col-2.tab-one-sixth, .col-2.tab-two-twelfths, .col-2.tab-2, .col-2.tab-1-6, .col-2.tab-2-12, .col-1-6.tab-two, .col-1-6.tab-one-sixth, .col-1-6.tab-two-twelfths, .col-1-6.tab-2, .col-1-6.tab-1-6, .col-1-6.tab-2-12, .col-2-12.tab-two, .col-2-12.tab-one-sixth, .col-2-12.tab-two-twelfths, .col-2-12.tab-2, .col-2-12.tab-1-6, .col-2-12.tab-2-12, .col-3.tab-two, .col-3.tab-one-sixth, .col-3.tab-two-twelfths, .col-3.tab-2, .col-3.tab-1-6, .col-3.tab-2-12, .col-1-4.tab-two, .col-1-4.tab-one-sixth, .col-1-4.tab-two-twelfths, .col-1-4.tab-2, .col-1-4.tab-1-6, .col-1-4.tab-2-12, .col-3-12.tab-two, .col-3-12.tab-one-sixth, .col-3-12.tab-two-twelfths, .col-3-12.tab-2, .col-3-12.tab-1-6, .col-3-12.tab-2-12, .col-4.tab-two, .col-4.tab-one-sixth, .col-4.tab-two-twelfths, .col-4.tab-2, .col-4.tab-1-6, .col-4.tab-2-12, .col-1-3.tab-two, .col-1-3.tab-one-sixth, .col-1-3.tab-two-twelfths, .col-1-3.tab-2, .col-1-3.tab-1-6, .col-1-3.tab-2-12, .col-4-12.tab-two, .col-4-12.tab-one-sixth, .col-4-12.tab-two-twelfths, .col-4-12.tab-2, .col-4-12.tab-1-6, .col-4-12.tab-2-12, .col-5.tab-two, .col-5.tab-one-sixth, .col-5.tab-two-twelfths, .col-5.tab-2, .col-5.tab-1-6, .col-5.tab-2-12, .col-5-12.tab-two, .col-5-12.tab-one-sixth, .col-5-12.tab-two-twelfths, .col-5-12.tab-2, .col-5-12.tab-1-6, .col-5-12.tab-2-12, .col-6.tab-two, .col-6.tab-one-sixth, .col-6.tab-two-twelfths, .col-6.tab-2, .col-6.tab-1-6, .col-6.tab-2-12, .col-1-2.tab-two, .col-1-2.tab-one-sixth, .col-1-2.tab-two-twelfths, .col-1-2.tab-2, .col-1-2.tab-1-6, .col-1-2.tab-2-12, .col-6-12.tab-two, .col-6-12.tab-one-sixth, .col-6-12.tab-two-twelfths, .col-6-12.tab-2, .col-6-12.tab-1-6, .col-6-12.tab-2-12, .col-7.tab-two, .col-7.tab-one-sixth, .col-7.tab-two-twelfths, .col-7.tab-2, .col-7.tab-1-6, .col-7.tab-2-12, .col-7-12.tab-two, .col-7-12.tab-one-sixth, .col-7-12.tab-two-twelfths, .col-7-12.tab-2, .col-7-12.tab-1-6, .col-7-12.tab-2-12, .col-8.tab-two, .col-8.tab-one-sixth, .col-8.tab-two-twelfths, .col-8.tab-2, .col-8.tab-1-6, .col-8.tab-2-12, .col-2-3.tab-two, .col-2-3.tab-one-sixth, .col-2-3.tab-two-twelfths, .col-2-3.tab-2, .col-2-3.tab-1-6, .col-2-3.tab-2-12, .col-8-12.tab-two, .col-8-12.tab-one-sixth, .col-8-12.tab-two-twelfths, .col-8-12.tab-2, .col-8-12.tab-1-6, .col-8-12.tab-2-12, .col-9.tab-two, .col-9.tab-one-sixth, .col-9.tab-two-twelfths, .col-9.tab-2, .col-9.tab-1-6, .col-9.tab-2-12, .col-3-4.tab-two, .col-3-4.tab-one-sixth, .col-3-4.tab-two-twelfths, .col-3-4.tab-2, .col-3-4.tab-1-6, .col-3-4.tab-2-12, .col-9-12.tab-two, .col-9-12.tab-one-sixth, .col-9-12.tab-two-twelfths, .col-9-12.tab-2, .col-9-12.tab-1-6, .col-9-12.tab-2-12, .col-10.tab-two, .col-10.tab-one-sixth, .col-10.tab-two-twelfths, .col-10.tab-2, .col-10.tab-1-6, .col-10.tab-2-12, .col-5-6.tab-two, .col-5-6.tab-one-sixth, .col-5-6.tab-two-twelfths, .col-5-6.tab-2, .col-5-6.tab-1-6, .col-5-6.tab-2-12, .col-10-12.tab-two, .col-10-12.tab-one-sixth, .col-10-12.tab-two-twelfths, .col-10-12.tab-2, .col-10-12.tab-1-6, .col-10-12.tab-2-12, .col-11.tab-two, .col-11.tab-one-sixth, .col-11.tab-two-twelfths, .col-11.tab-2, .col-11.tab-1-6, .col-11.tab-2-12, .col-11-12.tab-two, .col-11-12.tab-one-sixth, .col-11-12.tab-two-twelfths, .col-11-12.tab-2, .col-11-12.tab-1-6, .col-11-12.tab-2-12, .col-12.tab-two, .col-12.tab-one-sixth, .col-12.tab-two-twelfths, .col-12.tab-2, .col-12.tab-1-6, .col-12.tab-2-12, .col-12-12.tab-two, .col-12-12.tab-one-sixth, .col-12-12.tab-two-twelfths, .col-12-12.tab-2, .col-12-12.tab-1-6, .col-12-12.tab-2-12 {
+      width: 13.3333333333% !important; }
+    .col-1.tab-three, .col-1.tab-one-quarter, .col-1.tab-three-twelfths, .col-1.tab-3, .col-1.tab-1-4, .col-1.tab-3-12, .col-1-12.tab-three, .col-1-12.tab-one-quarter, .col-1-12.tab-three-twelfths, .col-1-12.tab-3, .col-1-12.tab-1-4, .col-1-12.tab-3-12, .col-2.tab-three, .col-2.tab-one-quarter, .col-2.tab-three-twelfths, .col-2.tab-3, .col-2.tab-1-4, .col-2.tab-3-12, .col-1-6.tab-three, .col-1-6.tab-one-quarter, .col-1-6.tab-three-twelfths, .col-1-6.tab-3, .col-1-6.tab-1-4, .col-1-6.tab-3-12, .col-2-12.tab-three, .col-2-12.tab-one-quarter, .col-2-12.tab-three-twelfths, .col-2-12.tab-3, .col-2-12.tab-1-4, .col-2-12.tab-3-12, .col-3.tab-three, .col-3.tab-one-quarter, .col-3.tab-three-twelfths, .col-3.tab-3, .col-3.tab-1-4, .col-3.tab-3-12, .col-1-4.tab-three, .col-1-4.tab-one-quarter, .col-1-4.tab-three-twelfths, .col-1-4.tab-3, .col-1-4.tab-1-4, .col-1-4.tab-3-12, .col-3-12.tab-three, .col-3-12.tab-one-quarter, .col-3-12.tab-three-twelfths, .col-3-12.tab-3, .col-3-12.tab-1-4, .col-3-12.tab-3-12, .col-4.tab-three, .col-4.tab-one-quarter, .col-4.tab-three-twelfths, .col-4.tab-3, .col-4.tab-1-4, .col-4.tab-3-12, .col-1-3.tab-three, .col-1-3.tab-one-quarter, .col-1-3.tab-three-twelfths, .col-1-3.tab-3, .col-1-3.tab-1-4, .col-1-3.tab-3-12, .col-4-12.tab-three, .col-4-12.tab-one-quarter, .col-4-12.tab-three-twelfths, .col-4-12.tab-3, .col-4-12.tab-1-4, .col-4-12.tab-3-12, .col-5.tab-three, .col-5.tab-one-quarter, .col-5.tab-three-twelfths, .col-5.tab-3, .col-5.tab-1-4, .col-5.tab-3-12, .col-5-12.tab-three, .col-5-12.tab-one-quarter, .col-5-12.tab-three-twelfths, .col-5-12.tab-3, .col-5-12.tab-1-4, .col-5-12.tab-3-12, .col-6.tab-three, .col-6.tab-one-quarter, .col-6.tab-three-twelfths, .col-6.tab-3, .col-6.tab-1-4, .col-6.tab-3-12, .col-1-2.tab-three, .col-1-2.tab-one-quarter, .col-1-2.tab-three-twelfths, .col-1-2.tab-3, .col-1-2.tab-1-4, .col-1-2.tab-3-12, .col-6-12.tab-three, .col-6-12.tab-one-quarter, .col-6-12.tab-three-twelfths, .col-6-12.tab-3, .col-6-12.tab-1-4, .col-6-12.tab-3-12, .col-7.tab-three, .col-7.tab-one-quarter, .col-7.tab-three-twelfths, .col-7.tab-3, .col-7.tab-1-4, .col-7.tab-3-12, .col-7-12.tab-three, .col-7-12.tab-one-quarter, .col-7-12.tab-three-twelfths, .col-7-12.tab-3, .col-7-12.tab-1-4, .col-7-12.tab-3-12, .col-8.tab-three, .col-8.tab-one-quarter, .col-8.tab-three-twelfths, .col-8.tab-3, .col-8.tab-1-4, .col-8.tab-3-12, .col-2-3.tab-three, .col-2-3.tab-one-quarter, .col-2-3.tab-three-twelfths, .col-2-3.tab-3, .col-2-3.tab-1-4, .col-2-3.tab-3-12, .col-8-12.tab-three, .col-8-12.tab-one-quarter, .col-8-12.tab-three-twelfths, .col-8-12.tab-3, .col-8-12.tab-1-4, .col-8-12.tab-3-12, .col-9.tab-three, .col-9.tab-one-quarter, .col-9.tab-three-twelfths, .col-9.tab-3, .col-9.tab-1-4, .col-9.tab-3-12, .col-3-4.tab-three, .col-3-4.tab-one-quarter, .col-3-4.tab-three-twelfths, .col-3-4.tab-3, .col-3-4.tab-1-4, .col-3-4.tab-3-12, .col-9-12.tab-three, .col-9-12.tab-one-quarter, .col-9-12.tab-three-twelfths, .col-9-12.tab-3, .col-9-12.tab-1-4, .col-9-12.tab-3-12, .col-10.tab-three, .col-10.tab-one-quarter, .col-10.tab-three-twelfths, .col-10.tab-3, .col-10.tab-1-4, .col-10.tab-3-12, .col-5-6.tab-three, .col-5-6.tab-one-quarter, .col-5-6.tab-three-twelfths, .col-5-6.tab-3, .col-5-6.tab-1-4, .col-5-6.tab-3-12, .col-10-12.tab-three, .col-10-12.tab-one-quarter, .col-10-12.tab-three-twelfths, .col-10-12.tab-3, .col-10-12.tab-1-4, .col-10-12.tab-3-12, .col-11.tab-three, .col-11.tab-one-quarter, .col-11.tab-three-twelfths, .col-11.tab-3, .col-11.tab-1-4, .col-11.tab-3-12, .col-11-12.tab-three, .col-11-12.tab-one-quarter, .col-11-12.tab-three-twelfths, .col-11-12.tab-3, .col-11-12.tab-1-4, .col-11-12.tab-3-12, .col-12.tab-three, .col-12.tab-one-quarter, .col-12.tab-three-twelfths, .col-12.tab-3, .col-12.tab-1-4, .col-12.tab-3-12, .col-12-12.tab-three, .col-12-12.tab-one-quarter, .col-12-12.tab-three-twelfths, .col-12-12.tab-3, .col-12-12.tab-1-4, .col-12-12.tab-3-12 {
+      width: 22% !important; }
+    .col-1.tab-four, .col-1.tab-one-third, .col-1.tab-four-twelfths, .col-1.tab-4, .col-1.tab-1-3, .col-1.tab-4-12, .col-1-12.tab-four, .col-1-12.tab-one-third, .col-1-12.tab-four-twelfths, .col-1-12.tab-4, .col-1-12.tab-1-3, .col-1-12.tab-4-12, .col-2.tab-four, .col-2.tab-one-third, .col-2.tab-four-twelfths, .col-2.tab-4, .col-2.tab-1-3, .col-2.tab-4-12, .col-1-6.tab-four, .col-1-6.tab-one-third, .col-1-6.tab-four-twelfths, .col-1-6.tab-4, .col-1-6.tab-1-3, .col-1-6.tab-4-12, .col-2-12.tab-four, .col-2-12.tab-one-third, .col-2-12.tab-four-twelfths, .col-2-12.tab-4, .col-2-12.tab-1-3, .col-2-12.tab-4-12, .col-3.tab-four, .col-3.tab-one-third, .col-3.tab-four-twelfths, .col-3.tab-4, .col-3.tab-1-3, .col-3.tab-4-12, .col-1-4.tab-four, .col-1-4.tab-one-third, .col-1-4.tab-four-twelfths, .col-1-4.tab-4, .col-1-4.tab-1-3, .col-1-4.tab-4-12, .col-3-12.tab-four, .col-3-12.tab-one-third, .col-3-12.tab-four-twelfths, .col-3-12.tab-4, .col-3-12.tab-1-3, .col-3-12.tab-4-12, .col-4.tab-four, .col-4.tab-one-third, .col-4.tab-four-twelfths, .col-4.tab-4, .col-4.tab-1-3, .col-4.tab-4-12, .col-1-3.tab-four, .col-1-3.tab-one-third, .col-1-3.tab-four-twelfths, .col-1-3.tab-4, .col-1-3.tab-1-3, .col-1-3.tab-4-12, .col-4-12.tab-four, .col-4-12.tab-one-third, .col-4-12.tab-four-twelfths, .col-4-12.tab-4, .col-4-12.tab-1-3, .col-4-12.tab-4-12, .col-5.tab-four, .col-5.tab-one-third, .col-5.tab-four-twelfths, .col-5.tab-4, .col-5.tab-1-3, .col-5.tab-4-12, .col-5-12.tab-four, .col-5-12.tab-one-third, .col-5-12.tab-four-twelfths, .col-5-12.tab-4, .col-5-12.tab-1-3, .col-5-12.tab-4-12, .col-6.tab-four, .col-6.tab-one-third, .col-6.tab-four-twelfths, .col-6.tab-4, .col-6.tab-1-3, .col-6.tab-4-12, .col-1-2.tab-four, .col-1-2.tab-one-third, .col-1-2.tab-four-twelfths, .col-1-2.tab-4, .col-1-2.tab-1-3, .col-1-2.tab-4-12, .col-6-12.tab-four, .col-6-12.tab-one-third, .col-6-12.tab-four-twelfths, .col-6-12.tab-4, .col-6-12.tab-1-3, .col-6-12.tab-4-12, .col-7.tab-four, .col-7.tab-one-third, .col-7.tab-four-twelfths, .col-7.tab-4, .col-7.tab-1-3, .col-7.tab-4-12, .col-7-12.tab-four, .col-7-12.tab-one-third, .col-7-12.tab-four-twelfths, .col-7-12.tab-4, .col-7-12.tab-1-3, .col-7-12.tab-4-12, .col-8.tab-four, .col-8.tab-one-third, .col-8.tab-four-twelfths, .col-8.tab-4, .col-8.tab-1-3, .col-8.tab-4-12, .col-2-3.tab-four, .col-2-3.tab-one-third, .col-2-3.tab-four-twelfths, .col-2-3.tab-4, .col-2-3.tab-1-3, .col-2-3.tab-4-12, .col-8-12.tab-four, .col-8-12.tab-one-third, .col-8-12.tab-four-twelfths, .col-8-12.tab-4, .col-8-12.tab-1-3, .col-8-12.tab-4-12, .col-9.tab-four, .col-9.tab-one-third, .col-9.tab-four-twelfths, .col-9.tab-4, .col-9.tab-1-3, .col-9.tab-4-12, .col-3-4.tab-four, .col-3-4.tab-one-third, .col-3-4.tab-four-twelfths, .col-3-4.tab-4, .col-3-4.tab-1-3, .col-3-4.tab-4-12, .col-9-12.tab-four, .col-9-12.tab-one-third, .col-9-12.tab-four-twelfths, .col-9-12.tab-4, .col-9-12.tab-1-3, .col-9-12.tab-4-12, .col-10.tab-four, .col-10.tab-one-third, .col-10.tab-four-twelfths, .col-10.tab-4, .col-10.tab-1-3, .col-10.tab-4-12, .col-5-6.tab-four, .col-5-6.tab-one-third, .col-5-6.tab-four-twelfths, .col-5-6.tab-4, .col-5-6.tab-1-3, .col-5-6.tab-4-12, .col-10-12.tab-four, .col-10-12.tab-one-third, .col-10-12.tab-four-twelfths, .col-10-12.tab-4, .col-10-12.tab-1-3, .col-10-12.tab-4-12, .col-11.tab-four, .col-11.tab-one-third, .col-11.tab-four-twelfths, .col-11.tab-4, .col-11.tab-1-3, .col-11.tab-4-12, .col-11-12.tab-four, .col-11-12.tab-one-third, .col-11-12.tab-four-twelfths, .col-11-12.tab-4, .col-11-12.tab-1-3, .col-11-12.tab-4-12, .col-12.tab-four, .col-12.tab-one-third, .col-12.tab-four-twelfths, .col-12.tab-4, .col-12.tab-1-3, .col-12.tab-4-12, .col-12-12.tab-four, .col-12-12.tab-one-third, .col-12-12.tab-four-twelfths, .col-12-12.tab-4, .col-12-12.tab-1-3, .col-12-12.tab-4-12 {
+      width: 30.6666666667% !important; }
+    .col-1.tab-five, .col-1.tab-five-twelfths, .col-1.tab-5, .col-1.tab-5-12, .col-1-12.tab-five, .col-1-12.tab-five-twelfths, .col-1-12.tab-5, .col-1-12.tab-5-12, .col-2.tab-five, .col-2.tab-five-twelfths, .col-2.tab-5, .col-2.tab-5-12, .col-1-6.tab-five, .col-1-6.tab-five-twelfths, .col-1-6.tab-5, .col-1-6.tab-5-12, .col-2-12.tab-five, .col-2-12.tab-five-twelfths, .col-2-12.tab-5, .col-2-12.tab-5-12, .col-3.tab-five, .col-3.tab-five-twelfths, .col-3.tab-5, .col-3.tab-5-12, .col-1-4.tab-five, .col-1-4.tab-five-twelfths, .col-1-4.tab-5, .col-1-4.tab-5-12, .col-3-12.tab-five, .col-3-12.tab-five-twelfths, .col-3-12.tab-5, .col-3-12.tab-5-12, .col-4.tab-five, .col-4.tab-five-twelfths, .col-4.tab-5, .col-4.tab-5-12, .col-1-3.tab-five, .col-1-3.tab-five-twelfths, .col-1-3.tab-5, .col-1-3.tab-5-12, .col-4-12.tab-five, .col-4-12.tab-five-twelfths, .col-4-12.tab-5, .col-4-12.tab-5-12, .col-5.tab-five, .col-5.tab-five-twelfths, .col-5.tab-5, .col-5.tab-5-12, .col-5-12.tab-five, .col-5-12.tab-five-twelfths, .col-5-12.tab-5, .col-5-12.tab-5-12, .col-6.tab-five, .col-6.tab-five-twelfths, .col-6.tab-5, .col-6.tab-5-12, .col-1-2.tab-five, .col-1-2.tab-five-twelfths, .col-1-2.tab-5, .col-1-2.tab-5-12, .col-6-12.tab-five, .col-6-12.tab-five-twelfths, .col-6-12.tab-5, .col-6-12.tab-5-12, .col-7.tab-five, .col-7.tab-five-twelfths, .col-7.tab-5, .col-7.tab-5-12, .col-7-12.tab-five, .col-7-12.tab-five-twelfths, .col-7-12.tab-5, .col-7-12.tab-5-12, .col-8.tab-five, .col-8.tab-five-twelfths, .col-8.tab-5, .col-8.tab-5-12, .col-2-3.tab-five, .col-2-3.tab-five-twelfths, .col-2-3.tab-5, .col-2-3.tab-5-12, .col-8-12.tab-five, .col-8-12.tab-five-twelfths, .col-8-12.tab-5, .col-8-12.tab-5-12, .col-9.tab-five, .col-9.tab-five-twelfths, .col-9.tab-5, .col-9.tab-5-12, .col-3-4.tab-five, .col-3-4.tab-five-twelfths, .col-3-4.tab-5, .col-3-4.tab-5-12, .col-9-12.tab-five, .col-9-12.tab-five-twelfths, .col-9-12.tab-5, .col-9-12.tab-5-12, .col-10.tab-five, .col-10.tab-five-twelfths, .col-10.tab-5, .col-10.tab-5-12, .col-5-6.tab-five, .col-5-6.tab-five-twelfths, .col-5-6.tab-5, .col-5-6.tab-5-12, .col-10-12.tab-five, .col-10-12.tab-five-twelfths, .col-10-12.tab-5, .col-10-12.tab-5-12, .col-11.tab-five, .col-11.tab-five-twelfths, .col-11.tab-5, .col-11.tab-5-12, .col-11-12.tab-five, .col-11-12.tab-five-twelfths, .col-11-12.tab-5, .col-11-12.tab-5-12, .col-12.tab-five, .col-12.tab-five-twelfths, .col-12.tab-5, .col-12.tab-5-12, .col-12-12.tab-five, .col-12-12.tab-five-twelfths, .col-12-12.tab-5, .col-12-12.tab-5-12 {
+      width: 39.3333333333% !important; }
+    .col-1.tab-six, .col-1.tab-half, .col-1.tab-one-half, .col-1.tab-six-twelfths, .col-1.tab-6, .col-1.tab-1-2, .col-1.tab-6-12, .col-1-12.tab-six, .col-1-12.tab-half, .col-1-12.tab-one-half, .col-1-12.tab-six-twelfths, .col-1-12.tab-6, .col-1-12.tab-1-2, .col-1-12.tab-6-12, .col-2.tab-six, .col-2.tab-half, .col-2.tab-one-half, .col-2.tab-six-twelfths, .col-2.tab-6, .col-2.tab-1-2, .col-2.tab-6-12, .col-1-6.tab-six, .col-1-6.tab-half, .col-1-6.tab-one-half, .col-1-6.tab-six-twelfths, .col-1-6.tab-6, .col-1-6.tab-1-2, .col-1-6.tab-6-12, .col-2-12.tab-six, .col-2-12.tab-half, .col-2-12.tab-one-half, .col-2-12.tab-six-twelfths, .col-2-12.tab-6, .col-2-12.tab-1-2, .col-2-12.tab-6-12, .col-3.tab-six, .col-3.tab-half, .col-3.tab-one-half, .col-3.tab-six-twelfths, .col-3.tab-6, .col-3.tab-1-2, .col-3.tab-6-12, .col-1-4.tab-six, .col-1-4.tab-half, .col-1-4.tab-one-half, .col-1-4.tab-six-twelfths, .col-1-4.tab-6, .col-1-4.tab-1-2, .col-1-4.tab-6-12, .col-3-12.tab-six, .col-3-12.tab-half, .col-3-12.tab-one-half, .col-3-12.tab-six-twelfths, .col-3-12.tab-6, .col-3-12.tab-1-2, .col-3-12.tab-6-12, .col-4.tab-six, .col-4.tab-half, .col-4.tab-one-half, .col-4.tab-six-twelfths, .col-4.tab-6, .col-4.tab-1-2, .col-4.tab-6-12, .col-1-3.tab-six, .col-1-3.tab-half, .col-1-3.tab-one-half, .col-1-3.tab-six-twelfths, .col-1-3.tab-6, .col-1-3.tab-1-2, .col-1-3.tab-6-12, .col-4-12.tab-six, .col-4-12.tab-half, .col-4-12.tab-one-half, .col-4-12.tab-six-twelfths, .col-4-12.tab-6, .col-4-12.tab-1-2, .col-4-12.tab-6-12, .col-5.tab-six, .col-5.tab-half, .col-5.tab-one-half, .col-5.tab-six-twelfths, .col-5.tab-6, .col-5.tab-1-2, .col-5.tab-6-12, .col-5-12.tab-six, .col-5-12.tab-half, .col-5-12.tab-one-half, .col-5-12.tab-six-twelfths, .col-5-12.tab-6, .col-5-12.tab-1-2, .col-5-12.tab-6-12, .col-6.tab-six, .col-6.tab-half, .col-6.tab-one-half, .col-6.tab-six-twelfths, .col-6.tab-6, .col-6.tab-1-2, .col-6.tab-6-12, .col-1-2.tab-six, .col-1-2.tab-half, .col-1-2.tab-one-half, .col-1-2.tab-six-twelfths, .col-1-2.tab-6, .col-1-2.tab-1-2, .col-1-2.tab-6-12, .col-6-12.tab-six, .col-6-12.tab-half, .col-6-12.tab-one-half, .col-6-12.tab-six-twelfths, .col-6-12.tab-6, .col-6-12.tab-1-2, .col-6-12.tab-6-12, .col-7.tab-six, .col-7.tab-half, .col-7.tab-one-half, .col-7.tab-six-twelfths, .col-7.tab-6, .col-7.tab-1-2, .col-7.tab-6-12, .col-7-12.tab-six, .col-7-12.tab-half, .col-7-12.tab-one-half, .col-7-12.tab-six-twelfths, .col-7-12.tab-6, .col-7-12.tab-1-2, .col-7-12.tab-6-12, .col-8.tab-six, .col-8.tab-half, .col-8.tab-one-half, .col-8.tab-six-twelfths, .col-8.tab-6, .col-8.tab-1-2, .col-8.tab-6-12, .col-2-3.tab-six, .col-2-3.tab-half, .col-2-3.tab-one-half, .col-2-3.tab-six-twelfths, .col-2-3.tab-6, .col-2-3.tab-1-2, .col-2-3.tab-6-12, .col-8-12.tab-six, .col-8-12.tab-half, .col-8-12.tab-one-half, .col-8-12.tab-six-twelfths, .col-8-12.tab-6, .col-8-12.tab-1-2, .col-8-12.tab-6-12, .col-9.tab-six, .col-9.tab-half, .col-9.tab-one-half, .col-9.tab-six-twelfths, .col-9.tab-6, .col-9.tab-1-2, .col-9.tab-6-12, .col-3-4.tab-six, .col-3-4.tab-half, .col-3-4.tab-one-half, .col-3-4.tab-six-twelfths, .col-3-4.tab-6, .col-3-4.tab-1-2, .col-3-4.tab-6-12, .col-9-12.tab-six, .col-9-12.tab-half, .col-9-12.tab-one-half, .col-9-12.tab-six-twelfths, .col-9-12.tab-6, .col-9-12.tab-1-2, .col-9-12.tab-6-12, .col-10.tab-six, .col-10.tab-half, .col-10.tab-one-half, .col-10.tab-six-twelfths, .col-10.tab-6, .col-10.tab-1-2, .col-10.tab-6-12, .col-5-6.tab-six, .col-5-6.tab-half, .col-5-6.tab-one-half, .col-5-6.tab-six-twelfths, .col-5-6.tab-6, .col-5-6.tab-1-2, .col-5-6.tab-6-12, .col-10-12.tab-six, .col-10-12.tab-half, .col-10-12.tab-one-half, .col-10-12.tab-six-twelfths, .col-10-12.tab-6, .col-10-12.tab-1-2, .col-10-12.tab-6-12, .col-11.tab-six, .col-11.tab-half, .col-11.tab-one-half, .col-11.tab-six-twelfths, .col-11.tab-6, .col-11.tab-1-2, .col-11.tab-6-12, .col-11-12.tab-six, .col-11-12.tab-half, .col-11-12.tab-one-half, .col-11-12.tab-six-twelfths, .col-11-12.tab-6, .col-11-12.tab-1-2, .col-11-12.tab-6-12, .col-12.tab-six, .col-12.tab-half, .col-12.tab-one-half, .col-12.tab-six-twelfths, .col-12.tab-6, .col-12.tab-1-2, .col-12.tab-6-12, .col-12-12.tab-six, .col-12-12.tab-half, .col-12-12.tab-one-half, .col-12-12.tab-six-twelfths, .col-12-12.tab-6, .col-12-12.tab-1-2, .col-12-12.tab-6-12 {
+      width: 48% !important; }
+    .col-1.tab-seven, .col-1.tab-seven-twelfths, .col-1.tab-7, .col-1.tab-7-12, .col-1-12.tab-seven, .col-1-12.tab-seven-twelfths, .col-1-12.tab-7, .col-1-12.tab-7-12, .col-2.tab-seven, .col-2.tab-seven-twelfths, .col-2.tab-7, .col-2.tab-7-12, .col-1-6.tab-seven, .col-1-6.tab-seven-twelfths, .col-1-6.tab-7, .col-1-6.tab-7-12, .col-2-12.tab-seven, .col-2-12.tab-seven-twelfths, .col-2-12.tab-7, .col-2-12.tab-7-12, .col-3.tab-seven, .col-3.tab-seven-twelfths, .col-3.tab-7, .col-3.tab-7-12, .col-1-4.tab-seven, .col-1-4.tab-seven-twelfths, .col-1-4.tab-7, .col-1-4.tab-7-12, .col-3-12.tab-seven, .col-3-12.tab-seven-twelfths, .col-3-12.tab-7, .col-3-12.tab-7-12, .col-4.tab-seven, .col-4.tab-seven-twelfths, .col-4.tab-7, .col-4.tab-7-12, .col-1-3.tab-seven, .col-1-3.tab-seven-twelfths, .col-1-3.tab-7, .col-1-3.tab-7-12, .col-4-12.tab-seven, .col-4-12.tab-seven-twelfths, .col-4-12.tab-7, .col-4-12.tab-7-12, .col-5.tab-seven, .col-5.tab-seven-twelfths, .col-5.tab-7, .col-5.tab-7-12, .col-5-12.tab-seven, .col-5-12.tab-seven-twelfths, .col-5-12.tab-7, .col-5-12.tab-7-12, .col-6.tab-seven, .col-6.tab-seven-twelfths, .col-6.tab-7, .col-6.tab-7-12, .col-1-2.tab-seven, .col-1-2.tab-seven-twelfths, .col-1-2.tab-7, .col-1-2.tab-7-12, .col-6-12.tab-seven, .col-6-12.tab-seven-twelfths, .col-6-12.tab-7, .col-6-12.tab-7-12, .col-7.tab-seven, .col-7.tab-seven-twelfths, .col-7.tab-7, .col-7.tab-7-12, .col-7-12.tab-seven, .col-7-12.tab-seven-twelfths, .col-7-12.tab-7, .col-7-12.tab-7-12, .col-8.tab-seven, .col-8.tab-seven-twelfths, .col-8.tab-7, .col-8.tab-7-12, .col-2-3.tab-seven, .col-2-3.tab-seven-twelfths, .col-2-3.tab-7, .col-2-3.tab-7-12, .col-8-12.tab-seven, .col-8-12.tab-seven-twelfths, .col-8-12.tab-7, .col-8-12.tab-7-12, .col-9.tab-seven, .col-9.tab-seven-twelfths, .col-9.tab-7, .col-9.tab-7-12, .col-3-4.tab-seven, .col-3-4.tab-seven-twelfths, .col-3-4.tab-7, .col-3-4.tab-7-12, .col-9-12.tab-seven, .col-9-12.tab-seven-twelfths, .col-9-12.tab-7, .col-9-12.tab-7-12, .col-10.tab-seven, .col-10.tab-seven-twelfths, .col-10.tab-7, .col-10.tab-7-12, .col-5-6.tab-seven, .col-5-6.tab-seven-twelfths, .col-5-6.tab-7, .col-5-6.tab-7-12, .col-10-12.tab-seven, .col-10-12.tab-seven-twelfths, .col-10-12.tab-7, .col-10-12.tab-7-12, .col-11.tab-seven, .col-11.tab-seven-twelfths, .col-11.tab-7, .col-11.tab-7-12, .col-11-12.tab-seven, .col-11-12.tab-seven-twelfths, .col-11-12.tab-7, .col-11-12.tab-7-12, .col-12.tab-seven, .col-12.tab-seven-twelfths, .col-12.tab-7, .col-12.tab-7-12, .col-12-12.tab-seven, .col-12-12.tab-seven-twelfths, .col-12-12.tab-7, .col-12-12.tab-7-12 {
+      width: 56.6666666667% !important; }
+    .col-1.tab-eight, .col-1.tab-two-thirds, .col-1.tab-eight-twelfths, .col-1.tab-8, .col-1.tab-2-3, .col-1.tab-8-12, .col-1-12.tab-eight, .col-1-12.tab-two-thirds, .col-1-12.tab-eight-twelfths, .col-1-12.tab-8, .col-1-12.tab-2-3, .col-1-12.tab-8-12, .col-2.tab-eight, .col-2.tab-two-thirds, .col-2.tab-eight-twelfths, .col-2.tab-8, .col-2.tab-2-3, .col-2.tab-8-12, .col-1-6.tab-eight, .col-1-6.tab-two-thirds, .col-1-6.tab-eight-twelfths, .col-1-6.tab-8, .col-1-6.tab-2-3, .col-1-6.tab-8-12, .col-2-12.tab-eight, .col-2-12.tab-two-thirds, .col-2-12.tab-eight-twelfths, .col-2-12.tab-8, .col-2-12.tab-2-3, .col-2-12.tab-8-12, .col-3.tab-eight, .col-3.tab-two-thirds, .col-3.tab-eight-twelfths, .col-3.tab-8, .col-3.tab-2-3, .col-3.tab-8-12, .col-1-4.tab-eight, .col-1-4.tab-two-thirds, .col-1-4.tab-eight-twelfths, .col-1-4.tab-8, .col-1-4.tab-2-3, .col-1-4.tab-8-12, .col-3-12.tab-eight, .col-3-12.tab-two-thirds, .col-3-12.tab-eight-twelfths, .col-3-12.tab-8, .col-3-12.tab-2-3, .col-3-12.tab-8-12, .col-4.tab-eight, .col-4.tab-two-thirds, .col-4.tab-eight-twelfths, .col-4.tab-8, .col-4.tab-2-3, .col-4.tab-8-12, .col-1-3.tab-eight, .col-1-3.tab-two-thirds, .col-1-3.tab-eight-twelfths, .col-1-3.tab-8, .col-1-3.tab-2-3, .col-1-3.tab-8-12, .col-4-12.tab-eight, .col-4-12.tab-two-thirds, .col-4-12.tab-eight-twelfths, .col-4-12.tab-8, .col-4-12.tab-2-3, .col-4-12.tab-8-12, .col-5.tab-eight, .col-5.tab-two-thirds, .col-5.tab-eight-twelfths, .col-5.tab-8, .col-5.tab-2-3, .col-5.tab-8-12, .col-5-12.tab-eight, .col-5-12.tab-two-thirds, .col-5-12.tab-eight-twelfths, .col-5-12.tab-8, .col-5-12.tab-2-3, .col-5-12.tab-8-12, .col-6.tab-eight, .col-6.tab-two-thirds, .col-6.tab-eight-twelfths, .col-6.tab-8, .col-6.tab-2-3, .col-6.tab-8-12, .col-1-2.tab-eight, .col-1-2.tab-two-thirds, .col-1-2.tab-eight-twelfths, .col-1-2.tab-8, .col-1-2.tab-2-3, .col-1-2.tab-8-12, .col-6-12.tab-eight, .col-6-12.tab-two-thirds, .col-6-12.tab-eight-twelfths, .col-6-12.tab-8, .col-6-12.tab-2-3, .col-6-12.tab-8-12, .col-7.tab-eight, .col-7.tab-two-thirds, .col-7.tab-eight-twelfths, .col-7.tab-8, .col-7.tab-2-3, .col-7.tab-8-12, .col-7-12.tab-eight, .col-7-12.tab-two-thirds, .col-7-12.tab-eight-twelfths, .col-7-12.tab-8, .col-7-12.tab-2-3, .col-7-12.tab-8-12, .col-8.tab-eight, .col-8.tab-two-thirds, .col-8.tab-eight-twelfths, .col-8.tab-8, .col-8.tab-2-3, .col-8.tab-8-12, .col-2-3.tab-eight, .col-2-3.tab-two-thirds, .col-2-3.tab-eight-twelfths, .col-2-3.tab-8, .col-2-3.tab-2-3, .col-2-3.tab-8-12, .col-8-12.tab-eight, .col-8-12.tab-two-thirds, .col-8-12.tab-eight-twelfths, .col-8-12.tab-8, .col-8-12.tab-2-3, .col-8-12.tab-8-12, .col-9.tab-eight, .col-9.tab-two-thirds, .col-9.tab-eight-twelfths, .col-9.tab-8, .col-9.tab-2-3, .col-9.tab-8-12, .col-3-4.tab-eight, .col-3-4.tab-two-thirds, .col-3-4.tab-eight-twelfths, .col-3-4.tab-8, .col-3-4.tab-2-3, .col-3-4.tab-8-12, .col-9-12.tab-eight, .col-9-12.tab-two-thirds, .col-9-12.tab-eight-twelfths, .col-9-12.tab-8, .col-9-12.tab-2-3, .col-9-12.tab-8-12, .col-10.tab-eight, .col-10.tab-two-thirds, .col-10.tab-eight-twelfths, .col-10.tab-8, .col-10.tab-2-3, .col-10.tab-8-12, .col-5-6.tab-eight, .col-5-6.tab-two-thirds, .col-5-6.tab-eight-twelfths, .col-5-6.tab-8, .col-5-6.tab-2-3, .col-5-6.tab-8-12, .col-10-12.tab-eight, .col-10-12.tab-two-thirds, .col-10-12.tab-eight-twelfths, .col-10-12.tab-8, .col-10-12.tab-2-3, .col-10-12.tab-8-12, .col-11.tab-eight, .col-11.tab-two-thirds, .col-11.tab-eight-twelfths, .col-11.tab-8, .col-11.tab-2-3, .col-11.tab-8-12, .col-11-12.tab-eight, .col-11-12.tab-two-thirds, .col-11-12.tab-eight-twelfths, .col-11-12.tab-8, .col-11-12.tab-2-3, .col-11-12.tab-8-12, .col-12.tab-eight, .col-12.tab-two-thirds, .col-12.tab-eight-twelfths, .col-12.tab-8, .col-12.tab-2-3, .col-12.tab-8-12, .col-12-12.tab-eight, .col-12-12.tab-two-thirds, .col-12-12.tab-eight-twelfths, .col-12-12.tab-8, .col-12-12.tab-2-3, .col-12-12.tab-8-12 {
+      width: 65.3333333333% !important; }
+    .col-1.tab-nine, .col-1.tab-three-quarters, .col-1.tab-nine-twelfths, .col-1.tab-9, .col-1.tab-3-4, .col-1.tab-9-12, .col-1-12.tab-nine, .col-1-12.tab-three-quarters, .col-1-12.tab-nine-twelfths, .col-1-12.tab-9, .col-1-12.tab-3-4, .col-1-12.tab-9-12, .col-2.tab-nine, .col-2.tab-three-quarters, .col-2.tab-nine-twelfths, .col-2.tab-9, .col-2.tab-3-4, .col-2.tab-9-12, .col-1-6.tab-nine, .col-1-6.tab-three-quarters, .col-1-6.tab-nine-twelfths, .col-1-6.tab-9, .col-1-6.tab-3-4, .col-1-6.tab-9-12, .col-2-12.tab-nine, .col-2-12.tab-three-quarters, .col-2-12.tab-nine-twelfths, .col-2-12.tab-9, .col-2-12.tab-3-4, .col-2-12.tab-9-12, .col-3.tab-nine, .col-3.tab-three-quarters, .col-3.tab-nine-twelfths, .col-3.tab-9, .col-3.tab-3-4, .col-3.tab-9-12, .col-1-4.tab-nine, .col-1-4.tab-three-quarters, .col-1-4.tab-nine-twelfths, .col-1-4.tab-9, .col-1-4.tab-3-4, .col-1-4.tab-9-12, .col-3-12.tab-nine, .col-3-12.tab-three-quarters, .col-3-12.tab-nine-twelfths, .col-3-12.tab-9, .col-3-12.tab-3-4, .col-3-12.tab-9-12, .col-4.tab-nine, .col-4.tab-three-quarters, .col-4.tab-nine-twelfths, .col-4.tab-9, .col-4.tab-3-4, .col-4.tab-9-12, .col-1-3.tab-nine, .col-1-3.tab-three-quarters, .col-1-3.tab-nine-twelfths, .col-1-3.tab-9, .col-1-3.tab-3-4, .col-1-3.tab-9-12, .col-4-12.tab-nine, .col-4-12.tab-three-quarters, .col-4-12.tab-nine-twelfths, .col-4-12.tab-9, .col-4-12.tab-3-4, .col-4-12.tab-9-12, .col-5.tab-nine, .col-5.tab-three-quarters, .col-5.tab-nine-twelfths, .col-5.tab-9, .col-5.tab-3-4, .col-5.tab-9-12, .col-5-12.tab-nine, .col-5-12.tab-three-quarters, .col-5-12.tab-nine-twelfths, .col-5-12.tab-9, .col-5-12.tab-3-4, .col-5-12.tab-9-12, .col-6.tab-nine, .col-6.tab-three-quarters, .col-6.tab-nine-twelfths, .col-6.tab-9, .col-6.tab-3-4, .col-6.tab-9-12, .col-1-2.tab-nine, .col-1-2.tab-three-quarters, .col-1-2.tab-nine-twelfths, .col-1-2.tab-9, .col-1-2.tab-3-4, .col-1-2.tab-9-12, .col-6-12.tab-nine, .col-6-12.tab-three-quarters, .col-6-12.tab-nine-twelfths, .col-6-12.tab-9, .col-6-12.tab-3-4, .col-6-12.tab-9-12, .col-7.tab-nine, .col-7.tab-three-quarters, .col-7.tab-nine-twelfths, .col-7.tab-9, .col-7.tab-3-4, .col-7.tab-9-12, .col-7-12.tab-nine, .col-7-12.tab-three-quarters, .col-7-12.tab-nine-twelfths, .col-7-12.tab-9, .col-7-12.tab-3-4, .col-7-12.tab-9-12, .col-8.tab-nine, .col-8.tab-three-quarters, .col-8.tab-nine-twelfths, .col-8.tab-9, .col-8.tab-3-4, .col-8.tab-9-12, .col-2-3.tab-nine, .col-2-3.tab-three-quarters, .col-2-3.tab-nine-twelfths, .col-2-3.tab-9, .col-2-3.tab-3-4, .col-2-3.tab-9-12, .col-8-12.tab-nine, .col-8-12.tab-three-quarters, .col-8-12.tab-nine-twelfths, .col-8-12.tab-9, .col-8-12.tab-3-4, .col-8-12.tab-9-12, .col-9.tab-nine, .col-9.tab-three-quarters, .col-9.tab-nine-twelfths, .col-9.tab-9, .col-9.tab-3-4, .col-9.tab-9-12, .col-3-4.tab-nine, .col-3-4.tab-three-quarters, .col-3-4.tab-nine-twelfths, .col-3-4.tab-9, .col-3-4.tab-3-4, .col-3-4.tab-9-12, .col-9-12.tab-nine, .col-9-12.tab-three-quarters, .col-9-12.tab-nine-twelfths, .col-9-12.tab-9, .col-9-12.tab-3-4, .col-9-12.tab-9-12, .col-10.tab-nine, .col-10.tab-three-quarters, .col-10.tab-nine-twelfths, .col-10.tab-9, .col-10.tab-3-4, .col-10.tab-9-12, .col-5-6.tab-nine, .col-5-6.tab-three-quarters, .col-5-6.tab-nine-twelfths, .col-5-6.tab-9, .col-5-6.tab-3-4, .col-5-6.tab-9-12, .col-10-12.tab-nine, .col-10-12.tab-three-quarters, .col-10-12.tab-nine-twelfths, .col-10-12.tab-9, .col-10-12.tab-3-4, .col-10-12.tab-9-12, .col-11.tab-nine, .col-11.tab-three-quarters, .col-11.tab-nine-twelfths, .col-11.tab-9, .col-11.tab-3-4, .col-11.tab-9-12, .col-11-12.tab-nine, .col-11-12.tab-three-quarters, .col-11-12.tab-nine-twelfths, .col-11-12.tab-9, .col-11-12.tab-3-4, .col-11-12.tab-9-12, .col-12.tab-nine, .col-12.tab-three-quarters, .col-12.tab-nine-twelfths, .col-12.tab-9, .col-12.tab-3-4, .col-12.tab-9-12, .col-12-12.tab-nine, .col-12-12.tab-three-quarters, .col-12-12.tab-nine-twelfths, .col-12-12.tab-9, .col-12-12.tab-3-4, .col-12-12.tab-9-12 {
+      width: 74.0% !important; }
+    .col-1.tab-ten, .col-1.tab-five-sixths, .col-1.tab-ten-twelfths, .col-1.tab-10, .col-1.tab-5-6, .col-1.tab-10-12, .col-1-12.tab-ten, .col-1-12.tab-five-sixths, .col-1-12.tab-ten-twelfths, .col-1-12.tab-10, .col-1-12.tab-5-6, .col-1-12.tab-10-12, .col-2.tab-ten, .col-2.tab-five-sixths, .col-2.tab-ten-twelfths, .col-2.tab-10, .col-2.tab-5-6, .col-2.tab-10-12, .col-1-6.tab-ten, .col-1-6.tab-five-sixths, .col-1-6.tab-ten-twelfths, .col-1-6.tab-10, .col-1-6.tab-5-6, .col-1-6.tab-10-12, .col-2-12.tab-ten, .col-2-12.tab-five-sixths, .col-2-12.tab-ten-twelfths, .col-2-12.tab-10, .col-2-12.tab-5-6, .col-2-12.tab-10-12, .col-3.tab-ten, .col-3.tab-five-sixths, .col-3.tab-ten-twelfths, .col-3.tab-10, .col-3.tab-5-6, .col-3.tab-10-12, .col-1-4.tab-ten, .col-1-4.tab-five-sixths, .col-1-4.tab-ten-twelfths, .col-1-4.tab-10, .col-1-4.tab-5-6, .col-1-4.tab-10-12, .col-3-12.tab-ten, .col-3-12.tab-five-sixths, .col-3-12.tab-ten-twelfths, .col-3-12.tab-10, .col-3-12.tab-5-6, .col-3-12.tab-10-12, .col-4.tab-ten, .col-4.tab-five-sixths, .col-4.tab-ten-twelfths, .col-4.tab-10, .col-4.tab-5-6, .col-4.tab-10-12, .col-1-3.tab-ten, .col-1-3.tab-five-sixths, .col-1-3.tab-ten-twelfths, .col-1-3.tab-10, .col-1-3.tab-5-6, .col-1-3.tab-10-12, .col-4-12.tab-ten, .col-4-12.tab-five-sixths, .col-4-12.tab-ten-twelfths, .col-4-12.tab-10, .col-4-12.tab-5-6, .col-4-12.tab-10-12, .col-5.tab-ten, .col-5.tab-five-sixths, .col-5.tab-ten-twelfths, .col-5.tab-10, .col-5.tab-5-6, .col-5.tab-10-12, .col-5-12.tab-ten, .col-5-12.tab-five-sixths, .col-5-12.tab-ten-twelfths, .col-5-12.tab-10, .col-5-12.tab-5-6, .col-5-12.tab-10-12, .col-6.tab-ten, .col-6.tab-five-sixths, .col-6.tab-ten-twelfths, .col-6.tab-10, .col-6.tab-5-6, .col-6.tab-10-12, .col-1-2.tab-ten, .col-1-2.tab-five-sixths, .col-1-2.tab-ten-twelfths, .col-1-2.tab-10, .col-1-2.tab-5-6, .col-1-2.tab-10-12, .col-6-12.tab-ten, .col-6-12.tab-five-sixths, .col-6-12.tab-ten-twelfths, .col-6-12.tab-10, .col-6-12.tab-5-6, .col-6-12.tab-10-12, .col-7.tab-ten, .col-7.tab-five-sixths, .col-7.tab-ten-twelfths, .col-7.tab-10, .col-7.tab-5-6, .col-7.tab-10-12, .col-7-12.tab-ten, .col-7-12.tab-five-sixths, .col-7-12.tab-ten-twelfths, .col-7-12.tab-10, .col-7-12.tab-5-6, .col-7-12.tab-10-12, .col-8.tab-ten, .col-8.tab-five-sixths, .col-8.tab-ten-twelfths, .col-8.tab-10, .col-8.tab-5-6, .col-8.tab-10-12, .col-2-3.tab-ten, .col-2-3.tab-five-sixths, .col-2-3.tab-ten-twelfths, .col-2-3.tab-10, .col-2-3.tab-5-6, .col-2-3.tab-10-12, .col-8-12.tab-ten, .col-8-12.tab-five-sixths, .col-8-12.tab-ten-twelfths, .col-8-12.tab-10, .col-8-12.tab-5-6, .col-8-12.tab-10-12, .col-9.tab-ten, .col-9.tab-five-sixths, .col-9.tab-ten-twelfths, .col-9.tab-10, .col-9.tab-5-6, .col-9.tab-10-12, .col-3-4.tab-ten, .col-3-4.tab-five-sixths, .col-3-4.tab-ten-twelfths, .col-3-4.tab-10, .col-3-4.tab-5-6, .col-3-4.tab-10-12, .col-9-12.tab-ten, .col-9-12.tab-five-sixths, .col-9-12.tab-ten-twelfths, .col-9-12.tab-10, .col-9-12.tab-5-6, .col-9-12.tab-10-12, .col-10.tab-ten, .col-10.tab-five-sixths, .col-10.tab-ten-twelfths, .col-10.tab-10, .col-10.tab-5-6, .col-10.tab-10-12, .col-5-6.tab-ten, .col-5-6.tab-five-sixths, .col-5-6.tab-ten-twelfths, .col-5-6.tab-10, .col-5-6.tab-5-6, .col-5-6.tab-10-12, .col-10-12.tab-ten, .col-10-12.tab-five-sixths, .col-10-12.tab-ten-twelfths, .col-10-12.tab-10, .col-10-12.tab-5-6, .col-10-12.tab-10-12, .col-11.tab-ten, .col-11.tab-five-sixths, .col-11.tab-ten-twelfths, .col-11.tab-10, .col-11.tab-5-6, .col-11.tab-10-12, .col-11-12.tab-ten, .col-11-12.tab-five-sixths, .col-11-12.tab-ten-twelfths, .col-11-12.tab-10, .col-11-12.tab-5-6, .col-11-12.tab-10-12, .col-12.tab-ten, .col-12.tab-five-sixths, .col-12.tab-ten-twelfths, .col-12.tab-10, .col-12.tab-5-6, .col-12.tab-10-12, .col-12-12.tab-ten, .col-12-12.tab-five-sixths, .col-12-12.tab-ten-twelfths, .col-12-12.tab-10, .col-12-12.tab-5-6, .col-12-12.tab-10-12 {
+      width: 82.6666666667% !important; }
+    .col-1.tab-eleven, .col-1.tab-eleven-twelfths, .col-1.tab-11, .col-1.tab-11-12, .col-1-12.tab-eleven, .col-1-12.tab-eleven-twelfths, .col-1-12.tab-11, .col-1-12.tab-11-12, .col-2.tab-eleven, .col-2.tab-eleven-twelfths, .col-2.tab-11, .col-2.tab-11-12, .col-1-6.tab-eleven, .col-1-6.tab-eleven-twelfths, .col-1-6.tab-11, .col-1-6.tab-11-12, .col-2-12.tab-eleven, .col-2-12.tab-eleven-twelfths, .col-2-12.tab-11, .col-2-12.tab-11-12, .col-3.tab-eleven, .col-3.tab-eleven-twelfths, .col-3.tab-11, .col-3.tab-11-12, .col-1-4.tab-eleven, .col-1-4.tab-eleven-twelfths, .col-1-4.tab-11, .col-1-4.tab-11-12, .col-3-12.tab-eleven, .col-3-12.tab-eleven-twelfths, .col-3-12.tab-11, .col-3-12.tab-11-12, .col-4.tab-eleven, .col-4.tab-eleven-twelfths, .col-4.tab-11, .col-4.tab-11-12, .col-1-3.tab-eleven, .col-1-3.tab-eleven-twelfths, .col-1-3.tab-11, .col-1-3.tab-11-12, .col-4-12.tab-eleven, .col-4-12.tab-eleven-twelfths, .col-4-12.tab-11, .col-4-12.tab-11-12, .col-5.tab-eleven, .col-5.tab-eleven-twelfths, .col-5.tab-11, .col-5.tab-11-12, .col-5-12.tab-eleven, .col-5-12.tab-eleven-twelfths, .col-5-12.tab-11, .col-5-12.tab-11-12, .col-6.tab-eleven, .col-6.tab-eleven-twelfths, .col-6.tab-11, .col-6.tab-11-12, .col-1-2.tab-eleven, .col-1-2.tab-eleven-twelfths, .col-1-2.tab-11, .col-1-2.tab-11-12, .col-6-12.tab-eleven, .col-6-12.tab-eleven-twelfths, .col-6-12.tab-11, .col-6-12.tab-11-12, .col-7.tab-eleven, .col-7.tab-eleven-twelfths, .col-7.tab-11, .col-7.tab-11-12, .col-7-12.tab-eleven, .col-7-12.tab-eleven-twelfths, .col-7-12.tab-11, .col-7-12.tab-11-12, .col-8.tab-eleven, .col-8.tab-eleven-twelfths, .col-8.tab-11, .col-8.tab-11-12, .col-2-3.tab-eleven, .col-2-3.tab-eleven-twelfths, .col-2-3.tab-11, .col-2-3.tab-11-12, .col-8-12.tab-eleven, .col-8-12.tab-eleven-twelfths, .col-8-12.tab-11, .col-8-12.tab-11-12, .col-9.tab-eleven, .col-9.tab-eleven-twelfths, .col-9.tab-11, .col-9.tab-11-12, .col-3-4.tab-eleven, .col-3-4.tab-eleven-twelfths, .col-3-4.tab-11, .col-3-4.tab-11-12, .col-9-12.tab-eleven, .col-9-12.tab-eleven-twelfths, .col-9-12.tab-11, .col-9-12.tab-11-12, .col-10.tab-eleven, .col-10.tab-eleven-twelfths, .col-10.tab-11, .col-10.tab-11-12, .col-5-6.tab-eleven, .col-5-6.tab-eleven-twelfths, .col-5-6.tab-11, .col-5-6.tab-11-12, .col-10-12.tab-eleven, .col-10-12.tab-eleven-twelfths, .col-10-12.tab-11, .col-10-12.tab-11-12, .col-11.tab-eleven, .col-11.tab-eleven-twelfths, .col-11.tab-11, .col-11.tab-11-12, .col-11-12.tab-eleven, .col-11-12.tab-eleven-twelfths, .col-11-12.tab-11, .col-11-12.tab-11-12, .col-12.tab-eleven, .col-12.tab-eleven-twelfths, .col-12.tab-11, .col-12.tab-11-12, .col-12-12.tab-eleven, .col-12-12.tab-eleven-twelfths, .col-12-12.tab-11, .col-12-12.tab-11-12 {
+      width: 91.3333333333% !important; }
+    .col-1.tab-twelve, .col-1.tab-full, .col-1.tab-whole, .col-1.tab-twelve-twelfths, .col-1.tab-12, .col-1.tab-12-12, .col-1-12.tab-twelve, .col-1-12.tab-full, .col-1-12.tab-whole, .col-1-12.tab-twelve-twelfths, .col-1-12.tab-12, .col-1-12.tab-12-12, .col-2.tab-twelve, .col-2.tab-full, .col-2.tab-whole, .col-2.tab-twelve-twelfths, .col-2.tab-12, .col-2.tab-12-12, .col-1-6.tab-twelve, .col-1-6.tab-full, .col-1-6.tab-whole, .col-1-6.tab-twelve-twelfths, .col-1-6.tab-12, .col-1-6.tab-12-12, .col-2-12.tab-twelve, .col-2-12.tab-full, .col-2-12.tab-whole, .col-2-12.tab-twelve-twelfths, .col-2-12.tab-12, .col-2-12.tab-12-12, .col-3.tab-twelve, .col-3.tab-full, .col-3.tab-whole, .col-3.tab-twelve-twelfths, .col-3.tab-12, .col-3.tab-12-12, .col-1-4.tab-twelve, .col-1-4.tab-full, .col-1-4.tab-whole, .col-1-4.tab-twelve-twelfths, .col-1-4.tab-12, .col-1-4.tab-12-12, .col-3-12.tab-twelve, .col-3-12.tab-full, .col-3-12.tab-whole, .col-3-12.tab-twelve-twelfths, .col-3-12.tab-12, .col-3-12.tab-12-12, .col-4.tab-twelve, .col-4.tab-full, .col-4.tab-whole, .col-4.tab-twelve-twelfths, .col-4.tab-12, .col-4.tab-12-12, .col-1-3.tab-twelve, .col-1-3.tab-full, .col-1-3.tab-whole, .col-1-3.tab-twelve-twelfths, .col-1-3.tab-12, .col-1-3.tab-12-12, .col-4-12.tab-twelve, .col-4-12.tab-full, .col-4-12.tab-whole, .col-4-12.tab-twelve-twelfths, .col-4-12.tab-12, .col-4-12.tab-12-12, .col-5.tab-twelve, .col-5.tab-full, .col-5.tab-whole, .col-5.tab-twelve-twelfths, .col-5.tab-12, .col-5.tab-12-12, .col-5-12.tab-twelve, .col-5-12.tab-full, .col-5-12.tab-whole, .col-5-12.tab-twelve-twelfths, .col-5-12.tab-12, .col-5-12.tab-12-12, .col-6.tab-twelve, .col-6.tab-full, .col-6.tab-whole, .col-6.tab-twelve-twelfths, .col-6.tab-12, .col-6.tab-12-12, .col-1-2.tab-twelve, .col-1-2.tab-full, .col-1-2.tab-whole, .col-1-2.tab-twelve-twelfths, .col-1-2.tab-12, .col-1-2.tab-12-12, .col-6-12.tab-twelve, .col-6-12.tab-full, .col-6-12.tab-whole, .col-6-12.tab-twelve-twelfths, .col-6-12.tab-12, .col-6-12.tab-12-12, .col-7.tab-twelve, .col-7.tab-full, .col-7.tab-whole, .col-7.tab-twelve-twelfths, .col-7.tab-12, .col-7.tab-12-12, .col-7-12.tab-twelve, .col-7-12.tab-full, .col-7-12.tab-whole, .col-7-12.tab-twelve-twelfths, .col-7-12.tab-12, .col-7-12.tab-12-12, .col-8.tab-twelve, .col-8.tab-full, .col-8.tab-whole, .col-8.tab-twelve-twelfths, .col-8.tab-12, .col-8.tab-12-12, .col-2-3.tab-twelve, .col-2-3.tab-full, .col-2-3.tab-whole, .col-2-3.tab-twelve-twelfths, .col-2-3.tab-12, .col-2-3.tab-12-12, .col-8-12.tab-twelve, .col-8-12.tab-full, .col-8-12.tab-whole, .col-8-12.tab-twelve-twelfths, .col-8-12.tab-12, .col-8-12.tab-12-12, .col-9.tab-twelve, .col-9.tab-full, .col-9.tab-whole, .col-9.tab-twelve-twelfths, .col-9.tab-12, .col-9.tab-12-12, .col-3-4.tab-twelve, .col-3-4.tab-full, .col-3-4.tab-whole, .col-3-4.tab-twelve-twelfths, .col-3-4.tab-12, .col-3-4.tab-12-12, .col-9-12.tab-twelve, .col-9-12.tab-full, .col-9-12.tab-whole, .col-9-12.tab-twelve-twelfths, .col-9-12.tab-12, .col-9-12.tab-12-12, .col-10.tab-twelve, .col-10.tab-full, .col-10.tab-whole, .col-10.tab-twelve-twelfths, .col-10.tab-12, .col-10.tab-12-12, .col-5-6.tab-twelve, .col-5-6.tab-full, .col-5-6.tab-whole, .col-5-6.tab-twelve-twelfths, .col-5-6.tab-12, .col-5-6.tab-12-12, .col-10-12.tab-twelve, .col-10-12.tab-full, .col-10-12.tab-whole, .col-10-12.tab-twelve-twelfths, .col-10-12.tab-12, .col-10-12.tab-12-12, .col-11.tab-twelve, .col-11.tab-full, .col-11.tab-whole, .col-11.tab-twelve-twelfths, .col-11.tab-12, .col-11.tab-12-12, .col-11-12.tab-twelve, .col-11-12.tab-full, .col-11-12.tab-whole, .col-11-12.tab-twelve-twelfths, .col-11-12.tab-12, .col-11-12.tab-12-12, .col-12.tab-twelve, .col-12.tab-full, .col-12.tab-whole, .col-12.tab-twelve-twelfths, .col-12.tab-12, .col-12.tab-12-12, .col-12-12.tab-twelve, .col-12-12.tab-full, .col-12-12.tab-whole, .col-12-12.tab-twelve-twelfths, .col-12-12.tab-12, .col-12-12.tab-12-12 {
+      width: 100% !important;
+      margin-left: 0;
+      margin-bottom: 3%; }
+      .col-1.tab-twelve:last-of-type, .col-1.tab-full:last-of-type, .col-1.tab-whole:last-of-type, .col-1.tab-twelve-twelfths:last-of-type, .col-1.tab-12:last-of-type, .col-1.tab-12-12:last-of-type, .col-1-12.tab-twelve:last-of-type, .col-1-12.tab-full:last-of-type, .col-1-12.tab-whole:last-of-type, .col-1-12.tab-twelve-twelfths:last-of-type, .col-1-12.tab-12:last-of-type, .col-1-12.tab-12-12:last-of-type, .col-2.tab-twelve:last-of-type, .col-2.tab-full:last-of-type, .col-2.tab-whole:last-of-type, .col-2.tab-twelve-twelfths:last-of-type, .col-2.tab-12:last-of-type, .col-2.tab-12-12:last-of-type, .col-1-6.tab-twelve:last-of-type, .col-1-6.tab-full:last-of-type, .col-1-6.tab-whole:last-of-type, .col-1-6.tab-twelve-twelfths:last-of-type, .col-1-6.tab-12:last-of-type, .col-1-6.tab-12-12:last-of-type, .col-2-12.tab-twelve:last-of-type, .col-2-12.tab-full:last-of-type, .col-2-12.tab-whole:last-of-type, .col-2-12.tab-twelve-twelfths:last-of-type, .col-2-12.tab-12:last-of-type, .col-2-12.tab-12-12:last-of-type, .col-3.tab-twelve:last-of-type, .col-3.tab-full:last-of-type, .col-3.tab-whole:last-of-type, .col-3.tab-twelve-twelfths:last-of-type, .col-3.tab-12:last-of-type, .col-3.tab-12-12:last-of-type, .col-1-4.tab-twelve:last-of-type, .col-1-4.tab-full:last-of-type, .col-1-4.tab-whole:last-of-type, .col-1-4.tab-twelve-twelfths:last-of-type, .col-1-4.tab-12:last-of-type, .col-1-4.tab-12-12:last-of-type, .col-3-12.tab-twelve:last-of-type, .col-3-12.tab-full:last-of-type, .col-3-12.tab-whole:last-of-type, .col-3-12.tab-twelve-twelfths:last-of-type, .col-3-12.tab-12:last-of-type, .col-3-12.tab-12-12:last-of-type, .col-4.tab-twelve:last-of-type, .col-4.tab-full:last-of-type, .col-4.tab-whole:last-of-type, .col-4.tab-twelve-twelfths:last-of-type, .col-4.tab-12:last-of-type, .col-4.tab-12-12:last-of-type, .col-1-3.tab-twelve:last-of-type, .col-1-3.tab-full:last-of-type, .col-1-3.tab-whole:last-of-type, .col-1-3.tab-twelve-twelfths:last-of-type, .col-1-3.tab-12:last-of-type, .col-1-3.tab-12-12:last-of-type, .col-4-12.tab-twelve:last-of-type, .col-4-12.tab-full:last-of-type, .col-4-12.tab-whole:last-of-type, .col-4-12.tab-twelve-twelfths:last-of-type, .col-4-12.tab-12:last-of-type, .col-4-12.tab-12-12:last-of-type, .col-5.tab-twelve:last-of-type, .col-5.tab-full:last-of-type, .col-5.tab-whole:last-of-type, .col-5.tab-twelve-twelfths:last-of-type, .col-5.tab-12:last-of-type, .col-5.tab-12-12:last-of-type, .col-5-12.tab-twelve:last-of-type, .col-5-12.tab-full:last-of-type, .col-5-12.tab-whole:last-of-type, .col-5-12.tab-twelve-twelfths:last-of-type, .col-5-12.tab-12:last-of-type, .col-5-12.tab-12-12:last-of-type, .col-6.tab-twelve:last-of-type, .col-6.tab-full:last-of-type, .col-6.tab-whole:last-of-type, .col-6.tab-twelve-twelfths:last-of-type, .col-6.tab-12:last-of-type, .col-6.tab-12-12:last-of-type, .col-1-2.tab-twelve:last-of-type, .col-1-2.tab-full:last-of-type, .col-1-2.tab-whole:last-of-type, .col-1-2.tab-twelve-twelfths:last-of-type, .col-1-2.tab-12:last-of-type, .col-1-2.tab-12-12:last-of-type, .col-6-12.tab-twelve:last-of-type, .col-6-12.tab-full:last-of-type, .col-6-12.tab-whole:last-of-type, .col-6-12.tab-twelve-twelfths:last-of-type, .col-6-12.tab-12:last-of-type, .col-6-12.tab-12-12:last-of-type, .col-7.tab-twelve:last-of-type, .col-7.tab-full:last-of-type, .col-7.tab-whole:last-of-type, .col-7.tab-twelve-twelfths:last-of-type, .col-7.tab-12:last-of-type, .col-7.tab-12-12:last-of-type, .col-7-12.tab-twelve:last-of-type, .col-7-12.tab-full:last-of-type, .col-7-12.tab-whole:last-of-type, .col-7-12.tab-twelve-twelfths:last-of-type, .col-7-12.tab-12:last-of-type, .col-7-12.tab-12-12:last-of-type, .col-8.tab-twelve:last-of-type, .col-8.tab-full:last-of-type, .col-8.tab-whole:last-of-type, .col-8.tab-twelve-twelfths:last-of-type, .col-8.tab-12:last-of-type, .col-8.tab-12-12:last-of-type, .col-2-3.tab-twelve:last-of-type, .col-2-3.tab-full:last-of-type, .col-2-3.tab-whole:last-of-type, .col-2-3.tab-twelve-twelfths:last-of-type, .col-2-3.tab-12:last-of-type, .col-2-3.tab-12-12:last-of-type, .col-8-12.tab-twelve:last-of-type, .col-8-12.tab-full:last-of-type, .col-8-12.tab-whole:last-of-type, .col-8-12.tab-twelve-twelfths:last-of-type, .col-8-12.tab-12:last-of-type, .col-8-12.tab-12-12:last-of-type, .col-9.tab-twelve:last-of-type, .col-9.tab-full:last-of-type, .col-9.tab-whole:last-of-type, .col-9.tab-twelve-twelfths:last-of-type, .col-9.tab-12:last-of-type, .col-9.tab-12-12:last-of-type, .col-3-4.tab-twelve:last-of-type, .col-3-4.tab-full:last-of-type, .col-3-4.tab-whole:last-of-type, .col-3-4.tab-twelve-twelfths:last-of-type, .col-3-4.tab-12:last-of-type, .col-3-4.tab-12-12:last-of-type, .col-9-12.tab-twelve:last-of-type, .col-9-12.tab-full:last-of-type, .col-9-12.tab-whole:last-of-type, .col-9-12.tab-twelve-twelfths:last-of-type, .col-9-12.tab-12:last-of-type, .col-9-12.tab-12-12:last-of-type, .col-10.tab-twelve:last-of-type, .col-10.tab-full:last-of-type, .col-10.tab-whole:last-of-type, .col-10.tab-twelve-twelfths:last-of-type, .col-10.tab-12:last-of-type, .col-10.tab-12-12:last-of-type, .col-5-6.tab-twelve:last-of-type, .col-5-6.tab-full:last-of-type, .col-5-6.tab-whole:last-of-type, .col-5-6.tab-twelve-twelfths:last-of-type, .col-5-6.tab-12:last-of-type, .col-5-6.tab-12-12:last-of-type, .col-10-12.tab-twelve:last-of-type, .col-10-12.tab-full:last-of-type, .col-10-12.tab-whole:last-of-type, .col-10-12.tab-twelve-twelfths:last-of-type, .col-10-12.tab-12:last-of-type, .col-10-12.tab-12-12:last-of-type, .col-11.tab-twelve:last-of-type, .col-11.tab-full:last-of-type, .col-11.tab-whole:last-of-type, .col-11.tab-twelve-twelfths:last-of-type, .col-11.tab-12:last-of-type, .col-11.tab-12-12:last-of-type, .col-11-12.tab-twelve:last-of-type, .col-11-12.tab-full:last-of-type, .col-11-12.tab-whole:last-of-type, .col-11-12.tab-twelve-twelfths:last-of-type, .col-11-12.tab-12:last-of-type, .col-11-12.tab-12-12:last-of-type, .col-12.tab-twelve:last-of-type, .col-12.tab-full:last-of-type, .col-12.tab-whole:last-of-type, .col-12.tab-twelve-twelfths:last-of-type, .col-12.tab-12:last-of-type, .col-12.tab-12-12:last-of-type, .col-12-12.tab-twelve:last-of-type, .col-12-12.tab-full:last-of-type, .col-12-12.tab-whole:last-of-type, .col-12-12.tab-twelve-twelfths:last-of-type, .col-12-12.tab-12:last-of-type, .col-12-12.tab-12-12:last-of-type {
+        margin-bottom: 0%; } }
+  @media screen and (max-width: 425px) {
+    .col-1.mob-one, .col-1.mob-one-twelfth, .col-1.mob-1, .col-1.mob-1-12, .col-1-12.mob-one, .col-1-12.mob-one-twelfth, .col-1-12.mob-1, .col-1-12.mob-1-12, .col-2.mob-one, .col-2.mob-one-twelfth, .col-2.mob-1, .col-2.mob-1-12, .col-1-6.mob-one, .col-1-6.mob-one-twelfth, .col-1-6.mob-1, .col-1-6.mob-1-12, .col-2-12.mob-one, .col-2-12.mob-one-twelfth, .col-2-12.mob-1, .col-2-12.mob-1-12, .col-3.mob-one, .col-3.mob-one-twelfth, .col-3.mob-1, .col-3.mob-1-12, .col-1-4.mob-one, .col-1-4.mob-one-twelfth, .col-1-4.mob-1, .col-1-4.mob-1-12, .col-3-12.mob-one, .col-3-12.mob-one-twelfth, .col-3-12.mob-1, .col-3-12.mob-1-12, .col-4.mob-one, .col-4.mob-one-twelfth, .col-4.mob-1, .col-4.mob-1-12, .col-1-3.mob-one, .col-1-3.mob-one-twelfth, .col-1-3.mob-1, .col-1-3.mob-1-12, .col-4-12.mob-one, .col-4-12.mob-one-twelfth, .col-4-12.mob-1, .col-4-12.mob-1-12, .col-5.mob-one, .col-5.mob-one-twelfth, .col-5.mob-1, .col-5.mob-1-12, .col-5-12.mob-one, .col-5-12.mob-one-twelfth, .col-5-12.mob-1, .col-5-12.mob-1-12, .col-6.mob-one, .col-6.mob-one-twelfth, .col-6.mob-1, .col-6.mob-1-12, .col-1-2.mob-one, .col-1-2.mob-one-twelfth, .col-1-2.mob-1, .col-1-2.mob-1-12, .col-6-12.mob-one, .col-6-12.mob-one-twelfth, .col-6-12.mob-1, .col-6-12.mob-1-12, .col-7.mob-one, .col-7.mob-one-twelfth, .col-7.mob-1, .col-7.mob-1-12, .col-7-12.mob-one, .col-7-12.mob-one-twelfth, .col-7-12.mob-1, .col-7-12.mob-1-12, .col-8.mob-one, .col-8.mob-one-twelfth, .col-8.mob-1, .col-8.mob-1-12, .col-2-3.mob-one, .col-2-3.mob-one-twelfth, .col-2-3.mob-1, .col-2-3.mob-1-12, .col-8-12.mob-one, .col-8-12.mob-one-twelfth, .col-8-12.mob-1, .col-8-12.mob-1-12, .col-9.mob-one, .col-9.mob-one-twelfth, .col-9.mob-1, .col-9.mob-1-12, .col-3-4.mob-one, .col-3-4.mob-one-twelfth, .col-3-4.mob-1, .col-3-4.mob-1-12, .col-9-12.mob-one, .col-9-12.mob-one-twelfth, .col-9-12.mob-1, .col-9-12.mob-1-12, .col-10.mob-one, .col-10.mob-one-twelfth, .col-10.mob-1, .col-10.mob-1-12, .col-5-6.mob-one, .col-5-6.mob-one-twelfth, .col-5-6.mob-1, .col-5-6.mob-1-12, .col-10-12.mob-one, .col-10-12.mob-one-twelfth, .col-10-12.mob-1, .col-10-12.mob-1-12, .col-11.mob-one, .col-11.mob-one-twelfth, .col-11.mob-1, .col-11.mob-1-12, .col-11-12.mob-one, .col-11-12.mob-one-twelfth, .col-11-12.mob-1, .col-11-12.mob-1-12, .col-12.mob-one, .col-12.mob-one-twelfth, .col-12.mob-1, .col-12.mob-1-12, .col-12-12.mob-one, .col-12-12.mob-one-twelfth, .col-12-12.mob-1, .col-12-12.mob-1-12 {
+      width: 4.66666666667% !important; }
+    .col-1.mob-two, .col-1.mob-one-sixth, .col-1.mob-two-twelfths, .col-1.mob-2, .col-1.mob-1-6, .col-1.mob-2-12, .col-1-12.mob-two, .col-1-12.mob-one-sixth, .col-1-12.mob-two-twelfths, .col-1-12.mob-2, .col-1-12.mob-1-6, .col-1-12.mob-2-12, .col-2.mob-two, .col-2.mob-one-sixth, .col-2.mob-two-twelfths, .col-2.mob-2, .col-2.mob-1-6, .col-2.mob-2-12, .col-1-6.mob-two, .col-1-6.mob-one-sixth, .col-1-6.mob-two-twelfths, .col-1-6.mob-2, .col-1-6.mob-1-6, .col-1-6.mob-2-12, .col-2-12.mob-two, .col-2-12.mob-one-sixth, .col-2-12.mob-two-twelfths, .col-2-12.mob-2, .col-2-12.mob-1-6, .col-2-12.mob-2-12, .col-3.mob-two, .col-3.mob-one-sixth, .col-3.mob-two-twelfths, .col-3.mob-2, .col-3.mob-1-6, .col-3.mob-2-12, .col-1-4.mob-two, .col-1-4.mob-one-sixth, .col-1-4.mob-two-twelfths, .col-1-4.mob-2, .col-1-4.mob-1-6, .col-1-4.mob-2-12, .col-3-12.mob-two, .col-3-12.mob-one-sixth, .col-3-12.mob-two-twelfths, .col-3-12.mob-2, .col-3-12.mob-1-6, .col-3-12.mob-2-12, .col-4.mob-two, .col-4.mob-one-sixth, .col-4.mob-two-twelfths, .col-4.mob-2, .col-4.mob-1-6, .col-4.mob-2-12, .col-1-3.mob-two, .col-1-3.mob-one-sixth, .col-1-3.mob-two-twelfths, .col-1-3.mob-2, .col-1-3.mob-1-6, .col-1-3.mob-2-12, .col-4-12.mob-two, .col-4-12.mob-one-sixth, .col-4-12.mob-two-twelfths, .col-4-12.mob-2, .col-4-12.mob-1-6, .col-4-12.mob-2-12, .col-5.mob-two, .col-5.mob-one-sixth, .col-5.mob-two-twelfths, .col-5.mob-2, .col-5.mob-1-6, .col-5.mob-2-12, .col-5-12.mob-two, .col-5-12.mob-one-sixth, .col-5-12.mob-two-twelfths, .col-5-12.mob-2, .col-5-12.mob-1-6, .col-5-12.mob-2-12, .col-6.mob-two, .col-6.mob-one-sixth, .col-6.mob-two-twelfths, .col-6.mob-2, .col-6.mob-1-6, .col-6.mob-2-12, .col-1-2.mob-two, .col-1-2.mob-one-sixth, .col-1-2.mob-two-twelfths, .col-1-2.mob-2, .col-1-2.mob-1-6, .col-1-2.mob-2-12, .col-6-12.mob-two, .col-6-12.mob-one-sixth, .col-6-12.mob-two-twelfths, .col-6-12.mob-2, .col-6-12.mob-1-6, .col-6-12.mob-2-12, .col-7.mob-two, .col-7.mob-one-sixth, .col-7.mob-two-twelfths, .col-7.mob-2, .col-7.mob-1-6, .col-7.mob-2-12, .col-7-12.mob-two, .col-7-12.mob-one-sixth, .col-7-12.mob-two-twelfths, .col-7-12.mob-2, .col-7-12.mob-1-6, .col-7-12.mob-2-12, .col-8.mob-two, .col-8.mob-one-sixth, .col-8.mob-two-twelfths, .col-8.mob-2, .col-8.mob-1-6, .col-8.mob-2-12, .col-2-3.mob-two, .col-2-3.mob-one-sixth, .col-2-3.mob-two-twelfths, .col-2-3.mob-2, .col-2-3.mob-1-6, .col-2-3.mob-2-12, .col-8-12.mob-two, .col-8-12.mob-one-sixth, .col-8-12.mob-two-twelfths, .col-8-12.mob-2, .col-8-12.mob-1-6, .col-8-12.mob-2-12, .col-9.mob-two, .col-9.mob-one-sixth, .col-9.mob-two-twelfths, .col-9.mob-2, .col-9.mob-1-6, .col-9.mob-2-12, .col-3-4.mob-two, .col-3-4.mob-one-sixth, .col-3-4.mob-two-twelfths, .col-3-4.mob-2, .col-3-4.mob-1-6, .col-3-4.mob-2-12, .col-9-12.mob-two, .col-9-12.mob-one-sixth, .col-9-12.mob-two-twelfths, .col-9-12.mob-2, .col-9-12.mob-1-6, .col-9-12.mob-2-12, .col-10.mob-two, .col-10.mob-one-sixth, .col-10.mob-two-twelfths, .col-10.mob-2, .col-10.mob-1-6, .col-10.mob-2-12, .col-5-6.mob-two, .col-5-6.mob-one-sixth, .col-5-6.mob-two-twelfths, .col-5-6.mob-2, .col-5-6.mob-1-6, .col-5-6.mob-2-12, .col-10-12.mob-two, .col-10-12.mob-one-sixth, .col-10-12.mob-two-twelfths, .col-10-12.mob-2, .col-10-12.mob-1-6, .col-10-12.mob-2-12, .col-11.mob-two, .col-11.mob-one-sixth, .col-11.mob-two-twelfths, .col-11.mob-2, .col-11.mob-1-6, .col-11.mob-2-12, .col-11-12.mob-two, .col-11-12.mob-one-sixth, .col-11-12.mob-two-twelfths, .col-11-12.mob-2, .col-11-12.mob-1-6, .col-11-12.mob-2-12, .col-12.mob-two, .col-12.mob-one-sixth, .col-12.mob-two-twelfths, .col-12.mob-2, .col-12.mob-1-6, .col-12.mob-2-12, .col-12-12.mob-two, .col-12-12.mob-one-sixth, .col-12-12.mob-two-twelfths, .col-12-12.mob-2, .col-12-12.mob-1-6, .col-12-12.mob-2-12 {
+      width: 13.3333333333% !important; }
+    .col-1.mob-three, .col-1.mob-one-quarter, .col-1.mob-three-twelfths, .col-1.mob-3, .col-1.mob-1-4, .col-1.mob-3-12, .col-1-12.mob-three, .col-1-12.mob-one-quarter, .col-1-12.mob-three-twelfths, .col-1-12.mob-3, .col-1-12.mob-1-4, .col-1-12.mob-3-12, .col-2.mob-three, .col-2.mob-one-quarter, .col-2.mob-three-twelfths, .col-2.mob-3, .col-2.mob-1-4, .col-2.mob-3-12, .col-1-6.mob-three, .col-1-6.mob-one-quarter, .col-1-6.mob-three-twelfths, .col-1-6.mob-3, .col-1-6.mob-1-4, .col-1-6.mob-3-12, .col-2-12.mob-three, .col-2-12.mob-one-quarter, .col-2-12.mob-three-twelfths, .col-2-12.mob-3, .col-2-12.mob-1-4, .col-2-12.mob-3-12, .col-3.mob-three, .col-3.mob-one-quarter, .col-3.mob-three-twelfths, .col-3.mob-3, .col-3.mob-1-4, .col-3.mob-3-12, .col-1-4.mob-three, .col-1-4.mob-one-quarter, .col-1-4.mob-three-twelfths, .col-1-4.mob-3, .col-1-4.mob-1-4, .col-1-4.mob-3-12, .col-3-12.mob-three, .col-3-12.mob-one-quarter, .col-3-12.mob-three-twelfths, .col-3-12.mob-3, .col-3-12.mob-1-4, .col-3-12.mob-3-12, .col-4.mob-three, .col-4.mob-one-quarter, .col-4.mob-three-twelfths, .col-4.mob-3, .col-4.mob-1-4, .col-4.mob-3-12, .col-1-3.mob-three, .col-1-3.mob-one-quarter, .col-1-3.mob-three-twelfths, .col-1-3.mob-3, .col-1-3.mob-1-4, .col-1-3.mob-3-12, .col-4-12.mob-three, .col-4-12.mob-one-quarter, .col-4-12.mob-three-twelfths, .col-4-12.mob-3, .col-4-12.mob-1-4, .col-4-12.mob-3-12, .col-5.mob-three, .col-5.mob-one-quarter, .col-5.mob-three-twelfths, .col-5.mob-3, .col-5.mob-1-4, .col-5.mob-3-12, .col-5-12.mob-three, .col-5-12.mob-one-quarter, .col-5-12.mob-three-twelfths, .col-5-12.mob-3, .col-5-12.mob-1-4, .col-5-12.mob-3-12, .col-6.mob-three, .col-6.mob-one-quarter, .col-6.mob-three-twelfths, .col-6.mob-3, .col-6.mob-1-4, .col-6.mob-3-12, .col-1-2.mob-three, .col-1-2.mob-one-quarter, .col-1-2.mob-three-twelfths, .col-1-2.mob-3, .col-1-2.mob-1-4, .col-1-2.mob-3-12, .col-6-12.mob-three, .col-6-12.mob-one-quarter, .col-6-12.mob-three-twelfths, .col-6-12.mob-3, .col-6-12.mob-1-4, .col-6-12.mob-3-12, .col-7.mob-three, .col-7.mob-one-quarter, .col-7.mob-three-twelfths, .col-7.mob-3, .col-7.mob-1-4, .col-7.mob-3-12, .col-7-12.mob-three, .col-7-12.mob-one-quarter, .col-7-12.mob-three-twelfths, .col-7-12.mob-3, .col-7-12.mob-1-4, .col-7-12.mob-3-12, .col-8.mob-three, .col-8.mob-one-quarter, .col-8.mob-three-twelfths, .col-8.mob-3, .col-8.mob-1-4, .col-8.mob-3-12, .col-2-3.mob-three, .col-2-3.mob-one-quarter, .col-2-3.mob-three-twelfths, .col-2-3.mob-3, .col-2-3.mob-1-4, .col-2-3.mob-3-12, .col-8-12.mob-three, .col-8-12.mob-one-quarter, .col-8-12.mob-three-twelfths, .col-8-12.mob-3, .col-8-12.mob-1-4, .col-8-12.mob-3-12, .col-9.mob-three, .col-9.mob-one-quarter, .col-9.mob-three-twelfths, .col-9.mob-3, .col-9.mob-1-4, .col-9.mob-3-12, .col-3-4.mob-three, .col-3-4.mob-one-quarter, .col-3-4.mob-three-twelfths, .col-3-4.mob-3, .col-3-4.mob-1-4, .col-3-4.mob-3-12, .col-9-12.mob-three, .col-9-12.mob-one-quarter, .col-9-12.mob-three-twelfths, .col-9-12.mob-3, .col-9-12.mob-1-4, .col-9-12.mob-3-12, .col-10.mob-three, .col-10.mob-one-quarter, .col-10.mob-three-twelfths, .col-10.mob-3, .col-10.mob-1-4, .col-10.mob-3-12, .col-5-6.mob-three, .col-5-6.mob-one-quarter, .col-5-6.mob-three-twelfths, .col-5-6.mob-3, .col-5-6.mob-1-4, .col-5-6.mob-3-12, .col-10-12.mob-three, .col-10-12.mob-one-quarter, .col-10-12.mob-three-twelfths, .col-10-12.mob-3, .col-10-12.mob-1-4, .col-10-12.mob-3-12, .col-11.mob-three, .col-11.mob-one-quarter, .col-11.mob-three-twelfths, .col-11.mob-3, .col-11.mob-1-4, .col-11.mob-3-12, .col-11-12.mob-three, .col-11-12.mob-one-quarter, .col-11-12.mob-three-twelfths, .col-11-12.mob-3, .col-11-12.mob-1-4, .col-11-12.mob-3-12, .col-12.mob-three, .col-12.mob-one-quarter, .col-12.mob-three-twelfths, .col-12.mob-3, .col-12.mob-1-4, .col-12.mob-3-12, .col-12-12.mob-three, .col-12-12.mob-one-quarter, .col-12-12.mob-three-twelfths, .col-12-12.mob-3, .col-12-12.mob-1-4, .col-12-12.mob-3-12 {
+      width: 22% !important; }
+    .col-1.mob-four, .col-1.mob-one-third, .col-1.mob-four-twelfths, .col-1.mob-4, .col-1.mob-1-3, .col-1.mob-4-12, .col-1-12.mob-four, .col-1-12.mob-one-third, .col-1-12.mob-four-twelfths, .col-1-12.mob-4, .col-1-12.mob-1-3, .col-1-12.mob-4-12, .col-2.mob-four, .col-2.mob-one-third, .col-2.mob-four-twelfths, .col-2.mob-4, .col-2.mob-1-3, .col-2.mob-4-12, .col-1-6.mob-four, .col-1-6.mob-one-third, .col-1-6.mob-four-twelfths, .col-1-6.mob-4, .col-1-6.mob-1-3, .col-1-6.mob-4-12, .col-2-12.mob-four, .col-2-12.mob-one-third, .col-2-12.mob-four-twelfths, .col-2-12.mob-4, .col-2-12.mob-1-3, .col-2-12.mob-4-12, .col-3.mob-four, .col-3.mob-one-third, .col-3.mob-four-twelfths, .col-3.mob-4, .col-3.mob-1-3, .col-3.mob-4-12, .col-1-4.mob-four, .col-1-4.mob-one-third, .col-1-4.mob-four-twelfths, .col-1-4.mob-4, .col-1-4.mob-1-3, .col-1-4.mob-4-12, .col-3-12.mob-four, .col-3-12.mob-one-third, .col-3-12.mob-four-twelfths, .col-3-12.mob-4, .col-3-12.mob-1-3, .col-3-12.mob-4-12, .col-4.mob-four, .col-4.mob-one-third, .col-4.mob-four-twelfths, .col-4.mob-4, .col-4.mob-1-3, .col-4.mob-4-12, .col-1-3.mob-four, .col-1-3.mob-one-third, .col-1-3.mob-four-twelfths, .col-1-3.mob-4, .col-1-3.mob-1-3, .col-1-3.mob-4-12, .col-4-12.mob-four, .col-4-12.mob-one-third, .col-4-12.mob-four-twelfths, .col-4-12.mob-4, .col-4-12.mob-1-3, .col-4-12.mob-4-12, .col-5.mob-four, .col-5.mob-one-third, .col-5.mob-four-twelfths, .col-5.mob-4, .col-5.mob-1-3, .col-5.mob-4-12, .col-5-12.mob-four, .col-5-12.mob-one-third, .col-5-12.mob-four-twelfths, .col-5-12.mob-4, .col-5-12.mob-1-3, .col-5-12.mob-4-12, .col-6.mob-four, .col-6.mob-one-third, .col-6.mob-four-twelfths, .col-6.mob-4, .col-6.mob-1-3, .col-6.mob-4-12, .col-1-2.mob-four, .col-1-2.mob-one-third, .col-1-2.mob-four-twelfths, .col-1-2.mob-4, .col-1-2.mob-1-3, .col-1-2.mob-4-12, .col-6-12.mob-four, .col-6-12.mob-one-third, .col-6-12.mob-four-twelfths, .col-6-12.mob-4, .col-6-12.mob-1-3, .col-6-12.mob-4-12, .col-7.mob-four, .col-7.mob-one-third, .col-7.mob-four-twelfths, .col-7.mob-4, .col-7.mob-1-3, .col-7.mob-4-12, .col-7-12.mob-four, .col-7-12.mob-one-third, .col-7-12.mob-four-twelfths, .col-7-12.mob-4, .col-7-12.mob-1-3, .col-7-12.mob-4-12, .col-8.mob-four, .col-8.mob-one-third, .col-8.mob-four-twelfths, .col-8.mob-4, .col-8.mob-1-3, .col-8.mob-4-12, .col-2-3.mob-four, .col-2-3.mob-one-third, .col-2-3.mob-four-twelfths, .col-2-3.mob-4, .col-2-3.mob-1-3, .col-2-3.mob-4-12, .col-8-12.mob-four, .col-8-12.mob-one-third, .col-8-12.mob-four-twelfths, .col-8-12.mob-4, .col-8-12.mob-1-3, .col-8-12.mob-4-12, .col-9.mob-four, .col-9.mob-one-third, .col-9.mob-four-twelfths, .col-9.mob-4, .col-9.mob-1-3, .col-9.mob-4-12, .col-3-4.mob-four, .col-3-4.mob-one-third, .col-3-4.mob-four-twelfths, .col-3-4.mob-4, .col-3-4.mob-1-3, .col-3-4.mob-4-12, .col-9-12.mob-four, .col-9-12.mob-one-third, .col-9-12.mob-four-twelfths, .col-9-12.mob-4, .col-9-12.mob-1-3, .col-9-12.mob-4-12, .col-10.mob-four, .col-10.mob-one-third, .col-10.mob-four-twelfths, .col-10.mob-4, .col-10.mob-1-3, .col-10.mob-4-12, .col-5-6.mob-four, .col-5-6.mob-one-third, .col-5-6.mob-four-twelfths, .col-5-6.mob-4, .col-5-6.mob-1-3, .col-5-6.mob-4-12, .col-10-12.mob-four, .col-10-12.mob-one-third, .col-10-12.mob-four-twelfths, .col-10-12.mob-4, .col-10-12.mob-1-3, .col-10-12.mob-4-12, .col-11.mob-four, .col-11.mob-one-third, .col-11.mob-four-twelfths, .col-11.mob-4, .col-11.mob-1-3, .col-11.mob-4-12, .col-11-12.mob-four, .col-11-12.mob-one-third, .col-11-12.mob-four-twelfths, .col-11-12.mob-4, .col-11-12.mob-1-3, .col-11-12.mob-4-12, .col-12.mob-four, .col-12.mob-one-third, .col-12.mob-four-twelfths, .col-12.mob-4, .col-12.mob-1-3, .col-12.mob-4-12, .col-12-12.mob-four, .col-12-12.mob-one-third, .col-12-12.mob-four-twelfths, .col-12-12.mob-4, .col-12-12.mob-1-3, .col-12-12.mob-4-12 {
+      width: 30.6666666667% !important; }
+    .col-1.mob-five, .col-1.mob-five-twelfths, .col-1.mob-5, .col-1.mob-5-12, .col-1-12.mob-five, .col-1-12.mob-five-twelfths, .col-1-12.mob-5, .col-1-12.mob-5-12, .col-2.mob-five, .col-2.mob-five-twelfths, .col-2.mob-5, .col-2.mob-5-12, .col-1-6.mob-five, .col-1-6.mob-five-twelfths, .col-1-6.mob-5, .col-1-6.mob-5-12, .col-2-12.mob-five, .col-2-12.mob-five-twelfths, .col-2-12.mob-5, .col-2-12.mob-5-12, .col-3.mob-five, .col-3.mob-five-twelfths, .col-3.mob-5, .col-3.mob-5-12, .col-1-4.mob-five, .col-1-4.mob-five-twelfths, .col-1-4.mob-5, .col-1-4.mob-5-12, .col-3-12.mob-five, .col-3-12.mob-five-twelfths, .col-3-12.mob-5, .col-3-12.mob-5-12, .col-4.mob-five, .col-4.mob-five-twelfths, .col-4.mob-5, .col-4.mob-5-12, .col-1-3.mob-five, .col-1-3.mob-five-twelfths, .col-1-3.mob-5, .col-1-3.mob-5-12, .col-4-12.mob-five, .col-4-12.mob-five-twelfths, .col-4-12.mob-5, .col-4-12.mob-5-12, .col-5.mob-five, .col-5.mob-five-twelfths, .col-5.mob-5, .col-5.mob-5-12, .col-5-12.mob-five, .col-5-12.mob-five-twelfths, .col-5-12.mob-5, .col-5-12.mob-5-12, .col-6.mob-five, .col-6.mob-five-twelfths, .col-6.mob-5, .col-6.mob-5-12, .col-1-2.mob-five, .col-1-2.mob-five-twelfths, .col-1-2.mob-5, .col-1-2.mob-5-12, .col-6-12.mob-five, .col-6-12.mob-five-twelfths, .col-6-12.mob-5, .col-6-12.mob-5-12, .col-7.mob-five, .col-7.mob-five-twelfths, .col-7.mob-5, .col-7.mob-5-12, .col-7-12.mob-five, .col-7-12.mob-five-twelfths, .col-7-12.mob-5, .col-7-12.mob-5-12, .col-8.mob-five, .col-8.mob-five-twelfths, .col-8.mob-5, .col-8.mob-5-12, .col-2-3.mob-five, .col-2-3.mob-five-twelfths, .col-2-3.mob-5, .col-2-3.mob-5-12, .col-8-12.mob-five, .col-8-12.mob-five-twelfths, .col-8-12.mob-5, .col-8-12.mob-5-12, .col-9.mob-five, .col-9.mob-five-twelfths, .col-9.mob-5, .col-9.mob-5-12, .col-3-4.mob-five, .col-3-4.mob-five-twelfths, .col-3-4.mob-5, .col-3-4.mob-5-12, .col-9-12.mob-five, .col-9-12.mob-five-twelfths, .col-9-12.mob-5, .col-9-12.mob-5-12, .col-10.mob-five, .col-10.mob-five-twelfths, .col-10.mob-5, .col-10.mob-5-12, .col-5-6.mob-five, .col-5-6.mob-five-twelfths, .col-5-6.mob-5, .col-5-6.mob-5-12, .col-10-12.mob-five, .col-10-12.mob-five-twelfths, .col-10-12.mob-5, .col-10-12.mob-5-12, .col-11.mob-five, .col-11.mob-five-twelfths, .col-11.mob-5, .col-11.mob-5-12, .col-11-12.mob-five, .col-11-12.mob-five-twelfths, .col-11-12.mob-5, .col-11-12.mob-5-12, .col-12.mob-five, .col-12.mob-five-twelfths, .col-12.mob-5, .col-12.mob-5-12, .col-12-12.mob-five, .col-12-12.mob-five-twelfths, .col-12-12.mob-5, .col-12-12.mob-5-12 {
+      width: 39.3333333333% !important; }
+    .col-1.mob-six, .col-1.mob-half, .col-1.mob-one-half, .col-1.mob-six-twelfths, .col-1.mob-6, .col-1.mob-1-2, .col-1.mob-6-12, .col-1-12.mob-six, .col-1-12.mob-half, .col-1-12.mob-one-half, .col-1-12.mob-six-twelfths, .col-1-12.mob-6, .col-1-12.mob-1-2, .col-1-12.mob-6-12, .col-2.mob-six, .col-2.mob-half, .col-2.mob-one-half, .col-2.mob-six-twelfths, .col-2.mob-6, .col-2.mob-1-2, .col-2.mob-6-12, .col-1-6.mob-six, .col-1-6.mob-half, .col-1-6.mob-one-half, .col-1-6.mob-six-twelfths, .col-1-6.mob-6, .col-1-6.mob-1-2, .col-1-6.mob-6-12, .col-2-12.mob-six, .col-2-12.mob-half, .col-2-12.mob-one-half, .col-2-12.mob-six-twelfths, .col-2-12.mob-6, .col-2-12.mob-1-2, .col-2-12.mob-6-12, .col-3.mob-six, .col-3.mob-half, .col-3.mob-one-half, .col-3.mob-six-twelfths, .col-3.mob-6, .col-3.mob-1-2, .col-3.mob-6-12, .col-1-4.mob-six, .col-1-4.mob-half, .col-1-4.mob-one-half, .col-1-4.mob-six-twelfths, .col-1-4.mob-6, .col-1-4.mob-1-2, .col-1-4.mob-6-12, .col-3-12.mob-six, .col-3-12.mob-half, .col-3-12.mob-one-half, .col-3-12.mob-six-twelfths, .col-3-12.mob-6, .col-3-12.mob-1-2, .col-3-12.mob-6-12, .col-4.mob-six, .col-4.mob-half, .col-4.mob-one-half, .col-4.mob-six-twelfths, .col-4.mob-6, .col-4.mob-1-2, .col-4.mob-6-12, .col-1-3.mob-six, .col-1-3.mob-half, .col-1-3.mob-one-half, .col-1-3.mob-six-twelfths, .col-1-3.mob-6, .col-1-3.mob-1-2, .col-1-3.mob-6-12, .col-4-12.mob-six, .col-4-12.mob-half, .col-4-12.mob-one-half, .col-4-12.mob-six-twelfths, .col-4-12.mob-6, .col-4-12.mob-1-2, .col-4-12.mob-6-12, .col-5.mob-six, .col-5.mob-half, .col-5.mob-one-half, .col-5.mob-six-twelfths, .col-5.mob-6, .col-5.mob-1-2, .col-5.mob-6-12, .col-5-12.mob-six, .col-5-12.mob-half, .col-5-12.mob-one-half, .col-5-12.mob-six-twelfths, .col-5-12.mob-6, .col-5-12.mob-1-2, .col-5-12.mob-6-12, .col-6.mob-six, .col-6.mob-half, .col-6.mob-one-half, .col-6.mob-six-twelfths, .col-6.mob-6, .col-6.mob-1-2, .col-6.mob-6-12, .col-1-2.mob-six, .col-1-2.mob-half, .col-1-2.mob-one-half, .col-1-2.mob-six-twelfths, .col-1-2.mob-6, .col-1-2.mob-1-2, .col-1-2.mob-6-12, .col-6-12.mob-six, .col-6-12.mob-half, .col-6-12.mob-one-half, .col-6-12.mob-six-twelfths, .col-6-12.mob-6, .col-6-12.mob-1-2, .col-6-12.mob-6-12, .col-7.mob-six, .col-7.mob-half, .col-7.mob-one-half, .col-7.mob-six-twelfths, .col-7.mob-6, .col-7.mob-1-2, .col-7.mob-6-12, .col-7-12.mob-six, .col-7-12.mob-half, .col-7-12.mob-one-half, .col-7-12.mob-six-twelfths, .col-7-12.mob-6, .col-7-12.mob-1-2, .col-7-12.mob-6-12, .col-8.mob-six, .col-8.mob-half, .col-8.mob-one-half, .col-8.mob-six-twelfths, .col-8.mob-6, .col-8.mob-1-2, .col-8.mob-6-12, .col-2-3.mob-six, .col-2-3.mob-half, .col-2-3.mob-one-half, .col-2-3.mob-six-twelfths, .col-2-3.mob-6, .col-2-3.mob-1-2, .col-2-3.mob-6-12, .col-8-12.mob-six, .col-8-12.mob-half, .col-8-12.mob-one-half, .col-8-12.mob-six-twelfths, .col-8-12.mob-6, .col-8-12.mob-1-2, .col-8-12.mob-6-12, .col-9.mob-six, .col-9.mob-half, .col-9.mob-one-half, .col-9.mob-six-twelfths, .col-9.mob-6, .col-9.mob-1-2, .col-9.mob-6-12, .col-3-4.mob-six, .col-3-4.mob-half, .col-3-4.mob-one-half, .col-3-4.mob-six-twelfths, .col-3-4.mob-6, .col-3-4.mob-1-2, .col-3-4.mob-6-12, .col-9-12.mob-six, .col-9-12.mob-half, .col-9-12.mob-one-half, .col-9-12.mob-six-twelfths, .col-9-12.mob-6, .col-9-12.mob-1-2, .col-9-12.mob-6-12, .col-10.mob-six, .col-10.mob-half, .col-10.mob-one-half, .col-10.mob-six-twelfths, .col-10.mob-6, .col-10.mob-1-2, .col-10.mob-6-12, .col-5-6.mob-six, .col-5-6.mob-half, .col-5-6.mob-one-half, .col-5-6.mob-six-twelfths, .col-5-6.mob-6, .col-5-6.mob-1-2, .col-5-6.mob-6-12, .col-10-12.mob-six, .col-10-12.mob-half, .col-10-12.mob-one-half, .col-10-12.mob-six-twelfths, .col-10-12.mob-6, .col-10-12.mob-1-2, .col-10-12.mob-6-12, .col-11.mob-six, .col-11.mob-half, .col-11.mob-one-half, .col-11.mob-six-twelfths, .col-11.mob-6, .col-11.mob-1-2, .col-11.mob-6-12, .col-11-12.mob-six, .col-11-12.mob-half, .col-11-12.mob-one-half, .col-11-12.mob-six-twelfths, .col-11-12.mob-6, .col-11-12.mob-1-2, .col-11-12.mob-6-12, .col-12.mob-six, .col-12.mob-half, .col-12.mob-one-half, .col-12.mob-six-twelfths, .col-12.mob-6, .col-12.mob-1-2, .col-12.mob-6-12, .col-12-12.mob-six, .col-12-12.mob-half, .col-12-12.mob-one-half, .col-12-12.mob-six-twelfths, .col-12-12.mob-6, .col-12-12.mob-1-2, .col-12-12.mob-6-12 {
+      width: 48% !important; }
+    .col-1.mob-seven, .col-1.mob-seven-twelfths, .col-1.mob-7, .col-1.mob-7-12, .col-1-12.mob-seven, .col-1-12.mob-seven-twelfths, .col-1-12.mob-7, .col-1-12.mob-7-12, .col-2.mob-seven, .col-2.mob-seven-twelfths, .col-2.mob-7, .col-2.mob-7-12, .col-1-6.mob-seven, .col-1-6.mob-seven-twelfths, .col-1-6.mob-7, .col-1-6.mob-7-12, .col-2-12.mob-seven, .col-2-12.mob-seven-twelfths, .col-2-12.mob-7, .col-2-12.mob-7-12, .col-3.mob-seven, .col-3.mob-seven-twelfths, .col-3.mob-7, .col-3.mob-7-12, .col-1-4.mob-seven, .col-1-4.mob-seven-twelfths, .col-1-4.mob-7, .col-1-4.mob-7-12, .col-3-12.mob-seven, .col-3-12.mob-seven-twelfths, .col-3-12.mob-7, .col-3-12.mob-7-12, .col-4.mob-seven, .col-4.mob-seven-twelfths, .col-4.mob-7, .col-4.mob-7-12, .col-1-3.mob-seven, .col-1-3.mob-seven-twelfths, .col-1-3.mob-7, .col-1-3.mob-7-12, .col-4-12.mob-seven, .col-4-12.mob-seven-twelfths, .col-4-12.mob-7, .col-4-12.mob-7-12, .col-5.mob-seven, .col-5.mob-seven-twelfths, .col-5.mob-7, .col-5.mob-7-12, .col-5-12.mob-seven, .col-5-12.mob-seven-twelfths, .col-5-12.mob-7, .col-5-12.mob-7-12, .col-6.mob-seven, .col-6.mob-seven-twelfths, .col-6.mob-7, .col-6.mob-7-12, .col-1-2.mob-seven, .col-1-2.mob-seven-twelfths, .col-1-2.mob-7, .col-1-2.mob-7-12, .col-6-12.mob-seven, .col-6-12.mob-seven-twelfths, .col-6-12.mob-7, .col-6-12.mob-7-12, .col-7.mob-seven, .col-7.mob-seven-twelfths, .col-7.mob-7, .col-7.mob-7-12, .col-7-12.mob-seven, .col-7-12.mob-seven-twelfths, .col-7-12.mob-7, .col-7-12.mob-7-12, .col-8.mob-seven, .col-8.mob-seven-twelfths, .col-8.mob-7, .col-8.mob-7-12, .col-2-3.mob-seven, .col-2-3.mob-seven-twelfths, .col-2-3.mob-7, .col-2-3.mob-7-12, .col-8-12.mob-seven, .col-8-12.mob-seven-twelfths, .col-8-12.mob-7, .col-8-12.mob-7-12, .col-9.mob-seven, .col-9.mob-seven-twelfths, .col-9.mob-7, .col-9.mob-7-12, .col-3-4.mob-seven, .col-3-4.mob-seven-twelfths, .col-3-4.mob-7, .col-3-4.mob-7-12, .col-9-12.mob-seven, .col-9-12.mob-seven-twelfths, .col-9-12.mob-7, .col-9-12.mob-7-12, .col-10.mob-seven, .col-10.mob-seven-twelfths, .col-10.mob-7, .col-10.mob-7-12, .col-5-6.mob-seven, .col-5-6.mob-seven-twelfths, .col-5-6.mob-7, .col-5-6.mob-7-12, .col-10-12.mob-seven, .col-10-12.mob-seven-twelfths, .col-10-12.mob-7, .col-10-12.mob-7-12, .col-11.mob-seven, .col-11.mob-seven-twelfths, .col-11.mob-7, .col-11.mob-7-12, .col-11-12.mob-seven, .col-11-12.mob-seven-twelfths, .col-11-12.mob-7, .col-11-12.mob-7-12, .col-12.mob-seven, .col-12.mob-seven-twelfths, .col-12.mob-7, .col-12.mob-7-12, .col-12-12.mob-seven, .col-12-12.mob-seven-twelfths, .col-12-12.mob-7, .col-12-12.mob-7-12 {
+      width: 56.6666666667% !important; }
+    .col-1.mob-eight, .col-1.mob-two-thirds, .col-1.mob-eight-twelfths, .col-1.mob-8, .col-1.mob-2-3, .col-1.mob-8-12, .col-1-12.mob-eight, .col-1-12.mob-two-thirds, .col-1-12.mob-eight-twelfths, .col-1-12.mob-8, .col-1-12.mob-2-3, .col-1-12.mob-8-12, .col-2.mob-eight, .col-2.mob-two-thirds, .col-2.mob-eight-twelfths, .col-2.mob-8, .col-2.mob-2-3, .col-2.mob-8-12, .col-1-6.mob-eight, .col-1-6.mob-two-thirds, .col-1-6.mob-eight-twelfths, .col-1-6.mob-8, .col-1-6.mob-2-3, .col-1-6.mob-8-12, .col-2-12.mob-eight, .col-2-12.mob-two-thirds, .col-2-12.mob-eight-twelfths, .col-2-12.mob-8, .col-2-12.mob-2-3, .col-2-12.mob-8-12, .col-3.mob-eight, .col-3.mob-two-thirds, .col-3.mob-eight-twelfths, .col-3.mob-8, .col-3.mob-2-3, .col-3.mob-8-12, .col-1-4.mob-eight, .col-1-4.mob-two-thirds, .col-1-4.mob-eight-twelfths, .col-1-4.mob-8, .col-1-4.mob-2-3, .col-1-4.mob-8-12, .col-3-12.mob-eight, .col-3-12.mob-two-thirds, .col-3-12.mob-eight-twelfths, .col-3-12.mob-8, .col-3-12.mob-2-3, .col-3-12.mob-8-12, .col-4.mob-eight, .col-4.mob-two-thirds, .col-4.mob-eight-twelfths, .col-4.mob-8, .col-4.mob-2-3, .col-4.mob-8-12, .col-1-3.mob-eight, .col-1-3.mob-two-thirds, .col-1-3.mob-eight-twelfths, .col-1-3.mob-8, .col-1-3.mob-2-3, .col-1-3.mob-8-12, .col-4-12.mob-eight, .col-4-12.mob-two-thirds, .col-4-12.mob-eight-twelfths, .col-4-12.mob-8, .col-4-12.mob-2-3, .col-4-12.mob-8-12, .col-5.mob-eight, .col-5.mob-two-thirds, .col-5.mob-eight-twelfths, .col-5.mob-8, .col-5.mob-2-3, .col-5.mob-8-12, .col-5-12.mob-eight, .col-5-12.mob-two-thirds, .col-5-12.mob-eight-twelfths, .col-5-12.mob-8, .col-5-12.mob-2-3, .col-5-12.mob-8-12, .col-6.mob-eight, .col-6.mob-two-thirds, .col-6.mob-eight-twelfths, .col-6.mob-8, .col-6.mob-2-3, .col-6.mob-8-12, .col-1-2.mob-eight, .col-1-2.mob-two-thirds, .col-1-2.mob-eight-twelfths, .col-1-2.mob-8, .col-1-2.mob-2-3, .col-1-2.mob-8-12, .col-6-12.mob-eight, .col-6-12.mob-two-thirds, .col-6-12.mob-eight-twelfths, .col-6-12.mob-8, .col-6-12.mob-2-3, .col-6-12.mob-8-12, .col-7.mob-eight, .col-7.mob-two-thirds, .col-7.mob-eight-twelfths, .col-7.mob-8, .col-7.mob-2-3, .col-7.mob-8-12, .col-7-12.mob-eight, .col-7-12.mob-two-thirds, .col-7-12.mob-eight-twelfths, .col-7-12.mob-8, .col-7-12.mob-2-3, .col-7-12.mob-8-12, .col-8.mob-eight, .col-8.mob-two-thirds, .col-8.mob-eight-twelfths, .col-8.mob-8, .col-8.mob-2-3, .col-8.mob-8-12, .col-2-3.mob-eight, .col-2-3.mob-two-thirds, .col-2-3.mob-eight-twelfths, .col-2-3.mob-8, .col-2-3.mob-2-3, .col-2-3.mob-8-12, .col-8-12.mob-eight, .col-8-12.mob-two-thirds, .col-8-12.mob-eight-twelfths, .col-8-12.mob-8, .col-8-12.mob-2-3, .col-8-12.mob-8-12, .col-9.mob-eight, .col-9.mob-two-thirds, .col-9.mob-eight-twelfths, .col-9.mob-8, .col-9.mob-2-3, .col-9.mob-8-12, .col-3-4.mob-eight, .col-3-4.mob-two-thirds, .col-3-4.mob-eight-twelfths, .col-3-4.mob-8, .col-3-4.mob-2-3, .col-3-4.mob-8-12, .col-9-12.mob-eight, .col-9-12.mob-two-thirds, .col-9-12.mob-eight-twelfths, .col-9-12.mob-8, .col-9-12.mob-2-3, .col-9-12.mob-8-12, .col-10.mob-eight, .col-10.mob-two-thirds, .col-10.mob-eight-twelfths, .col-10.mob-8, .col-10.mob-2-3, .col-10.mob-8-12, .col-5-6.mob-eight, .col-5-6.mob-two-thirds, .col-5-6.mob-eight-twelfths, .col-5-6.mob-8, .col-5-6.mob-2-3, .col-5-6.mob-8-12, .col-10-12.mob-eight, .col-10-12.mob-two-thirds, .col-10-12.mob-eight-twelfths, .col-10-12.mob-8, .col-10-12.mob-2-3, .col-10-12.mob-8-12, .col-11.mob-eight, .col-11.mob-two-thirds, .col-11.mob-eight-twelfths, .col-11.mob-8, .col-11.mob-2-3, .col-11.mob-8-12, .col-11-12.mob-eight, .col-11-12.mob-two-thirds, .col-11-12.mob-eight-twelfths, .col-11-12.mob-8, .col-11-12.mob-2-3, .col-11-12.mob-8-12, .col-12.mob-eight, .col-12.mob-two-thirds, .col-12.mob-eight-twelfths, .col-12.mob-8, .col-12.mob-2-3, .col-12.mob-8-12, .col-12-12.mob-eight, .col-12-12.mob-two-thirds, .col-12-12.mob-eight-twelfths, .col-12-12.mob-8, .col-12-12.mob-2-3, .col-12-12.mob-8-12 {
+      width: 65.3333333333% !important; }
+    .col-1.mob-nine, .col-1.mob-three-quarters, .col-1.mob-nine-twelfths, .col-1.mob-9, .col-1.mob-3-4, .col-1.mob-9-12, .col-1-12.mob-nine, .col-1-12.mob-three-quarters, .col-1-12.mob-nine-twelfths, .col-1-12.mob-9, .col-1-12.mob-3-4, .col-1-12.mob-9-12, .col-2.mob-nine, .col-2.mob-three-quarters, .col-2.mob-nine-twelfths, .col-2.mob-9, .col-2.mob-3-4, .col-2.mob-9-12, .col-1-6.mob-nine, .col-1-6.mob-three-quarters, .col-1-6.mob-nine-twelfths, .col-1-6.mob-9, .col-1-6.mob-3-4, .col-1-6.mob-9-12, .col-2-12.mob-nine, .col-2-12.mob-three-quarters, .col-2-12.mob-nine-twelfths, .col-2-12.mob-9, .col-2-12.mob-3-4, .col-2-12.mob-9-12, .col-3.mob-nine, .col-3.mob-three-quarters, .col-3.mob-nine-twelfths, .col-3.mob-9, .col-3.mob-3-4, .col-3.mob-9-12, .col-1-4.mob-nine, .col-1-4.mob-three-quarters, .col-1-4.mob-nine-twelfths, .col-1-4.mob-9, .col-1-4.mob-3-4, .col-1-4.mob-9-12, .col-3-12.mob-nine, .col-3-12.mob-three-quarters, .col-3-12.mob-nine-twelfths, .col-3-12.mob-9, .col-3-12.mob-3-4, .col-3-12.mob-9-12, .col-4.mob-nine, .col-4.mob-three-quarters, .col-4.mob-nine-twelfths, .col-4.mob-9, .col-4.mob-3-4, .col-4.mob-9-12, .col-1-3.mob-nine, .col-1-3.mob-three-quarters, .col-1-3.mob-nine-twelfths, .col-1-3.mob-9, .col-1-3.mob-3-4, .col-1-3.mob-9-12, .col-4-12.mob-nine, .col-4-12.mob-three-quarters, .col-4-12.mob-nine-twelfths, .col-4-12.mob-9, .col-4-12.mob-3-4, .col-4-12.mob-9-12, .col-5.mob-nine, .col-5.mob-three-quarters, .col-5.mob-nine-twelfths, .col-5.mob-9, .col-5.mob-3-4, .col-5.mob-9-12, .col-5-12.mob-nine, .col-5-12.mob-three-quarters, .col-5-12.mob-nine-twelfths, .col-5-12.mob-9, .col-5-12.mob-3-4, .col-5-12.mob-9-12, .col-6.mob-nine, .col-6.mob-three-quarters, .col-6.mob-nine-twelfths, .col-6.mob-9, .col-6.mob-3-4, .col-6.mob-9-12, .col-1-2.mob-nine, .col-1-2.mob-three-quarters, .col-1-2.mob-nine-twelfths, .col-1-2.mob-9, .col-1-2.mob-3-4, .col-1-2.mob-9-12, .col-6-12.mob-nine, .col-6-12.mob-three-quarters, .col-6-12.mob-nine-twelfths, .col-6-12.mob-9, .col-6-12.mob-3-4, .col-6-12.mob-9-12, .col-7.mob-nine, .col-7.mob-three-quarters, .col-7.mob-nine-twelfths, .col-7.mob-9, .col-7.mob-3-4, .col-7.mob-9-12, .col-7-12.mob-nine, .col-7-12.mob-three-quarters, .col-7-12.mob-nine-twelfths, .col-7-12.mob-9, .col-7-12.mob-3-4, .col-7-12.mob-9-12, .col-8.mob-nine, .col-8.mob-three-quarters, .col-8.mob-nine-twelfths, .col-8.mob-9, .col-8.mob-3-4, .col-8.mob-9-12, .col-2-3.mob-nine, .col-2-3.mob-three-quarters, .col-2-3.mob-nine-twelfths, .col-2-3.mob-9, .col-2-3.mob-3-4, .col-2-3.mob-9-12, .col-8-12.mob-nine, .col-8-12.mob-three-quarters, .col-8-12.mob-nine-twelfths, .col-8-12.mob-9, .col-8-12.mob-3-4, .col-8-12.mob-9-12, .col-9.mob-nine, .col-9.mob-three-quarters, .col-9.mob-nine-twelfths, .col-9.mob-9, .col-9.mob-3-4, .col-9.mob-9-12, .col-3-4.mob-nine, .col-3-4.mob-three-quarters, .col-3-4.mob-nine-twelfths, .col-3-4.mob-9, .col-3-4.mob-3-4, .col-3-4.mob-9-12, .col-9-12.mob-nine, .col-9-12.mob-three-quarters, .col-9-12.mob-nine-twelfths, .col-9-12.mob-9, .col-9-12.mob-3-4, .col-9-12.mob-9-12, .col-10.mob-nine, .col-10.mob-three-quarters, .col-10.mob-nine-twelfths, .col-10.mob-9, .col-10.mob-3-4, .col-10.mob-9-12, .col-5-6.mob-nine, .col-5-6.mob-three-quarters, .col-5-6.mob-nine-twelfths, .col-5-6.mob-9, .col-5-6.mob-3-4, .col-5-6.mob-9-12, .col-10-12.mob-nine, .col-10-12.mob-three-quarters, .col-10-12.mob-nine-twelfths, .col-10-12.mob-9, .col-10-12.mob-3-4, .col-10-12.mob-9-12, .col-11.mob-nine, .col-11.mob-three-quarters, .col-11.mob-nine-twelfths, .col-11.mob-9, .col-11.mob-3-4, .col-11.mob-9-12, .col-11-12.mob-nine, .col-11-12.mob-three-quarters, .col-11-12.mob-nine-twelfths, .col-11-12.mob-9, .col-11-12.mob-3-4, .col-11-12.mob-9-12, .col-12.mob-nine, .col-12.mob-three-quarters, .col-12.mob-nine-twelfths, .col-12.mob-9, .col-12.mob-3-4, .col-12.mob-9-12, .col-12-12.mob-nine, .col-12-12.mob-three-quarters, .col-12-12.mob-nine-twelfths, .col-12-12.mob-9, .col-12-12.mob-3-4, .col-12-12.mob-9-12 {
+      width: 74.0% !important; }
+    .col-1.mob-ten, .col-1.mob-five-sixths, .col-1.mob-ten-twelfths, .col-1.mob-10, .col-1.mob-5-6, .col-1.mob-10-12, .col-1-12.mob-ten, .col-1-12.mob-five-sixths, .col-1-12.mob-ten-twelfths, .col-1-12.mob-10, .col-1-12.mob-5-6, .col-1-12.mob-10-12, .col-2.mob-ten, .col-2.mob-five-sixths, .col-2.mob-ten-twelfths, .col-2.mob-10, .col-2.mob-5-6, .col-2.mob-10-12, .col-1-6.mob-ten, .col-1-6.mob-five-sixths, .col-1-6.mob-ten-twelfths, .col-1-6.mob-10, .col-1-6.mob-5-6, .col-1-6.mob-10-12, .col-2-12.mob-ten, .col-2-12.mob-five-sixths, .col-2-12.mob-ten-twelfths, .col-2-12.mob-10, .col-2-12.mob-5-6, .col-2-12.mob-10-12, .col-3.mob-ten, .col-3.mob-five-sixths, .col-3.mob-ten-twelfths, .col-3.mob-10, .col-3.mob-5-6, .col-3.mob-10-12, .col-1-4.mob-ten, .col-1-4.mob-five-sixths, .col-1-4.mob-ten-twelfths, .col-1-4.mob-10, .col-1-4.mob-5-6, .col-1-4.mob-10-12, .col-3-12.mob-ten, .col-3-12.mob-five-sixths, .col-3-12.mob-ten-twelfths, .col-3-12.mob-10, .col-3-12.mob-5-6, .col-3-12.mob-10-12, .col-4.mob-ten, .col-4.mob-five-sixths, .col-4.mob-ten-twelfths, .col-4.mob-10, .col-4.mob-5-6, .col-4.mob-10-12, .col-1-3.mob-ten, .col-1-3.mob-five-sixths, .col-1-3.mob-ten-twelfths, .col-1-3.mob-10, .col-1-3.mob-5-6, .col-1-3.mob-10-12, .col-4-12.mob-ten, .col-4-12.mob-five-sixths, .col-4-12.mob-ten-twelfths, .col-4-12.mob-10, .col-4-12.mob-5-6, .col-4-12.mob-10-12, .col-5.mob-ten, .col-5.mob-five-sixths, .col-5.mob-ten-twelfths, .col-5.mob-10, .col-5.mob-5-6, .col-5.mob-10-12, .col-5-12.mob-ten, .col-5-12.mob-five-sixths, .col-5-12.mob-ten-twelfths, .col-5-12.mob-10, .col-5-12.mob-5-6, .col-5-12.mob-10-12, .col-6.mob-ten, .col-6.mob-five-sixths, .col-6.mob-ten-twelfths, .col-6.mob-10, .col-6.mob-5-6, .col-6.mob-10-12, .col-1-2.mob-ten, .col-1-2.mob-five-sixths, .col-1-2.mob-ten-twelfths, .col-1-2.mob-10, .col-1-2.mob-5-6, .col-1-2.mob-10-12, .col-6-12.mob-ten, .col-6-12.mob-five-sixths, .col-6-12.mob-ten-twelfths, .col-6-12.mob-10, .col-6-12.mob-5-6, .col-6-12.mob-10-12, .col-7.mob-ten, .col-7.mob-five-sixths, .col-7.mob-ten-twelfths, .col-7.mob-10, .col-7.mob-5-6, .col-7.mob-10-12, .col-7-12.mob-ten, .col-7-12.mob-five-sixths, .col-7-12.mob-ten-twelfths, .col-7-12.mob-10, .col-7-12.mob-5-6, .col-7-12.mob-10-12, .col-8.mob-ten, .col-8.mob-five-sixths, .col-8.mob-ten-twelfths, .col-8.mob-10, .col-8.mob-5-6, .col-8.mob-10-12, .col-2-3.mob-ten, .col-2-3.mob-five-sixths, .col-2-3.mob-ten-twelfths, .col-2-3.mob-10, .col-2-3.mob-5-6, .col-2-3.mob-10-12, .col-8-12.mob-ten, .col-8-12.mob-five-sixths, .col-8-12.mob-ten-twelfths, .col-8-12.mob-10, .col-8-12.mob-5-6, .col-8-12.mob-10-12, .col-9.mob-ten, .col-9.mob-five-sixths, .col-9.mob-ten-twelfths, .col-9.mob-10, .col-9.mob-5-6, .col-9.mob-10-12, .col-3-4.mob-ten, .col-3-4.mob-five-sixths, .col-3-4.mob-ten-twelfths, .col-3-4.mob-10, .col-3-4.mob-5-6, .col-3-4.mob-10-12, .col-9-12.mob-ten, .col-9-12.mob-five-sixths, .col-9-12.mob-ten-twelfths, .col-9-12.mob-10, .col-9-12.mob-5-6, .col-9-12.mob-10-12, .col-10.mob-ten, .col-10.mob-five-sixths, .col-10.mob-ten-twelfths, .col-10.mob-10, .col-10.mob-5-6, .col-10.mob-10-12, .col-5-6.mob-ten, .col-5-6.mob-five-sixths, .col-5-6.mob-ten-twelfths, .col-5-6.mob-10, .col-5-6.mob-5-6, .col-5-6.mob-10-12, .col-10-12.mob-ten, .col-10-12.mob-five-sixths, .col-10-12.mob-ten-twelfths, .col-10-12.mob-10, .col-10-12.mob-5-6, .col-10-12.mob-10-12, .col-11.mob-ten, .col-11.mob-five-sixths, .col-11.mob-ten-twelfths, .col-11.mob-10, .col-11.mob-5-6, .col-11.mob-10-12, .col-11-12.mob-ten, .col-11-12.mob-five-sixths, .col-11-12.mob-ten-twelfths, .col-11-12.mob-10, .col-11-12.mob-5-6, .col-11-12.mob-10-12, .col-12.mob-ten, .col-12.mob-five-sixths, .col-12.mob-ten-twelfths, .col-12.mob-10, .col-12.mob-5-6, .col-12.mob-10-12, .col-12-12.mob-ten, .col-12-12.mob-five-sixths, .col-12-12.mob-ten-twelfths, .col-12-12.mob-10, .col-12-12.mob-5-6, .col-12-12.mob-10-12 {
+      width: 82.6666666667% !important; }
+    .col-1.mob-eleven, .col-1.mob-eleven-twelfths, .col-1.mob-11, .col-1.mob-11-12, .col-1-12.mob-eleven, .col-1-12.mob-eleven-twelfths, .col-1-12.mob-11, .col-1-12.mob-11-12, .col-2.mob-eleven, .col-2.mob-eleven-twelfths, .col-2.mob-11, .col-2.mob-11-12, .col-1-6.mob-eleven, .col-1-6.mob-eleven-twelfths, .col-1-6.mob-11, .col-1-6.mob-11-12, .col-2-12.mob-eleven, .col-2-12.mob-eleven-twelfths, .col-2-12.mob-11, .col-2-12.mob-11-12, .col-3.mob-eleven, .col-3.mob-eleven-twelfths, .col-3.mob-11, .col-3.mob-11-12, .col-1-4.mob-eleven, .col-1-4.mob-eleven-twelfths, .col-1-4.mob-11, .col-1-4.mob-11-12, .col-3-12.mob-eleven, .col-3-12.mob-eleven-twelfths, .col-3-12.mob-11, .col-3-12.mob-11-12, .col-4.mob-eleven, .col-4.mob-eleven-twelfths, .col-4.mob-11, .col-4.mob-11-12, .col-1-3.mob-eleven, .col-1-3.mob-eleven-twelfths, .col-1-3.mob-11, .col-1-3.mob-11-12, .col-4-12.mob-eleven, .col-4-12.mob-eleven-twelfths, .col-4-12.mob-11, .col-4-12.mob-11-12, .col-5.mob-eleven, .col-5.mob-eleven-twelfths, .col-5.mob-11, .col-5.mob-11-12, .col-5-12.mob-eleven, .col-5-12.mob-eleven-twelfths, .col-5-12.mob-11, .col-5-12.mob-11-12, .col-6.mob-eleven, .col-6.mob-eleven-twelfths, .col-6.mob-11, .col-6.mob-11-12, .col-1-2.mob-eleven, .col-1-2.mob-eleven-twelfths, .col-1-2.mob-11, .col-1-2.mob-11-12, .col-6-12.mob-eleven, .col-6-12.mob-eleven-twelfths, .col-6-12.mob-11, .col-6-12.mob-11-12, .col-7.mob-eleven, .col-7.mob-eleven-twelfths, .col-7.mob-11, .col-7.mob-11-12, .col-7-12.mob-eleven, .col-7-12.mob-eleven-twelfths, .col-7-12.mob-11, .col-7-12.mob-11-12, .col-8.mob-eleven, .col-8.mob-eleven-twelfths, .col-8.mob-11, .col-8.mob-11-12, .col-2-3.mob-eleven, .col-2-3.mob-eleven-twelfths, .col-2-3.mob-11, .col-2-3.mob-11-12, .col-8-12.mob-eleven, .col-8-12.mob-eleven-twelfths, .col-8-12.mob-11, .col-8-12.mob-11-12, .col-9.mob-eleven, .col-9.mob-eleven-twelfths, .col-9.mob-11, .col-9.mob-11-12, .col-3-4.mob-eleven, .col-3-4.mob-eleven-twelfths, .col-3-4.mob-11, .col-3-4.mob-11-12, .col-9-12.mob-eleven, .col-9-12.mob-eleven-twelfths, .col-9-12.mob-11, .col-9-12.mob-11-12, .col-10.mob-eleven, .col-10.mob-eleven-twelfths, .col-10.mob-11, .col-10.mob-11-12, .col-5-6.mob-eleven, .col-5-6.mob-eleven-twelfths, .col-5-6.mob-11, .col-5-6.mob-11-12, .col-10-12.mob-eleven, .col-10-12.mob-eleven-twelfths, .col-10-12.mob-11, .col-10-12.mob-11-12, .col-11.mob-eleven, .col-11.mob-eleven-twelfths, .col-11.mob-11, .col-11.mob-11-12, .col-11-12.mob-eleven, .col-11-12.mob-eleven-twelfths, .col-11-12.mob-11, .col-11-12.mob-11-12, .col-12.mob-eleven, .col-12.mob-eleven-twelfths, .col-12.mob-11, .col-12.mob-11-12, .col-12-12.mob-eleven, .col-12-12.mob-eleven-twelfths, .col-12-12.mob-11, .col-12-12.mob-11-12 {
+      width: 91.3333333333% !important; }
+    .col-1.mob-twelve, .col-1.mob-full, .col-1.mob-whole, .col-1.mob-twelve-twelfths, .col-1.mob-12, .col-1.mob-12-12, .col-1-12.mob-twelve, .col-1-12.mob-full, .col-1-12.mob-whole, .col-1-12.mob-twelve-twelfths, .col-1-12.mob-12, .col-1-12.mob-12-12, .col-2.mob-twelve, .col-2.mob-full, .col-2.mob-whole, .col-2.mob-twelve-twelfths, .col-2.mob-12, .col-2.mob-12-12, .col-1-6.mob-twelve, .col-1-6.mob-full, .col-1-6.mob-whole, .col-1-6.mob-twelve-twelfths, .col-1-6.mob-12, .col-1-6.mob-12-12, .col-2-12.mob-twelve, .col-2-12.mob-full, .col-2-12.mob-whole, .col-2-12.mob-twelve-twelfths, .col-2-12.mob-12, .col-2-12.mob-12-12, .col-3.mob-twelve, .col-3.mob-full, .col-3.mob-whole, .col-3.mob-twelve-twelfths, .col-3.mob-12, .col-3.mob-12-12, .col-1-4.mob-twelve, .col-1-4.mob-full, .col-1-4.mob-whole, .col-1-4.mob-twelve-twelfths, .col-1-4.mob-12, .col-1-4.mob-12-12, .col-3-12.mob-twelve, .col-3-12.mob-full, .col-3-12.mob-whole, .col-3-12.mob-twelve-twelfths, .col-3-12.mob-12, .col-3-12.mob-12-12, .col-4.mob-twelve, .col-4.mob-full, .col-4.mob-whole, .col-4.mob-twelve-twelfths, .col-4.mob-12, .col-4.mob-12-12, .col-1-3.mob-twelve, .col-1-3.mob-full, .col-1-3.mob-whole, .col-1-3.mob-twelve-twelfths, .col-1-3.mob-12, .col-1-3.mob-12-12, .col-4-12.mob-twelve, .col-4-12.mob-full, .col-4-12.mob-whole, .col-4-12.mob-twelve-twelfths, .col-4-12.mob-12, .col-4-12.mob-12-12, .col-5.mob-twelve, .col-5.mob-full, .col-5.mob-whole, .col-5.mob-twelve-twelfths, .col-5.mob-12, .col-5.mob-12-12, .col-5-12.mob-twelve, .col-5-12.mob-full, .col-5-12.mob-whole, .col-5-12.mob-twelve-twelfths, .col-5-12.mob-12, .col-5-12.mob-12-12, .col-6.mob-twelve, .col-6.mob-full, .col-6.mob-whole, .col-6.mob-twelve-twelfths, .col-6.mob-12, .col-6.mob-12-12, .col-1-2.mob-twelve, .col-1-2.mob-full, .col-1-2.mob-whole, .col-1-2.mob-twelve-twelfths, .col-1-2.mob-12, .col-1-2.mob-12-12, .col-6-12.mob-twelve, .col-6-12.mob-full, .col-6-12.mob-whole, .col-6-12.mob-twelve-twelfths, .col-6-12.mob-12, .col-6-12.mob-12-12, .col-7.mob-twelve, .col-7.mob-full, .col-7.mob-whole, .col-7.mob-twelve-twelfths, .col-7.mob-12, .col-7.mob-12-12, .col-7-12.mob-twelve, .col-7-12.mob-full, .col-7-12.mob-whole, .col-7-12.mob-twelve-twelfths, .col-7-12.mob-12, .col-7-12.mob-12-12, .col-8.mob-twelve, .col-8.mob-full, .col-8.mob-whole, .col-8.mob-twelve-twelfths, .col-8.mob-12, .col-8.mob-12-12, .col-2-3.mob-twelve, .col-2-3.mob-full, .col-2-3.mob-whole, .col-2-3.mob-twelve-twelfths, .col-2-3.mob-12, .col-2-3.mob-12-12, .col-8-12.mob-twelve, .col-8-12.mob-full, .col-8-12.mob-whole, .col-8-12.mob-twelve-twelfths, .col-8-12.mob-12, .col-8-12.mob-12-12, .col-9.mob-twelve, .col-9.mob-full, .col-9.mob-whole, .col-9.mob-twelve-twelfths, .col-9.mob-12, .col-9.mob-12-12, .col-3-4.mob-twelve, .col-3-4.mob-full, .col-3-4.mob-whole, .col-3-4.mob-twelve-twelfths, .col-3-4.mob-12, .col-3-4.mob-12-12, .col-9-12.mob-twelve, .col-9-12.mob-full, .col-9-12.mob-whole, .col-9-12.mob-twelve-twelfths, .col-9-12.mob-12, .col-9-12.mob-12-12, .col-10.mob-twelve, .col-10.mob-full, .col-10.mob-whole, .col-10.mob-twelve-twelfths, .col-10.mob-12, .col-10.mob-12-12, .col-5-6.mob-twelve, .col-5-6.mob-full, .col-5-6.mob-whole, .col-5-6.mob-twelve-twelfths, .col-5-6.mob-12, .col-5-6.mob-12-12, .col-10-12.mob-twelve, .col-10-12.mob-full, .col-10-12.mob-whole, .col-10-12.mob-twelve-twelfths, .col-10-12.mob-12, .col-10-12.mob-12-12, .col-11.mob-twelve, .col-11.mob-full, .col-11.mob-whole, .col-11.mob-twelve-twelfths, .col-11.mob-12, .col-11.mob-12-12, .col-11-12.mob-twelve, .col-11-12.mob-full, .col-11-12.mob-whole, .col-11-12.mob-twelve-twelfths, .col-11-12.mob-12, .col-11-12.mob-12-12, .col-12.mob-twelve, .col-12.mob-full, .col-12.mob-whole, .col-12.mob-twelve-twelfths, .col-12.mob-12, .col-12.mob-12-12, .col-12-12.mob-twelve, .col-12-12.mob-full, .col-12-12.mob-whole, .col-12-12.mob-twelve-twelfths, .col-12-12.mob-12, .col-12-12.mob-12-12 {
+      width: 100% !important;
+      margin-left: 0;
+      margin-bottom: 3%; }
+      .col-1.mob-twelve:last-of-type, .col-1.mob-full:last-of-type, .col-1.mob-whole:last-of-type, .col-1.mob-twelve-twelfths:last-of-type, .col-1.mob-12:last-of-type, .col-1.mob-12-12:last-of-type, .col-1-12.mob-twelve:last-of-type, .col-1-12.mob-full:last-of-type, .col-1-12.mob-whole:last-of-type, .col-1-12.mob-twelve-twelfths:last-of-type, .col-1-12.mob-12:last-of-type, .col-1-12.mob-12-12:last-of-type, .col-2.mob-twelve:last-of-type, .col-2.mob-full:last-of-type, .col-2.mob-whole:last-of-type, .col-2.mob-twelve-twelfths:last-of-type, .col-2.mob-12:last-of-type, .col-2.mob-12-12:last-of-type, .col-1-6.mob-twelve:last-of-type, .col-1-6.mob-full:last-of-type, .col-1-6.mob-whole:last-of-type, .col-1-6.mob-twelve-twelfths:last-of-type, .col-1-6.mob-12:last-of-type, .col-1-6.mob-12-12:last-of-type, .col-2-12.mob-twelve:last-of-type, .col-2-12.mob-full:last-of-type, .col-2-12.mob-whole:last-of-type, .col-2-12.mob-twelve-twelfths:last-of-type, .col-2-12.mob-12:last-of-type, .col-2-12.mob-12-12:last-of-type, .col-3.mob-twelve:last-of-type, .col-3.mob-full:last-of-type, .col-3.mob-whole:last-of-type, .col-3.mob-twelve-twelfths:last-of-type, .col-3.mob-12:last-of-type, .col-3.mob-12-12:last-of-type, .col-1-4.mob-twelve:last-of-type, .col-1-4.mob-full:last-of-type, .col-1-4.mob-whole:last-of-type, .col-1-4.mob-twelve-twelfths:last-of-type, .col-1-4.mob-12:last-of-type, .col-1-4.mob-12-12:last-of-type, .col-3-12.mob-twelve:last-of-type, .col-3-12.mob-full:last-of-type, .col-3-12.mob-whole:last-of-type, .col-3-12.mob-twelve-twelfths:last-of-type, .col-3-12.mob-12:last-of-type, .col-3-12.mob-12-12:last-of-type, .col-4.mob-twelve:last-of-type, .col-4.mob-full:last-of-type, .col-4.mob-whole:last-of-type, .col-4.mob-twelve-twelfths:last-of-type, .col-4.mob-12:last-of-type, .col-4.mob-12-12:last-of-type, .col-1-3.mob-twelve:last-of-type, .col-1-3.mob-full:last-of-type, .col-1-3.mob-whole:last-of-type, .col-1-3.mob-twelve-twelfths:last-of-type, .col-1-3.mob-12:last-of-type, .col-1-3.mob-12-12:last-of-type, .col-4-12.mob-twelve:last-of-type, .col-4-12.mob-full:last-of-type, .col-4-12.mob-whole:last-of-type, .col-4-12.mob-twelve-twelfths:last-of-type, .col-4-12.mob-12:last-of-type, .col-4-12.mob-12-12:last-of-type, .col-5.mob-twelve:last-of-type, .col-5.mob-full:last-of-type, .col-5.mob-whole:last-of-type, .col-5.mob-twelve-twelfths:last-of-type, .col-5.mob-12:last-of-type, .col-5.mob-12-12:last-of-type, .col-5-12.mob-twelve:last-of-type, .col-5-12.mob-full:last-of-type, .col-5-12.mob-whole:last-of-type, .col-5-12.mob-twelve-twelfths:last-of-type, .col-5-12.mob-12:last-of-type, .col-5-12.mob-12-12:last-of-type, .col-6.mob-twelve:last-of-type, .col-6.mob-full:last-of-type, .col-6.mob-whole:last-of-type, .col-6.mob-twelve-twelfths:last-of-type, .col-6.mob-12:last-of-type, .col-6.mob-12-12:last-of-type, .col-1-2.mob-twelve:last-of-type, .col-1-2.mob-full:last-of-type, .col-1-2.mob-whole:last-of-type, .col-1-2.mob-twelve-twelfths:last-of-type, .col-1-2.mob-12:last-of-type, .col-1-2.mob-12-12:last-of-type, .col-6-12.mob-twelve:last-of-type, .col-6-12.mob-full:last-of-type, .col-6-12.mob-whole:last-of-type, .col-6-12.mob-twelve-twelfths:last-of-type, .col-6-12.mob-12:last-of-type, .col-6-12.mob-12-12:last-of-type, .col-7.mob-twelve:last-of-type, .col-7.mob-full:last-of-type, .col-7.mob-whole:last-of-type, .col-7.mob-twelve-twelfths:last-of-type, .col-7.mob-12:last-of-type, .col-7.mob-12-12:last-of-type, .col-7-12.mob-twelve:last-of-type, .col-7-12.mob-full:last-of-type, .col-7-12.mob-whole:last-of-type, .col-7-12.mob-twelve-twelfths:last-of-type, .col-7-12.mob-12:last-of-type, .col-7-12.mob-12-12:last-of-type, .col-8.mob-twelve:last-of-type, .col-8.mob-full:last-of-type, .col-8.mob-whole:last-of-type, .col-8.mob-twelve-twelfths:last-of-type, .col-8.mob-12:last-of-type, .col-8.mob-12-12:last-of-type, .col-2-3.mob-twelve:last-of-type, .col-2-3.mob-full:last-of-type, .col-2-3.mob-whole:last-of-type, .col-2-3.mob-twelve-twelfths:last-of-type, .col-2-3.mob-12:last-of-type, .col-2-3.mob-12-12:last-of-type, .col-8-12.mob-twelve:last-of-type, .col-8-12.mob-full:last-of-type, .col-8-12.mob-whole:last-of-type, .col-8-12.mob-twelve-twelfths:last-of-type, .col-8-12.mob-12:last-of-type, .col-8-12.mob-12-12:last-of-type, .col-9.mob-twelve:last-of-type, .col-9.mob-full:last-of-type, .col-9.mob-whole:last-of-type, .col-9.mob-twelve-twelfths:last-of-type, .col-9.mob-12:last-of-type, .col-9.mob-12-12:last-of-type, .col-3-4.mob-twelve:last-of-type, .col-3-4.mob-full:last-of-type, .col-3-4.mob-whole:last-of-type, .col-3-4.mob-twelve-twelfths:last-of-type, .col-3-4.mob-12:last-of-type, .col-3-4.mob-12-12:last-of-type, .col-9-12.mob-twelve:last-of-type, .col-9-12.mob-full:last-of-type, .col-9-12.mob-whole:last-of-type, .col-9-12.mob-twelve-twelfths:last-of-type, .col-9-12.mob-12:last-of-type, .col-9-12.mob-12-12:last-of-type, .col-10.mob-twelve:last-of-type, .col-10.mob-full:last-of-type, .col-10.mob-whole:last-of-type, .col-10.mob-twelve-twelfths:last-of-type, .col-10.mob-12:last-of-type, .col-10.mob-12-12:last-of-type, .col-5-6.mob-twelve:last-of-type, .col-5-6.mob-full:last-of-type, .col-5-6.mob-whole:last-of-type, .col-5-6.mob-twelve-twelfths:last-of-type, .col-5-6.mob-12:last-of-type, .col-5-6.mob-12-12:last-of-type, .col-10-12.mob-twelve:last-of-type, .col-10-12.mob-full:last-of-type, .col-10-12.mob-whole:last-of-type, .col-10-12.mob-twelve-twelfths:last-of-type, .col-10-12.mob-12:last-of-type, .col-10-12.mob-12-12:last-of-type, .col-11.mob-twelve:last-of-type, .col-11.mob-full:last-of-type, .col-11.mob-whole:last-of-type, .col-11.mob-twelve-twelfths:last-of-type, .col-11.mob-12:last-of-type, .col-11.mob-12-12:last-of-type, .col-11-12.mob-twelve:last-of-type, .col-11-12.mob-full:last-of-type, .col-11-12.mob-whole:last-of-type, .col-11-12.mob-twelve-twelfths:last-of-type, .col-11-12.mob-12:last-of-type, .col-11-12.mob-12-12:last-of-type, .col-12.mob-twelve:last-of-type, .col-12.mob-full:last-of-type, .col-12.mob-whole:last-of-type, .col-12.mob-twelve-twelfths:last-of-type, .col-12.mob-12:last-of-type, .col-12.mob-12-12:last-of-type, .col-12-12.mob-twelve:last-of-type, .col-12-12.mob-full:last-of-type, .col-12-12.mob-whole:last-of-type, .col-12-12.mob-twelve-twelfths:last-of-type, .col-12-12.mob-12:last-of-type, .col-12-12.mob-12-12:last-of-type {
+        margin-bottom: 0%; } }
+
+.col {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%;
+  margin-left: 4%;
+  /* Offsets */ }
+  .col.one, .col.one-twelfth, .col-1, .col-1-12 {
+    width: 4.66666666667%; }
+  .col.two, .col.one-sixth, .col.two-twelfths, .col-2, .col-1-6, .col-2-12 {
+    width: 13.3333333333%; }
+  .col.three, .col.one-quarter, .col.three-twelfths, .col-3, .col-1-4, .col-3-12 {
+    width: 22%; }
+  .col.four, .col.one-third, .col.four-twelfths, .col-4, .col-1-3, .col-4-12 {
+    width: 30.6666666667%; }
+  .col.five, .col.five-twelfths, .col-5, .col-5-12 {
+    width: 39.3333333333%; }
+  .col.six, .col.half, .col.one-half, .col.six-twelfths, .col-6, .col-1-2, .col-6-12 {
+    width: 48%; }
+  .col.seven, .col.seven-twelfths, .col-7, .col-7-12 {
+    width: 56.6666666667%; }
+  .col.eight, .col.two-thirds, .col.eight-twelfths, .col-8, .col-2-3, .col-8-12 {
+    width: 65.3333333333%; }
+  .col.nine, .col.three-quarters, .col.nine-twelfths, .col-9, .col-3-4, .col-9-12 {
+    width: 74.0%; }
+  .col.ten, .col.five-sixths, .col.ten-twelfths, .col-10, .col-5-6, .col-10-12 {
+    width: 82.6666666667%; }
+  .col.eleven, .col.eleven-twelfths, .col-11, .col-11-12 {
+    width: 91.3333333333%; }
+  .col.twelve, .col.full, .col.whole, .col.twelve-twelfths, .col-12, .col-12-12 {
+    width: 100%;
+    margin-left: 0; }
+  .col:first-child {
+    margin-left: 0; }
+  .col.offset-by-one, .col.offset-by-1 {
+    margin-left: 8.66666666667%; }
+  .col.offset-by-two, .col.offset-by-2 {
+    margin-left: 17.3333333333%; }
+  .col.offset-by-three, .col.offset-by-3 {
+    margin-left: 26%; }
+  .col.offset-by-four, .col.offset-by-4 {
+    margin-left: 34.6666666667%; }
+  .col.offset-by-five, .col.offset-by-5 {
+    margin-left: 43.3333333333%; }
+  .col.offset-by-six, .col.offset-by-6 {
+    margin-left: 52%; }
+  .col.offset-by-seven, .col.offset-by-7 {
+    margin-left: 60.6666666667%; }
+  .col.offset-by-eight, .col.offset-by-8 {
+    margin-left: 69.3333333333%; }
+  .col.offset-by-nine, .col.offset-by-9 {
+    margin-left: 78.0%; }
+  .col.offset-by-ten, .col.offset-by-10 {
+    margin-left: 86.6666666667%; }
+  .col.offset-by-eleven, .col.offset-by-11 {
+    margin-left: 95.3333333333%; }
+  .col.offset-by-one-third, .col.offset-by-1-3 {
+    margin-left: 34.6666666667%; }
+  .col.offset-by-two-thirds, .col.offset-by-2-3 {
+    margin-left: 69.3333333333%; }
+  .col.offset-by-one-half, .col.offset-by-1-2 {
+    margin-left: 52%; }
+  @media screen and (max-width: 768px) {
+    .col.tab-one, .col.tab-one-twelfth, .col.tab-1, .col.tab-1-12 {
+      width: 4.66666666667% !important; }
+    .col.tab-two, .col.tab-one-sixth, .col.tab-two-twelfths, .col.tab-2, .col.tab-1-6, .col.tab-2-12 {
+      width: 13.3333333333% !important; }
+    .col.tab-three, .col.tab-one-quarter, .col.tab-three-twelfths, .col.tab-3, .col.tab-1-4, .col.tab-3-12 {
+      width: 22% !important; }
+    .col.tab-four, .col.tab-one-third, .col.tab-four-twelfths, .col.tab-4, .col.tab-1-3, .col.tab-4-12 {
+      width: 30.6666666667% !important; }
+    .col.tab-five, .col.tab-five-twelfths, .col.tab-5, .col.tab-5-12 {
+      width: 39.3333333333% !important; }
+    .col.tab-six, .col.tab-half, .col.tab-one-half, .col.tab-six-twelfths, .col.tab-6, .col.tab-1-2, .col.tab-6-12 {
+      width: 48% !important; }
+    .col.tab-seven, .col.tab-seven-twelfths, .col.tab-7, .col.tab-7-12 {
+      width: 56.6666666667% !important; }
+    .col.tab-eight, .col.tab-two-thirds, .col.tab-eight-twelfths, .col.tab-8, .col.tab-2-3, .col.tab-8-12 {
+      width: 65.3333333333% !important; }
+    .col.tab-nine, .col.tab-three-quarters, .col.tab-nine-twelfths, .col.tab-9, .col.tab-3-4, .col.tab-9-12 {
+      width: 74.0% !important; }
+    .col.tab-ten, .col.tab-five-sixths, .col.tab-ten-twelfths, .col.tab-10, .col.tab-5-6, .col.tab-10-12 {
+      width: 82.6666666667% !important; }
+    .col.tab-eleven, .col.tab-eleven-twelfths, .col.tab-11, .col.tab-11-12 {
+      width: 91.3333333333% !important; }
+    .col.tab-twelve, .col.tab-full, .col.tab-whole, .col.tab-twelve-twelfths, .col.tab-12, .col.tab-12-12 {
+      width: 100% !important;
+      margin-left: 0;
+      margin-bottom: 3%; }
+      .col.tab-twelve:last-of-type, .col.tab-full:last-of-type, .col.tab-whole:last-of-type, .col.tab-twelve-twelfths:last-of-type, .col.tab-12:last-of-type, .col.tab-12-12:last-of-type {
+        margin-bottom: 0%; } }
+  @media screen and (max-width: 425px) {
+    .col.mob-one, .col.mob-one-twelfth, .col.mob-1, .col.mob-1-12 {
+      width: 4.66666666667% !important; }
+    .col.mob-two, .col.mob-one-sixth, .col.mob-two-twelfths, .col.mob-2, .col.mob-1-6, .col.mob-2-12 {
+      width: 13.3333333333% !important; }
+    .col.mob-three, .col.mob-one-quarter, .col.mob-three-twelfths, .col.mob-3, .col.mob-1-4, .col.mob-3-12 {
+      width: 22% !important; }
+    .col.mob-four, .col.mob-one-third, .col.mob-four-twelfths, .col.mob-4, .col.mob-1-3, .col.mob-4-12 {
+      width: 30.6666666667% !important; }
+    .col.mob-five, .col.mob-five-twelfths, .col.mob-5, .col.mob-5-12 {
+      width: 39.3333333333% !important; }
+    .col.mob-six, .col.mob-half, .col.mob-one-half, .col.mob-six-twelfths, .col.mob-6, .col.mob-1-2, .col.mob-6-12 {
+      width: 48% !important; }
+    .col.mob-seven, .col.mob-seven-twelfths, .col.mob-7, .col.mob-7-12 {
+      width: 56.6666666667% !important; }
+    .col.mob-eight, .col.mob-two-thirds, .col.mob-eight-twelfths, .col.mob-8, .col.mob-2-3, .col.mob-8-12 {
+      width: 65.3333333333% !important; }
+    .col.mob-nine, .col.mob-three-quarters, .col.mob-nine-twelfths, .col.mob-9, .col.mob-3-4, .col.mob-9-12 {
+      width: 74.0% !important; }
+    .col.mob-ten, .col.mob-five-sixths, .col.mob-ten-twelfths, .col.mob-10, .col.mob-5-6, .col.mob-10-12 {
+      width: 82.6666666667% !important; }
+    .col.mob-eleven, .col.mob-eleven-twelfths, .col.mob-11, .col.mob-11-12 {
+      width: 91.3333333333% !important; }
+    .col.mob-twelve, .col.mob-full, .col.mob-whole, .col.mob-twelve-twelfths, .col.mob-12, .col.mob-12-12 {
+      width: 100% !important;
+      margin-left: 0;
+      margin-bottom: 3%; }
+      .col.mob-twelve:last-of-type, .col.mob-full:last-of-type, .col.mob-whole:last-of-type, .col.mob-twelve-twelfths:last-of-type, .col.mob-12:last-of-type, .col.mob-12-12:last-of-type {
+        margin-bottom: 0%; } }
+  .col.left-center {
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: start;
+        align-items: flex-start; }
+  .col.left-bottom {
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    -ms-flex-align: start;
+        align-items: flex-start; }
+  .col.center-top {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: center;
+        align-items: center; }
+  .col.center-bottom {
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    -ms-flex-align: center;
+        align-items: center; }
+  .col.right-top {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: end;
+        align-items: flex-end; }
+  .col.right-center {
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: end;
+        align-items: flex-end; }
+
+@keyframes slideLeft {
+  0% {
+    transform: translate3d(100%, 0px, 0px); }
+  100% {
+    transform: none; } }
+
+.nav {
+  width: 100%;
+  height: 70px;
+  padding: 0px 15px;
+  z-index: 98;
+  font-size: 0.9rem; }
+  .nav.padded {
+    padding: 0px 10%; }
+    @media screen and (max-width: 768px) {
+      .nav.padded {
+        padding: 0px 15px; } }
+    .nav.padded .brand.float-left {
+      margin-right: 3em; }
+    .nav.padded .brand.float-right {
+      margin-left: 3em; }
+    .nav.padded .nav-options > li {
+      padding: 0px 2em; }
+  .nav.fixed {
+    position: fixed !important;
+    top: 0px; }
+  .nav.centered {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    @media screen and (max-width: 768px) {
+      .nav.centered {
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+    .nav.centered .nav-options > li {
+      padding: 0px 20px !important; }
+    .nav.centered .nav-options .dropdown .dropdown-content {
+      left: -50%; }
+  .nav.mobile {
+    background-color: transparent;
+    position: relative; }
+    .nav.mobile .mob-nav {
+      display: block; }
+      .nav.mobile .mob-nav .mob-toggle {
+        display: none; }
+        .nav.mobile .mob-nav .mob-toggle:checked ~ .nav-options {
+          display: -ms-flexbox;
+          display: flex; }
+          @media screen and (max-width: 768px) {
+            .nav.mobile .mob-nav .mob-toggle:checked ~ .nav-options {
+              display: block; } }
+      .nav.mobile .mob-nav .nav-options {
+        z-index: -1;
+        -ms-flex-pack: center;
+            justify-content: center;
+        top: 0px; }
+        @media screen and (max-width: 768px) {
+          .nav.mobile .mob-nav .nav-options {
+            top: auto; } }
+  .nav.skinny {
+    height: 50px;
+    font-size: 0.8rem; }
+    .nav.skinny .brand {
+      line-height: 50px; }
+      .nav.skinny .brand img.logo {
+        height: 25px; }
+    .nav.skinny .nav-options {
+      line-height: 50px; }
+      .nav.skinny .nav-options button {
+        padding: 0.5em 1.5em; }
+    .nav.skinny ul li {
+      height: 50px; }
+    .nav.skinny .mob-nav {
+      line-height: 50px; }
+  .nav.fat {
+    height: 90px; }
+    .nav.fat .brand {
+      line-height: 90px; }
+      .nav.fat .brand img.logo {
+        height: 60px; }
+    .nav.fat .nav-options {
+      line-height: 90px; }
+    .nav.fat ul li {
+      height: 90px; }
+    .nav.fat .mob-nav {
+      line-height: 90px; }
+  .nav.dark {
+    background-color: #2f2f2f;
+    color: #ececec; }
+    .nav.dark .nav-options button {
+      background-color: #ececec;
+      color: #2f2f2f; }
+    .nav.dark .nav-options .dropdown .dropdown-content {
+      background-color: #bbbbbb;
+      color: #2f2f2f; }
+      .nav.dark .nav-options .dropdown .dropdown-content li a:hover {
+        opacity: 1;
+        background-color: #2f2f2f;
+        color: #ececec; }
+    .nav.dark .mob-nav .nav-options {
+      background-color: #bbbbbb; }
+      .nav.dark .mob-nav .nav-options li a:hover {
+        opacity: 1;
+        background-color: rgba(47, 47, 47, 0.75);
+        color: #ececec; }
+  .nav.light {
+    background-color: #ececec;
+    color: #2f2f2f; }
+    .nav.light .nav-options button {
+      background-color: #bbbbbb;
+      color: #2f2f2f; }
+    .nav.light .nav-options .dropdown .dropdown-content {
+      background-color: #bbbbbb;
+      color: #2f2f2f; }
+      .nav.light .nav-options .dropdown .dropdown-content li a:hover {
+        opacity: 1;
+        background-color: #ececec;
+        color: #2f2f2f; }
+    .nav.light .mob-nav .nav-options {
+      background-color: #bbbbbb; }
+      .nav.light .mob-nav .nav-options li a:hover {
+        opacity: 1;
+        background-color: #ececec;
+        color: #2f2f2f; }
+  .nav.transparent {
+    background-color: transparent;
+    color: #2f2f2f; }
+    .nav.transparent .nav-options button {
+      background-color: #ececec;
+      color: #2f2f2f; }
+    .nav.transparent .nav-options .dropdown .dropdown-content {
+      background-color: #ececec; }
+      .nav.transparent .nav-options .dropdown .dropdown-content li a:hover {
+        opacity: 1;
+        background-color: #bbbbbb;
+        color: #2f2f2f; }
+    .nav.transparent .mob-nav .nav-options {
+      background-color: #ececec; }
+      .nav.transparent .mob-nav .nav-options li a:hover {
+        opacity: 1;
+        background-color: #bbbbbb;
+        color: #2f2f2f; }
+  .nav .brand {
+    line-height: 70px;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease-in-out; }
+    .nav .brand:hover {
+      opacity: 0.75;
+      cursor: pointer; }
+    .nav .brand.float-left {
+      margin-right: 1.5em; }
+    .nav .brand.float-right {
+      margin-left: 1.5em; }
+    .nav .brand span {
+      font-weight: 900; }
+    .nav .brand img.logo {
+      height: 35px;
+      vertical-align: middle;
+      margin-right: 10px; }
+  .nav ul li {
+    display: inline-block;
+    height: 70px; }
+    .nav ul li.nav-text {
+      opacity: 0.5; }
+    .nav ul li a {
+      transition: opacity 0.3s ease-in-out; }
+      .nav ul li a:hover {
+        opacity: 0.5; }
+  .nav .nav-options {
+    line-height: 70px; }
+    @media screen and (max-width: 768px) {
+      .nav .nav-options {
+        display: none; } }
+    .nav .nav-options > li {
+      padding: 0px 1em;
+      margin-left: -5px; }
+      .nav .nav-options > li.active {
+        background-color: rgba(255, 255, 255, 0.25); }
+      .nav .nav-options > li:first-of-type {
+        padding-left: 0px; }
+      .nav .nav-options > li:last-of-type {
+        padding-right: 0px; }
+    .nav .nav-options button {
+      padding: 1.5em 2em;
+      border: none;
+      transition: all 0.3s ease-in-out; }
+      .nav .nav-options button.full {
+        height: 100%;
+        transform: translate3d(0px, -1px, 0px); }
+      .nav .nav-options button.skinny {
+        padding: 1em 2em; }
+      .nav .nav-options button.fat {
+        padding: 2em 2em; }
+      .nav .nav-options button:hover {
+        cursor: pointer;
+        letter-spacing: 0.3em; }
+    .nav .nav-options .dropdown {
+      position: relative; }
+      .nav .nav-options .dropdown:after {
+        content: "▿";
+        opacity: 0.5; }
+      .nav .nav-options .dropdown:hover {
+        cursor: pointer; }
+        .nav .nav-options .dropdown:hover .dropdown-content {
+          display: block; }
+      .nav .nav-options .dropdown .dropdown-content {
+        position: absolute;
+        min-width: 200px;
+        list-style: none;
+        text-align: center;
+        z-index: 99;
+        font-size: 0.9em;
+        display: none; }
+        .nav .nav-options .dropdown .dropdown-content li {
+          width: 100%;
+          height: 100%; }
+          .nav .nav-options .dropdown .dropdown-content li a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            padding: 0px 12px;
+            transition: all 0.3s ease-in-out; }
+            .nav .nav-options .dropdown .dropdown-content li a:hover {
+              background-color: black;
+              color: white;
+              cursor: pointer; }
+    .nav .nav-options.float-left.push-to-end {
+      margin-left: -15px; }
+    .nav .nav-options.float-left .dropdown .dropdown-content {
+      left: 0px;
+      text-align: left; }
+    .nav .nav-options.float-right.push-to-end {
+      margin-right: -15px; }
+    .nav .nav-options.float-right .dropdown .dropdown-content {
+      right: 0px;
+      text-align: right; }
+  .nav .mob-nav {
+    display: none;
+    line-height: 70px; }
+    @media screen and (max-width: 768px) {
+      .nav .mob-nav {
+        display: block; } }
+    .nav .mob-nav .mob-toggle {
+      display: none; }
+      .nav .mob-nav .mob-toggle:checked ~ .nav-options {
+        display: block; }
+      .nav .mob-nav .mob-toggle:checked ~ label .hamburger::before {
+        display: none; }
+      .nav .mob-nav .mob-toggle:checked ~ label .hamburger:after {
+        display: block; }
+    .nav .mob-nav .hamburger {
+      font-size: 20pt;
+      transition: opacity 0.3s ease-in-out; }
+      .nav .mob-nav .hamburger:before {
+        content: "☰"; }
+      .nav .mob-nav .hamburger:after {
+        content: "✕";
+        display: none; }
+      .nav .mob-nav .hamburger:hover {
+        opacity: 0.75;
+        cursor: pointer; }
+    .nav .mob-nav ul.nav-options {
+      display: none;
+      width: 100vw;
+      position: absolute;
+      left: 0px;
+      z-index: 99; }
+      .nav .mob-nav ul.nav-options li {
+        display: block;
+        padding: 0px !important; }
+        .nav .mob-nav ul.nav-options li a {
+          width: 100%;
+          height: 100%;
+          display: inline-block;
+          padding: 0px 65px;
+          transition: all 0.3s ease-in-out; }
+          .nav .mob-nav ul.nav-options li a:hover {
+            color: white;
+            cursor: pointer; }
+    .nav .mob-nav.side .mob-toggle:checked ~ label .hamburger {
+      transform: translate3d(-120px, 0px, 0px); }
+    .nav .mob-nav.side .mob-toggle:checked ~ .sidebar {
+      display: block; }
+    .nav .mob-nav.side label .hamburger {
+      transition: transform 1s ease-in-out; }
+    .nav .mob-nav.side .sidebar {
+      background-color: #2f2f2f;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      width: 120px;
+      padding: 30px;
+      z-index: 99;
+      display: none;
+      animation: slideLeft 1s ease-in-out; }
+      .nav .mob-nav.side .sidebar.is-open {
+        animation: slideLeft 1s ease-in-out reverse; }
+      .nav .mob-nav.side .sidebar .nav-options {
+        display: block;
+        background: none;
+        width: auto;
+        position: static;
+        left: auto; }
+        .nav .mob-nav.side .sidebar .nav-options li a {
+          display: block;
+          padding: 0px;
+          width: auto;
+          height: auto; }
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hero.short {
+    height: 50vh; }
+  .hero.tall {
+    height: 75vh; }
+  .hero.skinny {
+    width: 50vw; }
+  .hero.fat {
+    width: 75vw; }
+  @media screen and (max-width: 768px) {
+    .hero.skinny, .hero.fat {
+      width: 100vw; } }
+  .hero.overlay {
+    position: relative;
+    z-index: 0; }
+    .hero.overlay:after {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: -1; }
+    .hero.overlay.dark:after {
+      background-color: rgba(0, 0, 0, 0.75); }
+    .hero.overlay.light:after {
+      background-color: rgba(255, 255, 255, 0.75); }
+    .hero.overlay.eden:after {
+      background-color: rgba(82, 174, 118, 0.75); }
+
+.button,
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  text-align: center;
+  padding: 1em 3em;
+  border-radius: 0.25em;
+  outline: none;
+  background-color: transparent;
+  border: 0.1em solid #bbbbbb;
+  color: #2f2f2f;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out; }
+  .button:hover,
+  button:hover {
+    cursor: pointer;
+    border-color: #2f2f2f; }
+  .button.light,
+  button.light {
+    background-color: #ececec;
+    color: #2f2f2f; }
+    .button.light:hover,
+    button.light:hover {
+      background-color: #dfdfdf; }
+  .button.dark,
+  button.dark {
+    background-color: #2f2f2f;
+    color: #ececec; }
+    .button.dark:hover,
+    button.dark:hover {
+      background-color: #3c3c3c; }
+  .button.eden,
+  button.eden {
+    background-color: #52ae76;
+    color: #ececec; }
+    .button.eden:hover,
+    button.eden:hover {
+      background-color: #4a9d6a; }
+  .button.short,
+  button.short {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; }
+  .button.tall,
+  button.tall {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em; }
+  .button.skinny,
+  button.skinny {
+    padding-left: 2em;
+    padding-right: 2em; }
+  .button.fat,
+  button.fat {
+    padding-left: 4em;
+    padding-right: 4em; }
+  .button.no-border,
+  button.no-border {
+    border: none; }
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  display: none;
+  overflow: auto; }
+  .modal.is-open {
+    display: block; }
+  .modal.light > .content {
+    background-color: #ececec;
+    color: #2f2f2f; }
+    .modal.light > .content > .close.outside {
+      color: #ececec; }
+  .modal.dark > .content {
+    background-color: #2f2f2f;
+    color: #ececec; }
+    .modal.dark > .content > .close.outside {
+      color: #2f2f2f; }
+  .modal.eden > .content {
+    background-color: #52ae76;
+    color: #ececec; }
+    .modal.eden > .content > .close.outside {
+      color: #52ae76; }
+  .modal.dark-bg {
+    background-color: rgba(0, 0, 0, 0.75); }
+  .modal.light-bg {
+    background-color: rgba(255, 255, 255, 0.75); }
+  .modal.eden-bg {
+    background-color: rgba(82, 174, 118, 0.75); }
+  .modal.shadow > .content {
+    box-shadow: 0px 0px 100px -10px rgba(0, 0, 0, 0.75); }
+  .modal.rounded > .content {
+    border-radius: 7.5px; }
+  .modal.border > .content {
+    border: 1px solid black; }
+  .modal.top > .content {
+    margin: 0% auto 7.5% auto;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top: none; }
+    .modal.top > .content > .close.outside {
+      right: -1.5em;
+      top: 0.5em; }
+  .modal > .content {
+    position: relative;
+    width: 75%;
+    margin: 7.6% auto; }
+    .modal > .content > .close {
+      position: absolute;
+      opacity: 0.5;
+      transition: all 0.3s ease-in-out; }
+      .modal > .content > .close:hover {
+        opacity: 1;
+        cursor: pointer; }
+      .modal > .content > .close.dark {
+        color: #2f2f2f !important; }
+      .modal > .content > .close.light {
+        color: #ececec !important; }
+      .modal > .content > .close.eden {
+        color: #52ae76 !important; }
+      .modal > .content > .close.inside {
+        right: 15px;
+        top: 12px;
+        color: #ececec; }
+      .modal > .content > .close.outside {
+        right: -1.25em;
+        top: -1.25em;
+        color: #2f2f2f; }
+      .modal > .content > .close.corner {
+        right: -1em;
+        top: -1em;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 100%;
+        color: white;
+        width: 2em;
+        height: 2em;
+        text-align: center;
+        opacity: 1;
+        padding-top: 1px;
+        transition: all 0.3s ease-in-out; }
+        .modal > .content > .close.corner span {
+          vertical-align: middle; }
+        .modal > .content > .close.corner:hover {
+          opacity: 0.75;
+          cursor: pointer; }
+      .modal > .content > .close.rotate {
+        right: -2em;
+        top: 1em;
+        transform: rotate3d(0, 0, 1, 90deg); }
+
+.code {
+  padding: 2px 4px;
+  background-color: #282c34;
+  color: #ececec;
+  font-family: monospace;
+  margin-bottom: 50px; }
+  .code:last-child {
+    margin-bottom: 0px; }
+  .code.light {
+    background-color: #ececec;
+    color: #2f2f2f; }
+  .code.block {
+    margin-top: 10px;
+    position: relative;
+    padding: 75px; }
+    .code.block.short {
+      padding: 50px; }
+    @media screen and (max-width: 768px) {
+      .code.block {
+        padding: 25px !important;
+        font-size: 0.8rem; } }
+  .codespan {
+    padding: 0px;
+    margin: 0px; }
+  .code .tab {
+    margin: 1em 0em;
+    margin-left: 2em; }
+  .code .tag {
+    color: #e06c75; }
+    .code .tag:before, .code .tag:after {
+      color: white; }
+    .code .tag:before {
+      content: "<"; }
+    .code .tag:after {
+      content: ">"; }
+    .code .tag.close:before {
+      content: "</"; }
+    .code .tag .content {
+      color: #a2a9b6; }
+    .code .tag .attr {
+      color: #cb9a66; }
+      .code .tag .attr:after {
+        content: "=";
+        color: white; }
+      .code .tag .attr.id {
+        color: #3992ef; }
+    .code .tag .val {
+      color: #98c372;
+      margin-right: 0.4em; }
+      .code .tag .val:before {
+        content: open-quote; }
+      .code .tag .val:after {
+        content: close-quote; }
+      .code .tag .val:last-of-type {
+        margin-right: 0px; }
+
+.tool-tip {
+  position: relative; }
+  .tool-tip .tool-tip-text {
+    visibility: hidden;
+    display: inline-block;
+    font-size: 0.9em;
+    bottom: 100%;
+    margin-bottom: 10px;
+    left: 0px;
+    background-color: black;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 0.2em;
+    white-space: nowrap;
+    position: absolute;
+    z-index: 1; }
+    .tool-tip .tool-tip-text.center {
+      left: 50%;
+      transform: translate3d(-50%, 0px, 0px); }
+      .tool-tip .tool-tip-text.center:after {
+        left: 50%; }
+    .tool-tip .tool-tip-text.right {
+      left: auto;
+      right: 0px; }
+      .tool-tip .tool-tip-text.right:after {
+        left: auto;
+        right: 10px; }
+    .tool-tip .tool-tip-text.sharp {
+      border-radius: 0px; }
+    .tool-tip .tool-tip-text.short {
+      padding-top: 0.25em;
+      padding-bottom: 0.25em; }
+    .tool-tip .tool-tip-text.tall {
+      padding-top: 0.75em;
+      padding-bottom: 0.75em; }
+    .tool-tip .tool-tip-text.skinny {
+      padding-left: 0.5em;
+      padding-right: 0.5em; }
+    .tool-tip .tool-tip-text.fat {
+      padding-left: 1.5em;
+      padding-right: 1.5em; }
+    .tool-tip .tool-tip-text.dark {
+      background-color: #2f2f2f;
+      color: #ececec; }
+      .tool-tip .tool-tip-text.dark:after {
+        border-color: #2f2f2f transparent transparent transparent; }
+    .tool-tip .tool-tip-text.light {
+      background-color: #ececec;
+      color: #2f2f2f; }
+      .tool-tip .tool-tip-text.light:after {
+        border-color: #ececec transparent transparent transparent; }
+    .tool-tip .tool-tip-text.eden {
+      background-color: #52ae76;
+      color: #ececec; }
+      .tool-tip .tool-tip-text.eden:after {
+        border-color: #52ae76 transparent transparent transparent; }
+    .tool-tip .tool-tip-text:after {
+      content: " ";
+      position: absolute;
+      top: 100%;
+      left: 10px;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: black transparent transparent transparent; }
+  .tool-tip:hover {
+    cursor: help; }
+    .tool-tip:hover > .tool-tip-text {
+      visibility: visible; }

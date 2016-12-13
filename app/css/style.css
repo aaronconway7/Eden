@@ -1,8 +1,10 @@
 #container-pg #container h1 {
   text-align: center;
   margin-bottom: 20px; }
+
 #container-pg #container .row:first-of-type .container {
   padding-bottom: 0px; }
+
 #container-pg #container .container-example {
   background-color: #bbbbbb;
   transition: all 0.3s ease-in-out; }
@@ -19,6 +21,7 @@
 #grid-pg #grid h1 {
   text-align: center;
   margin-bottom: 20px; }
+
 #grid-pg #grid .grid-option {
   margin-bottom: 50px; }
   #grid-pg #grid .grid-option .row {
@@ -34,7 +37,8 @@
       font-size: 7pt;
       letter-spacing: 2pt;
       text-align: center;
-      justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
       padding: 10px 0px;
       transition: all 0.3s ease-in-out; }
       #grid-pg #grid .grid-option .row .col:hover {

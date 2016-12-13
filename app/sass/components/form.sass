@@ -1,0 +1,53 @@
+input, textarea
+    appearance: none
+    box-shadow: none
+    border: none
+    outline: none
+    padding: 1em 2em
+    vertical-align: bottom
+    display: inline-block
+    background: none
+
+    &.fat
+        padding-left: 3em
+        padding-right: 3em
+
+    &.skinny
+        padding-left: 1em
+        padding-right: 1em
+
+    &.tall
+        padding-top: 1.5em
+        padding-bottom: 1.5em
+
+    &.short
+        padding-top: 0.5em
+        padding-bottom: 0.5em
+
+    &.dark
+        background-color: $eden-charcoal
+        color: $eden-light-grey
+
+    &.light
+        background-color: $eden-light-grey
+        color: $eden-charcoal
+
+    &.eden
+        background-color: $eden-green
+        color: $eden-light-grey
+
+    &.transparent
+        background-color: transparent
+        color: $eden-charcoal
+
+    &.border
+        border: 1px solid $eden-dark-grey
+
+        &-bottom
+            border-bottom: 1px solid $eden-dark-grey
+
+            &.transparent
+                padding-left: 0px
+
+    &.rounded
+        border-radius: 0.25em

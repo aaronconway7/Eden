@@ -6,6 +6,7 @@
     top: 0px
     display: none
     overflow: auto
+    z-index: 99
 
     &.is-open
         display: block
@@ -16,6 +17,9 @@
             background-color: $eden_light_grey
             color: $eden-charcoal
 
+            &>.close.inside
+                color: $eden-charcoal
+
             &>.close.outside
                 color: $eden-light-grey
 
@@ -25,8 +29,8 @@
             background-color: $eden-charcoal
             color: $eden-light-grey
 
-            &>.close.outside
-                color: $eden-charcoal
+            &>.close.inside
+                color: $eden-light-grey
 
 
     &.eden
@@ -35,15 +39,31 @@
             background-color: $eden-green
             color: $eden-light-grey
 
-            &>.close.outside
-                color: $eden-green
+            &>.close.inside
+                color: $eden-light-grey
 
     &.dark-bg
         background-color: rgba(0, 0, 0, 0.75)
+
+        &>.content
+
+            &>.close.outside
+                color: $eden-light-grey
     &.light-bg
         background-color: rgba(255, 255, 255, 0.75)
+
+        &>.content
+
+            &>.close.outside
+                color: $eden-charcoal
+
     &.eden-bg
         background-color: rgba($eden-green, 0.75)
+
+        &>.content
+
+            &>.close.outside
+                color: $eden-light-grey
 
     &.shadow
 
@@ -116,14 +136,14 @@
                 height: 2em
                 text-align: center
                 opacity: 1
-                padding-top: 1px
+                padding-top: 2px
                 transition: all 0.3s ease-in-out
 
                 span
                     vertical-align: middle
 
                 &:hover
-                    opacity: 0.75
+                    background-color: lighten(black, 20)
                     cursor: pointer
 
             &.rotate

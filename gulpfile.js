@@ -78,13 +78,13 @@ gulp.task('jade-watch', ['jade'], reload);
 
 gulp.task('watch', ['sass', 'jade'], function (){
     gulp.watch('app/sass/**/*.sass', ['sass']);
-    gulp.watch('./app/components/jade/*.jade', ['jade-watch']);
+    gulp.watch('app/components/jade/*.jade', ['jade-watch']);
     // Other watchers
 });
 
 gulp.task('live', ['browserSync', 'sass', 'jade'], function (){
     gulp.watch('app/sass/**/*.sass', ['sass']);
-    gulp.watch('./app/components/jade/*.jade', ['jade-watch']);
+    gulp.watch('app/components/jade/*.jade', ['jade-watch']);
     // Other watchers
 });
 

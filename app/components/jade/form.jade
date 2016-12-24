@@ -10,7 +10,18 @@ html(lang='en')
             .container
                 form.col
                     input.skinny.rounded.light.border-bottom(type="text", placeholder="test")
-                    input.border(type="number")
-                    textarea.border
-                    input.eden(type="submit")
-                
+                    input.border-bottom.transparent(type="number")
+                    select.border.sharp
+                        option(value="placeholder", disabled='', selected='') Dropdown
+                        option(value="volvo") Volvo
+                        option(value="saab")
+                        option(value="opel")
+                        span.caret ▾
+                    textarea.border.skinny(placeholder="Description goes here...")
+                    input.transparent.tall.uppercase-and-space(type="submit")
+                    label.toggle.light.shadow
+                        input(type="checkbox")
+                        .toggle-control
+                            .option-1 Option 1
+                            .option-2 Option 2
+                            .handle.shadow

@@ -44,3 +44,8 @@
       #grid-pg #grid .grid-option .row .col:hover {
         background-color: #bbbbbb;
         cursor: help; }
+
+#form-pg form {
+  width: 300px; }
+  #form-pg form input, #form-pg form textarea, #form-pg form select {
+    margin-bottom: 20px; }

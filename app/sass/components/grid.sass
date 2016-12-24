@@ -15,8 +15,10 @@
 
 .row
     display: flex
-    flex-wrap: wrap
     height: 100%
+
+    &.wrap
+        flex-wrap: wrap
 
     &.left-center
         justify-content: flex-start
@@ -49,7 +51,7 @@
     margin-left: 4%
 
     &:first-child
-        margin-left: 0
+        margin-left: 0px
 
     &.one
         width: 4.66666666667%

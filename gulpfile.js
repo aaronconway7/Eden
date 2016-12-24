@@ -6,8 +6,6 @@ var reload          = browserSync.reload;
 var uglify          = require('gulp-uglify');
 var prefix          = require('gulp-autoprefixer');
 var cssnano         = require('gulp-cssnano');
-var mainBowerFiles  = require('main-bower-files');
-var filter          = require('gulp-filter');
 var rename          = require('gulp-rename');
 var runSequence     = require('run-sequence');
 var concat          = require('gulp-concat');
@@ -54,37 +52,21 @@ gulp.task('compile', function(){
         .pipe(gulp.dest('dist/js'))
 });
 
-gulp.task('bower-css', function() {
-
-    var cssFilter = filter('**/*.css', {restore: true});
-
-    return gulp.src(mainBowerFiles())
-        .pipe(cssFilter)
-        .pipe(gulp.dest('app/css'))
-});
-
-gulp.task('bower-js', function() {
-
-    var jsFilter = filter('**/*.js', {restore: true});
-
-    return gulp.src(mainBowerFiles())
-        .pipe(jsFilter)
-        .pipe(gulp.dest('app/js'))
-});
-
-gulp.task('bower', ['bower-css', 'bower-js']);
-
 gulp.task('jade-watch', ['jade'], reload);
+
+gulp.task('jquery-watch', ['scripts'], reload);
 
 gulp.task('watch', ['sass', 'jade'], function (){
     gulp.watch('app/sass/**/*.sass', ['sass']);
     gulp.watch('app/components/jade/*.jade', ['jade-watch']);
+    gulp.watch('app/js/**/*.js', ['jquery-watch']);
     // Other watchers
 });
 
-gulp.task('live', ['browserSync', 'sass', 'jade'], function (){
+gulp.task('live', ['browserSync', 'sass', 'jade', 'scripts'], function (){
     gulp.watch('app/sass/**/*.sass', ['sass']);
     gulp.watch('app/components/jade/*.jade', ['jade-watch']);
+    gulp.watch('app/js/**/*.js', ['jquery-watch']);
     // Other watchers
 });
 
@@ -98,7 +80,8 @@ gulp.task('browserSync', function() {
 
 gulp.task('default', function () {
     runSequence(
-        ['jade', 'sass', 'scripts', 'bower'],
-        'compile'
+        ['jade', 'sass', 'scripts'],
+        'compile',
+        'live'
     )
 });

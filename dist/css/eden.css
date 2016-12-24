@@ -4,10 +4,19 @@
 /* Copyright 2016, Aaron Conway */
 /* http://www.designofeden.com */
 /* */
+@keyframes slideLeft {
+  0% {
+    transform: translate3d(100%, 0px, 0px); }
+  100% {
+    transform: none; } }
+
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 html.no-scroll, body.no-scroll {
   overflow: hidden;
@@ -29,15 +38,9 @@ html.no-scroll, body.no-scroll {
 :root {
   font-size: 12pt; }
 
-* {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
 body {
   font-family: "Source Sans Pro", "Lato", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  line-height: 1.6; }
+  font-weight: 300; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900; }
@@ -279,11 +282,9 @@ h6 {
     -ms-flex-align: end;
         align-items: flex-end; }
 
-@keyframes slideLeft {
-  0% {
-    transform: translate3d(100%, 0px, 0px); }
-  100% {
-    transform: none; } }
+a {
+  text-decoration: none;
+  color: inherit; }
 
 .nav {
   width: 100%;
@@ -385,6 +386,8 @@ h6 {
         opacity: 1;
         background-color: rgba(47, 47, 47, 0.75);
         color: #ececec; }
+    .nav.dark .sidebar {
+      background-color: #2f2f2f; }
   .nav.light {
     background-color: #ececec;
     color: #2f2f2f; }
@@ -404,6 +407,8 @@ h6 {
         opacity: 1;
         background-color: #ececec;
         color: #2f2f2f; }
+    .nav.light .sidebar {
+      background-color: #ececec; }
   .nav.transparent {
     background-color: transparent;
     color: #2f2f2f; }
@@ -422,6 +427,8 @@ h6 {
         opacity: 1;
         background-color: #bbbbbb;
         color: #2f2f2f; }
+    .nav.transparent .sidebar {
+      background-color: white; }
   .nav .brand {
     line-height: 70px;
     text-transform: uppercase;
@@ -566,7 +573,6 @@ h6 {
     .nav .mob-nav.side label .hamburger {
       transition: transform 1s ease-in-out; }
     .nav .mob-nav.side .sidebar {
-      background-color: #2f2f2f;
       position: fixed;
       top: 0px;
       right: 0px;
@@ -588,7 +594,8 @@ h6 {
           display: block;
           padding: 0px;
           width: auto;
-          height: auto; }
+          height: auto;
+          font-weight: 300; }
 
 .hero {
   height: 100vh;
@@ -627,7 +634,6 @@ h6 {
     .hero.overlay.eden:after {
       background-color: rgba(82, 174, 118, 0.75); }
 
-.button,
 button {
   appearance: none;
   -webkit-appearance: none;
@@ -635,57 +641,49 @@ button {
   display: inline-block;
   text-align: center;
   padding: 1em 3em;
-  border-radius: 0.25em;
   outline: none;
-  background-color: transparent;
-  border: 0.1em solid #bbbbbb;
-  color: #2f2f2f;
-  white-space: nowrap;
+  border: none;
   transition: all 0.3s ease-in-out; }
-  .button:hover,
   button:hover {
-    cursor: pointer;
-    border-color: #2f2f2f; }
-  .button.light,
+    cursor: pointer; }
   button.light {
     background-color: #ececec;
     color: #2f2f2f; }
-    .button.light:hover,
     button.light:hover {
       background-color: #dfdfdf; }
-  .button.dark,
   button.dark {
     background-color: #2f2f2f;
     color: #ececec; }
-    .button.dark:hover,
     button.dark:hover {
       background-color: #3c3c3c; }
-  .button.eden,
   button.eden {
     background-color: #52ae76;
     color: #ececec; }
-    .button.eden:hover,
     button.eden:hover {
       background-color: #4a9d6a; }
-  .button.short,
+  button.transparent {
+    background-color: transparent;
+    color: #2f2f2f; }
+    button.transparent:hover {
+      background-color: #ececec; }
   button.short {
     padding-top: 0.5em;
     padding-bottom: 0.5em; }
-  .button.tall,
   button.tall {
     padding-top: 1.5em;
     padding-bottom: 1.5em; }
-  .button.skinny,
   button.skinny {
     padding-left: 2em;
     padding-right: 2em; }
-  .button.fat,
   button.fat {
     padding-left: 4em;
     padding-right: 4em; }
-  .button.no-border,
-  button.no-border {
-    border: none; }
+  button.border {
+    border: 0.1em solid #bbbbbb; }
+  button.rounded {
+    border-radius: 0.25em; }
+  button.shadow {
+    box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.75); }
 
 .modal {
   width: 100%;
@@ -694,30 +692,39 @@ button {
   left: 0px;
   top: 0px;
   display: none;
-  overflow: auto; }
+  overflow: auto;
+  z-index: 99; }
   .modal.is-open {
     display: block; }
   .modal.light > .content {
     background-color: #ececec;
     color: #2f2f2f; }
+    .modal.light > .content > .close.inside {
+      color: #2f2f2f; }
     .modal.light > .content > .close.outside {
       color: #ececec; }
   .modal.dark > .content {
     background-color: #2f2f2f;
     color: #ececec; }
-    .modal.dark > .content > .close.outside {
-      color: #2f2f2f; }
+    .modal.dark > .content > .close.inside {
+      color: #ececec; }
   .modal.eden > .content {
     background-color: #52ae76;
     color: #ececec; }
-    .modal.eden > .content > .close.outside {
-      color: #52ae76; }
+    .modal.eden > .content > .close.inside {
+      color: #ececec; }
   .modal.dark-bg {
     background-color: rgba(0, 0, 0, 0.75); }
+    .modal.dark-bg > .content > .close.outside {
+      color: #ececec; }
   .modal.light-bg {
     background-color: rgba(255, 255, 255, 0.75); }
+    .modal.light-bg > .content > .close.outside {
+      color: #2f2f2f; }
   .modal.eden-bg {
     background-color: rgba(82, 174, 118, 0.75); }
+    .modal.eden-bg > .content > .close.outside {
+      color: #ececec; }
   .modal.shadow > .content {
     box-shadow: 0px 0px 100px -10px rgba(0, 0, 0, 0.75); }
   .modal.rounded > .content {
@@ -768,12 +775,12 @@ button {
         height: 2em;
         text-align: center;
         opacity: 1;
-        padding-top: 1px;
+        padding-top: 2px;
         transition: all 0.3s ease-in-out; }
         .modal > .content > .close.corner span {
           vertical-align: middle; }
         .modal > .content > .close.corner:hover {
-          opacity: 0.75;
+          background-color: #333333;
           cursor: pointer; }
       .modal > .content > .close.rotate {
         right: -2em;
@@ -905,3 +912,47 @@ button {
     cursor: help; }
     .tool-tip:hover > .tool-tip-text {
       visibility: visible; }
+
+input, textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  padding: 1em 2em;
+  vertical-align: bottom;
+  display: inline-block;
+  background: none; }
+  input.fat, textarea.fat {
+    padding-left: 3em;
+    padding-right: 3em; }
+  input.skinny, textarea.skinny {
+    padding-left: 1em;
+    padding-right: 1em; }
+  input.tall, textarea.tall {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em; }
+  input.short, textarea.short {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; }
+  input.dark, textarea.dark {
+    background-color: #2f2f2f;
+    color: #ececec; }
+  input.light, textarea.light {
+    background-color: #ececec;
+    color: #2f2f2f; }
+  input.eden, textarea.eden {
+    background-color: #52ae76;
+    color: #ececec; }
+  input.transparent, textarea.transparent {
+    background-color: transparent;
+    color: #2f2f2f; }
+  input.border, textarea.border {
+    border: 1px solid #bbbbbb; }
+    input.border-bottom, textarea.border-bottom {
+      border-bottom: 1px solid #bbbbbb; }
+      input.border-bottom.transparent, textarea.border-bottom.transparent {
+        padding-left: 0px; }
+  input.rounded, textarea.rounded {
+    border-radius: 0.25em; }

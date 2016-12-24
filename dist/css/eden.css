@@ -35,6 +35,24 @@ html.no-scroll, body.no-scroll {
 .clear:after {
   clear: both; }
 
+.overlay {
+  position: relative;
+  z-index: 0; }
+  .overlay:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+  .overlay.dark:after {
+    background-color: rgba(0, 0, 0, 0.75); }
+  .overlay.light:after {
+    background-color: rgba(255, 255, 255, 0.75); }
+  .overlay.eden:after {
+    background-color: rgba(82, 174, 118, 0.75); }
+
 :root {
   font-size: 12pt; }
 
@@ -125,9 +143,10 @@ h6 {
 .row {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   height: 100%; }
+  .row.wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .row.left-center {
     -ms-flex-pack: start;
         justify-content: flex-start;
@@ -167,7 +186,7 @@ h6 {
   width: 100%;
   margin-left: 4%; }
   .col:first-child {
-    margin-left: 0; }
+    margin-left: 0px; }
   .col.one {
     width: 4.66666666667%; }
   .col.two, .col.sixth {
@@ -285,6 +304,8 @@ h6 {
 a {
   text-decoration: none;
   color: inherit; }
+  a.button {
+    font-size: 0.75rem; }
 
 .nav {
   width: 100%;
@@ -616,25 +637,8 @@ a {
   @media screen and (max-width: 768px) {
     .hero.skinny, .hero.fat {
       width: 100vw; } }
-  .hero.overlay {
-    position: relative;
-    z-index: 0; }
-    .hero.overlay:after {
-      content: "";
-      position: absolute;
-      left: 0px;
-      top: 0px;
-      width: 100%;
-      height: 100%;
-      z-index: -1; }
-    .hero.overlay.dark:after {
-      background-color: rgba(0, 0, 0, 0.75); }
-    .hero.overlay.light:after {
-      background-color: rgba(255, 255, 255, 0.75); }
-    .hero.overlay.eden:after {
-      background-color: rgba(82, 174, 118, 0.75); }
 
-button {
+button, .button {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -644,45 +648,45 @@ button {
   outline: none;
   border: none;
   transition: all 0.3s ease-in-out; }
-  button:hover {
+  button:hover, .button:hover {
     cursor: pointer; }
-  button.light {
+  button.light, .button.light {
     background-color: #ececec;
     color: #2f2f2f; }
-    button.light:hover {
+    button.light:hover, .button.light:hover {
       background-color: #dfdfdf; }
-  button.dark {
+  button.dark, .button.dark {
     background-color: #2f2f2f;
     color: #ececec; }
-    button.dark:hover {
+    button.dark:hover, .button.dark:hover {
       background-color: #3c3c3c; }
-  button.eden {
+  button.eden, .button.eden {
     background-color: #52ae76;
     color: #ececec; }
-    button.eden:hover {
+    button.eden:hover, .button.eden:hover {
       background-color: #4a9d6a; }
-  button.transparent {
+  button.transparent, .button.transparent {
     background-color: transparent;
     color: #2f2f2f; }
-    button.transparent:hover {
+    button.transparent:hover, .button.transparent:hover {
       background-color: #ececec; }
-  button.short {
+  button.short, .button.short {
     padding-top: 0.5em;
     padding-bottom: 0.5em; }
-  button.tall {
+  button.tall, .button.tall {
     padding-top: 1.5em;
     padding-bottom: 1.5em; }
-  button.skinny {
+  button.skinny, .button.skinny {
     padding-left: 2em;
     padding-right: 2em; }
-  button.fat {
+  button.fat, .button.fat {
     padding-left: 4em;
     padding-right: 4em; }
-  button.border {
+  button.border, .button.border {
     border: 0.1em solid #bbbbbb; }
-  button.rounded {
+  button.rounded, .button.rounded {
     border-radius: 0.25em; }
-  button.shadow {
+  button.shadow, .button.shadow {
     box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.75); }
 
 .modal {
@@ -913,7 +917,7 @@ button {
     .tool-tip:hover > .tool-tip-text {
       visibility: visible; }
 
-input, textarea {
+input, textarea, select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -924,35 +928,108 @@ input, textarea {
   vertical-align: bottom;
   display: inline-block;
   background: none; }
-  input.fat, textarea.fat {
+  input.fat, textarea.fat, select.fat {
     padding-left: 3em;
     padding-right: 3em; }
-  input.skinny, textarea.skinny {
+  input.skinny, textarea.skinny, select.skinny {
     padding-left: 1em;
     padding-right: 1em; }
-  input.tall, textarea.tall {
+  input.tall, textarea.tall, select.tall {
     padding-top: 1.5em;
     padding-bottom: 1.5em; }
-  input.short, textarea.short {
+  input.short, textarea.short, select.short {
     padding-top: 0.5em;
     padding-bottom: 0.5em; }
-  input.dark, textarea.dark {
+  input.dark, textarea.dark, select.dark {
     background-color: #2f2f2f;
     color: #ececec; }
-  input.light, textarea.light {
+  input.light, textarea.light, select.light {
     background-color: #ececec;
     color: #2f2f2f; }
-  input.eden, textarea.eden {
+  input.eden, textarea.eden, select.eden {
     background-color: #52ae76;
     color: #ececec; }
-  input.transparent, textarea.transparent {
+  input.transparent, textarea.transparent, select.transparent {
     background-color: transparent;
     color: #2f2f2f; }
-  input.border, textarea.border {
+  input.border, textarea.border, select.border {
     border: 1px solid #bbbbbb; }
-    input.border-bottom, textarea.border-bottom {
+    input.border-bottom, textarea.border-bottom, select.border-bottom {
       border-bottom: 1px solid #bbbbbb; }
-      input.border-bottom.transparent, textarea.border-bottom.transparent {
+      input.border-bottom.transparent, textarea.border-bottom.transparent, select.border-bottom.transparent {
         padding-left: 0px; }
-  input.rounded, textarea.rounded {
+  input.rounded, textarea.rounded, select.rounded {
     border-radius: 0.25em; }
+  input.sharp, textarea.sharp, select.sharp {
+    border-radius: 0px; }
+
+input[type="submit"], input[type="reset"] {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer; }
+  input[type="submit"].dark:hover, input[type="reset"].dark:hover {
+    background-color: #494949; }
+  input[type="submit"].light:hover, input[type="reset"].light:hover {
+    background-color: lightgray; }
+  input[type="submit"].eden:hover, input[type="reset"].eden:hover {
+    background-color: #418c5e; }
+  input[type="submit"].transparent:hover, input[type="reset"].transparent:hover {
+    opacity: 0.7; }
+
+textarea {
+  height: 150px; }
+
+.toggle {
+  cursor: pointer; }
+  .toggle.light .toggle-control {
+    background-color: #ececec;
+    color: #2f2f2f; }
+  .toggle.dark .toggle-control {
+    background-color: #2f2f2f;
+    color: #ececec; }
+  .toggle.eden .toggle-control {
+    background-color: #52ae76;
+    color: #ececec; }
+  .toggle.transparent .toggle-control {
+    background-color: transparent;
+    border: 0.1em solid black; }
+    .toggle.transparent .toggle-control .handle {
+      border: 0.1em solid black; }
+  .toggle.tall .toggle-control {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em; }
+  .toggle.short .toggle-control {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; }
+  .toggle input[type="checkbox"] {
+    display: none; }
+    .toggle input[type="checkbox"]:checked + .toggle-control > .option-1 {
+      opacity: 0; }
+    .toggle input[type="checkbox"]:checked + .toggle-control > .option-2 {
+      opacity: 1; }
+    .toggle input[type="checkbox"]:checked + .toggle-control > .handle {
+      transform: scaleY(0.9) scaleX(0.98) translate3d(-100%, 0px, 0px); }
+  .toggle .toggle-control {
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    padding: 1em 0em;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out; }
+    .toggle .toggle-control .option-1 {
+      width: 50%; }
+    .toggle .toggle-control .option-2 {
+      width: 50%;
+      opacity: 0; }
+    .toggle .toggle-control .handle {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      height: 100%;
+      width: 50%;
+      transform-origin: left;
+      transform: scaleY(0.9) scaleX(0.98);
+      background-color: white;
+      transition: transform 0.5s ease-in-out; }
+      .toggle .toggle-control .handle.shadow {
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); }

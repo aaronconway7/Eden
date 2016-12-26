@@ -49,3 +49,10 @@
   width: 300px; }
   #form-pg form input, #form-pg form textarea, #form-pg form select {
     margin-bottom: 20px; }
+
+#animations-pg {
+  height: 5000px; }
+  #animations-pg #animations p {
+    margin-bottom: 50px; }
+    #animations-pg #animations p:last-of-type {
+      margin-bottom: 0px; }

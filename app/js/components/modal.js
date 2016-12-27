@@ -2,8 +2,6 @@
 
     $.fn.modal = function(options) {
 
-        var modal = this;
-
         // Establish our default settings
         var settings = $.extend({
             open    : '.open-modal',
@@ -11,7 +9,9 @@
         }, options);
 
         return $(settings.open).click(function(){
-            modal.addClass('is-open');
+            var modal = $(this).next('.modal');
+
+            $(this).next('.modal').addClass('is-open');
             $('body').addClass('no-scroll');
 
             modal.find(settings.close).click(function(){

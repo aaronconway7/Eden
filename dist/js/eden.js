@@ -1,29 +1,23 @@
 (function($) {
 
-    $.fn.animateOnScroll = function() {
+    $.fn.animate = function() {
 
         var wScroll = $(window).scrollTop();
 
-        return this.each(function(){
-            if($(this).hasClass('on-scroll')){
+        return this.each(function(i){
+            if($(this).hasClass('on-delay') && $(this).hasClass('on-scroll')){
+                if((wScroll + ($(window).height()*0.8)) > $(this).offset().top){
+                    setTimeout(function(){
+                        $('.animation').eq(i).addClass('animated');
+                    }, 150 * (i+1));
+                }
+            } else if($(this).hasClass('on-scroll')){
                 if((wScroll + ($(window).height()*0.8)) > $(this).offset().top){
                     $(this).addClass('animated');
                 }
-            }
-        });
-
-    }
-
-}(jQuery));
-
-(function($) {
-
-    $.fn.animateOnDelay = function() {
-
-        return this.each(function(i){
-            if($(this).hasClass('on-delay')){
+            } else if($(this).hasClass('on-delay')){
                 setTimeout(function(){
-                    $('.on-delay').eq(i).addClass('animated');
+                    $('.animation').eq(i).addClass('animated');
                 }, 150 * (i+1));
             }
         });
@@ -31,6 +25,20 @@
     }
 
 }(jQuery));
+
+// (function($) {
+//
+//     $.fn.animateOnDelay = function() {
+//
+//         return this.each(function(i){
+//             setTimeout(function(){
+//                 $('.on-delay').eq(i).addClass('animated');
+//             }, 150 * (i+1));
+//         });
+//
+//     }
+//
+// }(jQuery));
 
 (function($) {
 

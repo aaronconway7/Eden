@@ -1,51 +1,35 @@
-.animate-on-scroll
-    animation-timing-function: ease-in-out
-    animation-duration: 0.5s
-    animation-play-state: paused !important
-
-.animated
-    animation-play-state: running !important
-
-@keyframes slideLeft
+@keyframes slideInLeft
     0%
-        opacity: 0
         transform: translate3d(40px, 0px, 0px)
     100%
-        opacity: 1
         transform: none
 
-.slideLeft
-    animation-name: slideLeft
+.slide-in-left
+    animation-name: slideInLeft
 
-@keyframes slideRight
+@keyframes slideInRight
     0%
-        opacity: 0
         transform: translate3d(-40px, 0px, 0px)
     100%
-        opacity: 1
         transform: none
 
-.slideRight
-    animation-name: slideRight
+.slide-in-right
+    animation-name: slideInRight
 
-@keyframes slideUp
+@keyframes slideInUp
     0%
-        opacity: 0
         transform: translate3d(0px, 40px, 0px)
     100%
-        opacity: 1
         transform: none
 
-.slideUp
-    animation-name: slideUp
+.slide-in-up
+    animation-name: slideInUp
 
-@keyframes slideDown
+@keyframes slideInDown
     0%
-        opacity: 0
         transform: translate3d(0px, -40px, 0px)
     100%
-        opacity: 1
         transform: none
 
-.slideDown
-    animation-name: slideDown
+.slide-in-down
+    animation-name: slideInDown

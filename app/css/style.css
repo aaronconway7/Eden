@@ -52,6 +52,11 @@
 
 #animations-pg {
   height: 5000px; }
+  #animations-pg #animations .boxes {
+    margin-bottom: 20px; }
+  #animations-pg #animations .box {
+    background-color: grey;
+    height: 100px; }
   #animations-pg #animations p {
     margin-bottom: 50px; }
     #animations-pg #animations p:last-of-type {

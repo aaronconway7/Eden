@@ -1,12 +1,30 @@
 (function($) {
 
-    $.fn.animate = function() {
+    $.fn.animateOnScroll = function() {
 
         var wScroll = $(window).scrollTop();
 
         return this.each(function(){
-            if((wScroll + ($(window).height()*0.8)) > $(this).offset().top){
-                $(this).addClass('animated');
+            if($(this).hasClass('on-scroll')){
+                if((wScroll + ($(window).height()*0.8)) > $(this).offset().top){
+                    $(this).addClass('animated');
+                }
+            }
+        });
+
+    }
+
+}(jQuery));
+
+(function($) {
+
+    $.fn.animateOnDelay = function() {
+
+        return this.each(function(i){
+            if($(this).hasClass('on-delay')){
+                setTimeout(function(){
+                    $('.on-delay').eq(i).addClass('animated');
+                }, 150 * (i+1));
             }
         });
 
@@ -18,8 +36,6 @@
 
     $.fn.modal = function(options) {
 
-        var modal = this;
-
         // Establish our default settings
         var settings = $.extend({
             open    : '.open-modal',
@@ -27,7 +43,9 @@
         }, options);
 
         return $(settings.open).click(function(){
-            modal.addClass('is-open');
+            var modal = $(this).next('.modal');
+
+            $(this).next('.modal').addClass('is-open');
             $('body').addClass('no-scroll');
 
             modal.find(settings.close).click(function(){

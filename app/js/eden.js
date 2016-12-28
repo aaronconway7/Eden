@@ -26,20 +26,6 @@
 
 }(jQuery));
 
-// (function($) {
-//
-//     $.fn.animateOnDelay = function() {
-//
-//         return this.each(function(i){
-//             setTimeout(function(){
-//                 $('.on-delay').eq(i).addClass('animated');
-//             }, 150 * (i+1));
-//         });
-//
-//     }
-//
-// }(jQuery));
-
 (function($) {
 
     $.fn.modal = function(options) {
@@ -67,6 +53,32 @@
                     $('body').removeClass('no-scroll');
                 }
             });
+
+        });
+
+    }
+
+}(jQuery));
+
+(function($) {
+
+    $.fn.parallax = function() {
+
+        var wScroll = $(window).scrollTop();
+
+        return this.each(function(){
+
+            if(wScroll > (($(this).offset().top + $(this).height()) - $(window).height())){
+                if(wScroll < $(this).offset().top + $(this).height()){
+                    $(this).css({
+                        'background-position':'center '+ wScroll/2 + 'px'
+                    });
+                    $(this).find('.content').css({
+                        'transform':'translate3d(0px,'+ wScroll/10 +'%,0px)',
+                        'opacity':1-(wScroll/400)
+                    });
+                }
+            }
 
         });
 

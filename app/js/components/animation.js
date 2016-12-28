@@ -25,17 +25,3 @@
     }
 
 }(jQuery));
-
-// (function($) {
-//
-//     $.fn.animateOnDelay = function() {
-//
-//         return this.each(function(i){
-//             setTimeout(function(){
-//                 $('.on-delay').eq(i).addClass('animated');
-//             }, 150 * (i+1));
-//         });
-//
-//     }
-//
-// }(jQuery));

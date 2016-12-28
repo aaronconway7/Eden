@@ -5,12 +5,14 @@ html(lang='en')
     title Hero by Eden.
     link(href='../css/style.css', rel='stylesheet')
   body
-    .universe#grid-pg
+    .universe#hero-pg
         #hero
-            .hero.overlay.eden
-                .col.content.center-center
+            .hero.parallax
+                .row.content.center-center
                     h1 Eden Heroes
-                    h2 .hero.overlay.eden
-            .hero.overlay.dark.fat.short
+                    //- h2 .hero
+            .hero.overlay.dark.fat.short.parallax
                 .col.content.center-center
                     h2 .hero.overlay.dark.fat.short
+    include ../../include/foot
+    script(src="../js/function.js")

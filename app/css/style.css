@@ -45,6 +45,12 @@
         background-color: #bbbbbb;
         cursor: help; }
 
+#nav-pg .page-container {
+  transition: margin-left 0.3s ease-in-out, margin-right 0.3s ease-in-out; }
+
+#nav-pg .nav .mob-nav {
+  display: block; }
+
 #form-pg form {
   width: 300px; }
   #form-pg form input, #form-pg form textarea, #form-pg form select {

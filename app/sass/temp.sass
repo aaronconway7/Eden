@@ -17,6 +17,9 @@ $mob-screen: 425px
 #nav
     padding: 25px 0px
 
+    @media screen and (max-width: 768px)
+        padding: 0px
+
     .nav
 
         &>.nav-options
@@ -24,98 +27,134 @@ $mob-screen: 425px
             &>li
                 padding: 0px 35px !important
 
-.hero
-    background-image: url('../assets/img/photo-1444798188341-13aa3650c7db.jpg')
-    height: auto
+        .sidebar
+            border-left: 2px solid white
 
-    .content
-        color: white
+#home-pg
 
-        h3
-            font-family: Pacifico
-            text-transform: lowercase
+    .hero
+        background-image: url('../assets/img/photo-1444798188341-13aa3650c7db.jpg')
+        height: auto
 
-#about
+        .content
+            color: white
 
-    h5
-        font-weight: 300
-        margin-bottom: 20px
+            h3
+                font-family: Pacifico
+                text-transform: lowercase
 
-    span.curly
-        color: $eden-green
+    #about
 
-    p
-        margin-bottom: 50px
+        h5
+            font-weight: 300
+            margin-bottom: 20px
 
-    .icons
-        margin-bottom: 40px
+        span.curly
+            color: $eden-green
 
-        img
-            height: 100px
+        p
+            margin-bottom: 50px
 
-#read-doc
-    height: 600px
-    background-color: $eden-green
-    transition: all 0.3s ease-in-out
+        .icons
+            margin-bottom: 40px
 
-    &:hover
-        background-color: darken($eden-green, 10)
+            img
+                height: 75px
+                margin: 0px 50px
 
-    h5
-        color: white
-        font-weight: 300
+                @media screen and (max-width: 768px)
+                    margin: 0px 30px
 
-#brands
+                @media screen and (max-width: 425px)
+                    margin: 0px
+                    margin-bottom: 30px
 
-    h5
-        font-weight: 300
-        margin-bottom: 50px
+                    &:last-of-type
+                        margin-bottom: 0px
 
-    .logos
+    #read-doc
+        height: 600px
+        background-color: $eden-green
+        transition: all 0.3s ease-in-out
 
-        img
-            height: 55px
-            margin: 15px 50px
-            opacity: 0.75
+        &:hover
+            background-color: darken($eden-green, 10)
 
-            &:first-of-type
-                margin-left: 0px
+        h5
+            color: white
+            font-weight: 300
 
-            &:last-of-type
-                margin-right: 0px
+    #brands
 
-#open-source
-    background-color: #F7F7F7
+        h5
+            font-weight: 300
+            margin-bottom: 75px
 
-    &>.container
-        padding-bottom: 20px
+        .logos
 
-    h1
-        font-size: 2rem
-        font-weight: 300
-        margin-bottom: 20px
+            img
+                height: 40px
+                margin: 0px 30px
+                opacity: 0.75
 
-    p
-        margin-bottom: 40px
+                @media screen and (max-width: 768px)
+                    margin: 0px 20px
 
-    .buttons
-        margin-bottom: 100px
+                @media screen and (max-width: 425px)
+                    margin: 0px
+                    margin-bottom: 50px
 
-        a
-            font-size: 0.8rem
-            margin: 0px 10px
+                    &:last-of-type
+                        margin-bottom: 0px
 
-    .github-stats
+                &:first-of-type
+                    margin-left: 0px
 
-        iframe, .version-number
-            margin: 0px 20px
-            opacity: 0.5
+                &:last-of-type
+                    margin-right: 0px
 
-        iframe
-            transition: all 0.3s ease-in-out
+                &.ndorsa
+                    opacity: 0.5
 
-            &:hover
-                opacity: 1
+    #open-source
+        background-color: #F7F7F7
+
+        &>.container
+            padding-bottom: 20px
+
+        h5
+            font-weight: 300
+            margin-bottom: 20px
+
+        p
+            margin-bottom: 40px
+
+        .buttons
+            margin-bottom: 100px
+
+            a
+                font-size: 0.8rem
+                margin: 0px 10px
+
+                @media screen and (max-width: 425px)
+                    margin: 0px
+                    margin-bottom: 10px
+                    width: 100%
+
+                    &:last-of-type
+                        margin-bottom: 0px
+
+        .github-stats
+
+            iframe, .version-number
+                margin: 0px 20px
+                opacity: 0.5
+
+            iframe
+                transition: all 0.3s ease-in-out
+
+                &:hover
+                    opacity: 1
 
 #footer
 
@@ -207,14 +246,6 @@ $mob-screen: 425px
                 & > p
                     margin-bottom: 10px
 
-                .copy-text-btn
-                    position: absolute
-                    top: 0px
-                    right: 0px
-                    font-size: 0.5rem
-                    font-family: Lato
-                    font-weight: 500
-
             .container.second
                 padding-top: 0px
 
@@ -272,7 +303,8 @@ $mob-screen: 425px
             .hero
 
                 &:nth-of-type(2)
-                    background-image: url(../img/backgrounds/hero1.jpg)
+                    background-image: url('../assets/img/backgrounds/hero1.jpg')
+                    color: #fff
 
                     h1
                         font-family: Playfair Display
@@ -284,8 +316,9 @@ $mob-screen: 425px
                             font-size: 4rem
 
                 &:nth-of-type(4)
-                    background-image: url(../img/backgrounds/hero2.jpg)
+                    background-image: url('../assets/img/backgrounds/hero2.jpg')
                     background-position: center 70%
+                    color: #fff
 
                     h1
                         font-family: Pacifico
@@ -307,3 +340,13 @@ $mob-screen: 425px
                     margin-left: 0px
                 &:last-of-type
                     margin-right: 0px
+
+        #slider-component
+
+            .slider
+
+                .slide
+                    &:nth-of-type(1)
+                        background-color: red
+                    &:nth-of-type(2)
+                        background-color: green

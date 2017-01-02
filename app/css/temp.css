@@ -5,77 +5,109 @@
 
 #nav {
   padding: 25px 0px; }
+  @media screen and (max-width: 768px) {
+    #nav {
+      padding: 0px; } }
   #nav .nav > .nav-options > li {
     padding: 0px 35px !important; }
+  #nav .nav .sidebar {
+    border-left: 2px solid white; }
 
-.hero {
+#home-pg .hero {
   background-image: url("../assets/img/photo-1444798188341-13aa3650c7db.jpg");
   height: auto; }
-  .hero .content {
+  #home-pg .hero .content {
     color: white; }
-    .hero .content h3 {
+    #home-pg .hero .content h3 {
       font-family: Pacifico;
       text-transform: lowercase; }
 
-#about h5 {
+#home-pg #about h5 {
   font-weight: 300;
   margin-bottom: 20px; }
 
-#about span.curly {
+#home-pg #about span.curly {
   color: #52ae76; }
 
-#about p {
+#home-pg #about p {
   margin-bottom: 50px; }
 
-#about .icons {
+#home-pg #about .icons {
   margin-bottom: 40px; }
-  #about .icons img {
-    height: 100px; }
+  #home-pg #about .icons img {
+    height: 75px;
+    margin: 0px 50px; }
+    @media screen and (max-width: 768px) {
+      #home-pg #about .icons img {
+        margin: 0px 30px; } }
+    @media screen and (max-width: 425px) {
+      #home-pg #about .icons img {
+        margin: 0px;
+        margin-bottom: 30px; }
+        #home-pg #about .icons img:last-of-type {
+          margin-bottom: 0px; } }
 
-#read-doc {
+#home-pg #read-doc {
   height: 600px;
   background-color: #52ae76;
   transition: all 0.3s ease-in-out; }
-  #read-doc:hover {
+  #home-pg #read-doc:hover {
     background-color: #418c5e; }
-  #read-doc h5 {
+  #home-pg #read-doc h5 {
     color: white;
     font-weight: 300; }
 
-#brands h5 {
+#home-pg #brands h5 {
   font-weight: 300;
-  margin-bottom: 50px; }
+  margin-bottom: 75px; }
 
-#brands .logos img {
-  height: 55px;
-  margin: 15px 50px;
+#home-pg #brands .logos img {
+  height: 40px;
+  margin: 0px 30px;
   opacity: 0.75; }
-  #brands .logos img:first-of-type {
+  @media screen and (max-width: 768px) {
+    #home-pg #brands .logos img {
+      margin: 0px 20px; } }
+  @media screen and (max-width: 425px) {
+    #home-pg #brands .logos img {
+      margin: 0px;
+      margin-bottom: 50px; }
+      #home-pg #brands .logos img:last-of-type {
+        margin-bottom: 0px; } }
+  #home-pg #brands .logos img:first-of-type {
     margin-left: 0px; }
-  #brands .logos img:last-of-type {
+  #home-pg #brands .logos img:last-of-type {
     margin-right: 0px; }
+  #home-pg #brands .logos img.ndorsa {
+    opacity: 0.5; }
 
-#open-source {
+#home-pg #open-source {
   background-color: #F7F7F7; }
-  #open-source > .container {
+  #home-pg #open-source > .container {
     padding-bottom: 20px; }
-  #open-source h1 {
-    font-size: 2rem;
+  #home-pg #open-source h5 {
     font-weight: 300;
     margin-bottom: 20px; }
-  #open-source p {
+  #home-pg #open-source p {
     margin-bottom: 40px; }
-  #open-source .buttons {
+  #home-pg #open-source .buttons {
     margin-bottom: 100px; }
-    #open-source .buttons a {
+    #home-pg #open-source .buttons a {
       font-size: 0.8rem;
       margin: 0px 10px; }
-  #open-source .github-stats iframe, #open-source .github-stats .version-number {
+      @media screen and (max-width: 425px) {
+        #home-pg #open-source .buttons a {
+          margin: 0px;
+          margin-bottom: 10px;
+          width: 100%; }
+          #home-pg #open-source .buttons a:last-of-type {
+            margin-bottom: 0px; } }
+  #home-pg #open-source .github-stats iframe, #home-pg #open-source .github-stats .version-number {
     margin: 0px 20px;
     opacity: 0.5; }
-  #open-source .github-stats iframe {
+  #home-pg #open-source .github-stats iframe {
     transition: all 0.3s ease-in-out; }
-    #open-source .github-stats iframe:hover {
+    #home-pg #open-source .github-stats iframe:hover {
       opacity: 1; }
 
 #footer .container {
@@ -145,13 +177,6 @@
     text-align: left; }
   #components-pg #components .component > .container > p {
     margin-bottom: 10px; }
-  #components-pg #components .component > .container .copy-text-btn {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    font-size: 0.5rem;
-    font-family: Lato;
-    font-weight: 500; }
 
 #components-pg #components .component .container.second {
   padding-top: 0px; }
@@ -191,7 +216,8 @@
     font-family: Playfair Display; }
 
 #components-pg #components #hero-component .hero:nth-of-type(2) {
-  background-image: url(../img/backgrounds/hero1.jpg); }
+  background-image: url("../assets/img/backgrounds/hero1.jpg");
+  color: #fff; }
   #components-pg #components #hero-component .hero:nth-of-type(2) h1 {
     font-family: Playfair Display;
     font-size: 15rem; }
@@ -203,8 +229,9 @@
         font-size: 4rem; } }
 
 #components-pg #components #hero-component .hero:nth-of-type(4) {
-  background-image: url(../img/backgrounds/hero2.jpg);
-  background-position: center 70%; }
+  background-image: url("../assets/img/backgrounds/hero2.jpg");
+  background-position: center 70%;
+  color: #fff; }
   #components-pg #components #hero-component .hero:nth-of-type(4) h1 {
     font-family: Pacifico;
     font-size: 2.5rem;
@@ -221,3 +248,9 @@
     margin-left: 0px; }
   #components-pg #components #button-component .button:last-of-type {
     margin-right: 0px; }
+
+#components-pg #components #slider-component .slider .slide:nth-of-type(1) {
+  background-color: red; }
+
+#components-pg #components #slider-component .slider .slide:nth-of-type(2) {
+  background-color: green; }

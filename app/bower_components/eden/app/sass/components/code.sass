@@ -1,0 +1,75 @@
+.code
+    padding: 2px 4px
+    background-color: #282c34
+    color: $eden-light-grey
+    font-family: monospace
+    margin-bottom: 50px
+
+    &:last-child
+        margin-bottom: 0px
+
+    &.light
+        background-color: $eden-light-grey
+        color: $eden-charcoal
+
+    &.block
+        margin-top: 10px
+        position: relative
+        padding: 75px
+
+        &.short
+            padding: 50px
+
+        @media screen and (max-width: $tab-screen)
+            padding: 25px !important
+            font-size: 0.8rem
+
+    &span
+        padding: 0px
+        margin: 0px
+
+    .tab
+        margin: 1em 0em
+        margin-left: 2em
+
+    .tag
+        color: #e06c75
+
+        &:before, &:after
+            color: white
+
+        &:before
+            content: "<"
+
+        &:after
+            content: ">"
+
+        &.close
+
+            &:before
+                content: "</"
+
+        .content
+            color: #a2a9b6
+
+        .attr
+            color: #cb9a66
+
+            &:after
+                content: "="
+                color: white
+
+            &.id
+                color: #3992ef
+
+        .val
+            color: #98c372
+            margin-right: 0.4em
+
+            &:before
+                content: open-quote
+            &:after
+                content: close-quote
+
+            &:last-of-type
+                margin-right: 0px

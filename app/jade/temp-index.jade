@@ -1,21 +1,22 @@
 doctype html
 html(lang="en")
     head
-        include ../include/head
+        include include/head
         title="Eden"
-        link(rel='stylesheet', href='assets/css/temp.css')
+        link(rel='stylesheet', href='css/temp.css')
     body
         .universe#home-pg
-            include ../include/header
-            .page-content
+            include include/header
+            .page-container
                 section#hero
-                    .hero.short.overlay.eden
-                        .col.content.center-center
-                            h1.uppercase-and-space The #1 Framework for
-                            h1 Beautiful Design
+                    .hero.overlay.eden
+                        .content.row.center-center
+                            .container
+                                h5.uppercase-and-space.text-center The #1 Framework for
+                                h3.text-center Beautiful Design
                 section#about
                     .container
-                        h1.text-center Designed to be #[span.curly different.] Designed to be #[span.curly beautiful.]
+                        h5.text-center Designed to be #[span.curly different.] Designed to be #[span.curly beautiful.]
                         p.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         .row.icons
                             .col.one-third.mob-full.center-center
@@ -25,34 +26,33 @@ html(lang="en")
                             .col.one-third.mob-full.center-center
                                 img(alt="heart", src="assets/img/heart.svg")
                         .row.center-center
-                            a.button.uppercase-and-space.short.eden.transparent.border.invert-on-hover(href="#") Read More
+                            a.button.uppercase-and-space.transparent.border(href="#") Read More
                 section#read-doc
-                    a.button.full.eden(href="")
+                    a(href="")
                         .container.row.center-center
-                            h1.uppercase-and-space Read Documentation
+                            h5.uppercase-and-space Read Documentation
                 section#brands
                     .container
-                        h1.text-center Brands using Eden
+                        h5.text-center Brands using Eden
                         .row.logos.center-center
-                            img(alt="Aaron Conway", src="assets/img/aaronconway-b&w.png")
-                            img(alt="FDIS", src="assets/img/fdis-b&w.png")
+                            img(alt="Aaron Conway", src="assets/img/aaronconway.png")
                             img(alt="Frecibo", src="assets/img/frecibo-b&w.png")
-                            img(alt="Lush Heat", src="assets/img/lushheat-b&w.png")
-                            img(alt="Tutorial Ltd", src="assets/img/tutorial-b&w.png")
+                            img(alt="NDORSA", src="assets/img/ndorsa.png")
+                            img(alt="WES", src="assets/img/wes.png")
                             
                 section#open-source
                     .container
                         h1.text-center Eden is open source!
                         p.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         .row.buttons.center-center
-                            a.button.uppercase-and-space.short.eden.transparent.border.invert-on-hover(href="https://github.com/aaronconway7/Eden") #[i(class="fa fa-github", aria-hidden="true")] View on Github
-                            a.button.uppercase-and-space.short.eden.border.invert-on-hover(href="http://paypal.me/aaronconway/3.50") #[i(class="fa fa-paypal", aria-hidden="true")] Buy me a beer
+                            a.button.uppercase-and-space.eden.transparent.border.invert-on-hover(href="https://github.com/aaronconway7/Eden") #[i(class="fa fa-github", aria-hidden="true")] View on Github
+                            a.button.uppercase-and-space.eden.border.invert-on-hover(href="http://paypal.me/aaronconway/3.50") #[i(class="fa fa-paypal", aria-hidden="true")] Buy me a beer
                         .row.github-stats.center-center
                             a(class="github-button", href="https://github.com/aaronconway7/Eden", data-icon="octicon-star", data-count-href="/aaronconway7/Eden/stargazers", data-count-api="/repos/aaronconway7/Eden#stargazers_count", data-count-aria-label="# stargazers on GitHub", aria-label="Star aaronconway7/Eden on GitHub") Star
                             a(class="github-button", href="https://github.com/aaronconway7/Eden/fork", data-icon="octicon-repo-forked", data-count-href="/aaronconway7/Eden/network", data-count-api="/repos/aaronconway7/Eden#forks_count", data-count-aria-label="# forks on GitHub", aria-label="Fork aaronconway7/Eden on GitHub") Fork
                             span.version-number v1.0.0
             
-            include ../include/footer
+            include include/footer
 
         script(async defer src="https://buttons.github.io/buttons.js")
-        include ../include/foot
+        include include/foot

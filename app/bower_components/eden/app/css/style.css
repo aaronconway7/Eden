@@ -1,0 +1,86 @@
+#container-pg #container h1 {
+  text-align: center;
+  margin-bottom: 20px; }
+
+#container-pg #container .row:first-of-type .container {
+  padding-bottom: 0px; }
+
+#container-pg #container .container-example {
+  background-color: #bbbbbb;
+  transition: all 0.3s ease-in-out; }
+  #container-pg #container .container-example:hover {
+    background-color: #ababab;
+    cursor: help; }
+  #container-pg #container .container-example .container {
+    background-color: #dedede;
+    transition: all 0.3s ease-in-out; }
+    #container-pg #container .container-example .container:hover {
+      background-color: #cbcbcb;
+      cursor: help; }
+
+#grid-pg #grid h1 {
+  text-align: center;
+  margin-bottom: 20px; }
+
+#grid-pg #grid .grid-option {
+  margin-bottom: 50px; }
+  #grid-pg #grid .grid-option .row {
+    margin: 10px 0px; }
+    #grid-pg #grid .grid-option .row:first-of-type {
+      margin-top: 0px; }
+    #grid-pg #grid .grid-option .row:last-of-type {
+      margin-bottom: 0px; }
+    #grid-pg #grid .grid-option .row .col {
+      background-color: #dedede;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 7pt;
+      letter-spacing: 2pt;
+      text-align: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      padding: 10px 0px;
+      transition: all 0.3s ease-in-out; }
+      #grid-pg #grid .grid-option .row .col:hover {
+        background-color: #bbbbbb;
+        cursor: help; }
+
+#nav-pg .page-container {
+  transition: margin-left 0.3s ease-in-out, margin-right 0.3s ease-in-out; }
+
+#nav-pg .nav .mob-nav {
+  display: block; }
+
+#form-pg form {
+  width: 300px; }
+  #form-pg form input, #form-pg form textarea, #form-pg form select {
+    margin-bottom: 20px; }
+
+#animations-pg {
+  height: 5000px; }
+  #animations-pg #animations .boxes {
+    margin-bottom: 20px; }
+  #animations-pg #animations .box {
+    background-color: grey;
+    height: 100px; }
+  #animations-pg #animations p {
+    margin-bottom: 50px; }
+    #animations-pg #animations p:last-of-type {
+      margin-bottom: 0px; }
+
+#hero-pg {
+  height: 9999px; }
+  #hero-pg #hero .hero:nth-of-type(1) {
+    background-image: url("http://cdn29.us1.fansshare.com/pictures/tumblrphotography/tumblr-static-tumblrbg-beautiful-756022492.jpg");
+    margin-bottom: 500px; }
+  #hero-pg #hero .hero:nth-of-type(2) {
+    background-image: url("https://www.clipartsgram.com/image/278747608-beautiful-city-wallpaper-hd-background-tumblr-wallpaper-photography-tumblr-314777781.jpg"); }
+
+#slider-pg .slider .slide:nth-of-type(1) {
+  background-color: red; }
+
+#slider-pg .slider .slide:nth-of-type(2) {
+  background-color: green; }
+
+#slider-pg .slider .slide:nth-of-type(3) {
+  background-color: blue; }

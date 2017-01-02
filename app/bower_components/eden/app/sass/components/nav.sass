@@ -1,0 +1,515 @@
+.nav
+    width: 100%
+    height: 70px
+    padding: 0px 15px
+    z-index: 98
+    background-color: $eden-green
+    font-size: 0.9rem
+
+    &.sidebar
+        height: 100%
+        width: 200px
+
+        &.skinny
+            width: 100px
+
+        &.fat
+            width: 300px
+
+        ul
+
+            li
+                display: block
+                padding: 0px !important
+
+    &.padded
+        padding: 0px 10%
+
+        @media screen and (max-width: $tab-screen)
+            padding: 0px 15px
+
+        .brand
+
+            &.float-left
+                margin-right: 3em
+
+            &.float-right
+                margin-left: 3em
+
+        .nav-options
+
+            & > li
+                padding: 0px 2em
+
+    &.fixed
+        position: fixed !important
+        top: 0px
+
+    &.centered
+        display: flex
+        justify-content: center
+
+        @media screen and (max-width: $tab-screen)
+            justify-content: space-between
+
+        .nav-options
+
+            & > li
+                padding: 0px 20px !important
+
+            .dropdown
+
+                .dropdown-content
+                    left: -50%
+
+    &.short
+        height: 50px
+        font-size: 0.8rem
+
+        .brand
+            line-height: 50px
+
+            img.logo
+                height: 25px
+
+        .nav-options
+            line-height: 50px
+
+            button
+                padding: 0.5em 1.5em
+
+        ul
+
+            li
+                height: 50px
+
+        .mob-nav
+            line-height: 50px
+
+    &.tall
+        height: 90px
+
+        .brand
+            line-height: 90px
+
+            img.logo
+                height: 60px
+
+        .nav-options
+            line-height: 90px
+
+        ul
+
+            li
+                height: 90px
+
+        .mob-nav
+            line-height: 90px
+
+    &.dark
+        background-color: $eden-charcoal
+        color: $eden-light-grey
+
+        .nav-options
+
+            button
+                background-color: $eden-light-grey
+                color: $eden-charcoal
+
+            .dropdown
+
+                .dropdown-content
+                    background-color: $eden-dark-grey
+                    color: $eden-charcoal
+
+                    li
+
+                        a
+                            &:hover
+                                opacity: 1
+                                background-color: $eden-charcoal
+                                color: $eden-light-grey
+
+        .mob-nav
+
+            .nav-options
+                background-color: $eden-dark-grey
+
+                li
+                    a
+
+                        &:hover
+                            opacity: 1
+                            background-color: rgba($eden-charcoal, 0.75)
+                            color: $eden-light-grey
+
+    &.light
+        background-color: $eden-light-grey
+        color: $eden-charcoal
+
+        .nav-options
+
+            button
+                background-color: $eden-dark-grey
+                color: $eden-charcoal
+
+            .dropdown
+
+                .dropdown-content
+                    background-color: $eden-dark-grey
+                    color: $eden-charcoal
+
+                    li
+
+                        a
+                            &:hover
+                                opacity: 1
+                                background-color: $eden-light-grey
+                                color: $eden-charcoal
+
+        .mob-nav
+
+            .nav-options
+                background-color: $eden-dark-grey
+
+                li
+                    a
+
+                        &:hover
+                            opacity: 1
+                            background-color: $eden-light-grey
+                            color: $eden-charcoal
+
+    &.transparent
+        background-color: transparent
+        color: $eden-charcoal
+
+        .nav-options
+
+            button
+                background-color: $eden-light-grey
+                color: $eden-charcoal
+
+            .dropdown
+
+                .dropdown-content
+                    background-color: $eden-light-grey
+
+                    li
+
+                        a
+                            &:hover
+                                opacity: 1
+                                background-color: $eden-dark-grey
+                                color: $eden-charcoal
+
+        .mob-nav
+
+            .nav-options
+                background-color: $eden-light-grey
+
+                li
+                    a
+
+                        &:hover
+                            opacity: 1
+                            background-color: $eden-dark-grey
+                            color: $eden-charcoal
+
+    .brand
+        line-height: 70px
+        text-transform: uppercase
+        transition: opacity 0.3s ease-in-out
+
+        &:hover
+            opacity: 0.75
+            cursor: pointer
+
+        &.float-left
+            margin-right: 1.5em
+
+        &.float-right
+            margin-left: 1.5em
+
+        span
+            font-weight: 900
+
+        img.logo
+            height: 35px
+            vertical-align: middle
+            margin-right: 10px
+
+    ul
+
+        li
+            display: inline-block
+            height: 70px
+
+            &.nav-text
+                opacity: 0.5
+
+            a
+                transition: opacity 0.3s ease-in-out
+
+                &:hover
+                    opacity: 0.5
+
+    .nav-options
+        line-height: 70px
+
+        @media screen and (max-width: $tab-screen)
+            display: none
+
+        & > li
+            padding: 0px 1em
+            margin-left: -5px
+
+            &.active
+                background-color: rgba(255, 255, 255, 0.25)
+
+            &:first-of-type
+                padding-left: 0px
+
+            &:last-of-type
+                padding-right: 0px
+
+        button
+            padding: 1.5em 2em
+            border: none
+            transition: all 0.3s ease-in-out
+
+            &.full
+                height: 100%
+                transform: translate3d(0px,-1px,0px)
+
+            &.short
+                padding: 1em 2em
+
+            &.tall
+                padding: 2em 2em
+
+            &:hover
+                cursor: pointer
+                letter-spacing: 0.3em
+
+        .dropdown
+            position: relative
+
+            &:after
+                content: "▿"
+                opacity: 0.5
+
+            &:hover
+                cursor: pointer
+
+                .dropdown-content
+                    display: block
+
+            .dropdown-content
+                position: absolute
+                min-width: 200px
+                list-style: none
+                text-align: center
+                z-index: 99
+                font-size: 0.9em
+                display: none
+
+                li
+                    width: 100%
+                    height: 100%
+
+                    a
+                        display: inline-block
+                        width: 100%
+                        height: 100%
+                        padding: 0px 12px
+                        transition: all 0.3s ease-in-out
+
+                        &:hover
+                            background-color: black
+                            color: white
+                            cursor: pointer
+
+        &.float-left
+
+            &.push-to-end
+                margin-left: -15px
+
+            .dropdown
+
+                .dropdown-content
+                    left: 0px
+                    text-align: left
+
+        &.float-right
+
+            &.push-to-end
+                margin-right: -15px
+
+            .dropdown
+
+                .dropdown-content
+                    right: 0px
+                    text-align: right
+
+    .mob-nav
+        display: none
+        line-height: 70px
+
+        @media screen and (max-width: $tab-screen)
+            display: block
+
+        .mob-toggle
+            display: none
+
+            &:checked
+
+                & ~ .nav-options
+                    display: block
+
+                & ~ .sidebar
+                    width: 250px
+
+                    &.skinny
+                        width: 200px
+                    &.fat
+                        width: 300px
+                    &.full
+                        width: 100%
+
+                & ~ label
+
+                    .hamburger
+
+                        &:nth-of-type(1)
+                            top: 50%
+                            transform: rotate(-45deg)
+                        &:nth-of-type(2)
+                            opacity: 0
+                        &:nth-of-type(3)
+                            top: 50%
+                            bottom: auto
+                            transform: rotate(45deg)
+
+        .bun
+            margin-top: 25px
+            position: relative
+            width: 25px
+            height: 20px
+            z-index: 100
+            cursor: pointer
+
+            &.light
+                .hamburger
+                    background-color: $eden-light-grey
+            &.dark
+                .hamburger
+                    background-color: $eden-charcoal
+
+
+            .hamburger
+                position: absolute
+                width: 100%
+                height: 3px
+                background-color: $eden-green
+                transition: all 0.3s ease-in-out
+
+                &:nth-of-type(1)
+                    top: 0px
+                &:nth-of-type(2)
+                    top: 50%
+                    transform: translate3d(0px, -50%, 0px)
+                &:nth-of-type(3)
+                    bottom: 0px
+
+            &.skinny
+                .hamburger
+                    width: 20px
+            &.fat
+                .hamburger
+                    width: 30px
+
+            &.short
+                height: 15px
+            &.tall
+                height: 25px
+
+            &.thin
+                .hamburger
+                    height: 2px
+            &.thick
+                .hamburger
+                    height: 5px
+
+        .sidebar
+            height: 100%
+            width: 0
+            position: fixed
+            z-index: 99
+            top: 0
+            left: 0
+            overflow-x: hidden
+            background-color: $eden-green
+            transition: all 0.3s ease-in-out
+
+            &.light
+                background-color: $eden-light-grey
+                .nav-options
+                    color: $eden-charcoal
+            &.dark
+                background-color: $eden-charcoal
+                .nav-options
+                    color: $eden-light-grey
+
+            &.light
+                left: 0
+                right: auto
+
+                &.shadow
+                    box-shadow: -5px 0px 25px -5px rgba(0, 0, 0, 0.75) inset
+
+            &.right
+                right: 0
+                left: auto
+
+                &.shadow
+                    box-shadow: 5px 0px 25px -5px rgba(0, 0, 0, 0.75) inset
+
+            .nav-options
+                display: block
+                background-color: transparent
+                color: $eden-charcoal
+
+                li
+                    margin: 0
+                    padding: 0
+                    display: block
+
+                    a
+
+                        &:hover
+                            background: none
+                            color: inherit
+                            opacity: 0.75
+
+        // ul.nav-options
+        //     display: none
+        //     width: 100vw
+        //     position: absolute
+        //     left: 0px
+        //     z-index: 99
+        //
+        //     li
+        //         display: block
+        //         padding: 0px !important
+        //
+        //         a
+        //             width: 100%
+        //             height: 100%
+        //             display: inline-block
+        //             padding: 0px 65px
+        //             transition: all 0.3s ease-in-out
+        //
+        //             &:hover
+        //                 color: white
+        //                 cursor: pointer

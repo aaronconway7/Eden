@@ -1,6 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Pacifico';
 @import 'https://fonts.googleapis.com/css?family=Dosis:300,400,600,800';
-@import 'https://fonts.googleapis.com/css?family=Dosis:300,400,600,800';
 .curly {
   font-family: Pacifico; }
 
@@ -10,34 +9,43 @@
     padding: 0px 35px !important; }
 
 .hero {
-  background-image: url(../img/photo-1444798188341-13aa3650c7db.jpg); }
+  background-image: url("../assets/img/photo-1444798188341-13aa3650c7db.jpg");
+  height: auto; }
   .hero .content {
     color: white; }
-    .hero .content h1:nth-of-type(2) {
+    .hero .content h3 {
       font-family: Pacifico;
-      text-transform: lowercase;
-      font-size: 3.5rem; }
+      text-transform: lowercase; }
 
-#about h1 {
-  font-size: 2rem;
+#about h5 {
   font-weight: 300;
   margin-bottom: 20px; }
+
 #about span.curly {
   color: #52ae76; }
+
 #about p {
   margin-bottom: 50px; }
+
 #about .icons {
   margin-bottom: 40px; }
   #about .icons img {
     height: 100px; }
 
 #read-doc {
-  height: 600px; }
+  height: 600px;
+  background-color: #52ae76;
+  transition: all 0.3s ease-in-out; }
+  #read-doc:hover {
+    background-color: #418c5e; }
+  #read-doc h5 {
+    color: white;
+    font-weight: 300; }
 
-#brands h1 {
-  font-size: 2rem;
+#brands h5 {
   font-weight: 300;
   margin-bottom: 50px; }
+
 #brands .logos img {
   height: 55px;
   margin: 15px 50px;
@@ -92,8 +100,10 @@
   background-color: #52ae76 !important;
   z-index: 99;
   transition: all 1s ease-in-out; }
+
 .banner.eden {
   background-color: rgba(82, 174, 118, 0.75); }
+
 .banner > .container {
   padding-top: 25px;
   padding-bottom: 25px; }
@@ -122,11 +132,13 @@
 
 #components-pg .page-content {
   position: relative; }
+
 #components-pg #banner {
   position: absolute;
   width: 100%;
   top: 0px;
   z-index: 98; }
+
 #components-pg #components .component > .container {
   padding-bottom: 0px; }
   #components-pg #components .component > .container > h2 {
@@ -140,8 +152,10 @@
     font-size: 0.5rem;
     font-family: Lato;
     font-weight: 500; }
+
 #components-pg #components .component .container.second {
   padding-top: 0px; }
+
 #components-pg #components #container-component .wrapper {
   background-color: #ececec;
   transition: all 0.3s ease-in-out; }
@@ -154,16 +168,19 @@
     transition: all 0.3s ease-in-out; }
     #components-pg #components #container-component .wrapper .container:hover {
       background-color: #2f2f2f; }
+
 #components-pg #components #grid-component .row {
   margin-bottom: 10px; }
   #components-pg #components #grid-component .row:last-of-type {
     margin-bottom: 0px; }
+
 #components-pg #components #grid-component .col {
   background-color: #ececec;
   transition: all 0.3s ease-in-out; }
   #components-pg #components #grid-component .col:hover {
     background-color: #bbbbbb;
     cursor: help; }
+
 #components-pg #components #nav-component .nav {
   margin-bottom: 10px; }
   #components-pg #components #nav-component .nav:last-of-type {
@@ -172,6 +189,7 @@
     font-family: Dosis; }
   #components-pg #components #nav-component .nav:nth-of-type(4) {
     font-family: Playfair Display; }
+
 #components-pg #components #hero-component .hero:nth-of-type(2) {
   background-image: url(../img/backgrounds/hero1.jpg); }
   #components-pg #components #hero-component .hero:nth-of-type(2) h1 {
@@ -183,6 +201,7 @@
     @media screen and (max-width: 425px) {
       #components-pg #components #hero-component .hero:nth-of-type(2) h1 {
         font-size: 4rem; } }
+
 #components-pg #components #hero-component .hero:nth-of-type(4) {
   background-image: url(../img/backgrounds/hero2.jpg);
   background-position: center 70%; }
@@ -190,83 +209,15 @@
     font-family: Pacifico;
     font-size: 2.5rem;
     margin: 50px; }
+
 #components-pg #components #button-component .row {
   margin-bottom: 10px; }
   #components-pg #components #button-component .row:last-of-type {
     margin-bottom: 0px; }
+
 #components-pg #components #button-component .button {
   margin: 10px; }
   #components-pg #components #button-component .button:first-of-type {
     margin-left: 0px; }
   #components-pg #components #button-component .button:last-of-type {
     margin-right: 0px; }
-
-.tool-tip {
-  position: relative; }
-  .tool-tip .tool-tip-text {
-    visibility: hidden;
-    display: inline-block;
-    font-size: 0.9em;
-    bottom: 100%;
-    margin-bottom: 10px;
-    left: 0px;
-    background-color: black;
-    color: white;
-    padding: 0.5em 1em;
-    border-radius: 0.2em;
-    white-space: nowrap;
-    position: absolute;
-    z-index: 1; }
-    .tool-tip .tool-tip-text.center {
-      left: 50%;
-      transform: translate3d(-50%, 0px, 0px); }
-      .tool-tip .tool-tip-text.center:after {
-        left: 50%; }
-    .tool-tip .tool-tip-text.right {
-      left: auto;
-      right: 0px; }
-      .tool-tip .tool-tip-text.right:after {
-        left: auto;
-        right: 10px; }
-    .tool-tip .tool-tip-text.sharp {
-      border-radius: 0px; }
-    .tool-tip .tool-tip-text.short {
-      padding-top: 0.25em;
-      padding-bottom: 0.25em; }
-    .tool-tip .tool-tip-text.tall {
-      padding-top: 0.75em;
-      padding-bottom: 0.75em; }
-    .tool-tip .tool-tip-text.skinny {
-      padding-left: 0.5em;
-      padding-right: 0.5em; }
-    .tool-tip .tool-tip-text.fat {
-      padding-left: 1.5em;
-      padding-right: 1.5em; }
-    .tool-tip .tool-tip-text.dark {
-      background-color: #2f2f2f;
-      color: #ececec; }
-      .tool-tip .tool-tip-text.dark:after {
-        border-color: #2f2f2f transparent transparent transparent; }
-    .tool-tip .tool-tip-text.light {
-      background-color: #ececec;
-      color: #2f2f2f; }
-      .tool-tip .tool-tip-text.light:after {
-        border-color: #ececec transparent transparent transparent; }
-    .tool-tip .tool-tip-text.eden {
-      background-color: #52ae76;
-      color: #ececec; }
-      .tool-tip .tool-tip-text.eden:after {
-        border-color: #52ae76 transparent transparent transparent; }
-    .tool-tip .tool-tip-text:after {
-      content: " ";
-      position: absolute;
-      top: 100%;
-      left: 10px;
-      margin-left: -5px;
-      border-width: 5px;
-      border-style: solid;
-      border-color: black transparent transparent transparent; }
-  .tool-tip:hover {
-    cursor: help; }
-    .tool-tip:hover > .tool-tip-text {
-      visibility: visible; }

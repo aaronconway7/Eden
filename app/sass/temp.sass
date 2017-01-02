@@ -1,6 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Pacifico'
 @import 'https://fonts.googleapis.com/css?family=Dosis:300,400,600,800'
-@import 'https://fonts.googleapis.com/css?family=Dosis:300,400,600,800'
 
 $eden-dark-green: rgb(20, 184, 125)
 $eden-green: rgb(82, 174, 118)
@@ -26,22 +25,19 @@ $mob-screen: 425px
                 padding: 0px 35px !important
 
 .hero
-    background-image: url(../img/photo-1444798188341-13aa3650c7db.jpg)
+    background-image: url('../assets/img/photo-1444798188341-13aa3650c7db.jpg')
+    height: auto
 
     .content
         color: white
 
-        h1
-
-            &:nth-of-type(2)
-                font-family: Pacifico
-                text-transform: lowercase
-                font-size: 3.5rem
+        h3
+            font-family: Pacifico
+            text-transform: lowercase
 
 #about
 
-    h1
-        font-size: 2rem
+    h5
         font-weight: 300
         margin-bottom: 20px
 
@@ -59,11 +55,19 @@ $mob-screen: 425px
 
 #read-doc
     height: 600px
+    background-color: $eden-green
+    transition: all 0.3s ease-in-out
+
+    &:hover
+        background-color: darken($eden-green, 10)
+
+    h5
+        color: white
+        font-weight: 300
 
 #brands
 
-    h1
-        font-size: 2rem
+    h5
         font-weight: 300
         margin-bottom: 50px
 
@@ -303,98 +307,3 @@ $mob-screen: 425px
                     margin-left: 0px
                 &:last-of-type
                     margin-right: 0px
-
-.tool-tip
-    position: relative
-
-    .tool-tip-text
-        visibility: hidden
-        display: inline-block
-        font-size: 0.9em
-        // width: 120px
-        bottom: 100%
-        margin-bottom: 10px
-        // left: 50%
-        left: 0px
-        // margin-left: -60px
-        background-color: black
-        color: white
-        // text-align: center
-        // padding: 5px 0px
-        padding: 0.5em 1em
-        border-radius: 0.2em
-        white-space: nowrap
-        position: absolute
-        z-index: 1
-
-        &.center
-            left: 50%
-            transform: translate3d(-50%, 0px, 0px)
-
-            &:after
-                left: 50%
-
-        &.right
-            left: auto
-            right: 0px
-
-            &:after
-                left: auto
-                right: 10px
-
-        &.sharp
-            border-radius: 0px
-
-        &.short
-            padding-top: 0.25em
-            padding-bottom: 0.25em
-
-        &.tall
-            padding-top: 0.75em
-            padding-bottom: 0.75em
-
-        &.skinny
-            padding-left: 0.5em
-            padding-right: 0.5em
-
-        &.fat
-            padding-left: 1.5em
-            padding-right: 1.5em
-
-        &.dark
-            background-color: $eden-charcoal
-            color: $eden-light-grey
-
-            &:after
-                border-color: $eden-charcoal transparent transparent transparent
-
-        &.light
-            background-color: $eden-light-grey
-            color: $eden-charcoal
-
-            &:after
-                border-color: $eden-light-grey transparent transparent transparent
-
-        &.eden
-            background-color: $eden-green
-            color: $eden-light-grey
-
-            &:after
-                border-color: $eden-green transparent transparent transparent
-
-        &:after
-            content: " "
-            position: absolute
-            top: 100%
-            // left: 50%
-            left: 10px
-            margin-left: -5px
-            border-width: 5px
-            border-style: solid
-            border-color: black transparent transparent transparent
-
-    &:hover
-        cursor: help
-
-        &>.tool-tip-text
-            visibility: visible

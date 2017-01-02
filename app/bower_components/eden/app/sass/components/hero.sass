@@ -1,0 +1,27 @@
+.hero
+    height: 100vh
+    width: 100vw
+    margin-left: auto
+    margin-right: auto
+    background-position-x: 50%
+    background-position-y: 50%
+    background-repeat: no-repeat
+    background-size: cover
+    overflow: hidden
+
+    &.short
+        height: 50vh
+
+    &.tall
+        height: 75vh
+
+    &.skinny
+        width: 50vw
+
+    &.fat
+        width: 75vw
+
+    &.skinny, &.fat
+
+        @media screen and (max-width: $tab-screen)
+            width: 100vw

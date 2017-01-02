@@ -1,0 +1,23 @@
+{
+  "name": "aaronconway",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "aaronconway7 <aaronconway796@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/aaronconway7/aaronconway7.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "eden": "https://github.com/aaronconway7/Eden.git"
+  }
+}

@@ -7,13 +7,19 @@ html(lang='en')
   body
     .universe#slider-pg
         #slider
-            .slider
-                .slide
-                .slide
-                .slide
+            .slider.short
+                .slides
+                    .slide.is-active
+                    .slide
+                    .slide
                 
                 span.slide-left.slider-control ❮
                 span.slide-right.slider-control ❯
+                
+                .dots
+                    .dot.is-active
+                    .dot
+                    .dot
     
     include ../../include/foot
     script(src="../../js/function.js")

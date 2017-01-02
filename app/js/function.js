@@ -7,6 +7,11 @@ $(document).ready(function(){
     //     closeColor: 'white'
     // });
 
+    $('.slider').slide({
+        quantity: 3,
+        timer: false
+    });
+
 });
 
 $(window).scroll(function(){

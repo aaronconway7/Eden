@@ -17,14 +17,13 @@
   "dependencies": {
     "jquery": "^3.1.1"
   },
-  "_release": "0baa9049a2",
+  "_release": "f041468692",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "0baa9049a23a676eb3b87854e736ad463df3a827"
+    "commit": "f041468692c4c91031d3634a04e6cfbc677a2ccc"
   },
   "_source": "https://github.com/aaronconway7/Eden.git",
   "_target": "*",
-  "_originalSource": "https://github.com/aaronconway7/Eden.git",
-  "_direct": true
+  "_originalSource": "https://github.com/aaronconway7/Eden.git"
 }

@@ -303,7 +303,7 @@ $mob-screen: 425px
             .hero
 
                 &:nth-of-type(2)
-                    background-image: url('../assets/img/backgrounds/hero1.jpg')
+                    background-image: url('../assets/img/bg/hero1.jpg')
                     color: #fff
 
                     h1
@@ -316,7 +316,7 @@ $mob-screen: 425px
                             font-size: 4rem
 
                 &:nth-of-type(4)
-                    background-image: url('../assets/img/backgrounds/hero2.jpg')
+                    background-image: url('../assets/img/bg/hero2.jpg')
                     background-position: center 70%
                     color: #fff
 
@@ -325,28 +325,54 @@ $mob-screen: 425px
                         font-size: 2.5rem
                         margin: 50px
 
+        #modal-component
+
+            .modal
+                position: static
+                z-index: 0
+
         #button-component
 
-            .row
-                margin-bottom: 10px
+            .buttons
 
-                &:last-of-type
-                    margin-bottom: 0px
+                button
+                    margin-right: 10px
 
-            .button
-                margin: 10px
+                    &:last-of-type
+                        margin-right: 0px
 
-                &:first-of-type
-                    margin-left: 0px
-                &:last-of-type
-                    margin-right: 0px
+        #form-component
+
+            form
+                width: 300px
+
+                input
+                    margin-bottom: 10px
+
+                .form-controls
+
+                    input
+                        margin: 0px
+                        margin-right: 5px
+
+                        &:last-of-type
+                            margin-right: 0px
 
         #slider-component
 
             .slider
 
                 .slide
+                    background-position: center
+                    background-repeat: no-repeat
+                    background-size: cover
+
                     &:nth-of-type(1)
-                        background-color: red
+                        background-image: url('../assets/img/bg/slider1.jpg')
                     &:nth-of-type(2)
-                        background-color: green
+                        background-image: url('../assets/img/bg/slider2.jpg')
+                    &:nth-of-type(3)
+                        background-image: url('../assets/img/bg/slider3.jpg')
+
+                    h1
+                        color: #fff

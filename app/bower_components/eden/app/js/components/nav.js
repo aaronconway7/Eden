@@ -16,6 +16,7 @@
 
         return toggle.change(function(){
             if(this.checked){
+                $('body').addClass('no-scroll');
                 nav.find('.hamburger').css('background-color', settings.openColor);
                 if(settings.pageShift){
                     if(sidebar.hasClass('left')){
@@ -40,6 +41,7 @@
                 $(settings.pageClass).css('margin-left', '0px');
                 $(settings.pageClass).css('margin-right', '0px');
                 nav.find('.hamburger').css('background-color', settings.closeColor);
+                $('body').removeClass('no-scroll');
             }
         });
 

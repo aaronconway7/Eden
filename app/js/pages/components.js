@@ -2,8 +2,7 @@ $(document).ready(function() {
     $('.nav').nav();
     $('.modal').modal();
     $('.slider').slide({
-        quantity: 3,
-        timer: false
+        quantity: 3
     });
 
     fixedBanner();

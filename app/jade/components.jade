@@ -25,6 +25,12 @@ html(lang="en")
                                     a(href="#hero-component") Hero
                                 li
                                     a(href="#modal-component") Modal
+                                li
+                                    a(href="#button-component") Buttons
+                                li
+                                    a(href="#form-component") Forms
+                                li
+                                    a(href="#slider-component") Slider
                 section#components
                     .component#container-component
                         .container
@@ -443,39 +449,206 @@ html(lang="en")
                             h3 Modal
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             .row.center-center
-                                a.button.light.open-modal(href="#") Open Modal
-                                .modal.light.shadow.dark-bg
+                                .modal.light.shadow.dark-bg.is-open
                                     .content
                                         .container
                                             h1 Modal
                                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                         .close.inside
                                             span.close-modal ✕
+                            .code.block
+                                span.tag div 
+                                    span.attr class
+                                    span.val modal dark-bg light shadow
+                                .tab
+                                    span.tag div 
+                                        span.attr class
+                                        span.val content
+                                    .tab
+                                        span.tag div 
+                                            span.attr class
+                                            span.val container
+                                        .tab
+                                            span.tag h1
+                                            span.content Modal
+                                            span.tag.close h1
+                                        .tab
+                                            span.tag p
+                                            span.content Modal content.
+                                            span.tag.close p
+                                        span.tag.close div
+                                    .tab
+                                        span.tag div 
+                                            span.attr class
+                                            span.val close inside
+                                            
+                                        .tab
+                                            span.tag span 
+                                                span.attr class
+                                                span.val close-modal
+                                            span.content ✕
+                                            span.tag.close span
+                                        span.tag.close div
+                                    span.tag.close div
+                                span.tag.close div
                     .component#button-component
                         .container
                             h3 Buttons
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            .buttons.row.center-center
+                                button.light(type="button") Button
+                                button.dark.uppercase-and-space(type="button") Button
+                                button.transparent.border(type="button") Button
+                            .code.block.short
+                                span.tag button 
+                                    span.attr class
+                                    span.val light
+                                    span.attr type
+                                    span.val button
+                                span.val Button Name
+                                span.tag.close button
                     .component#form-component
                         .container
                             h3 Forms
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            .form.row.center-center
+                                form
+                                    input.light(type="text", placeholder="Input Text Light")
+                                    input.dark(type="text", placeholder="Input Text Dark")
+                                    input.transparent.border-bottom(type="text", placeholder="Input Text Border-Bottom")
+                                    .row.form-controls
+                                        input.transparent.border.uppercase-and-space(type="submit", value="submit")
+                                        input.transparent.border.uppercase-and-space(type="reset", value="reset")
+                            .code.block.short
+                                span.tag form
+                                .tab
+                                    span.tag input 
+                                        span.attr class
+                                        span.val transparent border
+                                        span.attr type
+                                        span.val text
+                                        span.attr placeholder
+                                        span.val Text
+                                .tab
+                                    span.tag input 
+                                        span.attr class
+                                        span.val transparent border
+                                        span.attr type
+                                        span.val email
+                                        span.attr placeholder
+                                        span.val Email
+                                .tab
+                                    span.tag input 
+                                        span.attr class
+                                        span.val transparent border
+                                        span.attr type
+                                        span.val number
+                                        span.attr placeholder
+                                        span.val Number
+                                .tab
+                                    span.tag textarea 
+                                        span.attr class
+                                        span.val transparent border
+                                        span.attr placeholder
+                                        span.val Text goes here
+                                    span.tag.close textarea
+                                .tab
+                                    span.tag div 
+                                        span.attr class
+                                        span.val row form-controls
+                                    .tab
+                                        span.tag input 
+                                            span.attr class
+                                            span.val light uppercase-and-space
+                                            span.attr type
+                                            span.val submit
+                                            span.attr value
+                                            span.val Submit
+                                    .tab
+                                        span.tag input 
+                                            span.attr class
+                                            span.val dark uppercase-and-space
+                                            span.attr type
+                                            span.val reset
+                                            span.attr value
+                                            span.val Reset
+                                    span.tag.close div
+                                span.tag.close form
                     .component#slider-component
                         .container
                             h3 Slider
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            .slider
-                                .slides
-                                    .slide.is-active
-                                    .slide
-                                    .slide
-                                
-                                span.slide-left.slider-control ❮
-                                span.slide-right.slider-control ❯
-                                
-                                .dots
-                                    .dot.is-active
-                                    .dot
-                                    .dot   
+                        .slider.tall
+                            .slides
+                                .slide.is-active
+                                .slide.overlay.dark
+                                    .row.center-center
+                                        .container
+                                            h1.text-center Slide Title
+                                .slide
+                            
+                            span.slide-left.slider-control ❮
+                            span.slide-right.slider-control ❯
+                            
+                            .dots
+                                .dot.is-active
+                                .dot
+                                .dot
+                        .container.second
+                            .code.block
+                                span.tag div 
+                                    span.attr class
+                                    span.val slider
+                                .tab
+                                    span.tag div 
+                                        span.attr class
+                                        span.val slides
+                                    .tab
+                                        span.tag div 
+                                            span.attr class
+                                            span.val slide is-active
+                                        span.tag.close div
+                                    .tab
+                                        span.tag div 
+                                            span.attr class
+                                            span.val slide
+                                        span.tag.close div
+                                    .tab
+                                        span.tag div 
+                                            span.attr class
+                                            span.val slide
+                                        span.tag.close div
+                                    span.tag.close div
+                                .tab
+                                    span.tag span 
+                                        span.attr class
+                                        span.val slider-control slide-left
+                                    span.content ❮
+                                    span.tag.close span
+                                .tab
+                                    span.tag span 
+                                        span.attr class
+                                        span.val slider-control slide-right
+                                    span.content ❯
+                                    span.tag.close span
+                                .tab
+                                    span.tag div 
+                                        span.attr class
+                                        span.val dots
+                                    .tab
+                                        span.tag div
+                                            span.attr class
+                                            span.val dot is-active
+                                    .tab
+                                        span.tag div
+                                            span.attr class
+                                            span.val dot
+                                    .tab
+                                        span.tag div
+                                            span.attr class
+                                            span.val dot
+                                    span.tag.close div
+                                span.tag.close div
                                 
             include include/footer
             

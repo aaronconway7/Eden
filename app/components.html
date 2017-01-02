@@ -77,6 +77,9 @@
                 <li><a href="#nav-component">Nav</a></li>
                 <li><a href="#hero-component">Hero</a></li>
                 <li><a href="#modal-component">Modal</a></li>
+                <li><a href="#button-component">Buttons</a></li>
+                <li><a href="#form-component">Forms</a></li>
+                <li><a href="#slider-component">Slider</a></li>
               </ul>
             </div>
           </div>
@@ -378,8 +381,8 @@
             <div class="container">
               <h3>Modal</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <div class="row center-center"><a href="#" class="button light open-modal">Open Modal</a>
-                <div class="modal light shadow dark-bg">
+              <div class="row center-center">
+                <div class="modal light shadow dark-bg is-open">
                   <div class="content">
                     <div class="container">
                       <h1>Modal</h1>
@@ -389,35 +392,95 @@
                   </div>
                 </div>
               </div>
+              <div class="code block"><span class="tag">div <span class="attr">class</span><span class="val">modal dark-bg light shadow</span></span>
+                <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">content</span></span>
+                  <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">container</span></span>
+                    <div class="tab"><span class="tag">h1</span><span class="content">Modal</span><span class="tag close">h1</span></div>
+                    <div class="tab"><span class="tag">p</span><span class="content">Modal content.</span><span class="tag close">p</span></div><span class="tag close">div</span>
+                  </div>
+                  <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">close inside</span></span>
+                    <div class="tab"><span class="tag">span <span class="attr">class</span><span class="val">close-modal</span></span><span class="content">✕</span><span class="tag close">span</span></div><span class="tag close">div</span>
+                  </div><span class="tag close">div</span>
+                </div><span class="tag close">div</span>
+              </div>
             </div>
           </div>
           <div id="button-component" class="component">
             <div class="container">
               <h3>Buttons</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="buttons row center-center">
+                <button type="button" class="light">Button</button>
+                <button type="button" class="dark uppercase-and-space">Button</button>
+                <button type="button" class="transparent border">Button</button>
+              </div>
+              <div class="code block short"><span class="tag">button <span class="attr">class</span><span class="val">light</span><span class="attr">type</span><span class="val">button</span></span><span class="val">Button Name</span><span class="tag close">button</span></div>
             </div>
           </div>
           <div id="form-component" class="component">
             <div class="container">
               <h3>Forms</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="form row center-center">
+                <form>
+                  <input type="text" placeholder="Input Text Light" class="light">
+                  <input type="text" placeholder="Input Text Dark" class="dark">
+                  <input type="text" placeholder="Input Text Border-Bottom" class="transparent border-bottom">
+                  <div class="row form-controls">
+                    <input type="submit" value="submit" class="transparent border uppercase-and-space">
+                    <input type="reset" value="reset" class="transparent border uppercase-and-space">
+                  </div>
+                </form>
+              </div>
+              <div class="code block short"><span class="tag">form</span>
+                <div class="tab"><span class="tag">input <span class="attr">class</span><span class="val">transparent border</span><span class="attr">type</span><span class="val">text</span><span class="attr">placeholder</span><span class="val">Text</span></span></div>
+                <div class="tab"><span class="tag">input <span class="attr">class</span><span class="val">transparent border</span><span class="attr">type</span><span class="val">email</span><span class="attr">placeholder</span><span class="val">Email</span></span></div>
+                <div class="tab"><span class="tag">input <span class="attr">class</span><span class="val">transparent border</span><span class="attr">type</span><span class="val">number</span><span class="attr">placeholder</span><span class="val">Number</span></span></div>
+                <div class="tab"><span class="tag">textarea <span class="attr">class</span><span class="val">transparent border</span><span class="attr">placeholder</span><span class="val">Text goes here</span></span><span class="tag close">textarea</span></div>
+                <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">row form-controls</span></span>
+                  <div class="tab"><span class="tag">input <span class="attr">class</span><span class="val">light uppercase-and-space</span><span class="attr">type</span><span class="val">submit</span><span class="attr">value</span><span class="val">Submit</span></span></div>
+                  <div class="tab"><span class="tag">input <span class="attr">class</span><span class="val">dark uppercase-and-space</span><span class="attr">type</span><span class="val">reset</span><span class="attr">value</span><span class="val">Reset</span></span></div><span class="tag close">div</span>
+                </div><span class="tag close">form</span>
+              </div>
             </div>
           </div>
           <div id="slider-component" class="component">
             <div class="container">
               <h3>Slider</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <div class="slider">
-                <div class="slides">
-                  <div class="slide is-active"></div>
-                  <div class="slide"></div>
-                  <div class="slide"></div>
-                </div><span class="slide-left slider-control">❮</span><span class="slide-right slider-control">❯</span>
-                <div class="dots">
-                  <div class="dot is-active"></div>
-                  <div class="dot"></div>
-                  <div class="dot">  </div>
+            </div>
+            <div class="slider tall">
+              <div class="slides">
+                <div class="slide is-active"></div>
+                <div class="slide overlay dark">
+                  <div class="row center-center">
+                    <div class="container">
+                      <h1 class="text-center">Slide Title</h1>
+                    </div>
+                  </div>
                 </div>
+                <div class="slide"></div>
+              </div><span class="slide-left slider-control">❮</span><span class="slide-right slider-control">❯</span>
+              <div class="dots">
+                <div class="dot is-active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+            <div class="container second">
+              <div class="code block"><span class="tag">div <span class="attr">class</span><span class="val">slider</span></span>
+                <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">slides</span></span>
+                  <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">slide is-active</span></span><span class="tag close">div</span></div>
+                  <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">slide</span></span><span class="tag close">div</span></div>
+                  <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">slide</span></span><span class="tag close">div</span></div><span class="tag close">div</span>
+                </div>
+                <div class="tab"><span class="tag">span <span class="attr">class</span><span class="val">slider-control slide-left</span></span><span class="content">❮</span><span class="tag close">span</span></div>
+                <div class="tab"><span class="tag">span <span class="attr">class</span><span class="val">slider-control slide-right</span></span><span class="content">❯</span><span class="tag close">span</span></div>
+                <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">dots</span></span>
+                  <div class="tab"><span class="tag">div<span class="attr">class</span><span class="val">dot is-active</span></span></div>
+                  <div class="tab"><span class="tag">div<span class="attr">class</span><span class="val">dot</span></span></div>
+                  <div class="tab"><span class="tag">div<span class="attr">class</span><span class="val">dot</span></span></div><span class="tag close">div</span>
+                </div><span class="tag close">div</span>
               </div>
             </div>
           </div>

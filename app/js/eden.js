@@ -72,7 +72,6 @@
         // Establish our default settings
         var settings = $.extend({
             pageShift     : false,
-            noScroll      : true,
             openColor     : '#2F2F2F',
             closeColor    : '#2f2f2f',
             pageClass     : '.page-container'
@@ -80,8 +79,8 @@
 
         return toggle.change(function(){
             if(this.checked){
-                nav.find('.hamburger').css('background-color', settings.openColor);
                 $('body').addClass('no-scroll');
+                nav.find('.hamburger').css('background-color', settings.openColor);
                 if(settings.pageShift){
                     if(sidebar.hasClass('left')){
                         if(sidebar.hasClass('skinny')){
@@ -104,8 +103,8 @@
             } else {
                 $(settings.pageClass).css('margin-left', '0px');
                 $(settings.pageClass).css('margin-right', '0px');
-                $('body').removeClass('no-scroll');
                 nav.find('.hamburger').css('background-color', settings.closeColor);
+                $('body').removeClass('no-scroll');
             }
         });
 

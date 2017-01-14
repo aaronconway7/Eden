@@ -3,7 +3,7 @@
   margin: 0px; }
 
 html {
-  background-image: url("assets/img/eden-coming-soon.jpg");
+  background-image: url("../assets/img/eden-coming-soon.jpg");
   background-size: cover;
   background-position: right;
   height: 100%;

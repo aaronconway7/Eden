@@ -1187,3 +1187,37 @@ textarea {
         opacity: 1; }
       .slider .dots .dot.is-active {
         opacity: 1; }
+
+.lightbox {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; }
+  .lightbox > .caption {
+    display: none; }
+  .lightbox .modal.is-open {
+    display: -ms-flexbox;
+    display: flex; }
+  .lightbox .modal .content {
+    text-align: center; }
+    .lightbox .modal .content .active-img {
+      position: relative; }
+      .lightbox .modal .content .active-img img {
+        width: auto !important;
+        height: auto !important;
+        max-width: 100%;
+        max-height: 60vh; }
+      .lightbox .modal .content .active-img .caption {
+        font-style: italic;
+        margin: 10px 0px; }
+      .lightbox .modal .content .active-img .slider-control {
+        position: absolute;
+        top: 50%;
+        transform: translate3d(0px, -50%, 0px);
+        opacity: 0.5;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out; }
+        .lightbox .modal .content .active-img .slider-control.slide-left {
+          left: -20px; }
+        .lightbox .modal .content .active-img .slider-control.slide-right {
+          right: -20px; }
+    .lightbox .modal .content .close {
+      position: fixed; }

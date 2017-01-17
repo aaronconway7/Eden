@@ -139,66 +139,47 @@
             &>img
                 height: 100px
                 margin: 10px
-                cursor: pointer
-                transition: all 0.3s ease-in-out
 
                 &:hover
                     opacity: 0.7
 
-            &>.caption
-                display: none
-
             .modal
 
                 .content
-                    text-align: center
 
                     .active-img
-                        position: relative
-
-                        img
-                            max-width: 100%
 
                         .caption
                             color: white
-                            font-style: italic
-                            margin: 10px 0px
 
                         .slider-control
-                            position: absolute
-                            top: 50%
-                            transform: translate3d(0px, -50%, 0px)
                             color: white
-                            opacity: 0.5
-                            cursor: pointer
-                            transition: all 0.3s ease-in-out
 
                             &:hover
                                 opacity: 0.75
 
-                            &.slide-left
-                                left: -20px
-                            &.slide-right
-                                right: -20px
+#masonry-pg
 
-                    .row
-                        overflow: hidden
+    #masonry
 
-                        img
-                            height: 75px
-                            margin-right: 10px
-                            cursor: pointer
-                            transition: all 0.3s ease-in-out
+        .masonry
+            column-gap: 4px
 
-                            &.is-active
-                                border: 1px solid white
-                                cursor: default
+            &.no-gap
+                column-gap: 0px
 
-                                &:hover
-                                    opacity: 1
+                img
+                    margin-bottom: -4px
 
-                            &:hover
-                                opacity: 0.75
+            &.col-2
+                column-count: 2
+            &.col-3
+                column-count: 3
+            &.col-4
+                column-count: 4
+            &.col-5
+                column-count: 5
 
-                    .close
-                        position: fixed
+            img
+                width: 100%
+                display: inline-block

@@ -1,0 +1,43 @@
+.lightbox
+    cursor: pointer
+    transition: all 0.3s ease-in-out
+
+    & > .caption
+        display: none
+
+    .modal
+
+        &.is-open
+            display: flex
+
+        .content
+            text-align: center
+
+            .active-img
+                position: relative
+
+                img
+                    width: auto !important
+                    height: auto !important
+                    max-width: 100%
+                    max-height: 60vh
+
+                .caption
+                    font-style: italic
+                    margin: 10px 0px
+
+                .slider-control
+                    position: absolute
+                    top: 50%
+                    transform: translate3d(0px, -50%, 0px)
+                    opacity: 0.5
+                    cursor: pointer
+                    transition: all 0.3s ease-in-out
+
+                    &.slide-left
+                        left: -20px
+                    &.slide-right
+                        right: -20px
+
+            .close
+                position: fixed

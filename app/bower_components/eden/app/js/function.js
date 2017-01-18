@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    // $('.modal').modal();
+    $('.lightbox').lightbox();
     // $('.animation').animate();
     // $('.nav').nav({
     //     pageShift: true,
@@ -7,10 +7,10 @@ $(document).ready(function(){
     //     closeColor: 'white'
     // });
 
-    $('.slider').slide({
-        quantity: 3,
-        timer: false
-    });
+    // $('.slider').slide({
+    //     quantity: 3,
+    //     timer: false
+    // });
 
 });
 

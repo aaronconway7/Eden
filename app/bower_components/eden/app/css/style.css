@@ -84,3 +84,17 @@
 
 #slider-pg .slider .slide:nth-of-type(3) {
   background-color: blue; }
+
+#lightbox-pg {
+  height: 200vh; }
+  #lightbox-pg #lightbox .lightbox > img {
+    height: 100px;
+    margin: 10px; }
+    #lightbox-pg #lightbox .lightbox > img:hover {
+      opacity: 0.7; }
+  #lightbox-pg #lightbox .lightbox .modal .content .active-img .caption {
+    color: white; }
+  #lightbox-pg #lightbox .lightbox .modal .content .active-img .slider-control {
+    color: white; }
+    #lightbox-pg #lightbox .lightbox .modal .content .active-img .slider-control:hover {
+      opacity: 0.75; }

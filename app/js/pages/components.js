@@ -8,6 +8,7 @@ $(document).ready(function() {
     fixedBanner();
     var bannerHeight = $('#banner .banner').height();
     $('.page-content').css('padding-top',bannerHeight+'px');
+    $('.lightbox').lightbox();
 });
 
 $(window).scroll(function() {

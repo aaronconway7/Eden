@@ -98,27 +98,3 @@
     color: white; }
     #lightbox-pg #lightbox .lightbox .modal .content .active-img .slider-control:hover {
       opacity: 0.75; }
-
-#masonry-pg #masonry .masonry {
-  -moz-column-gap: 4px;
-       column-gap: 4px; }
-  #masonry-pg #masonry .masonry.no-gap {
-    -moz-column-gap: 0px;
-         column-gap: 0px; }
-    #masonry-pg #masonry .masonry.no-gap img {
-      margin-bottom: -4px; }
-  #masonry-pg #masonry .masonry.col-2 {
-    -moz-column-count: 2;
-         column-count: 2; }
-  #masonry-pg #masonry .masonry.col-3 {
-    -moz-column-count: 3;
-         column-count: 3; }
-  #masonry-pg #masonry .masonry.col-4 {
-    -moz-column-count: 4;
-         column-count: 4; }
-  #masonry-pg #masonry .masonry.col-5 {
-    -moz-column-count: 5;
-         column-count: 5; }
-  #masonry-pg #masonry .masonry img {
-    width: 100%;
-    display: inline-block; }

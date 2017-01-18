@@ -34,7 +34,7 @@
 
         return this.each(function(){
             $(this).append(
-                "<div class='modal dark-bg row center-center shadow'>"+
+                "<div class='modal dark-bg row center-center'>"+
                 "   <div class='content'>"+
                 "       <div class='active-img'>"+
                 "           <span class='slide-left slider-control'>❮</span>"+

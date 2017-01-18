@@ -12,38 +12,38 @@ html(lang="en")
                     .hero.overlay.eden
                         .content.row.center-center
                             .container
-                                h5.uppercase-and-space.text-center The #1 Framework for
+                                h5.uppercase-and-space.text-center The Front-end Framework for
                                 h3.text-center Beautiful Design
                 section#about
                     .container
-                        h5.text-center Designed to be #[span.curly different.] Designed to be #[span.curly beautiful.]
-                        p.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        h5.text-center.animation.fade-in-up.on-scroll Designed to be #[span.curly different.] Designed to be #[span.curly beautiful.]
+                        p.text-center.animation.fade-in-up.on-scroll Eden is a front-end web framework designed to create beautiful and unique looking websites. Built from scratch, it compiles the latest web design and most commonly used web trends into a single package.
                         .row.icons.center-center.mob-col
-                                img(alt="star", src="assets/img/star.svg")
-                                img(alt="code", src="assets/img/code.svg")
-                                img(alt="heart", src="assets/img/heart.svg")
+                                img.animation.fade-in-up.on-scroll.on-delay(alt="star", src="assets/img/star.svg")
+                                img.animation.fade-in-up.on-scroll.on-delay(alt="code", src="assets/img/code.svg")
+                                img.animation.fade-in-up.on-scroll.on-delay(alt="heart", src="assets/img/heart.svg")
                         .row.center-center
-                            a.button.uppercase-and-space.transparent.border(href="#") Read More
+                            a.button.uppercase-and-space.transparent.border.animation.fade-in-up.on-scroll(href="#") Read More
                 section#read-doc
                     a(href="")
                         .container.row.center-center
                             h5.uppercase-and-space.text-center Read Documentation
                 section#brands
                     .container
-                        h5.text-center Brands using Eden
+                        h5.text-center.animation.fade-in-up.on-scroll Brands using Eden
                         .row.logos.center-center.mob-col
-                            img(alt="Aaron Conway", src="assets/img/aaronconway.png")
-                            img(alt="Frecibo", src="assets/img/frecibo-b&w.png")
-                            img.ndorsa(alt="NDORSA", src="assets/img/ndorsa.png")
-                            img(alt="WES", src="assets/img/wes.png")
+                            img.animation.fade-in-up.on-scroll.on-delay(alt="Aaron Conway", src="assets/img/aaronconway.png")
+                            img.animation.fade-in-up.on-scroll.on-delay(alt="Frecibo", src="assets/img/frecibo-b&w.png")
+                            img.ndorsa.animation.fade-in-up.on-scroll.on-delay(alt="NDORSA", src="assets/img/ndorsa.png")
+                            img.animation.fade-in-up.on-scroll.on-delay(alt="WES", src="assets/img/wes.png")
                             
                 section#open-source
                     .container
-                        h5.text-center Eden is open source!
-                        p.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        h5.text-center.animation.fade-in-up.on-scroll Eden is open source!
+                        p.text-center.animation.fade-in-up.on-scroll Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         .row.buttons.center-center.mob-col
-                            a.button.uppercase-and-space.eden.transparent.border.invert-on-hover(href="https://github.com/aaronconway7/Eden") #[i(class="fa fa-github", aria-hidden="true")] View on Github
-                            a.button.uppercase-and-space.eden.border.invert-on-hover(href="http://paypal.me/aaronconway/3.50") #[i(class="fa fa-paypal", aria-hidden="true")] Buy me a beer
+                            a.button.uppercase-and-space.eden.transparent.border.invert-on-hover.animation.fade-in-up.on-scroll(href="https://github.com/aaronconway7/Eden") #[i(class="fa fa-github", aria-hidden="true")] View on Github
+                            a.button.uppercase-and-space.eden.border.invert-on-hover.animation.fade-in-up.on-scroll(href="http://paypal.me/aaronconway/3.50") #[i(class="fa fa-paypal", aria-hidden="true")] Buy me a beer
                         .row.github-stats.center-center
                             a(class="github-button", href="https://github.com/aaronconway7/Eden", data-icon="octicon-star", data-count-href="/aaronconway7/Eden/stargazers", data-count-api="/repos/aaronconway7/Eden#stargazers_count", data-count-aria-label="# stargazers on GitHub", aria-label="Star aaronconway7/Eden on GitHub") Star
                             a(class="github-button", href="https://github.com/aaronconway7/Eden/fork", data-icon="octicon-repo-forked", data-count-href="/aaronconway7/Eden/network", data-count-api="/repos/aaronconway7/Eden#forks_count", data-count-aria-label="# forks on GitHub", aria-label="Fork aaronconway7/Eden on GitHub") Fork
@@ -53,3 +53,4 @@ html(lang="en")
 
         script(async defer src="https://buttons.github.io/buttons.js")
         include include/foot
+        script(src="js/pages/index.js")

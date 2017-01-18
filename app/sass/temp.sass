@@ -14,10 +14,34 @@ $mob-screen: 425px
 .curly
     font-family: Pacifico
 
+.bg-center
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+.quote, .quote-author
+    font-style: italic
+
+.quote-author
+    text-align: right
+
+hr
+    border-width: 1px
+    border-style: solid
+
+    &.center
+        margin-left: auto
+        margin-right: auto
+
+    &.fat
+        width: 50%
+    &.skinny
+        width: 25%
+
 #nav
     padding: 25px 0px
 
-    @media screen and (max-width: 768px)
+    @media screen and (max-width: $tab-screen)
         padding: 0px
 
     .nav
@@ -33,11 +57,15 @@ $mob-screen: 425px
 #home-pg
 
     .hero
-        background-image: url('../assets/img/photo-1444798188341-13aa3650c7db.jpg')
+        background-image: url('../assets/img/bg/index.jpg')
         height: auto
 
         .content
             color: white
+
+            h5
+                @media screen and (max-width: $tab-screen)
+                    font-size: 1.5rem
 
             h3
                 font-family: Pacifico
@@ -155,6 +183,104 @@ $mob-screen: 425px
 
                 &:hover
                     opacity: 1
+
+#about-pg
+
+    .hero
+        background-image: url("../assets/img/bg/about.jpg")
+
+    hr
+        margin-top: 20px
+        margin-bottom: 50px
+        width: 50px
+        border-color: $eden-dark-grey
+
+    .quote
+        font-size: 2rem
+        margin-bottom: 5px
+
+    .quote-author
+        margin-bottom: 100px
+
+    .about-content
+        column-count: 2
+
+        p
+            margin-bottom: 1em
+
+            &:last-of-type
+                margin-bottom: 0px
+
+    .keywords
+        background-color: $eden-light-grey
+
+        h2
+            margin-bottom: 2px
+            font-family: Merriweather
+            color: $eden-charcoal
+
+            &:last-of-type
+                margin-bottom: 0px
+
+        p
+            font-style: italic
+
+        hr
+            border-color: $eden-green
+            margin-top: 50px
+
+        .img
+            height: 400px
+            background-image: url("../assets/img/bg/about2.jpg")
+
+    .about-me
+        background-color: $eden-green
+        color: $eden-light-grey
+
+        h5
+            margin-bottom: 50px
+
+        .img
+            width: 100%
+            height: 350px
+            background-image: url("../assets/img/me.jpg")
+
+        img
+            width: 100%
+
+        p
+            margin-bottom: 1em
+            font-size: 1rem
+            font-weight: 400
+
+            @media screen and (max-width: $tab-screen)
+                font-size: 1rem
+
+            &:last-of-type
+                margin-bottom: 0px
+
+#get-started-pg
+
+    .hero
+        background-image: url("../assets/img/bg/get-started.jpg")
+        color: $eden-light-grey
+
+        h5
+            font-weight: 100
+            margin-bottom: 5px
+
+        .quote-author
+            text-align: left !important
+            font-size: 0.9rem
+
+    .get-started
+
+        hr
+            margin-top: 20px
+            margin-bottom: 50px
+            width: 50px
+            border-color: $eden-dark-grey
+
 
 #footer
 

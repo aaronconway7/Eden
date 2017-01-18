@@ -172,9 +172,23 @@
   z-index: 98; }
 
 #components-pg #components .component > .container {
+  padding-top: 100px;
   padding-bottom: 0px; }
-  #components-pg #components .component > .container > h2 {
-    text-align: left; }
+  @media screen and (max-width: 768px) {
+    #components-pg #components .component > .container {
+      padding-top: 50px; } }
+  #components-pg #components .component > .container > h3 {
+    color: #6b6d6f;
+    text-align: left;
+    display: inline-block; }
+  #components-pg #components .component > .container > span {
+    vertical-align: super;
+    margin-left: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; }
+    #components-pg #components .component > .container > span:hover {
+      opacity: 0.75; }
   #components-pg #components .component > .container > p {
     margin-bottom: 10px; }
 
@@ -268,3 +282,53 @@
     background-image: url("../assets/img/bg/slider3.jpg"); }
   #components-pg #components #slider-component .slider .slide h1 {
     color: #fff; }
+
+#components-pg #components #lightbox-component .lightbox img {
+  height: 100px;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+
+#components-pg #components #lightbox-component .lightbox .caption {
+  color: white; }
+
+#components-pg #components #lightbox-component .lightbox .modal {
+  background-color: rgba(0, 0, 0, 0.9); }
+
+#components-pg #components #lightbox-component .lightbox .slider-control {
+  color: white; }
+
+.layout {
+  position: relative;
+  overflow-x: hidden; }
+  .layout.sidebar .sidebar {
+    color: white;
+    overflow-y: auto;
+    transition: left 0.3s ease-in-out; }
+    @media screen and (max-width: 768px) {
+      .layout.sidebar .sidebar {
+        left: -190px; }
+        .layout.sidebar .sidebar:hover {
+          left: 0px; }
+        .layout.sidebar .sidebar + .main {
+          padding-left: 10px; } }
+    .layout.sidebar .sidebar .brand {
+      font-size: 1.5rem;
+      margin-bottom: 50px; }
+    .layout.sidebar .sidebar .nav-options {
+      font-size: 1rem;
+      display: block;
+      line-height: 2.5em; }
+      .layout.sidebar .sidebar .nav-options > li {
+        margin-left: 0px;
+        height: auto; }
+  .layout.sidebar .main {
+    padding-left: 200px; }
+    .layout.sidebar .main > hr {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid #ececec;
+      transform: translate3d(0px, 30px, 0px); }
+      @media screen and (max-width: 768px) {
+        .layout.sidebar .main > hr {
+          transform: translate3d(0px, 10px, 0px); } }

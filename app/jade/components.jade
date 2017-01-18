@@ -6,309 +6,395 @@ html(lang="en")
         link(rel='stylesheet', href='css/temp.css')
     body
         .universe#components-pg
-            include include/header
-            .page-content
-                section#banner
-                    .banner.eden
-                        .container
-                            h1.uppercase-and-space Components
-                            ul
-                                li 
-                                    a(href="#container-component") Container
-                                li
-                                    a(href="#grid-component") Grid
-                                li
-                                    a(href="#typography-component") Typography
-                                li
-                                    a(href="#nav-component") Nav
-                                li
-                                    a(href="#hero-component") Hero
-                                li
-                                    a(href="#modal-component") Modal
-                                li
-                                    a(href="#button-component") Buttons
-                                li
-                                    a(href="#form-component") Forms
-                                li
-                                    a(href="#slider-component") Slider
-                section#components
-                    .component#container-component
-                        .container
-                            h3 Container
-                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-                        .wrapper.tool-tip
-                            .tool-tip-text.dark 
-                                .code .wrapper
-                            .container.tool-tip
-                                .tool-tip-text.light.center 
-                                    .code.light .container
-                        .container.second
-                            .code.block.short
-                                span.tag div 
-                                    span.attr class
-                                    span.val container
-                                .tab
-                                    span.content ...
-                                span.tag.close div
-                    .component#grid-component
-                        .container
-                            h3 Grid
-                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            .row
-                                .col.one.tool-tip &nbsp;
-                                    .tool-tip-text.dark.skinny 
-                                        .code .col.one
-                                .col.eleven.tool-tip &nbsp;
-                                    .tool-tip-text.dark.center
-                                        .code .col.eleven
-                            .row
-                                .col.two.tool-tip &nbsp;
-                                    .tool-tip-text.dark 
-                                        .code .col.two, .col.sixth
-                                .col.ten.tool-tip &nbsp;
-                                    .tool-tip-text.dark.center
-                                        .code .col.ten, .col.five-sixths
-                            .row
-                                .col.three.tool-tip &nbsp;
-                                    .tool-tip-text.dark
-                                        .code .col.three, .col.quarter
-                                .col.nine.tool-tip &nbsp;
-                                    .tool-tip-text.dark.center
-                                        .code .col.nine, .col.three-quarters
-                            .row
-                                .col.four.tool-tip &nbsp;
-                                    .tool-tip-text.dark
-                                        .code .col.four, .col.third
-                                .col.eight.tool-tip &nbsp;
-                                    .tool-tip-text.dark.right
-                                        .code .col.eight, .col.two-thirds
-                            .row
-                                .col.five.tool-tip &nbsp;
-                                    .tool-tip-text.dark
-                                        .code .col.five
-                                .col.seven.tool-tip &nbsp;
-                                    .tool-tip-text.dark.right
-                                        .code .col.seven
-                            .row
-                                .col.six.tool-tip &nbsp;
-                                    .tool-tip-text.dark.left
-                                        .code .col.six, .col.half
-                                .col.six.tool-tip &nbsp;
-                                    .tool-tip-text.dark.right
-                                        .code .col.six, .col.half
-                            .code.block
-                                span.tag div 
-                                    span.attr class
-                                    span.val row
-                                .tab
+            .layout.sidebar
+                .nav.sidebar.fixed
+                    .container
+                        .brand
+                            span Eden.
+                        ul.nav-options
+                            li
+                                a(href="#container-component") Container
+                            li
+                                a(href="#grid-component") Grid
+                            li
+                                a(href="#typography-component") Typography
+                            li
+                                a(href="#nav-component") Nav
+                            li
+                                a(href="#hero-component") Hero
+                            li
+                                a(href="#modal-component") Modal
+                            li
+                                a(href="#button-component") Buttons
+                            li
+                                a(href="#form-component") Forms
+                            li
+                                a(href="#slider-component") Slider
+                            li
+                                a(href="#lightbox-component") Lightbox
+                            li
+                                a(href="#masonry-component") Masonry
+                        
+                .main
+                    include include/header
+                    hr
+                    .page-content
+                    section#components
+                        .component#container-component
+                            .container
+                                h3 Container
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                            .wrapper.tool-tip
+                                .tool-tip-text.dark 
+                                    .code .wrapper
+                                .container.tool-tip
+                                    .tool-tip-text.light.center 
+                                        .code.light .container
+                            .container.second
+                                .code.block.short
                                     span.tag div 
                                         span.attr class
-                                        span.val col five
+                                        span.val container
                                     .tab
                                         span.content ...
                                     span.tag.close div
-                                .tab
+                        .component#grid-component
+                            .container
+                                h3 Grid
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                .row
+                                    .col.one.tool-tip &nbsp;
+                                        .tool-tip-text.dark.skinny 
+                                            .code .col.one
+                                    .col.eleven.tool-tip &nbsp;
+                                        .tool-tip-text.dark.center
+                                            .code .col.eleven
+                                .row
+                                    .col.two.tool-tip &nbsp;
+                                        .tool-tip-text.dark 
+                                            .code .col.two, .col.sixth
+                                    .col.ten.tool-tip &nbsp;
+                                        .tool-tip-text.dark.center
+                                            .code .col.ten, .col.five-sixths
+                                .row
+                                    .col.three.tool-tip &nbsp;
+                                        .tool-tip-text.dark
+                                            .code .col.three, .col.quarter
+                                    .col.nine.tool-tip &nbsp;
+                                        .tool-tip-text.dark.center
+                                            .code .col.nine, .col.three-quarters
+                                .row
+                                    .col.four.tool-tip &nbsp;
+                                        .tool-tip-text.dark
+                                            .code .col.four, .col.third
+                                    .col.eight.tool-tip &nbsp;
+                                        .tool-tip-text.dark.right
+                                            .code .col.eight, .col.two-thirds
+                                .row
+                                    .col.five.tool-tip &nbsp;
+                                        .tool-tip-text.dark
+                                            .code .col.five
+                                    .col.seven.tool-tip &nbsp;
+                                        .tool-tip-text.dark.right
+                                            .code .col.seven
+                                .row
+                                    .col.six.tool-tip &nbsp;
+                                        .tool-tip-text.dark.left
+                                            .code .col.six, .col.half
+                                    .col.six.tool-tip &nbsp;
+                                        .tool-tip-text.dark.right
+                                            .code .col.six, .col.half
+                                .code.block
                                     span.tag div 
                                         span.attr class
-                                        span.val col seven
+                                        span.val row
                                     .tab
-                                        span.content ...
-                                    span.tag.close div
-                                span.tag.close div
-                    .component#typography-component
-                        .container
-                            h3 Typography
-                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            h1 Heading 1
-                            h2 Heading 2
-                            h3 Heading 3
-                            h4 Heading 4
-                            h5 Heading 5
-                            h6 Heading 6
-                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            span.code.light Inline Code
-                            .code.block.light
-                                span Code Block 
-                    .component#nav-component
-                        .container
-                            h3 Nav
-                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        .nav.clear.light
-                            .brand.float-left
-                                a(href="#")
-                                    img.logo(alt="", src="assets/img/eden.png")
-                                    span brand
-                            ul.nav-options.float-left
-                                li
-                                    a(href="#") option
-                                li.dropdown LOST
-                                    ul.dropdown-content
-                                        li
-                                            a(href="") 4
-                                            a(href="") 8
-                                            a(href="") 15
-                                            a(href="") 16
-                                            a(href="") 23
-                                            a(href="") 42
-                            ul.nav-options.float-right
-                                li.nav-text signed in as Desmond
-                                li
-                                    a(href="")
-                                        button.uppercase-and-space(type="button") Sign Out
-                            .mob-nav.float-right
-                                input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
-                                label(for="mob-toggle")
-                                    .hamburger
-                                ul.nav-options.text-center
-                                    li
-                                        a(href="#") option
-                                    li
-                                        a(href="#") option
-                                    li
-                                        a(href="#") option
-                        .nav.clear.skinny.transparent.padded
-                            .brand.float-left
-                                a(href="#")
-                                    span.lowercase brand
-                            ul.nav-options.float-left
-                                li
-                                    a(href="#") option
-                                li
-                                    a(href="#") option
-                            ul.nav-options.float-right
-                                li
-                                    a(href="#") option
-                                li
-                                    a(href="#") option
-                                li
-                                    a(href="#") option
-                            .mob-nav.float-right
-                                input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
-                                label(for="mob-toggle")
-                                    .hamburger
-                                ul.nav-options.text-center
-                                    li
-                                        a(href="#") option
-                                    li
-                                        a(href="#") option
-                                    li
-                                        a(href="#") option
-                        .nav.fat.uppercase-and-space.centered.dark
-                            ul.nav-options
-                                li
-                                    a(href="#") option
-                                li.dropdown option
-                                    ul.dropdown-content
-                                        li
-                                            a(href="#") dropdown option
-                                        li
-                                            a(href="#") dropdown option
-                                li
-                                    a(href="#") option
-                            .brand
-                                a(href="index.html")
-                                    img.logo(alt="", src="assets/img/eden.png")
-                            ul.nav-options
-                                li
-                                    a(href="#") option
-                                li.dropdown option
-                                    ul.dropdown-content
-                                        li
-                                            a(href="#") dropdown option
-                                        li
-                                            a(href="#") dropdown option
-                                li
-                                    a(href="#")
-                                        button.uppercase-and-space.skinny(type="button") Download
-                            
-                            .mob-nav.float-right
-                                input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
-                                label(for="mob-toggle")
-                                    .hamburger
-                                ul.nav-options.text-center
-                                    li
-                                        a(href="#") option
-                                    li
-                                        a(href="#") option
-                                    li
-                                        a(href="#") option
-                        .nav.clear.mobile.transparent
-                            .brand.float-left
-                                a(href="index.html")
-                                    img.logo(alt="", src="assets/img/eden.png")
-                                    span brand
-                            .mob-nav.float-right
-                                input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
-                                label(for="mob-toggle")
-                                    .hamburger
-                                ul.nav-options.text-center
-                                    li
-                                        a(href="#") option
-                                    li
-                                        a(href="#") option
-                                    li
-                                        a(href="#") option
-                        .container.second
-                            .code.block
-                                span.tag div 
-                                    span.attr class
-                                    span.val nav clear skinny dark uppercase-and-space
-                                .tab
-                                    span.tag div 
-                                        span.attr class
-                                        span.val brand float-left
-                                    .tab
-                                        span.tag a 
-                                            span.attr href
-                                            span.val #
-                                        .tab
-                                            span.tag span
-                                            span.content Brand
-                                            span.tag.close span
-                                        span.tag.close a
-                                    span.tag.close div
-                                .tab
-                                    span.tag ul 
-                                        span.attr class
-                                        span.val nav-options float-left
-                                    .tab
-                                        span.tag li
-                                        span.tag a 
-                                            span.attr href
-                                            span.val #
-                                        span.content option
-                                        span.tag.close a
-                                        span.tag.close li
-                                    .tab
-                                        span.tag li
-                                        span.tag a 
-                                            span.attr href
-                                            span.val #
-                                        span.content option
-                                        span.tag.close a
-                                        span.tag.close li
-                                    span.tag.close ul
-                                .tab
-                                    span.tag ul 
-                                        span.attr class
-                                        span.val nav-options float-right
-                                    .tab
-                                        span.tag li 
+                                        span.tag div 
                                             span.attr class
-                                            span.val dropdown
-                                        span.content dropdown option
+                                            span.val col five
                                         .tab
-                                            span.tag ul 
-                                                span.attr class
-                                                span.val dropdown-content
+                                            span.content ...
+                                        span.tag.close div
+                                    .tab
+                                        span.tag div 
+                                            span.attr class
+                                            span.val col seven
+                                        .tab
+                                            span.content ...
+                                        span.tag.close div
+                                    span.tag.close div
+                        .component#typography-component
+                            .container
+                                h3 Typography
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                h1 Heading 1
+                                h2 Heading 2
+                                h3 Heading 3
+                                h4 Heading 4
+                                h5 Heading 5
+                                h6 Heading 6
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                span.code.light Inline Code
+                                .code.block.light
+                                    span Code Block 
+                        .component#nav-component
+                            .container
+                                h3 Nav
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            .nav.clear.light
+                                .brand.float-left
+                                    a(href="#")
+                                        img.logo(alt="", src="assets/img/eden.png")
+                                        span brand
+                                ul.nav-options.float-left
+                                    li
+                                        a(href="#") option
+                                    li.dropdown LOST
+                                        ul.dropdown-content
+                                            li
+                                                a(href="") 4
+                                                a(href="") 8
+                                                a(href="") 15
+                                                a(href="") 16
+                                                a(href="") 23
+                                                a(href="") 42
+                                ul.nav-options.float-right
+                                    li.nav-text signed in as Desmond
+                                    li
+                                        a(href="")
+                                            button.uppercase-and-space(type="button") Sign Out
+                                .mob-nav.float-right
+                                    input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
+                                    label(for="mob-toggle")
+                                        .hamburger
+                                    ul.nav-options.text-center
+                                        li
+                                            a(href="#") option
+                                        li
+                                            a(href="#") option
+                                        li
+                                            a(href="#") option
+                            .nav.clear.skinny.transparent.padded
+                                .brand.float-left
+                                    a(href="#")
+                                        span.lowercase brand
+                                ul.nav-options.float-left
+                                    li
+                                        a(href="#") option
+                                    li
+                                        a(href="#") option
+                                ul.nav-options.float-right
+                                    li
+                                        a(href="#") option
+                                    li
+                                        a(href="#") option
+                                    li
+                                        a(href="#") option
+                                .mob-nav.float-right
+                                    input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
+                                    label(for="mob-toggle")
+                                        .hamburger
+                                    ul.nav-options.text-center
+                                        li
+                                            a(href="#") option
+                                        li
+                                            a(href="#") option
+                                        li
+                                            a(href="#") option
+                            .nav.fat.uppercase-and-space.centered.dark
+                                ul.nav-options
+                                    li
+                                        a(href="#") option
+                                    li.dropdown option
+                                        ul.dropdown-content
+                                            li
+                                                a(href="#") dropdown option
+                                            li
+                                                a(href="#") dropdown option
+                                    li
+                                        a(href="#") option
+                                .brand
+                                    a(href="index.html")
+                                        img.logo(alt="", src="assets/img/eden.png")
+                                ul.nav-options
+                                    li
+                                        a(href="#") option
+                                    li.dropdown option
+                                        ul.dropdown-content
+                                            li
+                                                a(href="#") dropdown option
+                                            li
+                                                a(href="#") dropdown option
+                                    li
+                                        a(href="#")
+                                            button.uppercase-and-space.skinny(type="button") Download
+                                
+                                .mob-nav.float-right
+                                    input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
+                                    label(for="mob-toggle")
+                                        .hamburger
+                                    ul.nav-options.text-center
+                                        li
+                                            a(href="#") option
+                                        li
+                                            a(href="#") option
+                                        li
+                                            a(href="#") option
+                            .nav.clear.mobile.transparent
+                                .brand.float-left
+                                    a(href="index.html")
+                                        img.logo(alt="", src="assets/img/eden.png")
+                                        span brand
+                                .mob-nav.float-right
+                                    input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
+                                    label(for="mob-toggle")
+                                        .hamburger
+                                    ul.nav-options.text-center
+                                        li
+                                            a(href="#") option
+                                        li
+                                            a(href="#") option
+                                        li
+                                            a(href="#") option
+                            .container.second
+                                .code.block
+                                    span.tag div 
+                                        span.attr class
+                                        span.val nav clear skinny dark uppercase-and-space
+                                    .tab
+                                        span.tag div 
+                                            span.attr class
+                                            span.val brand float-left
+                                        .tab
+                                            span.tag a 
+                                                span.attr href
+                                                span.val #
                                             .tab
-                                                span.tag li
+                                                span.tag span
+                                                span.content Brand
+                                                span.tag.close span
+                                            span.tag.close a
+                                        span.tag.close div
+                                    .tab
+                                        span.tag ul 
+                                            span.attr class
+                                            span.val nav-options float-left
+                                        .tab
+                                            span.tag li
+                                            span.tag a 
+                                                span.attr href
+                                                span.val #
+                                            span.content option
+                                            span.tag.close a
+                                            span.tag.close li
+                                        .tab
+                                            span.tag li
+                                            span.tag a 
+                                                span.attr href
+                                                span.val #
+                                            span.content option
+                                            span.tag.close a
+                                            span.tag.close li
+                                        span.tag.close ul
+                                    .tab
+                                        span.tag ul 
+                                            span.attr class
+                                            span.val nav-options float-right
+                                        .tab
+                                            span.tag li 
+                                                span.attr class
+                                                span.val dropdown
+                                            span.content dropdown option
+                                            .tab
+                                                span.tag ul 
+                                                    span.attr class
+                                                    span.val dropdown-content
+                                                .tab
+                                                    span.tag li
+                                                    span.tag a 
+                                                        span.attr href
+                                                        span.val #
+                                                    span.content option
+                                                    span.tag.close a
+                                                    span.tag.close li
+                                                .tab
+                                                    span.tag li
+                                                    span.tag a 
+                                                        span.attr href
+                                                        span.val #
+                                                    span.content option
+                                                    span.tag.close a
+                                                    span.tag.close li
+                                                .tab
+                                                    span.tag li
+                                                    span.tag a 
+                                                        span.attr href
+                                                        span.val #
+                                                    span.content option
+                                                    span.tag.close a
+                                                    span.tag.close li
+                                                .tab
+                                                    span.tag li
+                                                    span.tag a 
+                                                        span.attr href
+                                                        span.val #
+                                                    span.content option
+                                                    span.tag.close a
+                                                    span.tag.close li
+                                                span.tag.close ul
+                                        .tab
+                                            span.tag.close li
+                                        .tab
+                                            span.tag li 
+                                                span.attr class
+                                                span.val nav-text
+                                            span.content signed in as Aaron
+                                            span.tag.close li
+                                        .tab
+                                            span.tag li
+                                            .tab
                                                 span.tag a 
                                                     span.attr href
                                                     span.val #
-                                                span.content option
+                                                .tab
+                                                    span.tag button 
+                                                        span.attr type
+                                                        span.val button
+                                                        span.attr class
+                                                        span.val uppercase-and-space
+                                                    span.content Sign Out
+                                                    span.tag.close button
                                                 span.tag.close a
-                                                span.tag.close li
+                                            span.tag.close li
+                                        span.tag.close ul
+                                    .tab
+                                        span.tag div 
+                                            span.attr class
+                                            span.val mob-nav float-right
+                                        .tab
+                                            span.tag input 
+                                                span.attr.id id
+                                                span.val mob-toggle
+                                                span.attr class
+                                                span.val mob-toggle
+                                                span.attr type
+                                                span.val checkbox
+                                                span.attr name
+                                                span.val mob-toggle
+                                        .tab
+                                            span.tag label 
+                                                span.attr for
+                                                span.val mob-toggle
+                                            .tab
+                                                span.tag div 
+                                                    span.attr class
+                                                    span.val hamburger
+                                                span.tag.close div
+                                            span.tag.close label
+                                        .tab
+                                            span.tag ul 
+                                                span.attr class
+                                                span.val nav-options text-center
                                             .tab
                                                 span.tag li
                                                 span.tag a 
@@ -334,322 +420,269 @@ html(lang="en")
                                                 span.tag.close a
                                                 span.tag.close li
                                             span.tag.close ul
-                                    .tab
-                                        span.tag.close li
-                                    .tab
-                                        span.tag li 
-                                            span.attr class
-                                            span.val nav-text
-                                        span.content signed in as Aaron
-                                        span.tag.close li
-                                    .tab
-                                        span.tag li
-                                        .tab
-                                            span.tag a 
-                                                span.attr href
-                                                span.val #
-                                            .tab
-                                                span.tag button 
-                                                    span.attr type
-                                                    span.val button
-                                                    span.attr class
-                                                    span.val uppercase-and-space
-                                                span.content Sign Out
-                                                span.tag.close button
-                                            span.tag.close a
-                                        span.tag.close li
-                                    span.tag.close ul
-                                .tab
+                                        span.tag.close div
+                                    span.tag.close div
+                        .component#hero-component
+                            .container
+                                h3 Hero
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            .hero
+                                .col.content.center-center
+                                    h1 Beauty.
+                            .container.second
+                                .code.block.short
                                     span.tag div 
                                         span.attr class
-                                        span.val mob-nav float-right
+                                        span.val hero
                                     .tab
-                                        span.tag input 
-                                            span.attr.id id
-                                            span.val mob-toggle
+                                        span.tag div 
                                             span.attr class
-                                            span.val mob-toggle
-                                            span.attr type
-                                            span.val checkbox
-                                            span.attr name
-                                            span.val mob-toggle
+                                            span.val col content center-center
+                                        .tab
+                                            span.tag h1
+                                            span.content Title.
+                                            span.tag.close h1
+                                        .tab
+                                            span.tag h4
+                                            span.content Subtitle.
+                                            span.tag.close h4
+                                        span.tag.close div
+                                    span.tag.close div
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut #[span.code.light .short] et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            .hero.short.fat.overlay.dark
+                                .col.content.right-bottom
+                                    h1 goals                    
+                        .component#modal-component
+                            .container
+                                h3 Modal
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                .row.center-center
+                                    .modal.light.shadow.dark-bg.is-open
+                                        .content
+                                            .container
+                                                h1 Modal
+                                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            .close.inside
+                                                span.close-modal ✕
+                                .code.block
+                                    span.tag div 
+                                        span.attr class
+                                        span.val modal dark-bg light shadow
                                     .tab
-                                        span.tag label 
-                                            span.attr for
-                                            span.val mob-toggle
+                                        span.tag div 
+                                            span.attr class
+                                            span.val content
                                         .tab
                                             span.tag div 
                                                 span.attr class
-                                                span.val hamburger
+                                                span.val container
+                                            .tab
+                                                span.tag h1
+                                                span.content Modal
+                                                span.tag.close h1
+                                            .tab
+                                                span.tag p
+                                                span.content Modal content.
+                                                span.tag.close p
                                             span.tag.close div
-                                        span.tag.close label
-                                    .tab
-                                        span.tag ul 
-                                            span.attr class
-                                            span.val nav-options text-center
                                         .tab
-                                            span.tag li
-                                            span.tag a 
-                                                span.attr href
-                                                span.val #
-                                            span.content option
-                                            span.tag.close a
-                                            span.tag.close li
-                                        .tab
-                                            span.tag li
-                                            span.tag a 
-                                                span.attr href
-                                                span.val #
-                                            span.content option
-                                            span.tag.close a
-                                            span.tag.close li
-                                        .tab
-                                            span.tag li
-                                            span.tag a 
-                                                span.attr href
-                                                span.val #
-                                            span.content option
-                                            span.tag.close a
-                                            span.tag.close li
-                                        span.tag.close ul
-                                    span.tag.close div
-                                span.tag.close div
-                    .component#hero-component
-                        .container
-                            h3 Hero
-                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        .hero
-                            .col.content.center-center
-                                h1 Beauty.
-                        .container.second
-                            .code.block.short
-                                span.tag div 
-                                    span.attr class
-                                    span.val hero
-                                .tab
-                                    span.tag div 
-                                        span.attr class
-                                        span.val col content center-center
-                                    .tab
-                                        span.tag h1
-                                        span.content Title.
-                                        span.tag.close h1
-                                    .tab
-                                        span.tag h4
-                                        span.content Subtitle.
-                                        span.tag.close h4
-                                    span.tag.close div
-                                span.tag.close div
-                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut #[span.code.light .short] et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        .hero.short.fat.overlay.dark
-                            .col.content.right-bottom
-                                h1 goals                    
-                    .component#modal-component
-                        .container
-                            h3 Modal
-                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            .row.center-center
-                                .modal.light.shadow.dark-bg.is-open
-                                    .content
-                                        .container
-                                            h1 Modal
-                                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        .close.inside
-                                            span.close-modal ✕
-                            .code.block
-                                span.tag div 
-                                    span.attr class
-                                    span.val modal dark-bg light shadow
-                                .tab
-                                    span.tag div 
-                                        span.attr class
-                                        span.val content
-                                    .tab
-                                        span.tag div 
-                                            span.attr class
-                                            span.val container
-                                        .tab
-                                            span.tag h1
-                                            span.content Modal
-                                            span.tag.close h1
-                                        .tab
-                                            span.tag p
-                                            span.content Modal content.
-                                            span.tag.close p
-                                        span.tag.close div
-                                    .tab
-                                        span.tag div 
-                                            span.attr class
-                                            span.val close inside
-                                            
-                                        .tab
-                                            span.tag span 
+                                            span.tag div 
                                                 span.attr class
-                                                span.val close-modal
-                                            span.content ✕
-                                            span.tag.close span
+                                                span.val close inside
+                                                
+                                            .tab
+                                                span.tag span 
+                                                    span.attr class
+                                                    span.val close-modal
+                                                span.content ✕
+                                                span.tag.close span
+                                            span.tag.close div
                                         span.tag.close div
                                     span.tag.close div
-                                span.tag.close div
-                    .component#button-component
-                        .container
-                            h3 Buttons
-                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            .buttons.row.center-center
-                                button.light(type="button") Button
-                                button.dark.uppercase-and-space(type="button") Button
-                                button.transparent.border(type="button") Button
-                            .code.block.short
-                                span.tag button 
-                                    span.attr class
-                                    span.val light
-                                    span.attr type
-                                    span.val button
-                                span.val Button Name
-                                span.tag.close button
-                    .component#form-component
-                        .container
-                            h3 Forms
-                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            .form.row.center-center
-                                form
-                                    input.light(type="text", placeholder="Input Text Light")
-                                    input.dark(type="text", placeholder="Input Text Dark")
-                                    input.transparent.border-bottom(type="text", placeholder="Input Text Border-Bottom")
-                                    .row.form-controls
-                                        input.transparent.border.uppercase-and-space(type="submit", value="submit")
-                                        input.transparent.border.uppercase-and-space(type="reset", value="reset")
-                            .code.block.short
-                                span.tag form
-                                .tab
-                                    span.tag input 
+                        .component#button-component
+                            .container
+                                h3 Buttons
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                .buttons.row.center-center
+                                    button.light(type="button") Button
+                                    button.dark.uppercase-and-space(type="button") Button
+                                    button.transparent.border(type="button") Button
+                                .code.block.short
+                                    span.tag button 
                                         span.attr class
-                                        span.val transparent border
+                                        span.val light
                                         span.attr type
-                                        span.val text
-                                        span.attr placeholder
-                                        span.val Text
-                                .tab
-                                    span.tag input 
-                                        span.attr class
-                                        span.val transparent border
-                                        span.attr type
-                                        span.val email
-                                        span.attr placeholder
-                                        span.val Email
-                                .tab
-                                    span.tag input 
-                                        span.attr class
-                                        span.val transparent border
-                                        span.attr type
-                                        span.val number
-                                        span.attr placeholder
-                                        span.val Number
-                                .tab
-                                    span.tag textarea 
-                                        span.attr class
-                                        span.val transparent border
-                                        span.attr placeholder
-                                        span.val Text goes here
-                                    span.tag.close textarea
-                                .tab
-                                    span.tag div 
-                                        span.attr class
-                                        span.val row form-controls
+                                        span.val button
+                                    span.val Button Name
+                                    span.tag.close button
+                        .component#form-component
+                            .container
+                                h3 Forms
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                .form.row.center-center
+                                    form
+                                        input.light(type="text", placeholder="Input Text Light")
+                                        input.dark(type="text", placeholder="Input Text Dark")
+                                        input.transparent.border-bottom(type="text", placeholder="Input Text Border-Bottom")
+                                        .row.form-controls
+                                            input.transparent.border.uppercase-and-space(type="submit", value="submit")
+                                            input.transparent.border.uppercase-and-space(type="reset", value="reset")
+                                .code.block.short
+                                    span.tag form
                                     .tab
                                         span.tag input 
                                             span.attr class
-                                            span.val light uppercase-and-space
+                                            span.val transparent border
                                             span.attr type
-                                            span.val submit
-                                            span.attr value
-                                            span.val Submit
+                                            span.val text
+                                            span.attr placeholder
+                                            span.val Text
                                     .tab
                                         span.tag input 
                                             span.attr class
-                                            span.val dark uppercase-and-space
+                                            span.val transparent border
                                             span.attr type
-                                            span.val reset
-                                            span.attr value
-                                            span.val Reset
-                                    span.tag.close div
-                                span.tag.close form
-                    .component#slider-component
-                        .container
-                            h3 Slider
-                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        .slider.tall
-                            .slides
-                                .slide.is-active
-                                .slide.overlay.dark
-                                    .row.center-center
-                                        .container
-                                            h1.text-center Slide Title
-                                .slide
-                            
-                            span.slide-left.slider-control ❮
-                            span.slide-right.slider-control ❯
-                            
-                            .dots
-                                .dot.is-active
-                                .dot
-                                .dot
-                        .container.second
-                            .code.block
-                                span.tag div 
-                                    span.attr class
-                                    span.val slider
-                                .tab
-                                    span.tag div 
-                                        span.attr class
-                                        span.val slides
+                                            span.val email
+                                            span.attr placeholder
+                                            span.val Email
+                                    .tab
+                                        span.tag input 
+                                            span.attr class
+                                            span.val transparent border
+                                            span.attr type
+                                            span.val number
+                                            span.attr placeholder
+                                            span.val Number
+                                    .tab
+                                        span.tag textarea 
+                                            span.attr class
+                                            span.val transparent border
+                                            span.attr placeholder
+                                            span.val Text goes here
+                                        span.tag.close textarea
                                     .tab
                                         span.tag div 
                                             span.attr class
-                                            span.val slide is-active
+                                            span.val row form-controls
+                                        .tab
+                                            span.tag input 
+                                                span.attr class
+                                                span.val light uppercase-and-space
+                                                span.attr type
+                                                span.val submit
+                                                span.attr value
+                                                span.val Submit
+                                        .tab
+                                            span.tag input 
+                                                span.attr class
+                                                span.val dark uppercase-and-space
+                                                span.attr type
+                                                span.val reset
+                                                span.attr value
+                                                span.val Reset
                                         span.tag.close div
-                                    .tab
-                                        span.tag div 
-                                            span.attr class
-                                            span.val slide
-                                        span.tag.close div
-                                    .tab
-                                        span.tag div 
-                                            span.attr class
-                                            span.val slide
-                                        span.tag.close div
-                                    span.tag.close div
-                                .tab
-                                    span.tag span 
-                                        span.attr class
-                                        span.val slider-control slide-left
-                                    span.content ❮
-                                    span.tag.close span
-                                .tab
-                                    span.tag span 
-                                        span.attr class
-                                        span.val slider-control slide-right
-                                    span.content ❯
-                                    span.tag.close span
-                                .tab
-                                    span.tag div 
-                                        span.attr class
-                                        span.val dots
-                                    .tab
-                                        span.tag div
-                                            span.attr class
-                                            span.val dot is-active
-                                    .tab
-                                        span.tag div
-                                            span.attr class
-                                            span.val dot
-                                    .tab
-                                        span.tag div
-                                            span.attr class
-                                            span.val dot
-                                    span.tag.close div
-                                span.tag.close div
+                                    span.tag.close form
+                        .component#slider-component
+                            .container
+                                h3 Slider
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            .slider.tall
+                                .slides
+                                    .slide.is-active
+                                    .slide.overlay.dark
+                                        .row.center-center
+                                            .container
+                                                h1.text-center Slide Title
+                                    .slide
                                 
+                                span.slide-left.slider-control ❮
+                                span.slide-right.slider-control ❯
+                                
+                                .dots
+                                    .dot.is-active
+                                    .dot
+                                    .dot
+                            .container.second
+                                .code.block
+                                    span.tag div 
+                                        span.attr class
+                                        span.val slider
+                                    .tab
+                                        span.tag div 
+                                            span.attr class
+                                            span.val slides
+                                        .tab
+                                            span.tag div 
+                                                span.attr class
+                                                span.val slide is-active
+                                            span.tag.close div
+                                        .tab
+                                            span.tag div 
+                                                span.attr class
+                                                span.val slide
+                                            span.tag.close div
+                                        .tab
+                                            span.tag div 
+                                                span.attr class
+                                                span.val slide
+                                            span.tag.close div
+                                        span.tag.close div
+                                    .tab
+                                        span.tag span 
+                                            span.attr class
+                                            span.val slider-control slide-left
+                                        span.content ❮
+                                        span.tag.close span
+                                    .tab
+                                        span.tag span 
+                                            span.attr class
+                                            span.val slider-control slide-right
+                                        span.content ❯
+                                        span.tag.close span
+                                    .tab
+                                        span.tag div 
+                                            span.attr class
+                                            span.val dots
+                                        .tab
+                                            span.tag div
+                                                span.attr class
+                                                span.val dot is-active
+                                        .tab
+                                            span.tag div
+                                                span.attr class
+                                                span.val dot
+                                        .tab
+                                            span.tag div
+                                                span.attr class
+                                                span.val dot
+                                        span.tag.close div
+                                    span.tag.close div
+                        .component#lightbox-component
+                            .container
+                                h3 Lightbox.
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                .lightbox.row.wrap.center-center
+                                    img(src="assets/img/bg/lightbox1.jpg")
+                                    img(src="assets/img/bg/lightbox2.jpg")
+                                    p.caption St. Paul's Cathedral
+                                    img(src="assets/img/bg/lightbox3.jpg") 
+                                    img(src="assets/img/bg/lightbox4.jpg")
+                                    img(src="assets/img/bg/lightbox5.jpg")
+                        .component#masonry-component
+                            .container
+                                h3 Masonry.
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                .masonry.col-3.tab-col-2
+                                    img.item(src="assets/img/bg/masonry1.jpg")
+                                    img.item(src="assets/img/bg/masonry2.jpg")
+                                    img.item(src="assets/img/bg/masonry8.jpg") 
+                                    img.item(src="assets/img/bg/masonry4.jpg")
+                                    img.item(src="assets/img/bg/masonry5.jpg")
+                                    img.item(src="assets/img/bg/masonry6.jpg")
+                                    img.item(src="assets/img/bg/masonry7.jpg")
+                                    img.item(src="assets/img/bg/masonry3.jpg")
+                                    img.item(src="assets/img/bg/masonry9.jpg")
+                    
             include include/footer
             
         include include/foot

@@ -239,10 +239,27 @@ $mob-screen: 425px
         .component
 
             & > .container
+                padding-top: 100px
                 padding-bottom: 0px
 
-                & > h2
+                @media screen and (max-width: $tab-screen)
+                    padding-top: 50px
+
+                & > h3
+                    color: #6b6d6f
                     text-align: left
+                    display: inline-block
+
+                & > span
+                    vertical-align: super
+                    margin-left: 10px
+                    opacity: 0.5
+                    cursor: pointer
+                    transition: all 0.3s ease-in-out
+
+                    &:hover
+                        opacity: 0.75
+
                 & > p
                     margin-bottom: 10px
 
@@ -376,3 +393,67 @@ $mob-screen: 425px
 
                     h1
                         color: #fff
+
+        #lightbox-component
+
+            .lightbox
+
+                img
+                    height: 100px
+                    margin-right: 10px
+                    margin-bottom: 10px
+
+                .caption
+                    color: white
+
+                .modal
+                    background-color: rgba(0, 0, 0, 0.9)
+
+                .slider-control
+                    color: white
+
+.layout
+    position: relative
+    overflow-x: hidden
+
+    &.sidebar
+
+        .sidebar
+            color: white
+            overflow-y: auto
+            transition: left 0.3s ease-in-out
+
+            @media screen and (max-width: $tab-screen)
+                left: -190px
+
+                &:hover
+                    left: 0px
+
+                & + .main
+                    padding-left: 10px
+
+            .brand
+                font-size: 1.5rem
+                margin-bottom: 50px
+
+            .nav-options
+                font-size: 1rem
+                display: block
+                line-height: 2.5em
+
+                & > li
+                    margin-left: 0px
+                    height: auto
+
+        .main
+            padding-left: 200px
+
+            & > hr
+                width: 50%
+                margin-left: auto
+                margin-right: auto
+                border: 1px solid $eden-light-grey
+                transform: translate3d(0px, 30px, 0px)
+
+                @media screen and (max-width: $tab-screen)
+                    transform: translate3d(0px, 10px, 0px)

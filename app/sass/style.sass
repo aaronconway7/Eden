@@ -157,3 +157,92 @@
 
                             &:hover
                                 opacity: 0.75
+
+#image-overlay-pg
+
+    #image-overlay
+
+        .img-overlay
+            display: inline-block
+            cursor: pointer
+
+            &.on-hover
+
+                &:after, .content
+                    transition: all 0.5s ease
+
+                &.fade
+
+                    &:after, .content
+                        opacity: 0
+
+                    &:hover
+
+                        &:after, .content
+                            opacity: 1
+
+                &.slide-right, &.slide-left, &.slide-up, &.slide-down
+
+                    &:hover
+
+                        &:after, .content
+                            transform: none
+
+                &.slide-right, &.slide-left
+
+                    &:after, .content
+                        transform: scale3d(0, 1, 1)
+
+                &.slide-up, &.slide-down
+
+                    &:after, .content
+                        transform: scale3d(1, 0, 1)
+
+                &.slide-right
+
+                    &:after, .content
+                        transform-origin: left
+
+                &.slide-left
+
+                    &:after, .content
+                        transform-origin: right
+
+                &.slide-up
+
+                    &:after, .content
+                        transform-origin: bottom
+
+                &.slide-down
+
+                    &:after, .content
+                        transform-origin: top
+
+            .content
+                position: absolute
+                left: 0px
+                top: 0px
+                color: white
+                z-index: 1
+
+            &:after
+                z-index: 0
+                height: 99%
+
+#responsive-media-pg
+
+    .responsive-media
+        margin-bottom: 10px
+
+    .responsive-media
+        padding-top: 56.25%
+        position: relative
+
+        iframe
+            position: absolute
+            top: 0
+            left: 0
+            bottom: 0
+            right: 0
+            width: 100%
+            height: 100%

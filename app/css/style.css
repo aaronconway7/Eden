@@ -99,50 +99,12 @@
     #lightbox-pg #lightbox .lightbox .modal .content .active-img .slider-control:hover {
       opacity: 0.75; }
 
-#image-overlay-pg #image-overlay .img-overlay {
-  display: inline-block;
-  cursor: pointer; }
-  #image-overlay-pg #image-overlay .img-overlay.on-hover:after, #image-overlay-pg #image-overlay .img-overlay.on-hover .content {
-    transition: all 0.5s ease; }
-  #image-overlay-pg #image-overlay .img-overlay.on-hover.fade:after, #image-overlay-pg #image-overlay .img-overlay.on-hover.fade .content {
-    opacity: 0; }
-  #image-overlay-pg #image-overlay .img-overlay.on-hover.fade:hover:after, #image-overlay-pg #image-overlay .img-overlay.on-hover.fade:hover .content {
-    opacity: 1; }
-  #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-right:hover:after, #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-right:hover .content, #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-left:hover:after, #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-left:hover .content, #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-up:hover:after, #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-up:hover .content, #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-down:hover:after, #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-down:hover .content {
-    transform: none; }
-  #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-right:after, #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-right .content, #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-left:after, #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-left .content {
-    transform: scale3d(0, 1, 1); }
-  #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-up:after, #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-up .content, #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-down:after, #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-down .content {
-    transform: scale3d(1, 0, 1); }
-  #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-right:after, #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-right .content {
-    transform-origin: left; }
-  #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-left:after, #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-left .content {
-    transform-origin: right; }
-  #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-up:after, #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-up .content {
-    transform-origin: bottom; }
-  #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-down:after, #image-overlay-pg #image-overlay .img-overlay.on-hover.slide-down .content {
-    transform-origin: top; }
-  #image-overlay-pg #image-overlay .img-overlay .content {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    color: white;
-    z-index: 1; }
-  #image-overlay-pg #image-overlay .img-overlay:after {
-    z-index: 0;
-    height: 99%; }
+#overlay-pg .img {
+  background-image: url("http://www.placecage.com/300/300");
+  height: 300px;
+  width: 300px; }
+  #overlay-pg .img.circle {
+    border-radius: 100%; }
 
 #responsive-media-pg .responsive-media {
   margin-bottom: 10px; }
-
-#responsive-media-pg .responsive-media {
-  padding-top: 56.25%;
-  position: relative; }
-  #responsive-media-pg .responsive-media iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%; }

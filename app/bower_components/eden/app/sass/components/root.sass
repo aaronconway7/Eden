@@ -27,30 +27,23 @@ html, body
     &:after
         clear: both
 
-.overlay
-    position: relative
-    z-index: 0
+.bg-center
+    background-position: center
+    background-size: cover
 
-    &:after
-        content: ""
-        position: absolute
-        left: 0px
-        top: 0px
-        width: 100%
-        height: 100%
-        z-index: -1
+.transition
+    transition: all 0.3s ease-in-out
 
-    &.dark
+hr
+    border-width: 1px
+    border-style: solid
 
-        &:after
-            background-color: rgba(0, 0, 0, 0.75)
+    .center
+        margin-left: auto
+        margin-right: auto
 
-    &.light
+    .quarter
+        width: 25%
 
-        &:after
-            background-color: rgba(255, 255, 255, 0.75)
-
-    &.eden
-
-        &:after
-            background-color: rgba($eden-green, 0.75)
+    .half
+        width: 50%

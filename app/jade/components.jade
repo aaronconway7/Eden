@@ -34,6 +34,12 @@ html(lang="en")
                                 a(href="#lightbox-component") Lightbox
                             li
                                 a(href="#masonry-component") Masonry
+                            li
+                                a(href="#overlay-component") Overlay
+                            li
+                                a(href="#responsive-media-component") Responsive Media
+                            li
+                                a(href="#animations-component") Animations
                         
                 .main
                     include include/header
@@ -682,6 +688,43 @@ html(lang="en")
                                     img.item(src="assets/img/bg/masonry7.jpg")
                                     img.item(src="assets/img/bg/masonry3.jpg")
                                     img.item(src="assets/img/bg/masonry9.jpg")
+                        .component#overlay-component
+                            .container
+                                h3 Overlay.
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                .row.center-center
+                                    .img-1.overlay
+                                    .img-2.overlay.dark
+                                    .img-3.overlay
+                                    .img-4.overlay.light
+                                    .img-5.overlay
+                                .row.center-center.hover
+                                    .img-6.overlay.slide-right.on-hover
+                                        .content.col.center-center
+                                            h6 .slide-right
+                                    .img-7.overlay.slide-down.on-hover
+                                        .content.col.center-center
+                                            h6 .slide-down
+                                    .img-8.overlay.fade.on-hover.solid
+                                        .content.col.center-center
+                                            h6 .fade
+                                    .img-9.overlay.slide-up.on-hover
+                                        .content.col.center-center
+                                            h6 .slide-up
+                                    .img-10.overlay.slide-left.on-hover
+                                        .content.col.center-center
+                                            h6 .slide-left
+                        .component#responsive-media-component
+                            .container
+                                h3 Responsive Media.
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                .row
+                                    .responsive-media
+                                        iframe(width="420", height="315" src='https://www.youtube.com/embed/UnNrcrPSBMU', frameborder='0', allowfullscreen='')
+                        .component#aniamtions-component
+                            .container
+                                h3 Animations.
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     
             include include/footer
             

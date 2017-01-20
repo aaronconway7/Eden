@@ -400,6 +400,57 @@ hr {
 #components-pg #components #lightbox-component .lightbox .slider-control {
   color: white; }
 
+#components-pg #components #overlay-component .row {
+  margin-bottom: 10px; }
+  #components-pg #components #overlay-component .row:last-of-type {
+    margin-bottom: 0px; }
+
+#components-pg #components #overlay-component .overlay {
+  height: 150px;
+  width: 100%;
+  margin-right: 10px;
+  background-color: #2f2f2f;
+  background-position: center;
+  background-size: cover; }
+  #components-pg #components #overlay-component .overlay:last-child {
+    margin-right: 0px; }
+
+#components-pg #components #overlay-component .img-1 {
+  background-image: url("../assets/img/bg/overlay1.jpg"); }
+  #components-pg #components #overlay-component .img-1:after {
+    background-color: #801818;
+    opacity: 0.5; }
+
+#components-pg #components #overlay-component .img-2 {
+  background-image: url("../assets/img/bg/overlay2.jpg"); }
+
+#components-pg #components #overlay-component .img-3 {
+  background-image: url("../assets/img/bg/overlay3.jpg"); }
+
+#components-pg #components #overlay-component .img-4 {
+  background-image: url("../assets/img/bg/overlay4.jpg"); }
+
+#components-pg #components #overlay-component .img-5 {
+  background-image: url("../assets/img/bg/overlay5.jpg"); }
+  #components-pg #components #overlay-component .img-5:after {
+    background-color: #183e80;
+    opacity: 0.5; }
+
+#components-pg #components #overlay-component .img-6 {
+  background-image: url("../assets/img/bg/overlay6.jpg"); }
+
+#components-pg #components #overlay-component .img-7 {
+  background-image: url("../assets/img/bg/overlay7.jpg"); }
+
+#components-pg #components #overlay-component .img-8 {
+  background-image: url("../assets/img/bg/overlay8.jpg"); }
+
+#components-pg #components #overlay-component .img-9 {
+  background-image: url("../assets/img/bg/overlay9.jpg"); }
+
+#components-pg #components #overlay-component .img-10 {
+  background-image: url("../assets/img/bg/overlay10.jpg"); }
+
 .layout {
   position: relative;
   overflow-x: hidden; }

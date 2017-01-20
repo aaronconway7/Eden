@@ -19,7 +19,8 @@ Check out <http://designofeden.com> for more details and documentation!
 There are a few ways to download Eden:
 - Download the zip file
 - Clone the repo `git clone https://github.com/aaronconway7/eden.git`
-- Install with [Bower](https://bower.io/)
+- Install with [Bower](https://bower.io/) `bower install eden`
+- Install with [npm](https://www.npmjs.com/) `npm install @aaronconway7/eden`
 
 ### What do you get?
 The download folder includes the following structure, containing compiled and minifed versions of the CSS and JS files.

@@ -1,20 +1,32 @@
 {
   "name": "eden",
-  "description": "Eden is a front-end framework focused on beautiful and unique web development.",
-  "main": "index.js",
+  "description": "A front-end framework focused on beautiful deisgn and unique web development.",
+  "main": "dist",
   "authors": [
-    "aaronconway7 <aaronconway796@gmail.com>"
+    "aaronconway7 <hello@aaronconway.co.uk> (http://aaronconway.co.uk)"
   ],
-  "license": "ISC",
-  "homepage": "https://github.com/aaronconway7/Eden",
+  "license": "MIT",
+  "homepage": "http://designofeden.com",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "app/bower_components"
   ],
   "dependencies": {
     "jquery": "^3.1.1"
-  }
+  },
+  "keywords": [
+    "css",
+    "js",
+    "beautiful",
+    "design",
+    "unique",
+    "web",
+    "front-end",
+    "framework",
+    "responsive"
+  ]
 }

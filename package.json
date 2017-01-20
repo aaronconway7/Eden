@@ -1,9 +1,11 @@
 {
-  "name": "eden",
+  "name": "@aaronconway7/eden",
   "version": "1.0.0",
-  "description": "Eden is a front-end framework focused on beautiful and unique web development, started and created by [Aaron Conway](http://aaronconway.co.uk) as a 3rd Year Project in Computer Science at The University of Warwick.",
-  "main": "index.js",
-  "dependencies": {},
+  "description": "A front-end framework focused on beautiful deisgn and unique web development.",
+  "main": "dist",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
   "devDependencies": {
     "browser-sync": "^2.18.5",
     "gulp": "^3.9.1",
@@ -25,10 +27,21 @@
     "type": "git",
     "url": "git+https://github.com/aaronconway7/Eden.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Aaron Conway <hello@aaronconway.co.uk> (http://aaronconway.co.uk)",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/aaronconway7/Eden/issues"
   },
-  "homepage": "https://github.com/aaronconway7/Eden#readme"
+  "homepage": "http://designofeden.com",
+  "keywords": [
+    "css",
+    "js",
+    "beautiful",
+    "design",
+    "unique",
+    "web",
+    "front-end",
+    "framework",
+    "responsive"
+  ]
 }

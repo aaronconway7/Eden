@@ -1295,7 +1295,7 @@ textarea {
     background-color: #2f2f2f; }
   .overlay.light:after {
     background-color: #ececec; }
-  .overlay.solid {
+  .overlay.solid:after {
     opacity: 1; }
   .overlay.circle:after {
     border-radius: 100%; }
@@ -1334,7 +1334,9 @@ textarea {
 
 .responsive-media {
   padding-top: 56.25%;
-  position: relative; }
+  position: relative;
+  width: 100%;
+  height: 100%; }
   .responsive-media iframe {
     position: absolute;
     top: 0;

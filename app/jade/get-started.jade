@@ -18,6 +18,48 @@ html(lang="en")
                     .container
                         h5.uppercase-and-space.text-center Get Started
                         hr.skinny.center
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            
+                        section.get-the-code
+                            p.heading.uppercase-and-space Get The Code.
+                            p There are a number of ways you can get your hands quickly on Eden and integreate into your workflow:
+                            p Download the Zip file.
+                            p Clone the repo.
+                                span.code.light git clone https://github.com/aaronconway7/eden.git
+                            p Install via npm.
+                                span.code.light npm install @aaronconway7/eden
+                            p Install via Bower.
+                                span.code.light bower install eden
+                        section.what-do-you-get
+                            p.heading.uppercase-and-space What do you get?
+                            p The download folder inlcudes the following structure, containing compiled and minified versions if the CSS and JS files.
+                            .code.block.short.light
+                                span eden/
+                                span ├── css/
+                                span │   ├── eden.css
+                                span │   └── eden.min.css
+                                span |
+                                span └── js/
+                                span     ├── eden.js
+                                span     └── eden.min.js
+                        section.workflow
+                            p.heading.uppercase-and-space Including it in your workflow.
+                            p Copy and paste the following snippers at the bottom of your #[span.code.light &lt;head&gt;] tag, and #[span.code.light &lt;body&gt;] tag respectively.
+                            .code.block.short
+                                span.comment Eden Stylesheet goes at the bottom of your &lt;head&gt; tag respectively
+                                br
+                                span.tag link 
+                                    span.attr rel
+                                    span.val stylesheet
+                                    span.attr type
+                                    span.val text/css
+                                    span.attr href
+                                    span.val path/to/eden.min.css
+                                br
+                                br
+                                span.comment Eden JS script goes at the bottom of your &lt;body&gt; tag after your JQuery script
+                                br
+                                span.tag script 
+                                    span.attr src
+                                    span.val path/to/eden.min.js
+                                span.tag.close script
+                                
             include include/footer

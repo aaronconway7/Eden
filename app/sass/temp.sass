@@ -124,6 +124,11 @@ hr
                 height: 40px
                 margin: 0px 30px
                 opacity: 0.75
+                cursor: pointer
+                transition: all 0.3s ease-in-out
+
+                &:hover
+                    opacity: 1
 
                 @media screen and (max-width: 768px)
                     margin: 0px 20px
@@ -144,6 +149,9 @@ hr
                 &.ndorsa
                     opacity: 0.5
 
+                    &:hover
+                        opacity: 0.75
+
     #open-source
         background-color: #F7F7F7
 
@@ -163,6 +171,9 @@ hr
             a
                 font-size: 0.8rem
                 margin: 0px 10px
+
+                &.eden
+                    font-weight: 400
 
                 @media screen and (max-width: 425px)
                     margin: 0px
@@ -250,7 +261,6 @@ hr
 
         p
             margin-bottom: 1em
-            font-size: 1rem
             font-weight: 400
 
             @media screen and (max-width: $tab-screen)
@@ -281,6 +291,40 @@ hr
             width: 50px
             border-color: $eden-dark-grey
 
+        section
+            margin-bottom: 100px
+
+            &:last-of-type
+                margin-bottom: 0px
+
+        .heading
+            font-weight: 900
+            margin-bottom: 0px
+
+        p
+            margin-bottom: 1em
+
+            span
+                margin-left: 5px
+
+        .what-do-you-get
+
+            .code
+
+                span
+                    display: block
+
+        .code
+
+            .comment
+                color: $eden-light-grey
+                opacity: 0.5
+
+                &:before
+                    content: "<!-- "
+                &:after
+                    content: " -->"
+
 
 #footer
 
@@ -293,6 +337,7 @@ hr
             font-size: 0.8rem
 
             a
+                font-weight: 400
                 transition: all 0.3s ease-in-out
 
                 &:hover

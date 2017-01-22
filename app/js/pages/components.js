@@ -4,30 +4,21 @@ $(document).ready(function() {
     $('.slider').slide({
         quantity: 3
     });
-
-    fixedBanner();
-    var bannerHeight = $('#banner .banner').height();
-    $('.page-content').css('padding-top',bannerHeight+'px');
     $('.lightbox').lightbox();
+    $('.animation').animate();
+
+    $('.video .play').click(function(){
+        $('.video').addClass('is-playing');
+        $('.video video')[0].play();
+    });
+
+    $('.video .pause').click(function(){
+        $('.video').removeClass('is-playing');
+        $('.video video')[0].pause();
+    });
+
 });
 
 $(window).scroll(function() {
-    fixedBanner();
+    $('.animation').animate();
 });
-
-function fixedBanner(){
-    var wScroll = $(window).scrollTop();
-    if($(window).width() > 768){
-        if(wScroll > 140){
-            $('#banner .banner').addClass('is-fixed');
-        } else {
-            $('#banner .banner').removeClass('is-fixed');
-        }
-    }else{
-        if(wScroll > 70){
-            $('#banner .banner').addClass('is-fixed');
-        } else {
-            $('#banner .banner').removeClass('is-fixed');
-        }
-    }
-}

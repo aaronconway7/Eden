@@ -120,15 +120,8 @@ hr
 
         .logos
 
-            img
-                height: 40px
+            a
                 margin: 0px 30px
-                opacity: 0.75
-                cursor: pointer
-                transition: all 0.3s ease-in-out
-
-                &:hover
-                    opacity: 1
 
                 @media screen and (max-width: 768px)
                     margin: 0px 20px
@@ -145,6 +138,15 @@ hr
 
                 &:last-of-type
                     margin-right: 0px
+
+            img
+                height: 40px
+                opacity: 0.75
+                cursor: pointer
+                transition: all 0.3s ease-in-out
+
+                &:hover
+                    opacity: 1
 
                 &.ndorsa
                     opacity: 0.5
@@ -416,6 +418,10 @@ hr
                 @media screen and (max-width: $tab-screen)
                     padding-top: 50px
 
+                & > .heading
+                    font-weight: 900
+                    color: $eden-charcoal
+
                 & > h3
                     color: #6b6d6f
                     text-align: left
@@ -655,6 +661,7 @@ hr
 
             .nav-options
                 font-size: 1rem
+                font-weight: 900
                 display: block
                 line-height: 2.5em
 
@@ -674,3 +681,53 @@ hr
 
                 @media screen and (max-width: $tab-screen)
                     transform: translate3d(0px, 10px, 0px)
+
+.video-overlay
+
+    &:after
+        z-index: 0
+
+    .content
+        position: absolute
+        left: 0px
+        top: 0px
+        z-index: 1
+
+        i
+            color: $eden-light-grey
+            font-size: 5rem
+            cursor: pointer
+
+            &:hover
+                opacity: 0.75
+
+.video
+
+    video
+        width: 100%
+
+    .play
+        display: block
+    .pause
+        display: none
+
+    &.is-playing
+
+        .play
+            display: none
+        .pause
+            display: block
+
+        .content
+            display: none
+
+        &:after
+            display: none
+
+        &:hover
+
+            .content
+                display: flex
+
+            &:after
+                display: block

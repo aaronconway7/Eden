@@ -1,4 +1,4 @@
-![Eden Logo](https://github.com/aaronconway7/Eden/blob/gh-pages/app/assets/img/eden-coming-soon.jpg)
+![Eden Logo](https://github.com/aaronconway7/Eden/blob/gh-pages/app/assets/img/eden-with-name.png)
 
 [![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)]()
 

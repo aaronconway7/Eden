@@ -422,6 +422,12 @@ hr
                     font-weight: 900
                     color: $eden-charcoal
 
+                    a
+                        opacity: 0.25
+
+                        &:hover
+                            opacity: 0.5
+
                 & > h3
                     color: #6b6d6f
                     text-align: left
@@ -438,10 +444,37 @@ hr
                         opacity: 0.75
 
                 & > p
-                    margin-bottom: 10px
+                    margin-bottom: 1em
+
+                & > .table
+                    margin: 50px 0px
 
             .container.second
+                margin-top: 25px
                 padding-top: 0px
+
+            .gist-code
+                margin-top: 25px
+                position: relative
+
+                .copy-code
+                    position: absolute
+                    right: 0px
+                    top: 0px
+                    font-size: 0.7em
+                    font-weight: 700
+                    background-color: #eee
+                    padding: 5px 15px
+                    border: 1px solid #dddddd
+                    border-top-right-radius: 3px
+                    cursor: pointer
+
+                    &:hover
+                        background-color: #dddddd
+
+                    i
+                        vertical-align: middle
+                        margin-left: 2px
 
         #container-component
 
@@ -655,9 +688,14 @@ hr
                 & + .main
                     padding-left: 10px
 
+            & >.container
+                padding: 25px 0px
+
             .brand
                 font-size: 1.5rem
-                margin-bottom: 50px
+
+                span
+                    font-weight: 100
 
             .nav-options
                 font-size: 1rem
@@ -703,6 +741,25 @@ hr
 
 .video
 
+    &.overlay
+
+        &:after
+            z-index: 0
+
+        .content
+            position: absolute
+            left: 0px
+            top: 0px
+            z-index: 1
+
+            i
+                color: $eden-light-grey
+                font-size: 5rem
+                cursor: pointer
+
+                &:hover
+                    opacity: 0.75
+
     video
         width: 100%
 
@@ -731,3 +788,67 @@ hr
 
             &:after
                 display: block
+
+.table
+    display: table
+    width: 100%
+
+    &.border
+
+        .table-cell
+            border: 1px solid $eden-dark-grey
+
+    &.col-border
+
+        .table-cell
+            border-right: 1px solid $eden-dark-grey
+
+            &:last-of-type
+                border-right: none
+
+    &.row-border
+
+        .table-cell
+            border-bottom: 1px solid $eden-dark-grey
+
+        .table-body
+
+            .table-row
+
+                &:last-of-type
+
+                    .table-cell
+                        border-bottom: none
+
+    .table-heading
+        background-color: $eden-green
+        color: $eden-light-grey
+        display: table-header-group
+        font-weight: bold
+
+        &.border-bottom
+
+            .table-cell
+                border-bottom: 1px solid $eden-dark-grey !important
+
+    .table-body
+        display: table-row-group
+
+    .table-row
+        display: table-row
+
+        .table-cell
+            display: table-cell
+            padding: 3px 10px
+            // border: 1px solid $eden-dark-grey
+
+ul
+
+    &.no-bullet
+        list-style: none
+
+    li
+        margin-bottom: 0.5em
+
+        &:last-of-type
+            margin-bottom: 0px

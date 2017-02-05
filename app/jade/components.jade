@@ -10,7 +10,7 @@ html(lang="en")
                 .nav.sidebar.fixed
                     .container
                         .brand
-                            span Eden.
+                            span.uppercase-and-space Eden.
                         ul.nav-options
                             li
                                 a(href="#container-component") Container
@@ -49,7 +49,9 @@ html(lang="en")
                         .component#container-component
                             .container
                                 p.heading.uppercase-and-space Container.
-                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                                    a.transition(href="#container-component")
+                                        i.fa.fa-link(aria-hidden="true")
+                                p The Eden container is used to hold elements for which you want to give some space to aorund the edegs. By housing these elements within a #[span.code.light .container] class, a large padding is given to the top and bottom with a repsonive margin that adjusts on either side in response to the window width. If no space is needed, a #[span.code.light .wrapper] class can be used.  
                             .wrapper.tool-tip
                                 .tool-tip-text.dark 
                                     .code .wrapper
@@ -57,17 +59,177 @@ html(lang="en")
                                     .tool-tip-text.light.center 
                                         .code.light .container
                             .container.second
-                                .code.block.short
-                                    span.tag div 
-                                        span.attr class
-                                        span.val container
-                                    .tab
-                                        span.content ...
-                                    span.tag.close div
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/061746fdaac7d128401fa0e89939bb67.js"></script>
                         .component#grid-component
                             .container
                                 p.heading.uppercase-and-space Grid.
-                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    a.transition(href="#grid-component")
+                                        i.fa.fa-link(aria-hidden="true")
+                                p The grid is a vital component in developing mobile responsive websites. We provide a 12 column fluid grid taht shrinks as the viewport shrinks. The Eden grid system uses #[span.code.light .row] classes directly followed by #[span.code.light .col] classes. The size (how many columns they occupy) of each column can then be specified by giving it a class of that number. e.g. a column spanning 7 columns would have the class #[span.code.light .seven].
+                                p Eden also allows users to specify common fractions indicating the amount of it's parent it spans. e.g. If you want a column to span a third of the width, give it a class of #[span.code.light .third] or if you want it to occupy five sixths, make it #[span.code.light .five-sixths]. Simple isn't it?
+                                p To alter the column layout resposnively at mobile or tablet size, just add a class of #[span.code.light .tab-*] or #[span.code.light .mob-*] respectively where * is the column size.
+                                .table.col-border.row-border.dark
+                                    .table-heading
+                                        .table-row
+                                            .table-cell Column Span
+                                            .table-cell Class
+                                            .table-cell Fraction Class
+                                            .table-cell Tablet
+                                            .table-cell Mobile
+                                    .table-body
+                                        .table-row
+                                            .table-cell 1
+                                            .table-cell #[span.code.light .one]
+                                            .table-cell 
+                                            .table-cell #[span.code.light .tab-one]
+                                            .table-cell #[span.code.light .mob-one]
+                                        .table-row
+                                            .table-cell 2
+                                            .table-cell #[span.code.light .two]
+                                            .table-cell #[span.code.light .sixth]
+                                            .table-cell
+                                                ul.no-bullet
+                                                    li
+                                                        span.code.light .tab-two
+                                                    li
+                                                        span.code.light .tab-sixth
+                                            .table-cell
+                                                ul.no-bullet
+                                                    li
+                                                        span.code.light .mob-two
+                                                    li
+                                                        span.code.light .mob-sixth
+                                        .table-row
+                                            .table-cell 3
+                                            .table-cell #[span.code.light .three]
+                                            .table-cell #[span.code.light .quarter]
+                                            .table-cell
+                                                ul.no-bullet
+                                                    li
+                                                        span.code.light .tab-three
+                                                    li
+                                                        span.code.light .tab-quarter
+                                            .table-cell
+                                                ul.no-bullet
+                                                    li
+                                                        span.code.light .mob-three
+                                                    li
+                                                        span.code.light .mob-quarter
+                                        .table-row
+                                            .table-cell 4
+                                            .table-cell #[span.code.light .four]
+                                            .table-cell #[span.code.light .third]
+                                            .table-cell
+                                                ul.no-bullet
+                                                    li
+                                                        span.code.light .tab-four
+                                                    li
+                                                        span.code.light .tab-third
+                                            .table-cell
+                                                ul.no-bullet
+                                                    li
+                                                        span.code.light .mob-four
+                                                    li
+                                                        span.code.light .mob-third
+                                        .table-row
+                                            .table-cell 5
+                                            .table-cell #[span.code.light .five]
+                                            .table-cell 
+                                            .table-cell #[span.code.light .tab-five]
+                                            .table-cell #[span.code.light .mob-five]
+                                        .table-row
+                                            .table-cell 6
+                                            .table-cell #[span.code.light .six]
+                                            .table-cell #[span.code.light .half]
+                                            .table-cell
+                                                ul.no-bullet
+                                                    li
+                                                        span.code.light .tab-six
+                                                    li
+                                                        span.code.light .tab-half
+                                            .table-cell
+                                                ul.no-bullet
+                                                    li
+                                                        span.code.light .mob-six
+                                                    li
+                                                        span.code.light .mob-half
+                                        .table-row
+                                            .table-cell 7
+                                            .table-cell #[span.code.light .seven]
+                                            .table-cell 
+                                            .table-cell #[span.code.light .tab-seven]
+                                            .table-cell #[span.code.light .mob-seven]
+                                        .table-row
+                                            .table-cell 8
+                                            .table-cell #[span.code.light .eight]
+                                            .table-cell #[span.code.light .two-thirds]
+                                            .table-cell
+                                                ul.no-bullet
+                                                    li
+                                                        span.code.light .tab-eight
+                                                    li
+                                                        span.code.light .tab-two-thirds
+                                            .table-cell
+                                                ul.no-bullet
+                                                    li
+                                                        span.code.light .mob-eight
+                                                    li
+                                                        span.code.light .mob-two-thirds
+                                        .table-row
+                                            .table-cell 9
+                                            .table-cell #[span.code.light .nine]
+                                            .table-cell #[span.code.light .three-quarters]
+                                            .table-cell
+                                                ul.no-bullet
+                                                    li
+                                                        span.code.light .tab-nine
+                                                    li
+                                                        span.code.light .tab-three-quarters
+                                            .table-cell
+                                                ul.no-bullet
+                                                    li
+                                                        span.code.light .mob-nine
+                                                    li
+                                                        span.code.light .mob-three-quarters
+                                        .table-row
+                                            .table-cell 10
+                                            .table-cell #[span.code.light .ten]
+                                            .table-cell #[span.code.light .five-sixths]
+                                            .table-cell
+                                                ul.no-bullet
+                                                    li
+                                                        span.code.light .tab-ten
+                                                    li
+                                                        span.code.light .tab-five-sixths
+                                            .table-cell
+                                                ul.no-bullet
+                                                    li
+                                                        span.code.light .mob-ten
+                                                    li
+                                                        span.code.light .mob-five-sixths
+                                        .table-row
+                                            .table-cell 11
+                                            .table-cell #[span.code.light .eleven]
+                                            .table-cell 
+                                            .table-cell #[span.code.light .tab-eleven]
+                                            .table-cell #[span.code.light .mob-eleven]
+                                        .table-row
+                                            .table-cell 12
+                                            .table-cell #[span.code.light .twelve]
+                                            .table-cell #[span.code.light .full]
+                                            .table-cell
+                                                ul.no-bullet
+                                                    li
+                                                        span.code.light .tab-twelve
+                                                    li
+                                                        span.code.light .tab-full
+                                            .table-cell
+                                                ul.no-bullet
+                                                    li
+                                                        span.code.light .mob-twelve
+                                                    li
+                                                        span.code.light .mob-full
                                 .row
                                     .col.one.tool-tip &nbsp;
                                         .tool-tip-text.dark.skinny 
@@ -110,43 +272,35 @@ html(lang="en")
                                     .col.six.tool-tip &nbsp;
                                         .tool-tip-text.dark.right
                                             .code .col.six, .col.half
-                                .code.block
-                                    span.tag div 
-                                        span.attr class
-                                        span.val row
-                                    .tab
-                                        span.tag div 
-                                            span.attr class
-                                            span.val col five
-                                        .tab
-                                            span.content ...
-                                        span.tag.close div
-                                    .tab
-                                        span.tag div 
-                                            span.attr class
-                                            span.val col seven
-                                        .tab
-                                            span.content ...
-                                        span.tag.close div
-                                    span.tag.close div
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/b8be1308ccae5d51ebaacedcb315b961.js"></script>
                         .component#typography-component
                             .container
                                 p.heading.uppercase-and-space Typography.
-                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    a.transition(href="#typography-component")
+                                        i.fa.fa-link(aria-hidden="true")
+                                p Eden comes with Source Sans Pro as its default font family but can easily be overwritten by changing it for the #[span.code.light .body] class. All types have been set using #[span.code.light rem] and #[span.code.light em] units where the default #[span.code.light :root] size is #[span.code.light 12pt].
+                                p Other basic type styles such as #[span.code.light .uppercase], #[span.code.light .lowercase] as well as different forms of alignemnt are all available. 
                                 h1 Heading 1
                                 h2 Heading 2
                                 h3 Heading 3
                                 h4 Heading 4
                                 h5 Heading 5
                                 h6 Heading 6
-                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                span.code.light Inline Code
-                                .code.block.light
-                                    span Code Block 
+                                //- p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                //- span.code.light Inline Code
+                                //- .code.block.light
+                                //-     span Code Block 
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/59d8cbc86a2859a1f8022a7c0adaee0c.js"></script>
                         .component#nav-component
                             .container
                                 p.heading.uppercase-and-space Nav.
-                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    a.transition(href="#nav-component")
+                                        i.fa.fa-link(aria-hidden="true")
+                                p The navigation bar is one of, if not the most complex and feature rich component of the framework. Both horizontal and vertical navigation bars are potential options as well as sidebars that can be pulled out.
+                                p You start of with a #[span.code.light .nav] class where colour themes can also be given ( #[span.code.light .light] & #[span.code.light .dark] ). Sizes can also be specified ( #[span.code.light .skinny], #[span.code.light .fat], #[span.code.light .short] & #[span.code.light .tall] ) which affects the height and width of the nav bars. Alignment and position changes can also be made. Adding the classes #[span.code.light fixed] to #[span.code.light .nav] will make it stick to the top of your viewport. Adding #[span.code.light .centered] and #[span.code.light .padded] can center the text in the menu and also pad the sides respectively.
+                                p Within the #[span.code.light .nav] class, seperate your menu items with a #[span.code.light ul] tag with a #[span.code.light .nav-options] class.
                             .nav.clear.light
                                 .brand.float-left
                                     a(href="#")
@@ -263,197 +417,21 @@ html(lang="en")
                                         li
                                             a(href="#") option
                             .container.second
-                                .code.block
-                                    span.tag div 
-                                        span.attr class
-                                        span.val nav clear skinny dark uppercase-and-space
-                                    .tab
-                                        span.tag div 
-                                            span.attr class
-                                            span.val brand float-left
-                                        .tab
-                                            span.tag a 
-                                                span.attr href
-                                                span.val #
-                                            .tab
-                                                span.tag span
-                                                span.content Brand
-                                                span.tag.close span
-                                            span.tag.close a
-                                        span.tag.close div
-                                    .tab
-                                        span.tag ul 
-                                            span.attr class
-                                            span.val nav-options float-left
-                                        .tab
-                                            span.tag li
-                                            span.tag a 
-                                                span.attr href
-                                                span.val #
-                                            span.content option
-                                            span.tag.close a
-                                            span.tag.close li
-                                        .tab
-                                            span.tag li
-                                            span.tag a 
-                                                span.attr href
-                                                span.val #
-                                            span.content option
-                                            span.tag.close a
-                                            span.tag.close li
-                                        span.tag.close ul
-                                    .tab
-                                        span.tag ul 
-                                            span.attr class
-                                            span.val nav-options float-right
-                                        .tab
-                                            span.tag li 
-                                                span.attr class
-                                                span.val dropdown
-                                            span.content dropdown option
-                                            .tab
-                                                span.tag ul 
-                                                    span.attr class
-                                                    span.val dropdown-content
-                                                .tab
-                                                    span.tag li
-                                                    span.tag a 
-                                                        span.attr href
-                                                        span.val #
-                                                    span.content option
-                                                    span.tag.close a
-                                                    span.tag.close li
-                                                .tab
-                                                    span.tag li
-                                                    span.tag a 
-                                                        span.attr href
-                                                        span.val #
-                                                    span.content option
-                                                    span.tag.close a
-                                                    span.tag.close li
-                                                .tab
-                                                    span.tag li
-                                                    span.tag a 
-                                                        span.attr href
-                                                        span.val #
-                                                    span.content option
-                                                    span.tag.close a
-                                                    span.tag.close li
-                                                .tab
-                                                    span.tag li
-                                                    span.tag a 
-                                                        span.attr href
-                                                        span.val #
-                                                    span.content option
-                                                    span.tag.close a
-                                                    span.tag.close li
-                                                span.tag.close ul
-                                        .tab
-                                            span.tag.close li
-                                        .tab
-                                            span.tag li 
-                                                span.attr class
-                                                span.val nav-text
-                                            span.content signed in as Aaron
-                                            span.tag.close li
-                                        .tab
-                                            span.tag li
-                                            .tab
-                                                span.tag a 
-                                                    span.attr href
-                                                    span.val #
-                                                .tab
-                                                    span.tag button 
-                                                        span.attr type
-                                                        span.val button
-                                                        span.attr class
-                                                        span.val uppercase-and-space
-                                                    span.content Sign Out
-                                                    span.tag.close button
-                                                span.tag.close a
-                                            span.tag.close li
-                                        span.tag.close ul
-                                    .tab
-                                        span.tag div 
-                                            span.attr class
-                                            span.val mob-nav float-right
-                                        .tab
-                                            span.tag input 
-                                                span.attr.id id
-                                                span.val mob-toggle
-                                                span.attr class
-                                                span.val mob-toggle
-                                                span.attr type
-                                                span.val checkbox
-                                                span.attr name
-                                                span.val mob-toggle
-                                        .tab
-                                            span.tag label 
-                                                span.attr for
-                                                span.val mob-toggle
-                                            .tab
-                                                span.tag div 
-                                                    span.attr class
-                                                    span.val hamburger
-                                                span.tag.close div
-                                            span.tag.close label
-                                        .tab
-                                            span.tag ul 
-                                                span.attr class
-                                                span.val nav-options text-center
-                                            .tab
-                                                span.tag li
-                                                span.tag a 
-                                                    span.attr href
-                                                    span.val #
-                                                span.content option
-                                                span.tag.close a
-                                                span.tag.close li
-                                            .tab
-                                                span.tag li
-                                                span.tag a 
-                                                    span.attr href
-                                                    span.val #
-                                                span.content option
-                                                span.tag.close a
-                                                span.tag.close li
-                                            .tab
-                                                span.tag li
-                                                span.tag a 
-                                                    span.attr href
-                                                    span.val #
-                                                span.content option
-                                                span.tag.close a
-                                                span.tag.close li
-                                            span.tag.close ul
-                                        span.tag.close div
-                                    span.tag.close div
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/a27cd3974cc8698fff95e72c75471f57.js"></script>
                         .component#hero-component
                             .container
                                 p.heading.uppercase-and-space Hero.
+                                    a.transition(href="#hero-component")
+                                        i.fa.fa-link(aria-hidden="true")
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             .hero
                                 .col.content.center-center
                                     h1 Beauty.
                             .container.second
-                                .code.block.short
-                                    span.tag div 
-                                        span.attr class
-                                        span.val hero
-                                    .tab
-                                        span.tag div 
-                                            span.attr class
-                                            span.val col content center-center
-                                        .tab
-                                            span.tag h1
-                                            span.content Title.
-                                            span.tag.close h1
-                                        .tab
-                                            span.tag h4
-                                            span.content Subtitle.
-                                            span.tag.close h4
-                                        span.tag.close div
-                                    span.tag.close div
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/b24a91266b10de91b67a6bc213ad1878.js"></script>
+                                    <script src="https://gist.github.com/aaronconway7/a505d0f9e1394c5a61854e2006bc37a5.js"></script>
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut #[span.code.light .short] et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             .hero.short.fat.overlay.dark
                                 .col.content.right-bottom
@@ -461,6 +439,8 @@ html(lang="en")
                         .component#modal-component
                             .container
                                 p.heading.uppercase-and-space Modal.
+                                    a.transition(href="#modal-component")
+                                        i.fa.fa-link(aria-hidden="true")
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 .row.center-center
                                     .modal.light.shadow.dark-bg.is-open
@@ -470,60 +450,26 @@ html(lang="en")
                                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                             .close.inside
                                                 span.close-modal ✕
-                                .code.block
-                                    span.tag div 
-                                        span.attr class
-                                        span.val modal dark-bg light shadow
-                                    .tab
-                                        span.tag div 
-                                            span.attr class
-                                            span.val content
-                                        .tab
-                                            span.tag div 
-                                                span.attr class
-                                                span.val container
-                                            .tab
-                                                span.tag h1
-                                                span.content Modal
-                                                span.tag.close h1
-                                            .tab
-                                                span.tag p
-                                                span.content Modal content.
-                                                span.tag.close p
-                                            span.tag.close div
-                                        .tab
-                                            span.tag div 
-                                                span.attr class
-                                                span.val close inside
-                                                
-                                            .tab
-                                                span.tag span 
-                                                    span.attr class
-                                                    span.val close-modal
-                                                span.content ✕
-                                                span.tag.close span
-                                            span.tag.close div
-                                        span.tag.close div
-                                    span.tag.close div
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/449501b9182005bbdc4b470fb3dbe769.js"></script>
+                                    <script src="https://gist.github.com/aaronconway7/34e0813ab98e859c5d25a82d6dd078fa.js"></script>
                         .component#button-component
                             .container
                                 p.heading.uppercase-and-space Buttons.
+                                    a.transition(href="#button-component")
+                                        i.fa.fa-link(aria-hidden="true")
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 .buttons.row.center-center
                                     button.light(type="button") Button
                                     button.dark.uppercase-and-space(type="button") Button
                                     button.transparent.border(type="button") Button
-                                .code.block.short
-                                    span.tag button 
-                                        span.attr class
-                                        span.val light
-                                        span.attr type
-                                        span.val button
-                                    span.val Button Name
-                                    span.tag.close button
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/e1dafa088d051eef9795dd9092f07399.js"></script>
                         .component#form-component
                             .container
                                 p.heading.uppercase-and-space Forms.
+                                    a.transition(href="#form-component")
+                                        i.fa.fa-link(aria-hidden="true")
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 .form.row.center-center
                                     form
@@ -533,64 +479,13 @@ html(lang="en")
                                         .row.form-controls
                                             input.transparent.border.uppercase-and-space(type="submit", value="submit")
                                             input.transparent.border.uppercase-and-space(type="reset", value="reset")
-                                .code.block.short
-                                    span.tag form
-                                    .tab
-                                        span.tag input 
-                                            span.attr class
-                                            span.val transparent border
-                                            span.attr type
-                                            span.val text
-                                            span.attr placeholder
-                                            span.val Text
-                                    .tab
-                                        span.tag input 
-                                            span.attr class
-                                            span.val transparent border
-                                            span.attr type
-                                            span.val email
-                                            span.attr placeholder
-                                            span.val Email
-                                    .tab
-                                        span.tag input 
-                                            span.attr class
-                                            span.val transparent border
-                                            span.attr type
-                                            span.val number
-                                            span.attr placeholder
-                                            span.val Number
-                                    .tab
-                                        span.tag textarea 
-                                            span.attr class
-                                            span.val transparent border
-                                            span.attr placeholder
-                                            span.val Text goes here
-                                        span.tag.close textarea
-                                    .tab
-                                        span.tag div 
-                                            span.attr class
-                                            span.val row form-controls
-                                        .tab
-                                            span.tag input 
-                                                span.attr class
-                                                span.val light uppercase-and-space
-                                                span.attr type
-                                                span.val submit
-                                                span.attr value
-                                                span.val Submit
-                                        .tab
-                                            span.tag input 
-                                                span.attr class
-                                                span.val dark uppercase-and-space
-                                                span.attr type
-                                                span.val reset
-                                                span.attr value
-                                                span.val Reset
-                                        span.tag.close div
-                                    span.tag.close form
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/093d9a598318fe5538ded76851b664fa.js"></script>
                         .component#slider-component
                             .container
                                 p.heading.uppercase-and-space Slider.
+                                    a.transition(href="#slider-component")
+                                        i.fa.fa-link(aria-hidden="true")
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             .slider.tall
                                 .slides
@@ -609,63 +504,14 @@ html(lang="en")
                                     .dot
                                     .dot
                             .container.second
-                                .code.block
-                                    span.tag div 
-                                        span.attr class
-                                        span.val slider
-                                    .tab
-                                        span.tag div 
-                                            span.attr class
-                                            span.val slides
-                                        .tab
-                                            span.tag div 
-                                                span.attr class
-                                                span.val slide is-active
-                                            span.tag.close div
-                                        .tab
-                                            span.tag div 
-                                                span.attr class
-                                                span.val slide
-                                            span.tag.close div
-                                        .tab
-                                            span.tag div 
-                                                span.attr class
-                                                span.val slide
-                                            span.tag.close div
-                                        span.tag.close div
-                                    .tab
-                                        span.tag span 
-                                            span.attr class
-                                            span.val slider-control slide-left
-                                        span.content ❮
-                                        span.tag.close span
-                                    .tab
-                                        span.tag span 
-                                            span.attr class
-                                            span.val slider-control slide-right
-                                        span.content ❯
-                                        span.tag.close span
-                                    .tab
-                                        span.tag div 
-                                            span.attr class
-                                            span.val dots
-                                        .tab
-                                            span.tag div
-                                                span.attr class
-                                                span.val dot is-active
-                                        .tab
-                                            span.tag div
-                                                span.attr class
-                                                span.val dot
-                                        .tab
-                                            span.tag div
-                                                span.attr class
-                                                span.val dot
-                                        span.tag.close div
-                                    span.tag.close div
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/510968438e17cd3ec18e0326d66618a6.js"></script>
+                                    <script src="https://gist.github.com/aaronconway7/d2ebb98850f0fd946b0d4d794fe105ae.js"></script>
                         .component#lightbox-component
                             .container
                                 p.heading.uppercase-and-space Lightbox.
+                                    a.transition(href="#lightbox-component")
+                                        i.fa.fa-link(aria-hidden="true")
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 .lightbox.row.wrap.center-center
                                     img(src="assets/img/bg/lightbox1.jpg")
@@ -674,9 +520,14 @@ html(lang="en")
                                     img(src="assets/img/bg/lightbox3.jpg") 
                                     img(src="assets/img/bg/lightbox4.jpg")
                                     img(src="assets/img/bg/lightbox5.jpg")
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/7517eb47fa2a2c3317d250c08753f65c.js"></script>
+                                    <script src="https://gist.github.com/aaronconway7/d0d98b7431d70f89c3e6e96065ad241a.js"></script>
                         .component#masonry-component
                             .container
                                 p.heading.uppercase-and-space Masonry.
+                                    a.transition(href="#masonry-component")
+                                        i.fa.fa-link(aria-hidden="true")
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 .masonry.col-3.tab-col-2
                                     img.item(src="assets/img/bg/masonry1.jpg")
@@ -688,9 +539,13 @@ html(lang="en")
                                     img.item(src="assets/img/bg/masonry7.jpg")
                                     img.item(src="assets/img/bg/masonry3.jpg")
                                     img.item(src="assets/img/bg/masonry9.jpg")
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/653b47e42b106a9ec6658a93e5262d18.js"></script>
                         .component#overlay-component
                             .container
                                 p.heading.uppercase-and-space Overlay.
+                                    a.transition(href="#overlay-component")
+                                        i.fa.fa-link(aria-hidden="true")
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 .row.center-center
                                     .img-1.overlay
@@ -714,28 +569,43 @@ html(lang="en")
                                     .img-10.overlay.slide-left.on-hover
                                         .content.col.center-center
                                             h6 .slide-left
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/7aefa70da50123a8dcc2635786264fb3.js"></script>
                         .component#video-component
                             .container
                                 p.heading.uppercase-and-space Video.
+                                    a.transition(href="#video-component")
+                                        i.fa.fa-link(aria-hidden="true")
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                .video.video-overlay.overlay
+                                .video.overlay
                                     video
                                         source(src="assets/video/frecibo.mp4" type="video/mp4")
                                     .content.row.center-center
                                         i(class="fa fa-play-circle-o", aria-hidden="true").transition.play
                                         i(class="fa fa-pause-circle" aria-hidden="true").transition.pause
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/583e53887775d73c030eac684a8d0f01.js"></script>
                         .component#responsive-media-component
                             .container
                                 p.heading.uppercase-and-space Responsive Media.
+                                    a.transition(href="#responsive-media-component")
+                                        i.fa.fa-link(aria-hidden="true")
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 .row
                                     .responsive-media
                                         iframe(width="420", height="315" src='https://www.youtube.com/embed/UnNrcrPSBMU', frameborder='0', allowfullscreen='')
-                        .component#aniamtions-component
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/89d61a86b1b0aadbc040faa37fd55be1.js"></script>
+                        .component#animations-component
                             .container
                                 p.heading.uppercase-and-space.animation.on-scroll.fade-in-up Animations.
+                                    a.transition(href="#animations-media-component")
+                                        i.fa.fa-link(aria-hidden="true")
                                 p.animation.on-scroll.fade-in-right Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/f45c9e91987ee6806aeb795bea08d975.js"></script>
+                                    <script src="https://gist.github.com/aaronconway7/4b92f5b1673af78dcb9670e7b6f9640c.js"></script>
+                                    
             include include/footer
             
         include include/foot

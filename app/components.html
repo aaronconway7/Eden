@@ -34,7 +34,7 @@
       <div class="layout sidebar">
         <div class="nav sidebar fixed">
           <div class="container">
-            <div class="brand"><span>Eden.</span></div>
+            <div class="brand"><span class="uppercase-and-space">Eden.</span></div>
             <ul class="nav-options">
               <li><a href="#container-component">Container</a></li>
               <li><a href="#grid-component">Grid</a></li>
@@ -93,8 +93,8 @@
           <section id="components">
             <div id="container-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Container.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                <p class="heading uppercase-and-space">Container.<a href="#container-component" class="transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p>The Eden container is used to hold elements for which you want to give some space to aorund the edegs. By housing these elements within a <span class="code light">.container</span> class, a large padding is given to the top and bottom with a repsonive margin that adjusts on either side in response to the window width. If no space is needed, a <span class="code light">.wrapper</span> class can be used.  </p>
               </div>
               <div class="wrapper tool-tip">
                 <div class="tool-tip-text dark"> 
@@ -107,15 +107,192 @@
                 </div>
               </div>
               <div class="container second">
-                <div class="code block short"><span class="tag">div <span class="attr">class</span><span class="val">container</span></span>
-                  <div class="tab"><span class="content">...</span></div><span class="tag close">div</span>
-                </div>
+                <div class="gist-code"><script src="https://gist.github.com/aaronconway7/061746fdaac7d128401fa0e89939bb67.js"></script></div>
               </div>
             </div>
             <div id="grid-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Grid.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="heading uppercase-and-space">Grid.<a href="#grid-component" class="transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p>The grid is a vital component in developing mobile responsive websites. We provide a 12 column fluid grid taht shrinks as the viewport shrinks. The Eden grid system uses <span class="code light">.row</span> classes directly followed by <span class="code light">.col</span> classes. The size (how many columns they occupy) of each column can then be specified by giving it a class of that number. e.g. a column spanning 7 columns would have the class <span class="code light">.seven</span>.</p>
+                <p>Eden also allows users to specify common fractions indicating the amount of it's parent it spans. e.g. If you want a column to span a third of the width, give it a class of <span class="code light">.third</span> or if you want it to occupy five sixths, make it <span class="code light">.five-sixths</span>. Simple isn't it?</p>
+                <p>To alter the column layout resposnively at mobile or tablet size, just add a class of <span class="code light">.tab-*</span> or <span class="code light">.mob-*</span> respectively where * is the column size.</p>
+                <div class="table col-border row-border dark">
+                  <div class="table-heading">
+                    <div class="table-row">
+                      <div class="table-cell">Column Span</div>
+                      <div class="table-cell">Class</div>
+                      <div class="table-cell">Fraction Class</div>
+                      <div class="table-cell">Tablet</div>
+                      <div class="table-cell">Mobile</div>
+                    </div>
+                  </div>
+                  <div class="table-body">
+                    <div class="table-row">
+                      <div class="table-cell">1</div>
+                      <div class="table-cell"><span class="code light">.one</span></div>
+                      <div class="table-cell"> </div>
+                      <div class="table-cell"><span class="code light">.tab-one</span></div>
+                      <div class="table-cell"><span class="code light">.mob-one</span></div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-cell">2</div>
+                      <div class="table-cell"><span class="code light">.two</span></div>
+                      <div class="table-cell"><span class="code light">.sixth</span></div>
+                      <div class="table-cell">
+                        <ul class="no-bullet">
+                          <li><span class="code light">.tab-two</span></li>
+                          <li><span class="code light">.tab-sixth</span></li>
+                        </ul>
+                      </div>
+                      <div class="table-cell">
+                        <ul class="no-bullet">
+                          <li><span class="code light">.mob-two</span></li>
+                          <li><span class="code light">.mob-sixth</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-cell">3</div>
+                      <div class="table-cell"><span class="code light">.three</span></div>
+                      <div class="table-cell"><span class="code light">.quarter</span></div>
+                      <div class="table-cell">
+                        <ul class="no-bullet">
+                          <li><span class="code light">.tab-three</span></li>
+                          <li><span class="code light">.tab-quarter</span></li>
+                        </ul>
+                      </div>
+                      <div class="table-cell">
+                        <ul class="no-bullet">
+                          <li><span class="code light">.mob-three</span></li>
+                          <li><span class="code light">.mob-quarter</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-cell">4</div>
+                      <div class="table-cell"><span class="code light">.four</span></div>
+                      <div class="table-cell"><span class="code light">.third</span></div>
+                      <div class="table-cell">
+                        <ul class="no-bullet">
+                          <li><span class="code light">.tab-four</span></li>
+                          <li><span class="code light">.tab-third</span></li>
+                        </ul>
+                      </div>
+                      <div class="table-cell">
+                        <ul class="no-bullet">
+                          <li><span class="code light">.mob-four</span></li>
+                          <li><span class="code light">.mob-third</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-cell">5</div>
+                      <div class="table-cell"><span class="code light">.five</span></div>
+                      <div class="table-cell"> </div>
+                      <div class="table-cell"><span class="code light">.tab-five</span></div>
+                      <div class="table-cell"><span class="code light">.mob-five</span></div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-cell">6</div>
+                      <div class="table-cell"><span class="code light">.six</span></div>
+                      <div class="table-cell"><span class="code light">.half</span></div>
+                      <div class="table-cell">
+                        <ul class="no-bullet">
+                          <li><span class="code light">.tab-six</span></li>
+                          <li><span class="code light">.tab-half</span></li>
+                        </ul>
+                      </div>
+                      <div class="table-cell">
+                        <ul class="no-bullet">
+                          <li><span class="code light">.mob-six</span></li>
+                          <li><span class="code light">.mob-half</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-cell">7</div>
+                      <div class="table-cell"><span class="code light">.seven</span></div>
+                      <div class="table-cell"> </div>
+                      <div class="table-cell"><span class="code light">.tab-seven</span></div>
+                      <div class="table-cell"><span class="code light">.mob-seven</span></div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-cell">8</div>
+                      <div class="table-cell"><span class="code light">.eight</span></div>
+                      <div class="table-cell"><span class="code light">.two-thirds</span></div>
+                      <div class="table-cell">
+                        <ul class="no-bullet">
+                          <li><span class="code light">.tab-eight</span></li>
+                          <li><span class="code light">.tab-two-thirds</span></li>
+                        </ul>
+                      </div>
+                      <div class="table-cell">
+                        <ul class="no-bullet">
+                          <li><span class="code light">.mob-eight</span></li>
+                          <li><span class="code light">.mob-two-thirds</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-cell">9</div>
+                      <div class="table-cell"><span class="code light">.nine</span></div>
+                      <div class="table-cell"><span class="code light">.three-quarters</span></div>
+                      <div class="table-cell">
+                        <ul class="no-bullet">
+                          <li><span class="code light">.tab-nine</span></li>
+                          <li><span class="code light">.tab-three-quarters</span></li>
+                        </ul>
+                      </div>
+                      <div class="table-cell">
+                        <ul class="no-bullet">
+                          <li><span class="code light">.mob-nine</span></li>
+                          <li><span class="code light">.mob-three-quarters</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-cell">10</div>
+                      <div class="table-cell"><span class="code light">.ten</span></div>
+                      <div class="table-cell"><span class="code light">.five-sixths</span></div>
+                      <div class="table-cell">
+                        <ul class="no-bullet">
+                          <li><span class="code light">.tab-ten</span></li>
+                          <li><span class="code light">.tab-five-sixths</span></li>
+                        </ul>
+                      </div>
+                      <div class="table-cell">
+                        <ul class="no-bullet">
+                          <li><span class="code light">.mob-ten</span></li>
+                          <li><span class="code light">.mob-five-sixths</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-cell">11</div>
+                      <div class="table-cell"><span class="code light">.eleven</span></div>
+                      <div class="table-cell"> </div>
+                      <div class="table-cell"><span class="code light">.tab-eleven</span></div>
+                      <div class="table-cell"><span class="code light">.mob-eleven</span></div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-cell">12</div>
+                      <div class="table-cell"><span class="code light">.twelve</span></div>
+                      <div class="table-cell"><span class="code light">.full</span></div>
+                      <div class="table-cell">
+                        <ul class="no-bullet">
+                          <li><span class="code light">.tab-twelve</span></li>
+                          <li><span class="code light">.tab-full</span></li>
+                        </ul>
+                      </div>
+                      <div class="table-cell">
+                        <ul class="no-bullet">
+                          <li><span class="code light">.mob-twelve</span></li>
+                          <li><span class="code light">.mob-full</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="row">
                   <div class="col one tool-tip">&nbsp;
                     <div class="tool-tip-text dark skinny"> 
@@ -188,34 +365,29 @@
                     </div>
                   </div>
                 </div>
-                <div class="code block"><span class="tag">div <span class="attr">class</span><span class="val">row</span></span>
-                  <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">col five</span></span>
-                    <div class="tab"><span class="content">...</span></div><span class="tag close">div</span>
-                  </div>
-                  <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">col seven</span></span>
-                    <div class="tab"><span class="content">...</span></div><span class="tag close">div</span>
-                  </div><span class="tag close">div</span>
-                </div>
+                <div class="gist-code"><script src="https://gist.github.com/aaronconway7/b8be1308ccae5d51ebaacedcb315b961.js"></script></div>
               </div>
             </div>
             <div id="typography-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Typography.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="heading uppercase-and-space">Typography.<a href="#typography-component" class="transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p>Eden comes with Source Sans Pro as its default font family but can easily be overwritten by changing it for the <span class="code light">.body</span> class. All types have been set using <span class="code light">rem</span> and <span class="code light">em</span> units where the default <span class="code light">:root</span> size is <span class="code light">12pt</span>.</p>
+                <p>Other basic type styles such as <span class="code light">.uppercase</span>, <span class="code light">.lowercase</span> as well as different forms of alignemnt are all available. </p>
                 <h1>Heading 1</h1>
                 <h2>Heading 2</h2>
                 <h3>Heading 3</h3>
                 <h4>Heading 4</h4>
                 <h5>Heading 5</h5>
                 <h6>Heading 6</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><span class="code light">Inline Code</span>
-                <div class="code block light"><span>Code Block </span></div>
+                <div class="gist-code"><script src="https://gist.github.com/aaronconway7/59d8cbc86a2859a1f8022a7c0adaee0c.js"></script></div>
               </div>
             </div>
             <div id="nav-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Nav.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="heading uppercase-and-space">Nav.<a href="#nav-component" class="transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p>The navigation bar is one of, if not the most complex and feature rich component of the framework. Both horizontal and vertical navigation bars are potential options as well as sidebars that can be pulled out.</p>
+                <p>You start of with a <span class="code light">.nav</span> class where colour themes can also be given ( <span class="code light">.light</span> & <span class="code light">.dark</span> ). Sizes can also be specified ( <span class="code light">.skinny</span>, <span class="code light">.fat</span>, <span class="code light">.short</span> & <span class="code light">.tall</span> ) which affects the height and width of the nav bars. Alignment and position changes can also be made. Adding the classes <span class="code light">fixed</span> to <span class="code light">.nav</span> will make it stick to the top of your viewport. Adding <span class="code light">.centered</span> and <span class="code light">.padded</span> can center the text in the menu and also pad the sides respectively.</p>
+                <p>Within the <span class="code light">.nav</span> class, seperate your menu items with a <span class="code light">ul</span> tag with a <span class="code light">.nav-options</span> class.</p>
               </div>
               <div class="nav clear light">
                 <div class="brand float-left"><a href="#"><img alt="" src="assets/img/eden.png" class="logo"><span>brand</span></a></div>
@@ -317,50 +489,12 @@
                 </div>
               </div>
               <div class="container second">
-                <div class="code block"><span class="tag">div <span class="attr">class</span><span class="val">nav clear skinny dark uppercase-and-space</span></span>
-                  <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">brand float-left</span></span>
-                    <div class="tab"><span class="tag">a <span class="attr">href</span><span class="val">#</span></span>
-                      <div class="tab"><span class="tag">span</span><span class="content">Brand</span><span class="tag close">span</span></div><span class="tag close">a</span>
-                    </div><span class="tag close">div</span>
-                  </div>
-                  <div class="tab"><span class="tag">ul <span class="attr">class</span><span class="val">nav-options float-left</span></span>
-                    <div class="tab"><span class="tag">li</span><span class="tag">a <span class="attr">href</span><span class="val">#</span></span><span class="content">option</span><span class="tag close">a</span><span class="tag close">li</span></div>
-                    <div class="tab"><span class="tag">li</span><span class="tag">a <span class="attr">href</span><span class="val">#</span></span><span class="content">option</span><span class="tag close">a</span><span class="tag close">li</span></div><span class="tag close">ul</span>
-                  </div>
-                  <div class="tab"><span class="tag">ul <span class="attr">class</span><span class="val">nav-options float-right</span></span>
-                    <div class="tab"><span class="tag">li <span class="attr">class</span><span class="val">dropdown</span></span><span class="content">dropdown option</span>
-                      <div class="tab"><span class="tag">ul <span class="attr">class</span><span class="val">dropdown-content</span></span>
-                        <div class="tab"><span class="tag">li</span><span class="tag">a <span class="attr">href</span><span class="val">#</span></span><span class="content">option</span><span class="tag close">a</span><span class="tag close">li</span></div>
-                        <div class="tab"><span class="tag">li</span><span class="tag">a <span class="attr">href</span><span class="val">#</span></span><span class="content">option</span><span class="tag close">a</span><span class="tag close">li</span></div>
-                        <div class="tab"><span class="tag">li</span><span class="tag">a <span class="attr">href</span><span class="val">#</span></span><span class="content">option</span><span class="tag close">a</span><span class="tag close">li</span></div>
-                        <div class="tab"><span class="tag">li</span><span class="tag">a <span class="attr">href</span><span class="val">#</span></span><span class="content">option</span><span class="tag close">a</span><span class="tag close">li</span></div><span class="tag close">ul</span>
-                      </div>
-                    </div>
-                    <div class="tab"><span class="tag close">li</span></div>
-                    <div class="tab"><span class="tag">li <span class="attr">class</span><span class="val">nav-text</span></span><span class="content">signed in as Aaron</span><span class="tag close">li</span></div>
-                    <div class="tab"><span class="tag">li</span>
-                      <div class="tab"><span class="tag">a <span class="attr">href</span><span class="val">#</span></span>
-                        <div class="tab"><span class="tag">button <span class="attr">type</span><span class="val">button</span><span class="attr">class</span><span class="val">uppercase-and-space</span></span><span class="content">Sign Out</span><span class="tag close">button</span></div><span class="tag close">a</span>
-                      </div><span class="tag close">li</span>
-                    </div><span class="tag close">ul</span>
-                  </div>
-                  <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">mob-nav float-right</span></span>
-                    <div class="tab"><span class="tag">input <span class="attr id">id</span><span class="val">mob-toggle</span><span class="attr">class</span><span class="val">mob-toggle</span><span class="attr">type</span><span class="val">checkbox</span><span class="attr">name</span><span class="val">mob-toggle</span></span></div>
-                    <div class="tab"><span class="tag">label <span class="attr">for</span><span class="val">mob-toggle</span></span>
-                      <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">hamburger</span></span><span class="tag close">div</span></div><span class="tag close">label</span>
-                    </div>
-                    <div class="tab"><span class="tag">ul <span class="attr">class</span><span class="val">nav-options text-center</span></span>
-                      <div class="tab"><span class="tag">li</span><span class="tag">a <span class="attr">href</span><span class="val">#</span></span><span class="content">option</span><span class="tag close">a</span><span class="tag close">li</span></div>
-                      <div class="tab"><span class="tag">li</span><span class="tag">a <span class="attr">href</span><span class="val">#</span></span><span class="content">option</span><span class="tag close">a</span><span class="tag close">li</span></div>
-                      <div class="tab"><span class="tag">li</span><span class="tag">a <span class="attr">href</span><span class="val">#</span></span><span class="content">option</span><span class="tag close">a</span><span class="tag close">li</span></div><span class="tag close">ul</span>
-                    </div><span class="tag close">div</span>
-                  </div><span class="tag close">div</span>
-                </div>
+                <div class="gist-code"><script src="https://gist.github.com/aaronconway7/a27cd3974cc8698fff95e72c75471f57.js"></script></div>
               </div>
             </div>
             <div id="hero-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Hero.</p>
+                <p class="heading uppercase-and-space">Hero.<a href="#hero-component" class="transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
               <div class="hero">
@@ -369,11 +503,9 @@
                 </div>
               </div>
               <div class="container second">
-                <div class="code block short"><span class="tag">div <span class="attr">class</span><span class="val">hero</span></span>
-                  <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">col content center-center</span></span>
-                    <div class="tab"><span class="tag">h1</span><span class="content">Title.</span><span class="tag close">h1</span></div>
-                    <div class="tab"><span class="tag">h4</span><span class="content">Subtitle.</span><span class="tag close">h4</span></div><span class="tag close">div</span>
-                  </div><span class="tag close">div</span>
+                <div class="gist-code">
+                  <script src="https://gist.github.com/aaronconway7/b24a91266b10de91b67a6bc213ad1878.js"></script>
+                  <script src="https://gist.github.com/aaronconway7/a505d0f9e1394c5a61854e2006bc37a5.js"></script>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <span class="code light">.short</span> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
@@ -385,7 +517,7 @@
             </div>
             <div id="modal-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Modal.</p>
+                <p class="heading uppercase-and-space">Modal.<a href="#modal-component" class="transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="row center-center">
                   <div class="modal light shadow dark-bg is-open">
@@ -398,34 +530,27 @@
                     </div>
                   </div>
                 </div>
-                <div class="code block"><span class="tag">div <span class="attr">class</span><span class="val">modal dark-bg light shadow</span></span>
-                  <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">content</span></span>
-                    <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">container</span></span>
-                      <div class="tab"><span class="tag">h1</span><span class="content">Modal</span><span class="tag close">h1</span></div>
-                      <div class="tab"><span class="tag">p</span><span class="content">Modal content.</span><span class="tag close">p</span></div><span class="tag close">div</span>
-                    </div>
-                    <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">close inside</span></span>
-                      <div class="tab"><span class="tag">span <span class="attr">class</span><span class="val">close-modal</span></span><span class="content">✕</span><span class="tag close">span</span></div><span class="tag close">div</span>
-                    </div><span class="tag close">div</span>
-                  </div><span class="tag close">div</span>
+                <div class="gist-code">
+                  <script src="https://gist.github.com/aaronconway7/449501b9182005bbdc4b470fb3dbe769.js"></script>
+                  <script src="https://gist.github.com/aaronconway7/34e0813ab98e859c5d25a82d6dd078fa.js"></script>
                 </div>
               </div>
             </div>
             <div id="button-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Buttons.</p>
+                <p class="heading uppercase-and-space">Buttons.<a href="#button-component" class="transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="buttons row center-center">
                   <button type="button" class="light">Button</button>
                   <button type="button" class="dark uppercase-and-space">Button</button>
                   <button type="button" class="transparent border">Button</button>
                 </div>
-                <div class="code block short"><span class="tag">button <span class="attr">class</span><span class="val">light</span><span class="attr">type</span><span class="val">button</span></span><span class="val">Button Name</span><span class="tag close">button</span></div>
+                <div class="gist-code"><script src="https://gist.github.com/aaronconway7/e1dafa088d051eef9795dd9092f07399.js"></script></div>
               </div>
             </div>
             <div id="form-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Forms.</p>
+                <p class="heading uppercase-and-space">Forms.<a href="#form-component" class="transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="form row center-center">
                   <form>
@@ -438,21 +563,12 @@
                     </div>
                   </form>
                 </div>
-                <div class="code block short"><span class="tag">form</span>
-                  <div class="tab"><span class="tag">input <span class="attr">class</span><span class="val">transparent border</span><span class="attr">type</span><span class="val">text</span><span class="attr">placeholder</span><span class="val">Text</span></span></div>
-                  <div class="tab"><span class="tag">input <span class="attr">class</span><span class="val">transparent border</span><span class="attr">type</span><span class="val">email</span><span class="attr">placeholder</span><span class="val">Email</span></span></div>
-                  <div class="tab"><span class="tag">input <span class="attr">class</span><span class="val">transparent border</span><span class="attr">type</span><span class="val">number</span><span class="attr">placeholder</span><span class="val">Number</span></span></div>
-                  <div class="tab"><span class="tag">textarea <span class="attr">class</span><span class="val">transparent border</span><span class="attr">placeholder</span><span class="val">Text goes here</span></span><span class="tag close">textarea</span></div>
-                  <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">row form-controls</span></span>
-                    <div class="tab"><span class="tag">input <span class="attr">class</span><span class="val">light uppercase-and-space</span><span class="attr">type</span><span class="val">submit</span><span class="attr">value</span><span class="val">Submit</span></span></div>
-                    <div class="tab"><span class="tag">input <span class="attr">class</span><span class="val">dark uppercase-and-space</span><span class="attr">type</span><span class="val">reset</span><span class="attr">value</span><span class="val">Reset</span></span></div><span class="tag close">div</span>
-                  </div><span class="tag close">form</span>
-                </div>
+                <div class="gist-code"><script src="https://gist.github.com/aaronconway7/093d9a598318fe5538ded76851b664fa.js"></script></div>
               </div>
             </div>
             <div id="slider-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Slider.</p>
+                <p class="heading uppercase-and-space">Slider.<a href="#slider-component" class="transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
               <div class="slider tall">
@@ -474,41 +590,36 @@
                 </div>
               </div>
               <div class="container second">
-                <div class="code block"><span class="tag">div <span class="attr">class</span><span class="val">slider</span></span>
-                  <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">slides</span></span>
-                    <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">slide is-active</span></span><span class="tag close">div</span></div>
-                    <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">slide</span></span><span class="tag close">div</span></div>
-                    <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">slide</span></span><span class="tag close">div</span></div><span class="tag close">div</span>
-                  </div>
-                  <div class="tab"><span class="tag">span <span class="attr">class</span><span class="val">slider-control slide-left</span></span><span class="content">❮</span><span class="tag close">span</span></div>
-                  <div class="tab"><span class="tag">span <span class="attr">class</span><span class="val">slider-control slide-right</span></span><span class="content">❯</span><span class="tag close">span</span></div>
-                  <div class="tab"><span class="tag">div <span class="attr">class</span><span class="val">dots</span></span>
-                    <div class="tab"><span class="tag">div<span class="attr">class</span><span class="val">dot is-active</span></span></div>
-                    <div class="tab"><span class="tag">div<span class="attr">class</span><span class="val">dot</span></span></div>
-                    <div class="tab"><span class="tag">div<span class="attr">class</span><span class="val">dot</span></span></div><span class="tag close">div</span>
-                  </div><span class="tag close">div</span>
+                <div class="gist-code">
+                  <script src="https://gist.github.com/aaronconway7/510968438e17cd3ec18e0326d66618a6.js"></script>
+                  <script src="https://gist.github.com/aaronconway7/d2ebb98850f0fd946b0d4d794fe105ae.js"></script>
                 </div>
               </div>
             </div>
             <div id="lightbox-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Lightbox.</p>
+                <p class="heading uppercase-and-space">Lightbox.<a href="#lightbox-component" class="transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="lightbox row wrap center-center"><img src="assets/img/bg/lightbox1.jpg"><img src="assets/img/bg/lightbox2.jpg">
                   <p class="caption">St. Paul's Cathedral</p><img src="assets/img/bg/lightbox3.jpg"><img src="assets/img/bg/lightbox4.jpg"><img src="assets/img/bg/lightbox5.jpg">
+                </div>
+                <div class="gist-code">
+                  <script src="https://gist.github.com/aaronconway7/7517eb47fa2a2c3317d250c08753f65c.js"></script>
+                  <script src="https://gist.github.com/aaronconway7/d0d98b7431d70f89c3e6e96065ad241a.js"></script>
                 </div>
               </div>
             </div>
             <div id="masonry-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Masonry.</p>
+                <p class="heading uppercase-and-space">Masonry.<a href="#masonry-component" class="transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="masonry col-3 tab-col-2"><img src="assets/img/bg/masonry1.jpg" class="item"><img src="assets/img/bg/masonry2.jpg" class="item"><img src="assets/img/bg/masonry8.jpg" class="item"><img src="assets/img/bg/masonry4.jpg" class="item"><img src="assets/img/bg/masonry5.jpg" class="item"><img src="assets/img/bg/masonry6.jpg" class="item"><img src="assets/img/bg/masonry7.jpg" class="item"><img src="assets/img/bg/masonry3.jpg" class="item"><img src="assets/img/bg/masonry9.jpg" class="item"></div>
+                <div class="gist-code"><script src="https://gist.github.com/aaronconway7/653b47e42b106a9ec6658a93e5262d18.js"></script></div>
               </div>
             </div>
             <div id="overlay-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Overlay.</p>
+                <p class="heading uppercase-and-space">Overlay.<a href="#overlay-component" class="transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="row center-center">
                   <div class="img-1 overlay"></div>
@@ -544,35 +655,42 @@
                     </div>
                   </div>
                 </div>
+                <div class="gist-code"><script src="https://gist.github.com/aaronconway7/7aefa70da50123a8dcc2635786264fb3.js"></script></div>
               </div>
             </div>
             <div id="video-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Video.</p>
+                <p class="heading uppercase-and-space">Video.<a href="#video-component" class="transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <div class="video video-overlay overlay">
+                <div class="video overlay">
                   <video>
                     <source src="assets/video/frecibo.mp4" type="video/mp4">
                   </video>
                   <div class="content row center-center"><i aria-hidden="true" class="fa fa-play-circle-o transition play"></i><i aria-hidden="true" class="fa fa-pause-circle transition pause"></i></div>
                 </div>
+                <div class="gist-code"><script src="https://gist.github.com/aaronconway7/583e53887775d73c030eac684a8d0f01.js"></script></div>
               </div>
             </div>
             <div id="responsive-media-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Responsive Media.</p>
+                <p class="heading uppercase-and-space">Responsive Media.<a href="#responsive-media-component" class="transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="row">
                   <div class="responsive-media">
                     <iframe width="420" height="315" src="https://www.youtube.com/embed/UnNrcrPSBMU" frameborder="0" allowfullscreen=""></iframe>
                   </div>
                 </div>
+                <div class="gist-code"><script src="https://gist.github.com/aaronconway7/89d61a86b1b0aadbc040faa37fd55be1.js"></script></div>
               </div>
             </div>
-            <div id="aniamtions-component" class="component">
+            <div id="animations-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space animation on-scroll fade-in-up">Animations.</p>
+                <p class="heading uppercase-and-space animation on-scroll fade-in-up">Animations.<a href="#animations-media-component" class="transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p class="animation on-scroll fade-in-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="gist-code">
+                  <script src="https://gist.github.com/aaronconway7/f45c9e91987ee6806aeb795bea08d975.js"></script>
+                  <script src="https://gist.github.com/aaronconway7/4b92f5b1673af78dcb9670e7b6f9640c.js"></script>
+                </div>
               </div>
             </div>
           </section>

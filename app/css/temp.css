@@ -318,6 +318,10 @@ hr {
   #components-pg #components .component > .container > .heading {
     font-weight: 900;
     color: #2f2f2f; }
+    #components-pg #components .component > .container > .heading a {
+      opacity: 0.25; }
+      #components-pg #components .component > .container > .heading a:hover {
+        opacity: 0.5; }
   #components-pg #components .component > .container > h3 {
     color: #6b6d6f;
     text-align: left;
@@ -331,10 +335,33 @@ hr {
     #components-pg #components .component > .container > span:hover {
       opacity: 0.75; }
   #components-pg #components .component > .container > p {
-    margin-bottom: 10px; }
+    margin-bottom: 1em; }
+  #components-pg #components .component > .container > .table {
+    margin: 50px 0px; }
 
 #components-pg #components .component .container.second {
+  margin-top: 25px;
   padding-top: 0px; }
+
+#components-pg #components .component .gist-code {
+  margin-top: 25px;
+  position: relative; }
+  #components-pg #components .component .gist-code .copy-code {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 700;
+    background-color: #eee;
+    padding: 5px 15px;
+    border: 1px solid #dddddd;
+    border-top-right-radius: 3px;
+    cursor: pointer; }
+    #components-pg #components .component .gist-code .copy-code:hover {
+      background-color: #dddddd; }
+    #components-pg #components .component .gist-code .copy-code i {
+      vertical-align: middle;
+      margin-left: 2px; }
 
 #components-pg #components #container-component .wrapper {
   background-color: #ececec;
@@ -503,9 +530,12 @@ hr {
           left: 0px; }
         .layout.sidebar .sidebar + .main {
           padding-left: 10px; } }
+    .layout.sidebar .sidebar > .container {
+      padding: 25px 0px; }
     .layout.sidebar .sidebar .brand {
-      font-size: 1.5rem;
-      margin-bottom: 50px; }
+      font-size: 1.5rem; }
+      .layout.sidebar .sidebar .brand span {
+        font-weight: 100; }
     .layout.sidebar .sidebar .nav-options {
       font-size: 1rem;
       font-weight: 900;
@@ -541,6 +571,21 @@ hr {
     .video-overlay .content i:hover {
       opacity: 0.75; }
 
+.video.overlay:after {
+  z-index: 0; }
+
+.video.overlay .content {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1; }
+  .video.overlay .content i {
+    color: #ececec;
+    font-size: 5rem;
+    cursor: pointer; }
+    .video.overlay .content i:hover {
+      opacity: 0.75; }
+
 .video video {
   width: 100%; }
 
@@ -568,3 +613,39 @@ hr {
 
 .video.is-playing:hover:after {
   display: block; }
+
+.table {
+  display: table;
+  width: 100%; }
+  .table.border .table-cell {
+    border: 1px solid #bbbbbb; }
+  .table.col-border .table-cell {
+    border-right: 1px solid #bbbbbb; }
+    .table.col-border .table-cell:last-of-type {
+      border-right: none; }
+  .table.row-border .table-cell {
+    border-bottom: 1px solid #bbbbbb; }
+  .table.row-border .table-body .table-row:last-of-type .table-cell {
+    border-bottom: none; }
+  .table .table-heading {
+    background-color: #52ae76;
+    color: #ececec;
+    display: table-header-group;
+    font-weight: bold; }
+    .table .table-heading.border-bottom .table-cell {
+      border-bottom: 1px solid #bbbbbb !important; }
+  .table .table-body {
+    display: table-row-group; }
+  .table .table-row {
+    display: table-row; }
+    .table .table-row .table-cell {
+      display: table-cell;
+      padding: 3px 10px; }
+
+ul.no-bullet {
+  list-style: none; }
+
+ul li {
+  margin-bottom: 0.5em; }
+  ul li:last-of-type {
+    margin-bottom: 0px; }

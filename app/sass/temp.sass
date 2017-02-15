@@ -854,9 +854,15 @@ ul
             margin-bottom: 0px
 
 #error-pg
+
     #error
         height: 100vh
 
         img
             height: 300px
             margin-bottom: 75px
+
+            @media screen and (max-width: $tab-screen)
+                height: 200px
+            @media screen and (max-width: mob-screen)
+                height: 150px

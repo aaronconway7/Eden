@@ -655,3 +655,9 @@ ul li {
   #error-pg #error img {
     height: 300px;
     margin-bottom: 75px; }
+    @media screen and (max-width: 768px) {
+      #error-pg #error img {
+        height: 200px; } }
+    @media screen and (max-width: mob-screen) {
+      #error-pg #error img {
+        height: 150px; } }

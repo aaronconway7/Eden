@@ -1,5 +1,7 @@
 $(document).ready(function(){
     $('.lightbox').lightbox();
+    $('.video').video();
+    $('footer').sticky();
     // $('.animation').animate();
     // $('.nav').nav({
     //     pageShift: true,

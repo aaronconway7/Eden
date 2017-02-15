@@ -1,0 +1,86 @@
+.table
+    display: table
+    width: 100%
+
+    &.border
+
+        .table-cell
+            border: 1px solid $eden-dark-grey
+
+    &.col-border
+
+        .table-cell
+            border-right: 1px solid $eden-dark-grey
+
+            &:last-of-type
+                border-right: none
+
+    &.row-border
+
+        .table-cell
+            border-bottom: 1px solid $eden-dark-grey
+
+        .table-body
+
+            .table-row
+
+                &:last-of-type
+
+                    .table-cell
+                        border-bottom: none
+
+    .table-heading
+        background-color: $eden-green
+        color: $eden-light-grey
+        display: table-header-group
+        font-weight: bold
+
+        &.dark
+            background-color: $eden-charcoal
+        &.light
+            background-color: $eden-light-grey
+            color: $eden-charcoal
+        &.transparent
+            background-color: transparent
+
+        &.border-bottom
+
+            .table-cell
+                border-bottom: 1px solid $eden-charcoal !important
+
+    .table-body
+        display: table-row-group
+        background-color: $eden-green
+
+        &.light
+            background-color: $eden-light-grey
+
+            &.striped
+
+                .table-row
+
+                    &:nth-of-type(even)
+                        background-color: lighten($eden-light-grey, 5)
+
+        &.dark
+            background-color: $eden-charcoal
+
+            &.striped
+
+                .table-row
+
+                    &:nth-of-type(even)
+                        background-color: lighten($eden-charcoal, 5)
+
+        &.transparent
+            background-color: transparent
+
+    .table-row
+        display: table-row
+
+        .table-cell
+            display: table-cell
+            padding: 3px 10px
+
+.responsive-table
+    overflow-x: auto

@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+  head
+    include ../../include/head
+    title Video by Eden.
+    link(href='../css/style.css', rel='stylesheet')
+  body
+    .universe#video-pg
+        #video
+            .row
+                .video.overlay
+                    video
+                        source(type="video/mp4" src="../assets/video/VID-20150829-WA0011.mp4")
+                    .content.row.center-center
+                        span.transition.play Play
+                        span.transition.pause Pause
+                        //- i(class="fa fa-pause-circle-o transition pause" aria-hidden="true")
+    include ../../include/foot
+    script(src="../../js/function.js")

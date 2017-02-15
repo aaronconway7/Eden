@@ -1,0 +1,50 @@
+.video
+    position: relative
+
+    &.overlay
+
+        &:after
+            z-index: 0
+
+    .content
+        position: absolute
+        left: 0px
+        top: 0px
+        z-index: 1
+
+        i
+            color: $eden-light-grey
+            font-size: 5rem
+            cursor: pointer
+
+            &:hover
+                opacity: 0.75
+
+    video
+        width: 100%
+
+    .play
+        display: block
+    .pause
+        display: none
+
+    &.is-playing
+
+        .play
+            display: none
+        .pause
+            display: block
+
+        .content
+            display: none
+
+        &:after
+            display: none
+
+        &:hover
+
+            .content
+                display: flex
+
+            &:after
+                display: block

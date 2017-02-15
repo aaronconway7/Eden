@@ -27,6 +27,30 @@
 
 }(jQuery));
 
+(function($) {
+
+    $.fn.sticky = function(options) {
+
+        // Establish our default settings
+        var settings = $.extend({
+            pageWrapper     : 'main',
+        }, options);
+
+        return this.each(function(){
+            $('html').css('height', '100%');
+            $('body').css({
+                'min-height': '100%',
+                'display': 'flex',
+                'flex-direction': 'column'
+            });
+
+            $(settings.pageWrapper).css('flex', '1');
+        });
+
+    }
+
+}(jQuery));
+
 (function($){
     $.fn.lightbox = function(){
 
@@ -305,6 +329,26 @@
         		}, settings.delay);
             }
 
+        });
+
+    }
+
+}(jQuery));
+
+(function($) {
+
+    $.fn.video = function(options) {
+
+        return this.each(function(){
+            $(this).find('.play').click(function(){
+                $(this).closest('.video').addClass('is-playing');
+                $(this).closest('.video').find('video')[0].play();
+            });
+
+            $(this).find('.pause').click(function(){
+                $(this).closest('.video').removeClass('is-playing');
+                $(this).closest('.video').find('video')[0].pause();
+            });
         });
 
     }

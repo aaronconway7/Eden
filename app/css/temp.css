@@ -649,3 +649,9 @@ ul li {
   margin-bottom: 0.5em; }
   ul li:last-of-type {
     margin-bottom: 0px; }
+
+#error-pg #error {
+  height: 100vh; }
+  #error-pg #error img {
+    height: 300px;
+    margin-bottom: 75px; }

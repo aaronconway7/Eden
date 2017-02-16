@@ -1067,6 +1067,8 @@ input, textarea, select {
     border-radius: 0.25em; }
   input.sharp, textarea.sharp, select.sharp {
     border-radius: 0px; }
+  input.round, textarea.round, select.round {
+    border-radius: 100px; }
 
 input[type="submit"], input[type="reset"] {
   transition: all 0.3s ease-in-out;

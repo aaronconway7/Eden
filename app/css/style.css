@@ -56,6 +56,12 @@
   #form-pg form input, #form-pg form textarea, #form-pg form select {
     margin-bottom: 20px; }
 
+#form-pg input[name="search"].animated-search {
+  transition: width 0.4s ease-in-out;
+  width: 300px; }
+  #form-pg input[name="search"].animated-search:focus {
+    width: 100%; }
+
 #animations-pg {
   height: 5000px; }
   #animations-pg #animations .boxes {
@@ -113,3 +119,21 @@
   margin-bottom: 50px; }
   #table-pg .table:last-of-type {
     margin-bottom: 0px; }
+
+#accordion-pg .accordion.light .show-content {
+  background-color: #eee; }
+  #accordion-pg .accordion.light .show-content:hover {
+    background-color: #d5d5d5; }
+
+#accordion-pg .accordion .panel.is-open .content {
+  padding: 20px 0px; }
+
+#accordion-pg .accordion .show-content {
+  display: block;
+  width: 100%; }
+
+#accordion-pg .accordion .content {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in; }

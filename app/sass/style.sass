@@ -84,6 +84,17 @@
         input,textarea, select
             margin-bottom: 20px
 
+    input
+
+        &[name="search"]
+
+            &.animated-search
+                transition: width 0.4s ease-in-out
+                width: 300px
+
+                &:focus
+                    width: 100%
+
 #animations-pg
     height: 5000px
 
@@ -180,3 +191,32 @@
 
         &:last-of-type
             margin-bottom: 0px
+
+#accordion-pg
+
+    .accordion
+
+        &.light
+
+            .show-content
+                background-color: #eee
+
+                &:hover
+                    background-color: darken(#eee, 10)
+
+        .panel
+
+            &.is-open
+
+                .content
+                    padding: 20px 0px
+
+        .show-content
+            display: block
+            width: 100%
+
+        .content
+            padding: 0
+            max-height: 0
+            overflow: hidden
+            transition: all 0.3s ease-in

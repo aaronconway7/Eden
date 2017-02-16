@@ -2,6 +2,7 @@ $(document).ready(function(){
     $('.lightbox').lightbox();
     $('.video').video();
     $('footer').sticky();
+    $('.accordion').accordion();
     // $('.animation').animate();
     // $('.nav').nav({
     //     pageShift: true,

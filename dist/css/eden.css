@@ -1431,3 +1431,37 @@ textarea {
 
 .responsive-table {
   overflow-x: auto; }
+
+ul {
+  list-style: none; }
+  ul.bullet {
+    list-style: initial; }
+  ul.inline li {
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-right: 0.5em; }
+    ul.inline li:last-of-type {
+      margin-right: 0px; }
+  ul li {
+    margin-bottom: 0.5em; }
+    ul li:last-of-type {
+      margin-bottom: 0px; }
+
+.footer {
+  background-color: #52ae76;
+  padding: 10px 50px;
+  font-size: 0.9rem; }
+  .footer.fixed {
+    position: fixed;
+    width: 100%;
+    bottom: 0px; }
+  .footer.padded {
+    padding: 10px 100px; }
+  .footer.short {
+    height: 100px; }
+  .footer.tall {
+    height: 300px; }
+  .footer.dark {
+    background-color: #2f2f2f; }
+  .footer.light {
+    background-color: #ececec; }

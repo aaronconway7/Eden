@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".lightbox").lightbox(),$(".video").video(),$("footer").sticky()}),$(window).scroll(function(){});

@@ -17,6 +17,11 @@ $(document).ready(function() {
         $('.video video')[0].pause();
     });
 
+    $('#container-component .wrapper .container').hover(function(event){
+        event.stopPropagation();
+        console.log("swag");
+    });
+
 });
 
 $(window).scroll(function() {

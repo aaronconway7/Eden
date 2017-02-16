@@ -322,20 +322,22 @@ hr {
       opacity: 0.25; }
       #components-pg #components .component > .container > .heading a:hover {
         opacity: 0.5; }
-  #components-pg #components .component > .container > h3 {
-    color: #6b6d6f;
-    text-align: left;
-    display: inline-block; }
-  #components-pg #components .component > .container > span {
-    vertical-align: super;
-    margin-left: 10px;
-    opacity: 0.5;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out; }
-    #components-pg #components .component > .container > span:hover {
-      opacity: 0.75; }
+  #components-pg #components .component > .container > .code {
+    margin-left: 0px;
+    font-size: 0.8rem; }
   #components-pg #components .component > .container > p {
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    line-height: 1.8em; }
+    #components-pg #components .component > .container > p a {
+      font-weight: 500;
+      font-style: italic;
+      border-bottom: 1px dashed black; }
+      #components-pg #components .component > .container > p a.link {
+        border-bottom: none; }
+      #components-pg #components .component > .container > p a i {
+        font-size: 1em !important; }
+      #components-pg #components .component > .container > p a:hover {
+        opacity: 0.75; }
   #components-pg #components .component > .container > .table {
     margin: 50px 0px; }
 
@@ -362,6 +364,27 @@ hr {
     #components-pg #components .component .gist-code .copy-code i {
       vertical-align: middle;
       margin-left: 2px; }
+
+#components-pg #components #icons-component .row {
+  margin-bottom: 3rem; }
+
+#components-pg #components #icons-component i {
+  font-size: 1.5rem;
+  text-align: center; }
+  @media screen and (max-width: 768px) {
+    #components-pg #components #icons-component i {
+      font-size: 1rem; } }
+
+#components-pg #components #font-component h4 {
+  margin-bottom: 0.5em; }
+  #components-pg #components #font-component h4:nth-of-type(1) {
+    font-weight: 100; }
+  #components-pg #components #font-component h4:nth-of-type(2) {
+    font-weight: 400; }
+  #components-pg #components #font-component h4:nth-of-type(3) {
+    font-weight: 600; }
+  #components-pg #components #font-component h4:nth-of-type(4) {
+    font-weight: 800; }
 
 #components-pg #components #container-component .wrapper {
   background-color: #ececec;
@@ -555,100 +578,6 @@ hr {
       @media screen and (max-width: 768px) {
         .layout.sidebar .main > hr {
           transform: translate3d(0px, 10px, 0px); } }
-
-.video-overlay:after {
-  z-index: 0; }
-
-.video-overlay .content {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 1; }
-  .video-overlay .content i {
-    color: #ececec;
-    font-size: 5rem;
-    cursor: pointer; }
-    .video-overlay .content i:hover {
-      opacity: 0.75; }
-
-.video.overlay:after {
-  z-index: 0; }
-
-.video.overlay .content {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 1; }
-  .video.overlay .content i {
-    color: #ececec;
-    font-size: 5rem;
-    cursor: pointer; }
-    .video.overlay .content i:hover {
-      opacity: 0.75; }
-
-.video video {
-  width: 100%; }
-
-.video .play {
-  display: block; }
-
-.video .pause {
-  display: none; }
-
-.video.is-playing .play {
-  display: none; }
-
-.video.is-playing .pause {
-  display: block; }
-
-.video.is-playing .content {
-  display: none; }
-
-.video.is-playing:after {
-  display: none; }
-
-.video.is-playing:hover .content {
-  display: -ms-flexbox;
-  display: flex; }
-
-.video.is-playing:hover:after {
-  display: block; }
-
-.table {
-  display: table;
-  width: 100%; }
-  .table.border .table-cell {
-    border: 1px solid #bbbbbb; }
-  .table.col-border .table-cell {
-    border-right: 1px solid #bbbbbb; }
-    .table.col-border .table-cell:last-of-type {
-      border-right: none; }
-  .table.row-border .table-cell {
-    border-bottom: 1px solid #bbbbbb; }
-  .table.row-border .table-body .table-row:last-of-type .table-cell {
-    border-bottom: none; }
-  .table .table-heading {
-    background-color: #52ae76;
-    color: #ececec;
-    display: table-header-group;
-    font-weight: bold; }
-    .table .table-heading.border-bottom .table-cell {
-      border-bottom: 1px solid #bbbbbb !important; }
-  .table .table-body {
-    display: table-row-group; }
-  .table .table-row {
-    display: table-row; }
-    .table .table-row .table-cell {
-      display: table-cell;
-      padding: 3px 10px; }
-
-ul.no-bullet {
-  list-style: none; }
-
-ul li {
-  margin-bottom: 0.5em; }
-  ul li:last-of-type {
-    margin-bottom: 0px; }
 
 #error-pg #error {
   height: 100vh; }

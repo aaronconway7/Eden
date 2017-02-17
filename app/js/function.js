@@ -2,7 +2,10 @@ $(document).ready(function(){
     $('.lightbox').lightbox();
     $('.video').video();
     $('footer').sticky();
-    $('.accordion').accordion();
+    $('.collapsible').collapsible({
+        type: 'accordion'
+    });
+    $('.modal').modal()
     // $('.animation').animate();
     // $('.nav').nav({
     //     pageShift: true,

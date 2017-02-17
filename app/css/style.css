@@ -119,21 +119,3 @@
   margin-bottom: 50px; }
   #table-pg .table:last-of-type {
     margin-bottom: 0px; }
-
-#accordion-pg .accordion.light .show-content {
-  background-color: #eee; }
-  #accordion-pg .accordion.light .show-content:hover {
-    background-color: #d5d5d5; }
-
-#accordion-pg .accordion .panel.is-open .content {
-  padding: 20px 0px; }
-
-#accordion-pg .accordion .show-content {
-  display: block;
-  width: 100%; }
-
-#accordion-pg .accordion .content {
-  padding: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-in; }

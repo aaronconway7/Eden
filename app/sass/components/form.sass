@@ -1,3 +1,6 @@
+// Form
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
 input, textarea, select
     appearance: none
     box-shadow: none
@@ -26,20 +29,20 @@ input, textarea, select
         padding-bottom: 0.5em
 
     &.dark
-        background-color: $eden-charcoal
-        color: $eden-light-grey
 
-    &.light
-        background-color: $eden-light-grey
-        color: $eden-charcoal
+        &.border
+            border: 1px solid $eden-light-grey
+
+            &-bottom
+                border-bottom: 1px solid $eden-light-grey
 
     &.eden
-        background-color: $eden-green
-        color: $eden-light-grey
 
-    &.transparent
-        background-color: transparent
-        color: $eden-charcoal
+        &.border
+            border: 1px solid $eden-charcoal
+
+            &-bottom
+                border-bottom: 1px solid $eden-charcoal
 
     &.border
         border: 1px solid $eden-dark-grey
@@ -63,10 +66,13 @@ input
         transition: all 0.3s ease-in-out
         cursor: pointer
 
+        &:hover
+            background-color: darken($eden-green, 10)
+
         &.dark
 
             &:hover
-                background-color: lighten($eden-charcoal, 10)
+                background-color: darken($eden-charcoal, 10)
 
         &.light
 

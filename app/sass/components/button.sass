@@ -1,3 +1,6 @@
+// Buttons
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
 button, .button
     appearance: none
     -webkit-appearance: none
@@ -8,37 +11,35 @@ button, .button
     outline: none
     border: none
     transition: all 0.3s ease-in-out
+    background-color: $eden-green
+    color: $eden-light-grey
 
     &:hover
         cursor: pointer
+        background-color: darken($eden-green, 5)
+
+    &.border
+        border: 0.1em solid $eden-charcoal
 
     &.light
-        background-color: $eden-light-grey
-        color: $eden-charcoal
 
         &:hover
             background-color: darken($eden-light-grey, 5)
 
     &.dark
-        background-color: $eden-charcoal
-        color: $eden-light-grey
 
         &:hover
             background-color: lighten($eden-charcoal, 5)
 
-    &.eden
-        background-color: $eden-green
-        color: $eden-light-grey
-
-        &:hover
-            background-color: darken($eden-green, 5)
+        &.border
+            border: 0.1em solid $eden-light-grey
 
     &.transparent
-        background-color: transparent
-        color: $eden-charcoal
 
         &:hover
             background-color: $eden-light-grey
+
+
 
     &.short
         padding-top: 0.5em
@@ -55,9 +56,6 @@ button, .button
     &.fat
         padding-left: 4em
         padding-right: 4em
-
-    &.border
-        border: 0.1em solid $eden-dark-grey
 
     &.rounded
         border-radius: 0.25em

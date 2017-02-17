@@ -11,6 +11,14 @@ $eden-light-grey: rgb(236, 236, 236)
 $tab-screen: 768px
 $mob-screen: 425px
 
+::selection
+  background: $eden-green
+  color: $eden-light-grey
+
+::-moz-selection
+  background: $eden-green
+  color: $eden-light-grey
+
 .curly
     font-family: Pacifico
 
@@ -111,6 +119,25 @@ hr
         h5
             color: white
             font-weight: 300
+
+    #showcase
+        padding: 0px 50px
+
+        @media screen and (max-width: 425px)
+            padding: 0px
+
+        img
+            width: 40%
+
+            &.ndorsa-homepage
+                transform: translate3d(50%, 0px, 0px)
+            &.aaronconway-homepage
+                transform: translate3d(-50%, 0px, 0px)
+
+        video
+            width: 60%
+            z-index: 1
+            box-shadow: 0px 0px 50px -10px rgba(0,0,0,0.75)
 
     #brands
 

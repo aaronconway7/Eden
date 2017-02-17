@@ -1,5 +1,16 @@
 @import 'https://fonts.googleapis.com/css?family=Pacifico';
 @import 'https://fonts.googleapis.com/css?family=Dosis:300,400,600,800';
+::-moz-selection {
+  background: #52ae76;
+  color: #ececec; }
+::selection {
+  background: #52ae76;
+  color: #ececec; }
+
+::-moz-selection {
+  background: #52ae76;
+  color: #ececec; }
+
 .curly {
   font-family: Pacifico; }
 
@@ -81,6 +92,22 @@ hr {
   #home-pg #read-doc h5 {
     color: white;
     font-weight: 300; }
+
+#home-pg #showcase {
+  padding: 0px 50px; }
+  @media screen and (max-width: 425px) {
+    #home-pg #showcase {
+      padding: 0px; } }
+  #home-pg #showcase img {
+    width: 40%; }
+    #home-pg #showcase img.ndorsa-homepage {
+      transform: translate3d(50%, 0px, 0px); }
+    #home-pg #showcase img.aaronconway-homepage {
+      transform: translate3d(-50%, 0px, 0px); }
+  #home-pg #showcase video {
+    width: 60%;
+    z-index: 1;
+    box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 0.75); }
 
 #home-pg #brands h5 {
   font-weight: 300;

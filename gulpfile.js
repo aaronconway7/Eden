@@ -67,9 +67,14 @@ gulp.task('docs', function() {
         .pipe(gulp.dest('assets/docs'))
 });
 
+gulp.task('video', function() {
+    return gulp.src('app/assets/video/**/*')
+        .pipe(gulp.dest('assets/video'))
+});
+
 gulp.task('minify', ['html-min', 'uglify', 'css-nano', 'image-optimise']);
 
-gulp.task('transfer', ['fonts', 'docs'])
+gulp.task('transfer', ['fonts', 'docs', 'video'])
 
 gulp.task('jade-watch', ['jade'], reload);
 

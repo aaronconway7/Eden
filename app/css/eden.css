@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* */
 /* Eden. V1.0.0 */
-/* Copyright 2016, Aaron Conway */
+/* Copyright 2017, Aaron Conway */
 /* http://www.designofeden.com */
 /* */
 .animation {
@@ -68,6 +68,14 @@
 
 .fade-in-down {
   animation-name: fadeIn, SlideInDown; }
+
+@keyframes pop-out {
+  0% {
+    transform: scale3d(0, 0, 0); }
+  90% {
+    transform: scale3d(1.4, 1.4, 1.4); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
 
 * {
   margin: 0px;
@@ -1074,8 +1082,47 @@ input[type="submit"], input[type="reset"] {
   input[type="submit"].transparent:hover, input[type="reset"].transparent:hover {
     opacity: 0.7; }
 
+.select {
+  position: relative;
+  cursor: pointer; }
+  .select:after {
+    content: '\f0dc';
+    font-family: 'FontAwesome';
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    top: 50%;
+    transform: translate3d(0px, -50%, 0px);
+    right: 1em;
+    pointer-events: none; }
+
 textarea {
   height: 150px; }
+
+.checkbox {
+  cursor: pointer;
+  color: #666; }
+  .checkbox input[type="checkbox"] {
+    display: none; }
+    .checkbox input[type="checkbox"] + .label-text:before {
+      content: '\f096';
+      font-family: 'FontAwesome';
+      width: 1em;
+      margin-right: 0.2em;
+      display: inline-block; }
+    .checkbox input[type="checkbox"]:checked + .label-text:before {
+      content: '\f14a';
+      color: #52ae76;
+      animation: pop-out 180ms ease-in; }
+    .checkbox input[type="checkbox"]:disabled + .label-text {
+      color: #aaa; }
+      .checkbox input[type="checkbox"]:disabled + .label-text:before {
+        content: '\f0c8';
+        color: #ccc; }
 
 .toggle {
   cursor: pointer; }
@@ -1443,6 +1490,22 @@ ul {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in; }
+
+.tab .tab-headings {
+  background-color: #ececec; }
+  .tab .tab-headings .tab-heading {
+    border: 1px solid #bbbbbb;
+    padding: 10px 30px;
+    cursor: pointer; }
+    .tab .tab-headings .tab-heading:hover {
+      background-color: lightgray; }
+
+.tab .tab-contents {
+  padding-top: 10px; }
+  .tab .tab-contents .tab-content {
+    display: none; }
+    .tab .tab-contents .tab-content.is-open {
+      display: block; }
 
 .footer {
   background-color: #52ae76;

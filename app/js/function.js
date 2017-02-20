@@ -5,7 +5,8 @@ $(document).ready(function(){
     $('.collapsible').collapsible({
         type: 'accordion'
     });
-    $('.modal').modal()
+    $('.modal').modal();
+    $('.tab').tab();
     // $('.animation').animate();
     // $('.nav').nav({
     //     pageShift: true,

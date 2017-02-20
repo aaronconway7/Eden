@@ -53,7 +53,7 @@
 
 #form-pg form {
   width: 300px; }
-  #form-pg form input, #form-pg form textarea, #form-pg form select {
+  #form-pg form input, #form-pg form textarea, #form-pg form label {
     margin-bottom: 20px; }
 
 #form-pg input[name="search"].animated-search {

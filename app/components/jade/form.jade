@@ -12,12 +12,21 @@ html(lang='en')
                 form.col
                     input.skinny.rounded.light.border-bottom(type="text", placeholder="test")
                     input.border-bottom.transparent(type="number")
-                    select.border.sharp
-                        option(value="placeholder", disabled='', selected='') Dropdown
-                        option(value="volvo") Volvo
-                        option(value="saab")
-                        option(value="opel")
-                        span.caret ▾
+                    label.select
+                        select.border.sharp
+                            option(value="placeholder", disabled='', selected='') Dropdown
+                            option(value="volvo") Volvo
+                            option(value="saab")
+                            option(value="opel")
+                    label.checkbox
+                        input(type="checkbox")
+                        span.label-text Checkbox 1
+                    label.checkbox
+                        input(type="checkbox")
+                        span.label-text Checkbox 2
+                    label.checkbox
+                        input(type="checkbox" disabled)
+                        span.label-text Checkbox 3
                     textarea.border.skinny(placeholder="Description goes here...")
                     input.light.tall.uppercase-and-space(type="submit")
                     label.toggle.light.shadow

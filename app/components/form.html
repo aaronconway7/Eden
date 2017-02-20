@@ -19,12 +19,23 @@
           <form class="col">
             <input type="text" placeholder="test" class="skinny rounded light border-bottom">
             <input type="number" class="border-bottom transparent">
-            <select class="border sharp">
-              <option value="placeholder" disabled="" selected="">Dropdown</option>
-              <option value="volvo">Volvo</option>
-              <option value="saab"></option>
-              <option value="opel"></option><span class="caret">▾</span>
-            </select>
+            <label class="select">
+              <select class="border sharp">
+                <option value="placeholder" disabled="" selected="">Dropdown</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab"></option>
+                <option value="opel"></option>
+              </select>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox"><span class="label-text">Checkbox 1</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox"><span class="label-text">Checkbox 2</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" disabled><span class="label-text">Checkbox 3</span>
+            </label>
             <textarea placeholder="Description goes here..." class="border skinny"></textarea>
             <input type="submit" class="light tall uppercase-and-space">
             <label class="toggle light shadow">

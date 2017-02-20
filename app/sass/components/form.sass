@@ -89,8 +89,60 @@ input
             &:hover
                 opacity: 0.7
 
+.select
+    position: relative
+    cursor: pointer
+
+    &:after
+        content: '\f0dc'
+        font-family: 'FontAwesome'
+        position: absolute
+        display: flex
+        justify-content: center
+        align-items: center
+        top: 50%
+        transform: translate3d(0px, -50%, 0px)
+        right: 1em
+        pointer-events: none
+
+
+
 textarea
     height: 150px
+
+.checkbox
+    cursor: pointer
+    color: #666
+
+    input[type="checkbox"]
+        display: none
+
+        & + .label-text
+
+            &:before
+                content: '\f096'
+                font-family: 'FontAwesome'
+                width: 1em
+                margin-right: 0.2em
+                display: inline-block
+
+        &:checked
+
+            & + .label-text
+
+                &:before
+                    content: '\f14a'
+                    color: $eden-green
+                    animation: pop-out 180ms ease-in
+        &:disabled
+
+            & + .label-text
+                color: #aaa
+
+                &:before
+                    content: '\f0c8'
+                    color: #ccc
+
 
 .toggle
     cursor: pointer

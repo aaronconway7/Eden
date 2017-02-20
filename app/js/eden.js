@@ -1,5 +1,34 @@
 (function($) {
 
+    $.fn.animate = function() {
+
+        var wScroll = $(window).scrollTop();
+
+        return this.each(function(i){
+            if($(this).hasClass('on-delay') && $(this).hasClass('on-scroll')){
+                if((wScroll + ($(window).height()*0.8)) > $(this).offset().top){
+                    var n = $(this).index();
+                    setTimeout(function(){
+                        $('.animation').eq(i).addClass('animated');
+                    }, 150 * (n+1));
+                }
+            } else if($(this).hasClass('on-scroll')){
+                if((wScroll + ($(window).height()*0.8)) > $(this).offset().top){
+                    $(this).addClass('animated');
+                }
+            } else if($(this).hasClass('on-delay')){
+                setTimeout(function(){
+                    $('.animation').eq(i).addClass('animated');
+                }, 150 * (i+1));
+            }
+        });
+
+    }
+
+}(jQuery));
+
+(function($) {
+
     $.fn.collapsible = function(options) {
 
         //Establish our default settings
@@ -22,35 +51,6 @@
                     $(this).next('.content').css('max-height', scrollHeight);
                 }
             });
-        });
-
-    }
-
-}(jQuery));
-
-(function($) {
-
-    $.fn.animate = function() {
-
-        var wScroll = $(window).scrollTop();
-
-        return this.each(function(i){
-            if($(this).hasClass('on-delay') && $(this).hasClass('on-scroll')){
-                if((wScroll + ($(window).height()*0.8)) > $(this).offset().top){
-                    var n = $(this).index();
-                    setTimeout(function(){
-                        $('.animation').eq(i).addClass('animated');
-                    }, 150 * (n+1));
-                }
-            } else if($(this).hasClass('on-scroll')){
-                if((wScroll + ($(window).height()*0.8)) > $(this).offset().top){
-                    $(this).addClass('animated');
-                }
-            } else if($(this).hasClass('on-delay')){
-                setTimeout(function(){
-                    $('.animation').eq(i).addClass('animated');
-                }, 150 * (i+1));
-            }
         });
 
     }
@@ -359,6 +359,27 @@
         		}, settings.delay);
             }
 
+        });
+
+    }
+
+}(jQuery));
+
+(function($) {
+
+    $.fn.tab = function(options) {
+
+        //Establish our default settings
+        // var settings = $.extend({
+        //     type     : 'expandable'
+        // }, options);
+
+        return this.each(function(){
+            $(this).find('.tab-heading').click(function(){
+                $(this).closest('.tab').find('.tab-content').removeClass('is-open');
+                var tabNo = $(this).index();
+                $(this).closest('.tab').find('.tab-content').eq(tabNo).addClass('is-open');
+            });
         });
 
     }

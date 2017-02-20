@@ -1,0 +1,21 @@
+.tab
+
+    .tab-headings
+        background-color: $eden-light-grey
+
+        .tab-heading
+            border: 1px solid $eden-dark-grey
+            padding: 10px 30px
+            cursor: pointer
+
+            &:hover
+                background-color: darken($eden-light-grey, 10)
+
+    .tab-contents
+        padding-top: 10px
+
+        .tab-content
+            display: none
+
+            &.is-open
+                display: block

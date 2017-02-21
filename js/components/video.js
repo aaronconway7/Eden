@@ -1,1 +1,0 @@
-!function(i){i.fn.video=function(s){return this.each(function(){i(this).find(".play").click(function(){i(this).closest(".video").addClass("is-playing"),i(this).closest(".video").find("video")[0].play()}),i(this).find(".pause").click(function(){i(this).closest(".video").removeClass("is-playing"),i(this).closest(".video").find("video")[0].pause()})})}}(jQuery);

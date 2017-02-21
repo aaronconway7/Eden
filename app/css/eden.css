@@ -1492,13 +1492,16 @@ ul {
   transition: all 0.3s ease-in; }
 
 .tab .tab-headings {
-  background-color: #ececec; }
+  background-color: #52ae76;
+  color: #ececec; }
   .tab .tab-headings .tab-heading {
-    border: 1px solid #bbbbbb;
     padding: 10px 30px;
+    width: 100%;
     cursor: pointer; }
-    .tab .tab-headings .tab-heading:hover {
-      background-color: lightgray; }
+    .tab .tab-headings .tab-heading:hover, .tab .tab-headings .tab-heading.is-active {
+      background-color: #418c5e; }
+    .tab .tab-headings .tab-heading.is-active {
+      pointer-events: none; }
 
 .tab .tab-contents {
   padding-top: 10px; }
@@ -1506,6 +1509,77 @@ ul {
     display: none; }
     .tab .tab-contents .tab-content.is-open {
       display: block; }
+
+.tab.light {
+  background-color: transparent; }
+  .tab.light .tab-headings {
+    background-color: #ececec;
+    color: #2f2f2f; }
+    .tab.light .tab-headings .tab-heading:hover, .tab.light .tab-headings .tab-heading.is-active {
+      background-color: lightgray; }
+
+.tab.dark {
+  background-color: transparent; }
+  .tab.dark .tab-headings {
+    background-color: #2f2f2f;
+    color: #ececec; }
+    .tab.dark .tab-headings .tab-heading:hover, .tab.dark .tab-headings .tab-heading.is-active {
+      background-color: #161616; }
+  .tab.dark .tab-content {
+    color: #2f2f2f; }
+
+.tab.outline .tab-headings {
+  background-color: transparent;
+  color: #2f2f2f; }
+
+.tab.outline .tab-heading {
+  border-bottom: 1px solid #ececec;
+  transition: background-color 0.3s ease-in-out; }
+  .tab.outline .tab-heading:hover {
+    color: #ececec; }
+  .tab.outline .tab-heading.is-active {
+    background-color: transparent;
+    border-top: 3px solid #52ae76;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid transparent; }
+
+.tab.outline.light .tab-heading:hover {
+  color: #2f2f2f; }
+
+.tab.outline.light .tab-heading.is-active {
+  background-color: transparent;
+  border-top: 3px solid #ececec; }
+
+.tab.outline.dark .tab-heading:hover {
+  background-color: #eee;
+  color: #2f2f2f; }
+
+.tab.outline.dark .tab-heading.is-active {
+  background-color: transparent;
+  border-top: 3px solid #2f2f2f; }
+
+.tab.arrow .tab-headings {
+  margin-bottom: 20px; }
+  .tab.arrow .tab-headings .is-active {
+    position: relative; }
+    .tab.arrow .tab-headings .is-active:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translate3d(-50%, 0px, 0px);
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #418c5e; }
+
+.tab.arrow.light .tab-headings .is-active:after {
+  border-top: 10px solid lightgray; }
+
+.tab.arrow.dark .tab-headings .is-active:after {
+  border-top: 10px solid #161616; }
 
 .footer {
   background-color: #52ae76;

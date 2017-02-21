@@ -1,15 +1,21 @@
+// Tabs
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
 .tab
 
     .tab-headings
-        background-color: $eden-light-grey
+        background-color: $eden-green
+        color: $eden-light-grey
 
         .tab-heading
-            border: 1px solid $eden-dark-grey
             padding: 10px 30px
+            width: 100%
             cursor: pointer
 
-            &:hover
-                background-color: darken($eden-light-grey, 10)
+            &:hover, &.is-active
+                background-color: darken($eden-green, 10)
+            &.is-active
+                pointer-events: none
 
     .tab-contents
         padding-top: 10px
@@ -19,3 +25,108 @@
 
             &.is-open
                 display: block
+
+    &.light
+        background-color: transparent
+
+        .tab-headings
+            background-color: $eden-light-grey
+            color: $eden-charcoal
+
+            .tab-heading
+
+                &:hover, &.is-active
+                    background-color: darken($eden-light-grey, 10)
+
+    &.dark
+        background-color: transparent
+
+        .tab-headings
+            background-color: $eden-charcoal
+            color: $eden-light-grey
+
+            .tab-heading
+
+                &:hover, &.is-active
+                    background-color: darken($eden-charcoal, 10)
+
+        .tab-content
+            color: $eden-charcoal
+
+    &.outline
+
+        .tab-headings
+            background-color: transparent
+            color: $eden-charcoal
+
+        .tab-heading
+            border-bottom: 1px solid $eden-light-grey
+            transition: background-color 0.3s ease-in-out
+
+            &:hover
+                color: $eden-light-grey
+            &.is-active
+                background-color: transparent
+                border-top: 3px solid $eden-green
+                border-left: 1px solid $eden-light-grey
+                border-right: 1px solid $eden-light-grey
+                border-bottom: 1px solid transparent
+
+        &.light
+
+            .tab-heading
+
+                &:hover
+                    color: $eden-charcoal
+                &.is-active
+                    background-color: transparent
+                    border-top: 3px solid $eden-light-grey
+
+        &.dark
+
+            .tab-heading
+
+                &:hover
+                    background-color: #eee
+                    color: $eden-charcoal
+                &.is-active
+                    background-color: transparent
+                    border-top: 3px solid $eden-charcoal
+
+    &.arrow
+
+        .tab-headings
+            margin-bottom: 20px
+
+            .is-active
+                position: relative
+
+                &:after
+                    content: ''
+                    position: absolute
+                    bottom: -10px
+                    left: 50%
+                    transform: translate3d(-50%, 0px, 0px)
+                    width: 0
+                    height: 0
+                    border-left: 10px solid transparent
+                    border-right: 10px solid transparent
+                    border-top: 10px solid darken($eden-green, 10)
+
+        &.light
+
+            .tab-headings
+
+                .is-active
+
+                    &:after
+                        border-top: 10px solid darken($eden-light-grey, 10)
+
+        &.dark
+
+            .tab-headings
+
+                .is-active
+
+                    &:after
+                        border-top: 10px solid darken($eden-charcoal, 10)

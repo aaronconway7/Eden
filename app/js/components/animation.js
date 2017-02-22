@@ -1,6 +1,6 @@
 (function($) {
 
-    $.fn.animate = function() {
+    $.fn.animation = function() {
 
         var wScroll = $(window).scrollTop();
 

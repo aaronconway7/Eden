@@ -1,12 +1,13 @@
 $(document).ready(function(){
-    $('.lightbox').lightbox();
-    $('.video').video();
-    $('footer').sticky();
-    $('.collapsible').collapsible({
-        type: 'accordion'
-    });
-    $('.modal').modal();
-    $('.tab').tab();
+    // $('.lightbox').lightbox();
+    // $('.video').video();
+    // $('footer').sticky();
+    // $('.collapsible').collapsible({
+    //     type: 'accordion'
+    // });
+    // $('.modal').modal();
+    // $('.tab').tab();
+    smoothScrolling();
     // $('.animation').animate();
     // $('.nav').nav({
     //     pageShift: true,

@@ -188,8 +188,7 @@ h6 {
 .lowercase {
   text-transform: lowercase; }
 
-.uppercase-and-space {
-  text-transform: uppercase;
+.space {
   letter-spacing: 0.2em; }
 
 .container {
@@ -217,13 +216,13 @@ h6 {
   -ms-flex-align: center;
       align-items: center; }
 
-.left-top {
+.left-top, .top-left {
   -ms-flex-pack: start;
       justify-content: flex-start;
   -ms-flex-align: start;
       align-items: flex-start; }
 
-.right-bottom {
+.right-bottom, .bottom-right {
   -ms-flex-pack: end;
       justify-content: flex-end;
   -ms-flex-align: end;
@@ -267,7 +266,7 @@ h6 {
         justify-content: flex-start;
     -ms-flex-align: center;
         align-items: center; }
-  .row.left-bottom {
+  .row.left-bottom, .row.bottom-left {
     -ms-flex-pack: start;
         justify-content: flex-start;
     -ms-flex-align: end;
@@ -282,7 +281,7 @@ h6 {
         justify-content: center;
     -ms-flex-align: end;
         align-items: flex-end; }
-  .row.right-top {
+  .row.right-top, .row.top-right {
     -ms-flex-pack: end;
         justify-content: flex-end;
     -ms-flex-align: start;
@@ -393,7 +392,7 @@ h6 {
         justify-content: center;
     -ms-flex-align: start;
         align-items: flex-start; }
-  .col.left-bottom {
+  .col.left-bottom, .col.bottom-left {
     -ms-flex-pack: end;
         justify-content: flex-end;
     -ms-flex-align: start;
@@ -408,7 +407,7 @@ h6 {
         justify-content: flex-end;
     -ms-flex-align: center;
         align-items: center; }
-  .col.right-top {
+  .col.right-top, .col.top-right {
     -ms-flex-pack: start;
         justify-content: flex-start;
     -ms-flex-align: end;
@@ -929,7 +928,10 @@ button, .button {
         font-size: 0.8rem; } }
   .codespan {
     padding: 0px;
-    margin: 0px; }
+    margin: 0px;
+    font-size: 0.8em;
+    border: 1px solid #bbbbbb;
+    border-radius: 0.2em; }
   .code .tab {
     margin: 1em 0em;
     margin-left: 2em; }

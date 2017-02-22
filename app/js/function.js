@@ -5,9 +5,9 @@ $(document).ready(function(){
     // $('.collapsible').collapsible({
     //     type: 'accordion'
     // });
-    // $('.modal').modal();
+    $('.modal').modal();
     // $('.tab').tab();
-    smoothScrolling();
+    // smoothScrolling();
     // $('.animation').animate();
     // $('.nav').nav({
     //     pageShift: true,

@@ -16,30 +16,40 @@ button, .button
 
     &:hover
         cursor: pointer
-        background-color: darken($eden-green, 5)
+        background-color: darken($eden-green, 10)
 
     &.border
         border: 0.1em solid $eden-charcoal
 
     &.light
+        background-color: $eden-light-grey
+        color: $eden-charcoal
+
+        &.border
+            border: 0.1em solid $eden-dark-grey
 
         &:hover
-            background-color: darken($eden-light-grey, 5)
+            background-color: darken($eden-light-grey, 10)
 
     &.dark
-
-        &:hover
-            background-color: lighten($eden-charcoal, 5)
+        background-color: $eden-charcoal
+        color: $eden-light-grey
 
         &.border
             border: 0.1em solid $eden-light-grey
 
+        &:hover
+            background-color: darken($eden-charcoal, 10)
+
     &.transparent
+        background-color: transparent
+        color: $eden-charcoal
+
+        &.border
+            border: 0.1em solid $eden-dark-grey
 
         &:hover
             background-color: $eden-light-grey
-
-
 
     &.short
         padding-top: 0.5em
@@ -59,6 +69,9 @@ button, .button
 
     &.rounded
         border-radius: 0.25em
+
+    &.pill
+        border-radius: 100px
 
     &.shadow
         box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.75)

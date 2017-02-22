@@ -176,6 +176,15 @@
                 $('body').removeClass('no-scroll');
             });
 
+            modal.click(function(){
+                modal.removeClass('is-open');
+                $('body').removeClass('no-scroll');
+            });
+
+            modal.find('.content').click(function(e){
+                e.stopPropagation();
+            });
+
             $(document).keyup(function(e) {
                 if (e.keyCode == 27) { // escape key maps to keycode `27`
                     modal.removeClass('is-open');

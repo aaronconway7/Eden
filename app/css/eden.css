@@ -90,20 +90,20 @@ html.no-scroll, body.no-scroll {
   height: 100%; }
 
 .dark {
-  background-color: #2f2f2f;
-  color: #ececec; }
+  background-color: #2f2f2f !important;
+  color: #ececec !important; }
 
 .light {
-  background-color: #ececec;
-  color: #2f2f2f; }
+  background-color: #ececec !important;
+  color: #2f2f2f !important; }
 
 .eden {
-  background-color: #52ae76;
-  color: #ececec; }
+  background-color: #52ae76 !important;
+  color: #ececec !important; }
 
 .transparent {
-  background-color: transparent;
-  color: #2f2f2f; }
+  background-color: transparent !important;
+  color: #2f2f2f !important; }
 
 .bg-black {
   background-color: black; }

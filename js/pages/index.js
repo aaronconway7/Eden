@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".animation").animate()}),$(window).scroll(function(){$(".animation").animate()});
+$(document).ready(function(){$(".animation").animation()}),$(window).scroll(function(){$(".animation").animation()});

@@ -57,6 +57,16 @@ gulp.task('image-optimise', function(){
         .pipe(gulp.dest('assets/img'))
 });
 
+gulp.task('eden-css', function() {
+    return gulp.src('app/bower_components/eden/dist/css/eden.css')
+        .pipe(gulp.dest('app/css'))
+});
+
+gulp.task('eden-js', function() {
+    return gulp.src('app/bower_components/eden/dist/js/eden.js')
+        .pipe(gulp.dest('app/js'))
+});
+
 gulp.task('fonts', function() {
     return gulp.src('app/assets/fonts/**/*')
         .pipe(gulp.dest('assets/fonts'))
@@ -73,6 +83,8 @@ gulp.task('video', function() {
 });
 
 gulp.task('minify', ['html-min', 'uglify', 'css-nano', 'image-optimise']);
+
+gulp.task('eden', ['eden-css', 'eden-js'])
 
 gulp.task('transfer', ['fonts', 'docs', 'video'])
 

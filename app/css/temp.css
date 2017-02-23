@@ -274,19 +274,18 @@ hr {
   #get-started-pg .get-started .code .comment:after {
     content: " -->"; }
 
-#footer .container {
-  padding: 20px 0px; }
-  #footer .container p {
-    opacity: 0.75;
-    margin-right: 10px;
-    font-size: 0.8rem; }
-    #footer .container p a {
-      font-weight: 400;
-      transition: all 0.3s ease-in-out; }
-      #footer .container p a:hover {
-        color: #14b87d; }
-  #footer .container object {
-    height: 30px; }
+footer p {
+  opacity: 0.75;
+  margin-right: 10px;
+  font-size: 0.8rem; }
+  footer p a {
+    font-weight: 400;
+    transition: all 0.3s ease-in-out; }
+    footer p a:hover {
+      color: #14b87d; }
+
+footer object {
+  height: 30px; }
 
 .banner.is-fixed {
   position: fixed;

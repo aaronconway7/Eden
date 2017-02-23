@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    $('.animation').animate();
+    $('.animation').animation();
 });
 
 $(window).scroll(function(){
-    $('.animation').animate();
+    $('.animation').animation();
 });

@@ -1,6 +1,6 @@
 (function($) {
 
-    $.fn.animate = function() {
+    $.fn.animation = function() {
 
         var wScroll = $(window).scrollTop();
 
@@ -21,6 +21,60 @@
                     $('.animation').eq(i).addClass('animated');
                 }, 150 * (i+1));
             }
+        });
+
+    }
+
+}(jQuery));
+
+(function($) {
+
+    $.fn.collapsible = function(options) {
+
+        //Establish our default settings
+        var settings = $.extend({
+            type     : 'expandable'
+        }, options);
+
+        return this.each(function(){
+            $(this).find('.show-content').click(function(){
+                if($(this).closest('.panel').hasClass('is-open')){
+                    $(this).closest('.panel').removeClass('is-open');
+                    $(this).next('.content').css('max-height', '0');
+                }else{
+                    if(settings.type == 'accordion'){
+                        $(this).closest('.collapsible').find('.panel').removeClass('is-open');
+                        $(this).closest('.collapsible').find('.content').css('max-height', '0');
+                    }
+                    $(this).closest('.panel').addClass('is-open');
+                    var scrollHeight = $(this).next('.content')[0].scrollHeight+40;
+                    $(this).next('.content').css('max-height', scrollHeight);
+                }
+            });
+        });
+
+    }
+
+}(jQuery));
+
+(function($) {
+
+    $.fn.sticky = function(options) {
+
+        // Establish our default settings
+        var settings = $.extend({
+            pageWrapper     : 'main',
+        }, options);
+
+        return this.each(function(){
+            $('html').css('height', '100%');
+            $('body').css({
+                'min-height': '100%',
+                'display': 'flex',
+                'flex-direction': 'column'
+            });
+
+            $(settings.pageWrapper).css('flex', '1');
         });
 
     }
@@ -120,6 +174,15 @@
             modal.find(settings.close).click(function(){
                 modal.removeClass('is-open');
                 $('body').removeClass('no-scroll');
+            });
+
+            modal.click(function(){
+                modal.removeClass('is-open');
+                $('body').removeClass('no-scroll');
+            });
+
+            modal.find('.content').click(function(e){
+                e.stopPropagation();
             });
 
             $(document).keyup(function(e) {
@@ -305,6 +368,66 @@
         		}, settings.delay);
             }
 
+        });
+
+    }
+
+}(jQuery));
+
+// https://css-tricks.com/snippets/jquery/smooth-scrolling/
+
+function smoothScrolling() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+}
+
+(function($) {
+
+    $.fn.tab = function(options) {
+
+        //Establish our default settings
+        // var settings = $.extend({
+        //     type     : 'expandable'
+        // }, options);
+
+        return this.each(function(){
+            $(this).find('.tab-heading').click(function(){
+                $(this).closest('.tab').find('.tab-heading').removeClass('is-active');
+                $(this).addClass('is-active');
+                $(this).closest('.tab').find('.tab-content').removeClass('is-open');
+                var tabNo = $(this).index();
+                $(this).closest('.tab').find('.tab-content').eq(tabNo).addClass('is-open');
+            });
+        });
+
+    }
+
+}(jQuery));
+
+(function($) {
+
+    $.fn.video = function(options) {
+
+        return this.each(function(){
+            $(this).find('.play').click(function(){
+                $(this).closest('.video').addClass('is-playing');
+                $(this).closest('.video').find('video')[0].play();
+            });
+
+            $(this).find('.pause').click(function(){
+                $(this).closest('.video').removeClass('is-playing');
+                $(this).closest('.video').find('video')[0].pause();
+            });
         });
 
     }

@@ -949,12 +949,6 @@ button, .button {
       .code.block {
         padding: 25px !important;
         font-size: 0.8rem; } }
-  .codespan {
-    padding: 0px;
-    margin: 0px;
-    font-size: 0.8em;
-    border: 1px solid #bbbbbb;
-    border-radius: 0.2em; }
   .code .tab {
     margin: 1em 0em;
     margin-left: 2em; }
@@ -986,6 +980,13 @@ button, .button {
         content: close-quote; }
       .code .tag .val:last-of-type {
         margin-right: 0px; }
+
+span.code {
+  padding: 0px;
+  margin: 0px;
+  font-size: 0.8em;
+  border: 1px solid #bbbbbb;
+  border-radius: 0.2em; }
 
 .tool-tip {
   position: relative; }

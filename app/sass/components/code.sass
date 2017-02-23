@@ -23,57 +23,16 @@
             padding: 25px !important
             font-size: 0.8rem
 
-    .tab
-        margin: 1em 0em
-        margin-left: 2em
-
-    .tag
-        color: #e06c75
-
-        &:before, &:after
-            color: white
-
-        &:before
-            content: "<"
-
-        &:after
-            content: ">"
-
-        &.close
-
-            &:before
-                content: "</"
-
-        .content
-            color: #a2a9b6
-
-        .attr
-            color: #cb9a66
-
-            &:after
-                content: "="
-                color: white
-
-            &.id
-                color: #3992ef
-
-        .val
-            color: #98c372
-            margin-right: 0.4em
-
-            &:before
-                content: open-quote
-            &:after
-                content: close-quote
-
-            &:last-of-type
-                margin-right: 0px
+    &.light
+        background-color: $eden-light-grey
+        color: $eden-charcoal
+    &.dark
+        background-color: $eden-charcoal
+        color: $eden-light-grey
 
 span
 
     &.code
-        padding: 0px
-        margin: 0px
         font-size: 0.8em
         border: 1px solid $eden-dark-grey
         border-radius: 0.2em

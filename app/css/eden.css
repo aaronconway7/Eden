@@ -949,41 +949,14 @@ button, .button {
       .code.block {
         padding: 25px !important;
         font-size: 0.8rem; } }
-  .code .tab {
-    margin: 1em 0em;
-    margin-left: 2em; }
-  .code .tag {
-    color: #e06c75; }
-    .code .tag:before, .code .tag:after {
-      color: white; }
-    .code .tag:before {
-      content: "<"; }
-    .code .tag:after {
-      content: ">"; }
-    .code .tag.close:before {
-      content: "</"; }
-    .code .tag .content {
-      color: #a2a9b6; }
-    .code .tag .attr {
-      color: #cb9a66; }
-      .code .tag .attr:after {
-        content: "=";
-        color: white; }
-      .code .tag .attr.id {
-        color: #3992ef; }
-    .code .tag .val {
-      color: #98c372;
-      margin-right: 0.4em; }
-      .code .tag .val:before {
-        content: open-quote; }
-      .code .tag .val:after {
-        content: close-quote; }
-      .code .tag .val:last-of-type {
-        margin-right: 0px; }
+  .code.light {
+    background-color: #ececec;
+    color: #2f2f2f; }
+  .code.dark {
+    background-color: #2f2f2f;
+    color: #ececec; }
 
 span.code {
-  padding: 0px;
-  margin: 0px;
   font-size: 0.8em;
   border: 1px solid #bbbbbb;
   border-radius: 0.2em; }

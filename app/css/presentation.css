@@ -1,0 +1,62 @@
+.thin {
+  font-weight: 100; }
+
+.section {
+  font-size: 1.5rem; }
+  .section .title {
+    margin-bottom: 50px; }
+  .section ul {
+    line-height: 2em; }
+  .section video {
+    height: 70vh;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75); }
+  .section img {
+    max-height: 70vh;
+    max-width: 100%; }
+    .section img.shadow {
+      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75); }
+
+header .nav {
+  color: #eee !important; }
+  header .nav .logo {
+    height: 30px !important; }
+
+#presentation {
+  background-color: #eee; }
+  #presentation .hero {
+    background-image: url("../assets/img/presentation/hero1.jpg");
+    background-attachment: fixed;
+    color: #eee;
+    position: relative; }
+    #presentation .hero .scroll-down {
+      position: absolute;
+      bottom: 20px; }
+      #presentation .hero .scroll-down a {
+        font-weight: 900;
+        opacity: 0.75;
+        font-size: 0.6em; }
+        #presentation .hero .scroll-down a:hover {
+          opacity: 1; }
+  #presentation #me .img {
+    border-radius: 100%;
+    min-height: 150px;
+    min-width: 150px;
+    background-image: url("../assets/img/presentation/me.jpg");
+    background-position: top;
+    margin-right: 50px; }
+  #presentation #the-solution img.eden {
+    height: 150px;
+    background-color: transparent; }
+
+footer p {
+  opacity: 0.75;
+  margin-right: 10px;
+  font-size: 0.8rem; }
+  footer p a {
+    font-weight: 400;
+    transition: all 0.3s ease-in-out; }
+    footer p a:hover {
+      color: #418c5e; }
+
+footer object {
+  height: 30px; }

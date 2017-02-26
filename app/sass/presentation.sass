@@ -1,0 +1,91 @@
+$eden-green: rgb(82, 174, 118)
+$eden-charcoal: rgb(47, 47, 47)
+$eden-dark-grey: rgb(187, 187, 187)
+$eden-light-grey: rgb(236, 236, 236)
+
+.thin
+    font-weight: 100
+
+.section
+    font-size: 1.5rem
+
+    .title
+        margin-bottom: 50px
+
+    ul
+        line-height: 2em
+
+    video
+        height: 70vh
+        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75)
+
+    img
+        max-height: 70vh
+        max-width: 100%
+
+        &.shadow
+            box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75)
+
+header
+
+    .nav
+        color: #eee !important
+
+        .logo
+            height: 30px !important
+
+#presentation
+    background-color: #eee
+
+    .hero
+        background-image: url('../assets/img/presentation/hero1.jpg')
+        background-attachment: fixed
+        color: #eee
+        position: relative
+
+        .scroll-down
+            position: absolute
+            bottom: 20px
+
+            a
+                font-weight: 900
+                opacity: 0.75
+                font-size: 0.6em
+
+                &:hover
+                    opacity: 1
+
+    #me
+
+        .img
+            border-radius: 100%
+            min-height: 150px
+            min-width: 150px
+            background-image: url('../assets/img/presentation/me.jpg')
+            background-position: top
+            margin-right: 50px
+
+    #the-solution
+
+        img.eden
+            height: 150px
+            background-color: transparent
+
+
+
+footer
+
+    p
+        opacity: 0.75
+        margin-right: 10px
+        font-size: 0.8rem
+
+        a
+            font-weight: 400
+            transition: all 0.3s ease-in-out
+
+            &:hover
+                color: darken($eden-green, 10)
+
+    object
+        height: 30px

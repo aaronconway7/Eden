@@ -1,0 +1,1 @@
+$(document).ready(function(){$("footer").sticky(),smoothScrolling(),$("#fullpage").fullpage({navigation:!0,slidesNavigation:!0,controlArrows:!1})});

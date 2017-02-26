@@ -1,0 +1,91 @@
+doctype html
+html(lang="en")
+    head
+        include include/head
+        title="Eden Presentation by Aaron Conway"
+        link(rel='stylesheet', href='css/presentation.css')
+        link(rel='stylesheet', href='css/jquery.fullpage.css')
+    body
+        header
+            .nav.clear.fixed.transparent.padded.tall
+                .brand.float-left
+                    img.logo(alt="Eden", src="assets/img/eden.png")
+                    span Eden.
+        main#presentation
+            #fullpage
+                .hero.overlay.section
+                    .content.row.left-center.fill-y
+                        .col
+                            .container
+                                h1.thin CS310 Third Year Project
+                                h6.name.uppercase.space Aaron Conway
+                    .row.scroll-down.fill-x.center-center
+                        a.transition(href="#me") keep scrollling <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                #me.section
+                    .slide
+                        .container
+                            h4.title.thin A little bit about myslef...
+                            .row.left-center
+                                .img.dark.bg-center
+                                ul.bullet
+                                    li My name is Aaron Conway
+                                    li I'm a pure CS student
+                                    li I'm a freelance designer and front-end web developer
+                    .slide
+                        .container
+                            .row.center-center
+                                img(src="assets/img/presentation/moneywise.png", alt="MoenywiseQuoteMe Website")
+                    .slide
+                        .container
+                            .row.center-center
+                                img(src="assets/img/presentation/tutorial.png", alt="Tutorial Website")
+                    .slide
+                        .container
+                            .row.center-center
+                                img(src="assets/img/presentation/lush-heat.png", alt="Lush Heat Treatment Website")
+                    .slide
+                        .container
+                            .row.center-center
+                                img(src="assets/img/presentation/fdis.png", alt="FDIS Website")
+                    .slide
+                        .container
+                            .row.center-center
+                                img.shadow(src="assets/img/presentation/fdis-logo.jpg", alt="FDIS Logo")
+                    .slide
+                        .container
+                            .row.center-center
+                                img.shadow(src="assets/img/presentation/raw.jpg", alt="RAW Logo")
+                    .slide
+                        .container
+                            .row.center-center
+                                img(src="assets/img/presentation/theboar.png", alt="The Boar")
+                #the-problem.section
+                    .container
+                        h4.title.thin The Problem.
+                        .table
+                            .table-heading.transparent
+                                .table-row
+                                    .table-cell Personal
+                                    .table-cell General
+                            .table-body.transparent
+                                .table-row
+                                    .table-cell 
+                                        ul.bullet
+                                            li Re-typing common pieces of code
+                                            li Lengthy (mundane) process
+                                    .table-cell
+                                        ul.bullet
+                                            li Prioritising design over functionality
+                                            li Poorly designed websites
+                                            li Similarity of websites
+                                    
+                #the-solution.section
+                    .slide
+                        .container
+                            h4.title.thin The Solution...
+                            .row.center-center
+                                img.eden(src="assets/img/eden-with-name.png", alt="Eden.")
+        include include/footer
+        include include/foot
+        script(src="js/pages/presentation.js")
+        script(src="js/jquery.fullpage.js")

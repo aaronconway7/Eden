@@ -923,24 +923,24 @@ button, .button {
     .modal > .content > .close {
       position: absolute;
       opacity: 0.5;
-      transition: all 0.3s ease-in-out; }
+      transition: all 0.3s ease-in-out;
+      color: #52ae76;
+      background-color: transparent; }
       .modal > .content > .close:hover {
         opacity: 1;
         cursor: pointer; }
       .modal > .content > .close.dark {
-        color: #2f2f2f !important; }
+        color: #2f2f2f !important;
+        background-color: transparent !important; }
       .modal > .content > .close.light {
-        color: #ececec !important; }
-      .modal > .content > .close.eden {
-        color: #52ae76 !important; }
+        color: #ececec !important;
+        background-color: transparent !important; }
       .modal > .content > .close.inside {
         right: 15px;
-        top: 12px;
-        color: #ececec; }
+        top: 12px; }
       .modal > .content > .close.outside {
         right: -1.25em;
-        top: -1.25em;
-        color: #2f2f2f; }
+        top: -1.25em; }
       .modal > .content > .close.corner {
         right: -1em;
         top: -1em;
@@ -1273,7 +1273,8 @@ textarea {
     display: -ms-flexbox;
     display: flex; }
   .lightbox .modal .content {
-    text-align: center; }
+    text-align: center;
+    background-color: transparent; }
     .lightbox .modal .content .active-img {
       position: relative; }
       .lightbox .modal .content .active-img img {

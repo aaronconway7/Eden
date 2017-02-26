@@ -5,25 +5,20 @@ $(document).ready(function() {
         quantity: 3
     });
     $('.lightbox').lightbox();
-    $('.animation').animate();
-
-    $('.video .play').click(function(){
-        $('.video').addClass('is-playing');
-        $('.video video')[0].play();
-    });
-
-    $('.video .pause').click(function(){
-        $('.video').removeClass('is-playing');
-        $('.video video')[0].pause();
-    });
+    $('.animation').animation();
+    $('.tab').tab();
+    $('.video').video();
+    $('.collapsible').collapsible();
 
     $('#container-component .wrapper .container').hover(function(event){
         event.stopPropagation();
-        console.log("swag");
     });
+
+    smoothScrolling();
+
 
 });
 
 $(window).scroll(function() {
-    $('.animation').animate();
+    $('.animation').animation();
 });

@@ -94,8 +94,8 @@ gulp.task('jquery-watch', ['uglify'], reload);
 
 gulp.task('live', ['browserSync', 'sass', 'jade'], function (){
     gulp.watch('app/sass/*.sass', ['sass']);
-    gulp.watch('./app/jade/*.jade', ['jade-watch']);
-    gulp.watch('./app/js/*.js', ['jquery-watch']);
+    gulp.watch('./app/jade/**/*.jade', ['jade-watch']);
+    gulp.watch('./app/js/**/*.js', ['jquery-watch']);
     // Other watchers
 });
 

@@ -14,27 +14,11 @@
 .curly {
   font-family: Pacifico; }
 
-.bg-center {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
 .quote, .quote-author {
   font-style: italic; }
 
 .quote-author {
   text-align: right; }
-
-hr {
-  border-width: 1px;
-  border-style: solid; }
-  hr.center {
-    margin-left: auto;
-    margin-right: auto; }
-  hr.fat {
-    width: 50%; }
-  hr.skinny {
-    width: 25%; }
 
 #nav {
   padding: 25px 0px; }
@@ -565,6 +549,25 @@ footer object {
 #components-pg #components #overlay-component .img-10 {
   background-image: url("../assets/img/bg/overlay10.jpg"); }
 
+#components-pg #components #collapsible-component .collapsible .show-content {
+  padding: 10px 20px; }
+  #components-pg #components #collapsible-component .collapsible .show-content.border {
+    border: 1px solid #bbbbbb; }
+  #components-pg #components #collapsible-component .collapsible .show-content:hover {
+    background-color: lightgray; }
+
+#components-pg #components #tab-component .tab {
+  margin-bottom: 50px;
+  border: 1px solid #ececec;
+  padding: 25px;
+  border-radius: 0.25em; }
+  #components-pg #components #tab-component .tab:last-of-type {
+    margin-bottom: 0px; }
+  #components-pg #components #tab-component .tab:nth-of-type(2) .tab-heading {
+    padding: 25px 10px; }
+    #components-pg #components #tab-component .tab:nth-of-type(2) .tab-heading i {
+      margin-bottom: 5px; }
+
 .layout {
   position: relative;
   overflow-x: hidden; }
@@ -616,3 +619,6 @@ footer object {
     @media screen and (max-width: mob-screen) {
       #error-pg #error img {
         height: 150px; } }
+
+.gist-meta span {
+  z-index: 1 !important; }

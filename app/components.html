@@ -43,7 +43,7 @@
       <div class="layout sidebar">
         <div class="nav sidebar fixed">
           <div class="container">
-            <div class="brand"><span class="uppercase-and-space">Eden.</span></div>
+            <div class="brand"><span class="uppercase space">Eden.</span></div>
             <ul class="nav-options">
               <li><a href="#icons-component">Icons</a></li>
               <li><a href="#font-component">Font</a></li>
@@ -59,7 +59,10 @@
               <li><a href="#lightbox-component">Lightbox</a></li>
               <li><a href="#masonry-component">Masonry</a></li>
               <li><a href="#overlay-component">Overlay</a></li>
+              <li><a href="#video-component">Video</a></li>
               <li><a href="#responsive-media-component">Responsive Media</a></li>
+              <li><a href="#tab-component">Tabs</a></li>
+              <li><a href="#collapsible-component">Collapsible</a></li>
               <li><a href="#animations-component">Animations</a></li>
             </ul>
           </div>
@@ -104,7 +107,7 @@
           <section id="components">
             <div id="icons-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Icons.<a href="#icons-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p class="heading uppercase space">Icons.<a href="#icons-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p><a href="http://fontawesome.io/" target="_blank">Font Awesome</a> gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.</p>
                 <div class="row">
                   <div class="col one"><i aria-hidden="true" class="fa fa-home"></i></div>
@@ -166,7 +169,7 @@
             </div>
             <div id="font-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Font.<a href="#font-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p class="heading uppercase space">Font.<a href="#font-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p><a href="https://github.com/adobe-fonts/source-sans-pro" target="_blank" class="transition">Source Sans Pro</a> is Eden's choice of default font. It was designed by Paul D. Hunt as Adobe’s first open source typeface family. Source Sans Pro draws inspiration from the clarity and legibility of twentieth-century American gothic typeface designs. </p><span class="code light">font-weight: 100;</span>
                 <h4>The spectacle before us was indeed sublime.</h4><span class="code light">font-weight: 400;</span>
                 <h4>The spectacle before us was indeed sublime.</h4><span class="code light">font-weight: 600;</span>
@@ -176,7 +179,7 @@
             </div>
             <div id="container-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Container.<a href="#container-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p class="heading uppercase space">Container.<a href="#container-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>The Eden container is used to hold elements for which you want to give some space to aorund the edegs. By housing these elements within a <span class="code light">.container</span> class, a large padding is given to the top and bottom with a repsonive margin that adjusts on either side in response to the window width. If no space is needed, a <span class="code light">.wrapper</span> class can be used.  </p>
               </div>
               <div class="wrapper tool-tip">
@@ -195,7 +198,7 @@
             </div>
             <div id="grid-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Grid.<a href="#grid-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p class="heading uppercase space">Grid.<a href="#grid-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>The grid is a vital component in developing mobile responsive websites. We provide a 12 column fluid grid taht shrinks as the viewport shrinks. The Eden grid system uses <span class="code light">.row</span> classes directly followed by <span class="code light">.col</span> classes. The size (how many columns they occupy) of each column can then be specified by giving it a class of that number. e.g. a column spanning 7 columns would have the class <span class="code light">.seven</span>.</p>
                 <p>Eden also allows users to specify common fractions indicating the amount of it's parent it spans. e.g. If you want a column to span a third of the width, give it a class of <span class="code light">.third</span> or if you want it to occupy five sixths, make it <span class="code light">.five-sixths</span>. Simple isn't it?</p>
                 <p>To alter the column layout resposnively at mobile or tablet size, just add a class of <span class="code light">.tab-*</span> or <span class="code light">.mob-*</span> respectively where * is the column size.</p>
@@ -453,7 +456,7 @@
             </div>
             <div id="typography-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Typography.<a href="#typography-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p class="heading uppercase space">Typography.<a href="#typography-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Eden comes with Source Sans Pro as its default font family but can easily be overwritten by changing it for the <span class="code light">.body</span> class. All types have been set using <span class="code light">rem</span> and <span class="code light">em</span> units where the default <span class="code light">:root</span> size is <span class="code light">12pt</span>.</p>
                 <p>Other basic type styles such as <span class="code light">.uppercase</span>, <span class="code light">.lowercase</span> as well as different forms of alignemnt are all available. </p>
                 <h1>Heading 1</h1>
@@ -467,7 +470,7 @@
             </div>
             <div id="nav-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Nav.<a href="#nav-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p class="heading uppercase space">Nav.<a href="#nav-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>The navigation bar is one of, if not the most complex and feature rich component of the framework. Both horizontal and vertical navigation bars are potential options as well as sidebars that can be pulled out.</p>
                 <p>You start of with a <span class="code light">.nav</span> class where colour themes can also be given ( <span class="code light">.light</span> & <span class="code light">.dark</span> ). Sizes can also be specified ( <span class="code light">.skinny</span>, <span class="code light">.fat</span>, <span class="code light">.short</span> & <span class="code light">.tall</span> ) which affects the height and width of the nav bars. Alignment and position changes can also be made. Adding the classes <span class="code light">fixed</span> to <span class="code light">.nav</span> will make it stick to the top of your viewport. Adding <span class="code light">.centered</span> and <span class="code light">.padded</span> can center the text in the menu and also pad the sides respectively.</p>
                 <p>Within the <span class="code light">.nav</span> class, seperate your menu items with a <span class="code light">ul</span> tag with a <span class="code light">.nav-options</span> class.</p>
@@ -485,7 +488,7 @@
                 <ul class="nav-options float-right">
                   <li class="nav-text">signed in as Desmond</li>
                   <li><a href="">
-                      <button type="button" class="uppercase-and-space">Sign Out</button></a></li>
+                      <button type="button" class="uppercase space">Sign Out</button></a></li>
                 </ul>
                 <div class="mob-nav float-right">
                   <input id="mob-toggle" type="checkbox" name="mob-toggle" class="mob-toggle">
@@ -522,7 +525,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="nav fat uppercase-and-space centered dark">
+              <div class="nav fat uppercase space centered dark">
                 <ul class="nav-options">
                   <li><a href="#">option</a></li>
                   <li class="dropdown">option
@@ -543,7 +546,7 @@
                     </ul>
                   </li>
                   <li><a href="#">
-                      <button type="button" class="uppercase-and-space skinny">Download</button></a></li>
+                      <button type="button" class="uppercase space skinny">Download</button></a></li>
                 </ul>
                 <div class="mob-nav float-right">
                   <input id="mob-toggle" type="checkbox" name="mob-toggle" class="mob-toggle">
@@ -577,12 +580,12 @@
             </div>
             <div id="hero-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Hero.<a href="#hero-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p class="heading uppercase space">Hero.<a href="#hero-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Hero images are a very popular and modern trend of web design. They are generally the first thing you see on a webpage and are used to grab your attention.</p>
                 <p>The Eden hero comes in all the sizes, <span class="code light">.short</span>, <span class="code light">.tall</span>, <span class="code light">.skinny</span> and <span class="code light">.fat</span>. The deafult will take up the entire height of your viewport and the entire width of the parent element. By adding a <span class="code light">.row</span> element immediataely inside, you have the ability to position an element in 9 places covering left, right and center along the x-axis and top, center, bottom along the y. So if you want some text in the bottom-right you would simply give your <span class="code light">.row</span>, a class of <span class="code light">.bottom-right</span>. Simples no?</p>
               </div>
               <div class="hero">
-                <div class="row content center-center">
+                <div class="row content center-center fill-y">
                   <h1>Hero.</h1>
                 </div>
               </div>
@@ -593,7 +596,7 @@
                 </div>
                 <p>Eden heroes also support colour overlays which are great when you are looking to match your brand's theme or even to cover up a pixelated image. Adding a <span class="code light">.overlay</span> class to your <span class="code light">.hero</span> will automatically apply the effect. You can then choose your own colour by overriding the <span class="code light">.overlay:after</span> property in your CSS or you can apply Eden's <span class="code light">.dark</span> or <span class="code light">.light</span> theme. </p>
               </div>
-              <div class="hero short fat overlay dark">
+              <div class="hero short fat overlay dark fill-y">
                 <div class="col content right-bottom">
                   <h1>goals                    </h1>
                 </div>
@@ -601,7 +604,7 @@
             </div>
             <div id="modal-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Modal.<a href="#modal-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p class="heading uppercase space">Modal.<a href="#modal-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Modals are pop-up dialog boxes that are a nice and tidy way to present iformation without the need to open another page. Just make a <span class="code light">.modal</span> div as the next sibling of the element that you want to activate it. This must then contain two immediate children being, <span class="code light">.content</span> and <span class="code light">.close</span>. Inside <span class="code light">.content</span> you can do whatever you like and style it however you want. <span class="code light">.close</span> however should contain what you want to use to close the modal.</p>
                 <div class="row center-center">
                   <div class="modal light shadow dark-bg is-open">
@@ -622,11 +625,11 @@
             </div>
             <div id="button-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Buttons.<a href="#button-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p class="heading uppercase space">Buttons.<a href="#button-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Buttons come in two forms in Eden. They can either be the standard <span class="code light">button</span> tags or attached to <span class="code light">a</span> tags with the <span class="code light">.button</span> class.</p>
                 <div class="buttons row center-center">
                   <button type="button" class="light">Button</button>
-                  <button type="button" class="dark uppercase-and-space">Button</button>
+                  <button type="button" class="dark uppercase space">Button</button>
                   <button type="button" class="transparent border">Button</button>
                 </div>
                 <div class="gist-code"><script src="https://gist.github.com/aaronconway7/e1dafa088d051eef9795dd9092f07399.js"></script></div>
@@ -634,7 +637,7 @@
             </div>
             <div id="form-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Forms.<a href="#form-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p class="heading uppercase space">Forms.<a href="#form-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="form row center-center">
                   <form>
@@ -642,8 +645,8 @@
                     <input type="text" placeholder="Input Text Dark" class="dark">
                     <input type="text" placeholder="Input Text Border-Bottom" class="transparent border-bottom">
                     <div class="row form-controls">
-                      <input type="submit" value="submit" class="transparent border uppercase-and-space">
-                      <input type="reset" value="reset" class="transparent border uppercase-and-space">
+                      <input type="submit" value="submit" class="transparent border uppercase space">
+                      <input type="reset" value="reset" class="transparent border uppercase space">
                     </div>
                   </form>
                 </div>
@@ -652,14 +655,14 @@
             </div>
             <div id="slider-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Slider.<a href="#slider-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p class="heading uppercase space">Slider.<a href="#slider-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
               <div class="slider tall">
                 <div class="slides">
                   <div class="slide is-active"></div>
                   <div class="slide overlay dark">
-                    <div class="row center-center">
+                    <div class="row center-center fill-y">
                       <div class="container">
                         <h1 class="text-center">Slide Title</h1>
                       </div>
@@ -682,7 +685,7 @@
             </div>
             <div id="lightbox-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Lightbox.<a href="#lightbox-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p class="heading uppercase space">Lightbox.<a href="#lightbox-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="lightbox row wrap center-center"><img src="assets/img/bg/lightbox1.jpg"><img src="assets/img/bg/lightbox2.jpg">
                   <p class="caption">St. Paul's Cathedral</p><img src="assets/img/bg/lightbox3.jpg"><img src="assets/img/bg/lightbox4.jpg"><img src="assets/img/bg/lightbox5.jpg">
@@ -695,7 +698,7 @@
             </div>
             <div id="masonry-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Masonry.<a href="#masonry-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p class="heading uppercase space">Masonry.<a href="#masonry-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="masonry col-3 tab-col-2"><img src="assets/img/bg/masonry1.jpg" class="item"><img src="assets/img/bg/masonry2.jpg" class="item"><img src="assets/img/bg/masonry8.jpg" class="item"><img src="assets/img/bg/masonry4.jpg" class="item"><img src="assets/img/bg/masonry5.jpg" class="item"><img src="assets/img/bg/masonry6.jpg" class="item"><img src="assets/img/bg/masonry7.jpg" class="item"><img src="assets/img/bg/masonry3.jpg" class="item"><img src="assets/img/bg/masonry9.jpg" class="item"></div>
                 <div class="gist-code"><script src="https://gist.github.com/aaronconway7/653b47e42b106a9ec6658a93e5262d18.js"></script></div>
@@ -703,7 +706,7 @@
             </div>
             <div id="overlay-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Overlay.<a href="#overlay-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p class="heading uppercase space">Overlay.<a href="#overlay-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="row center-center">
                   <div class="img-1 overlay"></div>
@@ -714,27 +717,27 @@
                 </div>
                 <div class="row center-center hover">
                   <div class="img-6 overlay slide-right on-hover">
-                    <div class="content col center-center">
+                    <div class="content col center-center fill-y">
                       <h6>.slide-right</h6>
                     </div>
                   </div>
                   <div class="img-7 overlay slide-down on-hover">
-                    <div class="content col center-center">
+                    <div class="content col center-center fill-y">
                       <h6>.slide-down</h6>
                     </div>
                   </div>
                   <div class="img-8 overlay fade on-hover solid">
-                    <div class="content col center-center">
+                    <div class="content col center-center fill-y">
                       <h6>.fade</h6>
                     </div>
                   </div>
                   <div class="img-9 overlay slide-up on-hover">
-                    <div class="content col center-center">
+                    <div class="content col center-center fill-y">
                       <h6>.slide-up</h6>
                     </div>
                   </div>
                   <div class="img-10 overlay slide-left on-hover">
-                    <div class="content col center-center">
+                    <div class="content col center-center fill-y">
                       <h6>.slide-left</h6>
                     </div>
                   </div>
@@ -744,20 +747,20 @@
             </div>
             <div id="video-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Video.<a href="#video-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p class="heading uppercase space">Video.<a href="#video-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="video overlay">
                   <video>
                     <source src="assets/video/frecibo.mp4" type="video/mp4">
                   </video>
-                  <div class="content row center-center"><i aria-hidden="true" class="fa fa-play-circle-o transition play"></i><i aria-hidden="true" class="fa fa-pause-circle transition pause"></i></div>
+                  <div class="content row center-center fill-y"><i aria-hidden="true" class="fa fa-play-circle-o transition play"></i><i aria-hidden="true" class="fa fa-pause-circle transition pause"></i></div>
                 </div>
                 <div class="gist-code"><script src="https://gist.github.com/aaronconway7/583e53887775d73c030eac684a8d0f01.js"></script></div>
               </div>
             </div>
             <div id="responsive-media-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space">Responsive Media.<a href="#responsive-media-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p class="heading uppercase space">Responsive Media.<a href="#responsive-media-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="row">
                   <div class="responsive-media">
@@ -767,9 +770,89 @@
                 <div class="gist-code"><script src="https://gist.github.com/aaronconway7/89d61a86b1b0aadbc040faa37fd55be1.js"></script></div>
               </div>
             </div>
+            <div id="tab-component" class="component">
+              <div class="container">
+                <p class="heading uppercase space">Tabs.<a href="#tab-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <div class="tab outline">
+                  <div class="tab-headings row"><span class="tab-heading transition is-active">One</span><span class="tab-heading transition">Two</span><span class="tab-heading transition">Three</span></div>
+                  <div class="tab-contents">
+                    <div class="tab-content is-open">
+                      <h6>Tab 1</h6>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="tab-content">
+                      <h6>Tab 2</h6>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="tab-content">
+                      <h6>Tab 3</h6>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab arrow dark">
+                  <div class="tab-headings row">
+                    <div class="tab-heading transition is-active"> 
+                      <div class="col center-center fill-y"><i class="fa fa-cutlery" aria-hidden="true"></i><span>Food & Drink</span></div>
+                    </div>
+                    <div class="tab-heading transition"> 
+                      <div class="col center-center fill-y"><i class="fa fa-futbol-o" aria-hidden="true"></i><span>Sport</span></div>
+                    </div>
+                    <div class="tab-heading transition"> 
+                      <div class="col center-center fill-y"><i class="fa fa-headphones" aria-hidden="true"></i><span>Music</span></div>
+                    </div>
+                    <div class="tab-heading transition"> 
+                      <div class="col center-center fill-y"><i class="fa fa-video-camera" aria-hidden="true"></i><span>Film</span></div>
+                    </div>
+                    <div class="tab-heading transition"> 
+                      <div class="col center-center fill-y"><i class="fa fa-gamepad" aria-hidden="true"></i><span>Game</span></div>
+                    </div>
+                  </div>
+                  <div class="tab-contents">
+                    <div class="tab-content is-open">
+                      <h6>Tab 1</h6>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="tab-content">
+                      <h6>Tab 2</h6>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="tab-content">
+                      <h6>Tab 3</h6>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="collapsible-component" class="component">
+              <div class="container">
+                <p class="heading uppercase space">Collapsible<a href="#collapsible-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <div class="collapsible">
+                  <div class="panel">
+                    <div class="show-content light border transition"><span>Section 1</span></div>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div class="show-content light border transition"><span>Section 2</span></div>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div class="show-content light border transition"><span>Section 3</span></div>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div id="animations-component" class="component">
               <div class="container">
-                <p class="heading uppercase-and-space animation on-scroll fade-in-up">Animations.<a href="#animations-media-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <p class="heading uppercase space animation on-scroll fade-in-up">Animations.<a href="#animations-media-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p class="animation on-scroll fade-in-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="gist-code">
                   <script src="https://gist.github.com/aaronconway7/f45c9e91987ee6806aeb795bea08d975.js"></script>
@@ -780,8 +863,8 @@
           </section>
         </div>
       </div>
-      <footer class="footer padded transparent">
-        <div class="row right-center">
+      <footer class="footer padded transparent short">
+        <div class="row right-center fill-y">
           <p>Designed for design by <a href="http://aaronconway.co.uk">Aaron Conway</a>. </p>
           <object data="assets/img/aaronconway.png"></object>
         </div>

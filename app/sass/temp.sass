@@ -46,6 +46,15 @@ $mob-screen: 425px
 //     &.skinny
 //         width: 25%
 
+.code
+
+    &.transparent
+        background-color: transparent
+        color: $eden-charcoal
+    &.eden
+        background-color: $eden-green
+        color: $eden-light-grey
+
 #nav
     padding: 25px 0px
 
@@ -544,6 +553,33 @@ footer
                     font-weight: 600
                 &:nth-of-type(4)
                     font-weight: 800
+
+        #colour-component
+
+            .col
+                height: 500px
+
+                @media screen and (max-width: 768px)
+                    height: 200px
+                    margin-bottom: 0px
+
+            .code
+                font-size: 0.8rem
+
+            span.code
+                font-size: 0.9rem
+
+        #size-component
+
+            .row
+
+                .code
+                    margin-bottom: 0px
+                    margin-right: 50px
+
+                    &:last-of-type
+                        margin-right: 0px
+
 
         #container-component
 

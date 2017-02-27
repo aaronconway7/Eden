@@ -20,6 +20,14 @@
 .quote-author {
   text-align: right; }
 
+.code.transparent {
+  background-color: transparent;
+  color: #2f2f2f; }
+
+.code.eden {
+  background-color: #52ae76;
+  color: #ececec; }
+
 #nav {
   padding: 25px 0px; }
   @media screen and (max-width: 768px) {
@@ -395,6 +403,25 @@ footer object {
     font-weight: 600; }
   #components-pg #components #font-component h4:nth-of-type(4) {
     font-weight: 800; }
+
+#components-pg #components #colour-component .col {
+  height: 500px; }
+  @media screen and (max-width: 768px) {
+    #components-pg #components #colour-component .col {
+      height: 200px;
+      margin-bottom: 0px; } }
+
+#components-pg #components #colour-component .code {
+  font-size: 0.8rem; }
+
+#components-pg #components #colour-component span.code {
+  font-size: 0.9rem; }
+
+#components-pg #components #size-component .row .code {
+  margin-bottom: 0px;
+  margin-right: 50px; }
+  #components-pg #components #size-component .row .code:last-of-type {
+    margin-right: 0px; }
 
 #components-pg #components #container-component .wrapper {
   background-color: #ececec;

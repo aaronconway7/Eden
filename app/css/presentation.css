@@ -1,6 +1,9 @@
 .thin {
   font-weight: 100; }
 
+.bold {
+  font-weight: 900; }
+
 .section {
   font-size: 1.5rem; }
   .section .title {
@@ -44,9 +47,25 @@ header .nav {
     background-image: url("../assets/img/presentation/me.jpg");
     background-position: top;
     margin-right: 50px; }
+  #presentation #the-problem .bootstrap-slide {
+    background-color: #563d7c; }
+    #presentation #the-problem .bootstrap-slide img {
+      border: 1px solid #eee;
+      border-radius: 15px; }
+  #presentation #the-problem .skeleton-slide {
+    background-color: white; }
+    #presentation #the-problem .skeleton-slide h1 {
+      font-family: Raleway;
+      font-weight: 100; }
   #presentation #the-solution img.eden {
     height: 150px;
     background-color: transparent; }
+  #presentation #the-solution .eden-slide {
+    background-color: #52ae76;
+    color: #eee; }
+    #presentation #the-solution .eden-slide img {
+      height: 100px;
+      margin-right: 10px; }
 
 footer p {
   opacity: 0.75;

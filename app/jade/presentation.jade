@@ -60,31 +60,65 @@ html(lang="en")
                             .row.center-center
                                 img(src="assets/img/presentation/theboar.png", alt="The Boar")
                 #the-problem.section
-                    .container
-                        h4.title.thin The Problem.
-                        .table
-                            .table-heading.transparent
-                                .table-row
-                                    .table-cell Personal
-                                    .table-cell General
-                            .table-body.transparent
-                                .table-row
-                                    .table-cell 
-                                        ul.bullet
-                                            li Re-typing common pieces of code
-                                            li Lengthy (mundane) process
-                                    .table-cell
-                                        ul.bullet
-                                            li Prioritising design over functionality
-                                            li Poorly designed websites
-                                            li Similarity of websites
+                    .slide
+                        .container
+                            h4.title.thin The Problem.
+                            .table
+                                .table-heading.transparent
+                                    .table-row
+                                        .table-cell Personal
+                                        .table-cell General
+                                .table-body.transparent
+                                    .table-row
+                                        .table-cell 
+                                            ul.bullet
+                                                li Re-typing common pieces of code
+                                                li Lengthy (mundane) process
+                                        .table-cell
+                                            ul.bullet
+                                                li Prioritising design over functionality
+                                                li Poorly designed websites
+                                                li Similarity of websites
+                    .slide.bootstrap-slide
+                        .container
+                            .row.center-center
+                                img(src="assets/img/presentation/bootstrap.svg", alt="Bootstrap")
+                    .slide.skeleton-slide
+                        .container
+                            .row.center-center
+                                h1 Skeleton
                                     
                 #the-solution.section
                     .slide
                         .container
                             h4.title.thin The Solution...
+                    .slide.eden-slide
+                        .container
                             .row.center-center
-                                img.eden(src="assets/img/eden-with-name.png", alt="Eden.")
+                                img.logo(alt="Eden", src="assets/img/eden.png")
+                                h3.thin Eden.
+                    .slide.eden-slide
+                        .container
+                            h4.thin The #[span.bold front-end framework] for beautiful design.
+                #demo.section
+                    .container
+                        h4.title.thin Demo
+                #feedback.section
+                    .container
+                        h4.title.thin Feedback
+                #project-management.section
+                    .container
+                        h4.title.thin Project Management
+                #furher-work.section
+                    .container
+                        h4.title.thin Further Work
+                #thank-you.section
+                    .slide
+                        .container
+                            h4.title.thin Thank you for listening!
+                    .slide
+                        .container
+                            h4.title.thin Questions?
         include include/footer
         include include/foot
         script(src="js/pages/presentation.js")

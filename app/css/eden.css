@@ -245,12 +245,12 @@ h6 {
         flex-direction: row-reverse !important; } }
 
 @media screen and (max-width: 425px) {
-  .mob-col {
+  .mob-row {
     -ms-flex-direction: row !important;
         flex-direction: row !important; } }
 
 @media screen and (max-width: 425px) {
-  .mob-col-reverse {
+  .mob-row-reverse {
     -ms-flex-direction: row-reverse !important;
         flex-direction: row-reverse !important; } }
 

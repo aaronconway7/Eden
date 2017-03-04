@@ -85,9 +85,15 @@ input
                 background-color: darken($eden-green, 10)
 
         &.transparent
+            opacity: 0.7
 
             &:hover
-                opacity: 0.7
+                opacity: 1
+
+    &.animated-search
+
+        &:focus
+            width: 100%
 
 .select
     position: relative
@@ -97,6 +103,7 @@ input
     &:after
         content: '\f0dc'
         font-family: 'FontAwesome'
+        color: $eden-green
         position: absolute
         display: flex
         justify-content: center
@@ -106,7 +113,15 @@ input
         right: 1em
         pointer-events: none
 
+    &.dark
 
+        &:after
+            color: $eden-light-grey
+
+    &.light
+
+        &:after
+            color: $eden-charcoal
 
 textarea
     height: 150px
@@ -147,6 +162,14 @@ textarea
 
 .toggle
     cursor: pointer
+
+    &.round
+        border-radius: 100px
+
+        .toggle-control
+            border-radius: 100px
+        .handle
+            border-radius: 100px
 
     &.light
 
@@ -206,7 +229,6 @@ textarea
         text-align: center
         padding: 1em 0em
         position: relative
-        overflow: hidden
         transition: all 0.5s ease-in-out
 
         .option-1

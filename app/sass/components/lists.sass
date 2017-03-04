@@ -1,6 +1,17 @@
 // Lists
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
+ul, ol
+
+    &.indent
+        list-style-position: inside
+
+    li
+        margin-bottom: 0.5em
+
+        &:last-of-type
+            margin-bottom: 0px
+
 ul
     list-style: none
 
@@ -15,10 +26,3 @@ ul
 
             &:last-of-type
                 margin-right: 0px
-
-    li
-        margin-bottom: 0.5em
-
-
-        &:last-of-type
-            margin-bottom: 0px

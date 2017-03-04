@@ -11,13 +11,20 @@
         bottom: 100%
         margin-bottom: 10px
         left: 0px
-        background-color: black
-        color: white
+        background-color: $eden-green
+        color: $eden-light-grey
         padding: 0.5em 1em
         border-radius: 0.2em
         white-space: nowrap
         position: absolute
         z-index: 1
+
+        &.dark
+            background-color: $eden-charcoal
+            color: $eden-light-grey
+        &.light
+            background-color: $eden-light-grey
+            color: $eden-charcoal
 
         &.center
             left: 50%

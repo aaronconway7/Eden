@@ -245,12 +245,12 @@ h6 {
         flex-direction: row-reverse !important; } }
 
 @media screen and (max-width: 425px) {
-  .mob-col {
+  .mob-row {
     -ms-flex-direction: row !important;
         flex-direction: row !important; } }
 
 @media screen and (max-width: 425px) {
-  .mob-col-reverse {
+  .mob-row-reverse {
     -ms-flex-direction: row-reverse !important;
         flex-direction: row-reverse !important; } }
 
@@ -1003,13 +1003,19 @@ span.code {
     bottom: 100%;
     margin-bottom: 10px;
     left: 0px;
-    background-color: black;
-    color: white;
+    background-color: #52ae76;
+    color: #ececec;
     padding: 0.5em 1em;
     border-radius: 0.2em;
     white-space: nowrap;
     position: absolute;
     z-index: 1; }
+    .tool-tip .tool-tip-text.dark {
+      background-color: #2f2f2f;
+      color: #ececec; }
+    .tool-tip .tool-tip-text.light {
+      background-color: #ececec;
+      color: #2f2f2f; }
     .tool-tip .tool-tip-text.center {
       left: 50%;
       transform: translate3d(-50%, 0px, 0px); }

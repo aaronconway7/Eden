@@ -20,6 +20,25 @@
 .quote-author {
   text-align: right; }
 
+.badges {
+  margin-bottom: 20px;
+  margin-top: -15px; }
+
+.badge {
+  padding: 0.2em 1.2em 0.2em 0.5em;
+  border: 1px solid black;
+  border-radius: 0.3em;
+  font-weight: 700;
+  font-size: 0.7rem;
+  margin-right: 5px; }
+  .badge:last-of-type {
+    margin-right: 0px; }
+  .badge.js {
+    background-color: #f0db4f; }
+  .badge.font-awesome {
+    background-color: #1d9d74;
+    color: white; }
+
 .code.transparent {
   background-color: transparent;
   color: #2f2f2f; }
@@ -605,6 +624,10 @@ footer object {
   #components-pg #components #size-component .row .code:last-of-type {
     margin-right: 0px; }
 
+#components-pg #components #size-component span.note {
+  font-weight: 400;
+  font-size: 0.8em; }
+
 #components-pg #components #container-component .wrapper {
   background-color: #ececec;
   transition: all 0.3s ease-in-out; }
@@ -661,24 +684,54 @@ footer object {
     font-size: 2.5rem;
     margin: 50px; }
 
-#components-pg #components #modal-component .modal {
+#components-pg #components #modal-component .modal.eg {
   position: static;
   z-index: 0; }
 
-#components-pg #components #button-component .buttons button {
-  margin-right: 10px; }
-  #components-pg #components #button-component .buttons button:last-of-type {
-    margin-right: 0px; }
-
-#components-pg #components #form-component form {
-  width: 300px; }
-  #components-pg #components #form-component form input {
-    margin-bottom: 10px; }
-  #components-pg #components #form-component form .form-controls input {
-    margin: 0px;
-    margin-right: 5px; }
-    #components-pg #components #form-component form .form-controls input:last-of-type {
+#components-pg #components #button-component .buttons {
+  margin-bottom: 10px; }
+  #components-pg #components #button-component .buttons:last-of-type {
+    margin-bottom: 0px; }
+  #components-pg #components #button-component .buttons button {
+    margin-right: 10px; }
+    #components-pg #components #button-component .buttons button:last-of-type {
       margin-right: 0px; }
+    #components-pg #components #button-component .buttons button.button-1 {
+      font-family: Dosis;
+      border-color: #7c2b1d;
+      border-width: 2px;
+      font-weight: 900;
+      color: #7c2b1d; }
+      #components-pg #components #button-component .buttons button.button-1:hover {
+        background-color: #7c2b1d;
+        color: white; }
+    #components-pg #components #button-component .buttons button.button-2 {
+      height: 100px;
+      font-size: 1.2rem;
+      font-weight: 900;
+      font-family: Playfair Display; }
+
+#components-pg #components #form-component .animated-search {
+  margin-bottom: 10px; }
+
+#components-pg #components #form-component form label {
+  display: block; }
+
+#components-pg #components #form-component form input, #components-pg #components #form-component form label, #components-pg #components #form-component form textarea {
+  margin-bottom: 10px; }
+
+#components-pg #components #form-component form .form-controls input {
+  margin: 0px;
+  margin-right: 5px; }
+  #components-pg #components #form-component form .form-controls input:last-of-type {
+    margin-right: 0px; }
+  #components-pg #components #form-component form .form-controls input[type="submit"], #components-pg #components #form-component form .form-controls input[type="reset"] {
+    font-weight: 900; }
+
+#components-pg #components #form-component .second input[type="submit"]:hover {
+  background-color: transparent;
+  transform: scale3d(1.1, 1.1, 1.1);
+  opacity: 1; }
 
 #components-pg #components #slider-component .slider .slide {
   background-position: center;

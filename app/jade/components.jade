@@ -7,7 +7,7 @@ html(lang="en")
     body
         .universe#components-pg
             .layout.sidebar
-                .nav.sidebar.fixed
+                .nav.sidebar.fixed.main-nav
                     .container
                         .brand
                             span.uppercase.space Eden.
@@ -26,6 +26,8 @@ html(lang="en")
                                 a(href="#grid-component") Grid
                             li
                                 a(href="#typography-component") Typography
+                            li
+                                a(href="#list-component") Lists
                             li
                                 a(href="#nav-component") Nav
                             li
@@ -54,6 +56,8 @@ html(lang="en")
                                 a(href="#collapsible-component") Collapsible
                             li
                                 a(href="#animations-component") Animations
+                            li
+                                a(href="#footer-component") Footer
                         
                 .main
                     include include/header
@@ -65,7 +69,7 @@ html(lang="en")
                                 p.heading.uppercase.space Icons.
                                     a.link.transition(href="#icons-component")
                                         i.fa.fa-link(aria-hidden="true")
-                                p #[a(href="http://fontawesome.io/", target="_blank") Font Awesome] are Eden's chosen icon set. They provide a scalable set of vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS. Just download the directoty and install by referenceing their CSS file within the #[span.code.light &lt;head&gt;] of your document.
+                                p #[a(href="http://fontawesome.io/", target="_blank") Font Awesome] are Eden's chosen icon set. They provide a scalable set of vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS. Just download the directoty and install by referencing their CSS file within the #[span.code.light &lt;head&gt;] of your document.
                                 .row
                                     .col.one
                                         i.transition(class="fa fa-home" aria-hidden="true")
@@ -212,6 +216,7 @@ html(lang="en")
                                             .code.eden
                                                 p background-color: #52ae76;
                                                 p color: #ececec;
+                                p Find below a selection of handpicked swatches to use witin a website along with each colours HEX value. These colours provide a nice blend to complement each other, where each swatch being suitable in a different situations.
                                 .row.palettes
                                     .col.half
                                         .row.palette.fluid.p-1.mob-col
@@ -477,19 +482,20 @@ html(lang="en")
                                                 p #bdc3c7
                                         .col.fill-y
                                             .row.fill-y.bottom-right.colour.white
-                                                p #7f8c8d
-                                
+                                                p #7f8c8d            
                         .component#size-component
                             .container
                                 p.heading.uppercase.space Sizes.
                                     a.link.transition(href="#size-component")
                                         i.fa.fa-link(aria-hidden="true")
-                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                .row.center-center
-                                    span.code.light .tall
-                                    span.code.light .short
-                                    span.code.light .fat
-                                    span.code.light .skinny
+                                p Another set of common CSS properties found in Eden are those representing size. By adding one of the appropriate classes, #[span.code.light .tall], #[span.code.light .short], #[span.code.light .fat] or #[span.code.light .skinny] to one of the elements listed below, it will alter the size/padding of the element in the way just specified.
+                                ul.bullet
+                                    li #[span.code.dark .nav]
+                                    li #[span.code.dark .hero]
+                                    li #[span.code.dark button], #[span.code.dark .button]
+                                    li #[span.code.dark input], #[span.code.dark textarea], #[span.code.dark select], #[span.code.dark .toggle]
+                                    li #[span.code.dark .slider] #[span.note (only tall & short)]
+                                    li #[span.code.dark .footer] #[span.note (only tall & short)]
                         .component#container-component
                             .container
                                 p.heading.uppercase.space Container.
@@ -510,9 +516,9 @@ html(lang="en")
                                 p.heading.uppercase.space Grid.
                                     a.link.transition(href="#grid-component")
                                         i.fa.fa-link(aria-hidden="true")
-                                p The grid is a vital component in developing mobile responsive websites. We provide a 12 column fluid grid taht shrinks as the viewport shrinks. The Eden grid system uses #[span.code.light .row] classes directly followed by #[span.code.light .col] classes. The size (how many columns they occupy) of each column can then be specified by giving it a class of that number. e.g. a column spanning 7 columns would have the class #[span.code.light .seven].
+                                p The grid is a vital component in developing mobile responsive websites. We provide a 12 column fluid grid that shrinks as the viewport shrinks. The Eden grid system uses #[span.code.light .row] & #[span.code.light .col] classes. The size (how many columns they occupy) of each column can then be specified by giving it a class of that number. e.g. a column spanning 7 columns would have the class #[span.code.light .seven].
                                 p Eden also allows users to specify common fractions indicating the amount of it's parent it spans. e.g. If you want a column to span a third of the width, give it a class of #[span.code.light .third] or if you want it to occupy five sixths, make it #[span.code.light .five-sixths]. Simple isn't it?
-                                p To alter the column layout resposnively at mobile or tablet size, just add a class of #[span.code.light .tab-*] or #[span.code.light .mob-*] respectively where * is the column size.
+                                p To alter the column layout resposnively at mobile or tablet size, just add a class of #[span.code.light .tab-*] or #[span.code.light .mob-*] respectively where * is the column size. You can also switch the orientation from #[span.code.light .row] to #[span.code.light .col] or #[span.code.light .col] to #[span.code.light .row] at tablet or mobile by using row or col in replace of the *.
                                 .table.col-border.row-border
                                     .table-heading
                                         .table-row
@@ -731,24 +737,50 @@ html(lang="en")
                                 h4 Heading 4
                                 h5 Heading 5
                                 h6 Heading 6
-                                //- p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                //- span.code.light Inline Code
-                                //- .code.block.light
-                                //-     span Code Block 
+                                p.uppercase.space Uppercase & Spaced
+                                p.text-center Centrally aligned text
+                                p.text-right Right aligned text
                                 .gist-code
                                     <script src="https://gist.github.com/aaronconway7/59d8cbc86a2859a1f8022a7c0adaee0c.js"></script>
+                        .component#list-component
+                            .container
+                                p.heading.uppercase.space Lists.
+                                    a.link.transition(href="#list-component")
+                                        i.fa.fa-link(aria-hidden="true")
+                                .row.lists
+                                    .col
+                                        ul
+                                            li Item
+                                            li Item
+                                            li Item
+                                    .col
+                                        ul.bullet
+                                            li Item
+                                            li Item
+                                            li Item
+                                    .col
+                                        ol
+                                            li Item
+                                            li Item
+                                            li Item
+                                    .col
+                                        ul.inline
+                                            li Item
+                                            li Item
+                                            li Item
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/4569a613f84aa3bfe26e75b03387c887.js"></script>
                         .component#nav-component
                             .container
                                 p.heading.uppercase.space Nav.
                                     a.link.transition(href="#nav-component")
                                         i.fa.fa-link(aria-hidden="true")
                                 p The navigation bar is one of, if not the most complex and feature rich component of the framework. Both horizontal and vertical navigation bars are potential options as well as sidebars that can be pulled out.
-                                p You start of with a #[span.code.light .nav] class where colour themes can also be given ( #[span.code.light .light] & #[span.code.light .dark] ). Sizes can also be specified ( #[span.code.light .skinny], #[span.code.light .fat], #[span.code.light .short] & #[span.code.light .tall] ) which affects the height and width of the nav bars. Alignment and position changes can also be made. Adding the classes #[span.code.light fixed] to #[span.code.light .nav] will make it stick to the top of your viewport. Adding #[span.code.light .centered] and #[span.code.light .padded] can center the text in the menu and also pad the sides respectively.
-                                p Within the #[span.code.light .nav] class, seperate your menu items with a #[span.code.light ul] tag with a #[span.code.light .nav-options] class.
+                                p Within the #[span.code.light .nav] tags, #[span.code.light .brand], #[span.code.light .nav-options] list(s), and/or #[span.code.light .mob-nav] can be specified.
                             .nav.clear.light
                                 .brand.float-left
                                     a(href="#")
-                                        img.logo(alt="", src="assets/img/eden.png")
+                                        img.logo(alt="", src="assets/img/logos/acme-logos-1.png")
                                         span brand
                                 ul.nav-options.float-left
                                     li
@@ -770,7 +802,10 @@ html(lang="en")
                                 .mob-nav.float-right
                                     input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
                                     label(for="mob-toggle")
-                                        .hamburger
+                                        .bun.dark
+                                            .hamburger
+                                            .hamburger
+                                            .hamburger
                                     ul.nav-options.text-center
                                         li
                                             a(href="#") option
@@ -797,7 +832,10 @@ html(lang="en")
                                 .mob-nav.float-right
                                     input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
                                     label(for="mob-toggle")
-                                        .hamburger
+                                        .bun.dark.thin.short.fat
+                                            .hamburger
+                                            .hamburger
+                                            .hamburger
                                     ul.nav-options.text-center
                                         li
                                             a(href="#") option
@@ -819,7 +857,7 @@ html(lang="en")
                                         a(href="#") option
                                 .brand
                                     a(href="index.html")
-                                        img.logo(alt="", src="assets/img/eden.png")
+                                        img.logo(alt="", src="assets/img/logos/acme-logos-10.png")
                                 ul.nav-options
                                     li
                                         a(href="#") option
@@ -836,7 +874,10 @@ html(lang="en")
                                 .mob-nav.float-right
                                     input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
                                     label(for="mob-toggle")
-                                        .hamburger
+                                        .bun.light.thin.skinny
+                                            .hamburger
+                                            .hamburger
+                                            .hamburger
                                     ul.nav-options.text-center
                                         li
                                             a(href="#") option
@@ -847,19 +888,7 @@ html(lang="en")
                             .nav.clear.mobile.transparent
                                 .brand.float-left
                                     a(href="index.html")
-                                        img.logo(alt="", src="assets/img/eden.png")
-                                        span brand
-                                .mob-nav.float-right
-                                    input.mob-toggle#mob-toggle(type="checkbox", name="mob-toggle")
-                                    label(for="mob-toggle")
-                                        .hamburger
-                                    ul.nav-options.text-center
-                                        li
-                                            a(href="#") option
-                                        li
-                                            a(href="#") option
-                                        li
-                                            a(href="#") option
+                                        img.logo(alt="", src="assets/img/logos/acme-logos-4.png")
                             .container.second
                                 .gist-code
                                     <script src="https://gist.github.com/aaronconway7/a27cd3974cc8698fff95e72c75471f57.js"></script>
@@ -868,27 +897,37 @@ html(lang="en")
                                 p.heading.uppercase.space Hero.
                                     a.link.transition(href="#hero-component")
                                         i.fa.fa-link(aria-hidden="true")
+                                .row.badges
+                                    .badge.js
+                                        span.uppercase js
                                 p Hero images are a very popular and modern trend of web design. They are generally the first thing you see on a webpage and are used to grab your attention.
-                                p The Eden hero comes in all the sizes, #[span.code.light .short], #[span.code.light .tall], #[span.code.light .skinny] and #[span.code.light .fat]. The deafult will take up the entire height of your viewport and the entire width of the parent element. By adding a #[span.code.light .row] element immediataely inside, you have the ability to position an element in 9 places covering left, right and center along the x-axis and top, center, bottom along the y. So if you want some text in the bottom-right you would simply give your #[span.code.light .row], a class of #[span.code.light .bottom-right]. Simples no?
+                                p The Eden hero comes in all the sizes. The deafult will take up the entire height of your viewport and the entire width of the parent element.
                             .hero
                                 .row.content.center-center.fill-y
                                     h1 Hero.
                             .container.second
                                 .gist-code
                                     <script src="https://gist.github.com/aaronconway7/b24a91266b10de91b67a6bc213ad1878.js"></script>
+                                p Parallax scrolling is a very new and modern technique used in web design and with Eden we now make it so easy to achieve this by just including the following in your js file! Check out an example #[a(href="parallax.html", target="_blank") here].
+                                .gist-code
                                     <script src="https://gist.github.com/aaronconway7/a505d0f9e1394c5a61854e2006bc37a5.js"></script>
                                 p Eden heroes also support colour overlays which are great when you are looking to match your brand's theme or even to cover up a pixelated image. Adding a #[span.code.light .overlay] class to your #[span.code.light .hero] will automatically apply the effect. You can then choose your own colour by overriding the #[span.code.light .overlay:after] property in your CSS or you can apply Eden's #[span.code.light .dark] or #[span.code.light .light] theme. 
-                            .hero.short.fat.overlay.dark.fill-y
-                                .col.content.right-bottom
-                                    h1 goals                    
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/bfe9b94ad26725908e0e48b959dcbfcc.js"></script>
+                            .hero.short.fat.overlay
+                                .col.content.top-right.fill-y
+                                    h1.space hero                    
                         .component#modal-component
                             .container
                                 p.heading.uppercase.space Modal.
                                     a.link.transition(href="#modal-component")
                                         i.fa.fa-link(aria-hidden="true")
-                                p Modals are pop-up dialog boxes that are a nice and tidy way to present iformation without the need to open another page. Just make a #[span.code.light .modal] div as the next sibling of the element that you want to activate it. This must then contain two immediate children being, #[span.code.light .content] and #[span.code.light .close]. Inside #[span.code.light .content] you can do whatever you like and style it however you want. #[span.code.light .close] however should contain what you want to use to close the modal.
+                                .row.badges
+                                    .badge.js
+                                        span.uppercase js
+                                p Modals are pop-up dialog boxes that are a nice and tidy way to present information without the need to open another page. Just make a #[span.code.light .modal] div as the next sibling of the element that you want to activate it.
                                 .row.center-center
-                                    .modal.light.shadow.dark-bg.is-open
+                                    .modal.light.shadow.dark-bg.is-open.eg
                                         .content
                                             .container
                                                 h1 Modal
@@ -898,6 +937,15 @@ html(lang="en")
                                 .gist-code
                                     <script src="https://gist.github.com/aaronconway7/449501b9182005bbdc4b470fb3dbe769.js"></script>
                                     <script src="https://gist.github.com/aaronconway7/34e0813ab98e859c5d25a82d6dd078fa.js"></script>
+                                .row.center-center
+                                    button(type="button fat tall" class="open-modal") Open Modal
+                                    .modal.light.shadow.dark-bg
+                                        .content
+                                            .container
+                                                h1 Ta-da!
+                                                p You just opened a modal designed by Eden.
+                                            .close.inside
+                                                span.close-modal ✕
                         .component#button-component
                             .container
                                 p.heading.uppercase.space Buttons.
@@ -906,8 +954,10 @@ html(lang="en")
                                 p Buttons come in two forms in Eden. They can either be the standard #[span.code.light button] tags or attached to #[span.code.light a] tags with the #[span.code.light .button] class.
                                 .buttons.row.center-center
                                     button.light(type="button") Button
-                                    button.dark.uppercase.space(type="button") Button
+                                    button.pill.fat.button-1.transparent.border(type="button") Button
                                     button.transparent.border(type="button") Button
+                                .buttons.row.center-center
+                                    button.button-2.rounded.dark.uppercase.space.fill-x.shadow(type="button") Button
                                 .gist-code
                                     <script src="https://gist.github.com/aaronconway7/e1dafa088d051eef9795dd9092f07399.js"></script>
                         .component#form-component
@@ -915,15 +965,63 @@ html(lang="en")
                                 p.heading.uppercase.space Forms.
                                     a.link.transition(href="#form-component")
                                         i.fa.fa-link(aria-hidden="true")
-                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                .form.row.center-center
-                                    form
-                                        input.light(type="text", placeholder="Input Text Light")
-                                        input.dark(type="text", placeholder="Input Text Dark")
-                                        input.transparent.border-bottom(type="text", placeholder="Input Text Border-Bottom")
-                                        .row.form-controls
-                                            input.transparent.border.uppercase.space(type="submit", value="submit")
-                                            input.transparent.border.uppercase.space(type="reset", value="reset")
+                                .row.badges
+                                    .badge.font-awesome
+                                        span.uppercase fontawesome
+                                    .badge.js
+                                        span.uppercase js
+                                p Forms play a key role in web developement and especially in the development of sites requiring a back-end.
+                                input.round.border.animated-search(type="text", placeholder="Search...")
+                                .forms.row
+                                    .col.form
+                                        form.first
+                                            input.light(type="text", placeholder="Input Text Light")
+                                            label.select
+                                                select.sharp.light
+                                                    option(value="placeholder" disabled selected) Select
+                                                    option(value="volvo") Volvo
+                                                    option(value="saab") Saab
+                                                    option(value="opel") Opel
+                                            label.checkbox
+                                                input(type="checkbox")
+                                                span.label-text Checkbox
+                                            label.checkbox
+                                                input(type="checkbox" disabled)
+                                                span.label-text Checkbox
+                                            textarea.light(placeholder="Description goes here...")
+                                            label.toggle.light
+                                                input(type="checkbox")
+                                                .toggle-control
+                                                    .option-1 Option 1
+                                                    .option-1 Option 2
+                                                    .handle
+                                            .row.form-controls
+                                                input.transparent.border.uppercase.space.round(type="submit", value="submit")
+                                                input.transparent.border.uppercase.space.round(type="reset", value="reset")
+                                    .col.form
+                                        form.second
+                                            input.border-bottom(type="text", placeholder="Input Text Light")
+                                            label.select
+                                                select.sharp.border-bottom
+                                                    option(value="placeholder" disabled selected) Select
+                                                    option(value="volvo") Volvo
+                                                    option(value="saab") Saab
+                                                    option(value="opel") Opel
+                                            label.checkbox
+                                                input(type="checkbox")
+                                                span.label-text Checkbox
+                                            label.checkbox
+                                                input(type="checkbox" disabled)
+                                                span.label-text Checkbox
+                                            textarea.border(placeholder="Description goes here...")
+                                            label.toggle.dark
+                                                input(type="checkbox")
+                                                .toggle-control
+                                                    .option-1 Option 1
+                                                    .option-1 Option 2
+                                                    .handle.shadow
+                                            .row.form-controls
+                                                input.transparent.uppercase.space(type="submit", value="submit")
                                 .gist-code
                                     <script src="https://gist.github.com/aaronconway7/093d9a598318fe5538ded76851b664fa.js"></script>
                         .component#slider-component
@@ -931,7 +1029,10 @@ html(lang="en")
                                 p.heading.uppercase.space Slider.
                                     a.link.transition(href="#slider-component")
                                         i.fa.fa-link(aria-hidden="true")
-                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                .row.badges
+                                    .badge.js
+                                        span.uppercase js
+                                //- p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             .slider.tall
                                 .slides
                                     .slide.is-active
@@ -957,7 +1058,10 @@ html(lang="en")
                                 p.heading.uppercase.space Lightbox.
                                     a.link.transition(href="#lightbox-component")
                                         i.fa.fa-link(aria-hidden="true")
-                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                .row.badges
+                                    .badge.js
+                                        span.uppercase js
+                                //- p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 .lightbox.row.wrap.center-center
                                     img(src="assets/img/bg/lightbox1.jpg")
                                     img(src="assets/img/bg/lightbox2.jpg")
@@ -973,7 +1077,7 @@ html(lang="en")
                                 p.heading.uppercase.space Masonry.
                                     a.link.transition(href="#masonry-component")
                                         i.fa.fa-link(aria-hidden="true")
-                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                //- p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 .masonry.col-3.tab-col-2
                                     img.item(src="assets/img/bg/masonry1.jpg")
                                     img.item(src="assets/img/bg/masonry2.jpg")
@@ -991,7 +1095,7 @@ html(lang="en")
                                 p.heading.uppercase.space Overlay.
                                     a.link.transition(href="#overlay-component")
                                         i.fa.fa-link(aria-hidden="true")
-                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                //- p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 .row.center-center
                                     .img-1.overlay
                                     .img-2.overlay.dark
@@ -1021,7 +1125,10 @@ html(lang="en")
                                 p.heading.uppercase.space Video.
                                     a.link.transition(href="#video-component")
                                         i.fa.fa-link(aria-hidden="true")
-                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                .row.badges
+                                    .badge.js
+                                        span.uppercase js
+                                //- p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 .video.overlay
                                     video
                                         source(src="assets/video/frecibo.mp4" type="video/mp4")
@@ -1046,6 +1153,9 @@ html(lang="en")
                                 p.heading.uppercase.space Tabs.
                                     a.link.transition(href="#tab-component")
                                         i.fa.fa-link(aria-hidden="true")
+                                .row.badges
+                                    .badge.js
+                                        span.uppercase js
                                 .tab.outline
                                     .tab-headings.row
                                         span.tab-heading.transition.is-active One
@@ -1093,11 +1203,16 @@ html(lang="en")
                                         .tab-content
                                             h6 Tab 3
                                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/07d9e78e712f1cb1fa1e9e64b0aafdb5.js"></script>
                         .component#collapsible-component
                             .container
                                 p.heading.uppercase.space Collapsible.
                                     a.link.transition(href="#collapsible-component")
                                         i.fa.fa-link(aria-hidden="true")
+                                .row.badges
+                                    .badge.js
+                                        span.uppercase js
                                 .collapsible
                                    .panel
                                        .show-content.light.border.transition
@@ -1114,16 +1229,33 @@ html(lang="en")
                                            span Section 3
                                        .content
                                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/3c4967c9a34987a9a224c8bdf4de96dc.js"></script>
+                                    <script src="https://gist.github.com/aaronconway7/5717a5a0071469a4a38a4f7a6e0df9f7.js"></script>
                         .component#animations-component
                             .container
                                 p.heading.uppercase.space.animation.on-scroll.fade-in-up Animations.
                                     a.link.transition(href="#animations-media-component")
                                         i.fa.fa-link(aria-hidden="true")
-                                p.animation.on-scroll.fade-in-right Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                .gist-code
+                                .row.badges.amimation.on-scroll.fade-in-up
+                                    .badge.js
+                                        span.uppercase js
+                                //- p.animation.on-scroll.fade-in-right Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                .gist-code.animation.on-scroll.fade-in-right
                                     <script src="https://gist.github.com/aaronconway7/f45c9e91987ee6806aeb795bea08d975.js"></script>
                                     <script src="https://gist.github.com/aaronconway7/4b92f5b1673af78dcb9670e7b6f9640c.js"></script>
-                                    
+                        .component#footer-component
+                            .container    
+                                p.heading.uppercase.space Footer.
+                                    a.link.transition(href="#footer-component")
+                                        i.fa.fa-link(aria-hidden="true")
+                                .row.badges
+                                    .badge.js
+                                        span.uppercase js
+                                //- p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.    
+                                .gist-code
+                                    <script src="https://gist.github.com/aaronconway7/5d64c1c353fbbeca4e329f9b6e80efcc.js"></script>
+                                    <script src="https://gist.github.com/aaronconway7/2d420561d274a001bec8a2d8ca0bbc93.js"></script>
             include include/footer
             
         include include/foot

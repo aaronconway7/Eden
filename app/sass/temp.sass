@@ -28,6 +28,27 @@ $mob-screen: 425px
 .quote-author
     text-align: right
 
+.badges
+    margin-bottom: 20px
+    margin-top: -15px
+
+.badge
+    padding: 0.2em 1.2em 0.2em 0.5em
+    border: 1px solid black
+    border-radius: 0.3em
+    font-weight: 700
+    font-size: 0.7rem
+    margin-right: 5px
+
+    &:last-of-type
+        margin-right: 0px
+
+    &.js
+        background-color: #f0db4f
+    &.font-awesome
+        background-color: #1d9d74
+        color: white
+
 .code
 
     &.transparent
@@ -782,6 +803,10 @@ footer
                     &:last-of-type
                         margin-right: 0px
 
+            span.note
+                font-weight: 400
+                font-size: 0.8em
+
 
         #container-component
 
@@ -861,13 +886,17 @@ footer
 
         #modal-component
 
-            .modal
+            .modal.eg
                 position: static
                 z-index: 0
 
         #button-component
 
             .buttons
+                margin-bottom: 10px
+
+                &:last-of-type
+                    margin-bottom: 0px
 
                 button
                     margin-right: 10px
@@ -875,12 +904,34 @@ footer
                     &:last-of-type
                         margin-right: 0px
 
+                    &.button-1
+                        font-family: Dosis
+                        border-color: #7c2b1d
+                        border-width: 2px
+                        font-weight: 900
+                        color: #7c2b1d
+
+                        &:hover
+                            background-color: #7c2b1d
+                            color: white
+
+                    &.button-2
+                        height: 100px
+                        font-size: 1.2rem
+                        font-weight: 900
+                        font-family: Playfair Display
+
         #form-component
 
-            form
-                width: 300px
+            .animated-search
+                margin-bottom: 10px
 
-                input
+            form
+
+                label
+                    display: block
+
+                input, label, textarea
                     margin-bottom: 10px
 
                 .form-controls
@@ -891,6 +942,21 @@ footer
 
                         &:last-of-type
                             margin-right: 0px
+
+                        &[type="submit"], &[type="reset"]
+                            font-weight: 900
+
+            .second
+
+                input
+
+                    &[type="submit"]
+
+                        &:hover
+                            background-color: transparent
+                            transform: scale3d(1.1, 1.1, 1.1)
+                            opacity: 1
+
 
         #slider-component
 

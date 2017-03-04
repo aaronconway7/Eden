@@ -41,7 +41,7 @@
   <body>
     <div id="components-pg" class="universe">
       <div class="layout sidebar">
-        <div class="nav sidebar fixed">
+        <div class="nav sidebar fixed main-nav">
           <div class="container">
             <div class="brand"><span class="uppercase space">Eden.</span></div>
             <ul class="nav-options">
@@ -52,6 +52,7 @@
               <li><a href="#container-component">Container</a></li>
               <li><a href="#grid-component">Grid</a></li>
               <li><a href="#typography-component">Typography</a></li>
+              <li><a href="#list-component">Lists</a></li>
               <li><a href="#nav-component">Nav</a></li>
               <li><a href="#hero-component">Hero</a></li>
               <li><a href="#modal-component">Modal</a></li>
@@ -66,6 +67,7 @@
               <li><a href="#tab-component">Tabs</a></li>
               <li><a href="#collapsible-component">Collapsible</a></li>
               <li><a href="#animations-component">Animations</a></li>
+              <li><a href="#footer-component">Footer</a></li>
             </ul>
           </div>
         </div>
@@ -110,7 +112,7 @@
             <div id="icons-component" class="component">
               <div class="container">
                 <p class="heading uppercase space">Icons.<a href="#icons-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
-                <p><a href="http://fontawesome.io/" target="_blank">Font Awesome</a> are Eden's chosen icon set. They provide a scalable set of vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS. Just download the directoty and install by referenceing their CSS file within the <span class="code light">&lt;head&gt;</span> of your document.</p>
+                <p><a href="http://fontawesome.io/" target="_blank">Font Awesome</a> are Eden's chosen icon set. They provide a scalable set of vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS. Just download the directoty and install by referencing their CSS file within the <span class="code light">&lt;head&gt;</span> of your document.</p>
                 <div class="row">
                   <div class="col one"><i aria-hidden="true" class="transition fa fa-home"></i></div>
                   <div class="col one"><i aria-hidden="true" class="transition fa fa-user"></i></div>
@@ -218,6 +220,7 @@
                     </div>
                   </div>
                 </div>
+                <p>Find below a selection of handpicked swatches to use witin a website along with each colours HEX value. These colours provide a nice blend to complement each other, where each swatch being suitable in a different situations.</p>
                 <div class="row palettes">
                   <div class="col half">
                     <div class="row palette fluid p-1 mob-col">
@@ -669,7 +672,7 @@
                     </div>
                     <div class="col fill-y">
                       <div class="row fill-y bottom-right colour white">
-                        <p>#7f8c8d</p>
+                        <p>#7f8c8d            </p>
                       </div>
                     </div>
                   </div>
@@ -679,8 +682,15 @@
             <div id="size-component" class="component">
               <div class="container">
                 <p class="heading uppercase space">Sizes.<a href="#size-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <div class="row center-center"><span class="code light">.tall</span><span class="code light">.short</span><span class="code light">.fat</span><span class="code light">.skinny</span></div>
+                <p>Another set of common CSS properties found in Eden are those representing size. By adding one of the appropriate classes, <span class="code light">.tall</span>, <span class="code light">.short</span>, <span class="code light">.fat</span> or <span class="code light">.skinny</span> to one of the elements listed below, it will alter the size/padding of the element in the way just specified.</p>
+                <ul class="bullet">
+                  <li><span class="code dark">.nav</span></li>
+                  <li><span class="code dark">.hero</span></li>
+                  <li><span class="code dark">button</span>, <span class="code dark">.button</span></li>
+                  <li><span class="code dark">input</span>, <span class="code dark">textarea</span>, <span class="code dark">select</span>, <span class="code dark">.toggle</span></li>
+                  <li><span class="code dark">.slider</span> <span class="note">(only tall & short)</span></li>
+                  <li><span class="code dark">.footer</span> <span class="note">(only tall & short)</span></li>
+                </ul>
               </div>
             </div>
             <div id="container-component" class="component">
@@ -705,9 +715,9 @@
             <div id="grid-component" class="component">
               <div class="container">
                 <p class="heading uppercase space">Grid.<a href="#grid-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
-                <p>The grid is a vital component in developing mobile responsive websites. We provide a 12 column fluid grid taht shrinks as the viewport shrinks. The Eden grid system uses <span class="code light">.row</span> classes directly followed by <span class="code light">.col</span> classes. The size (how many columns they occupy) of each column can then be specified by giving it a class of that number. e.g. a column spanning 7 columns would have the class <span class="code light">.seven</span>.</p>
+                <p>The grid is a vital component in developing mobile responsive websites. We provide a 12 column fluid grid that shrinks as the viewport shrinks. The Eden grid system uses <span class="code light">.row</span> & <span class="code light">.col</span> classes. The size (how many columns they occupy) of each column can then be specified by giving it a class of that number. e.g. a column spanning 7 columns would have the class <span class="code light">.seven</span>.</p>
                 <p>Eden also allows users to specify common fractions indicating the amount of it's parent it spans. e.g. If you want a column to span a third of the width, give it a class of <span class="code light">.third</span> or if you want it to occupy five sixths, make it <span class="code light">.five-sixths</span>. Simple isn't it?</p>
-                <p>To alter the column layout resposnively at mobile or tablet size, just add a class of <span class="code light">.tab-*</span> or <span class="code light">.mob-*</span> respectively where * is the column size.</p>
+                <p>To alter the column layout resposnively at mobile or tablet size, just add a class of <span class="code light">.tab-*</span> or <span class="code light">.mob-*</span> respectively where * is the column size. You can also switch the orientation from <span class="code light">.row</span> to <span class="code light">.col</span> or <span class="code light">.col</span> to <span class="code light">.row</span> at tablet or mobile by using row or col in replace of the *.</p>
                 <div class="table col-border row-border">
                   <div class="table-heading">
                     <div class="table-row">
@@ -971,18 +981,56 @@
                 <h4>Heading 4</h4>
                 <h5>Heading 5</h5>
                 <h6>Heading 6</h6>
+                <p class="uppercase space">Uppercase & Spaced</p>
+                <p class="text-center">Centrally aligned text</p>
+                <p class="text-right">Right aligned text</p>
                 <div class="gist-code"><script src="https://gist.github.com/aaronconway7/59d8cbc86a2859a1f8022a7c0adaee0c.js"></script></div>
+              </div>
+            </div>
+            <div id="list-component" class="component">
+              <div class="container">
+                <p class="heading uppercase space">Lists.<a href="#list-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <div class="row lists">
+                  <div class="col">
+                    <ul>
+                      <li>Item</li>
+                      <li>Item</li>
+                      <li>Item</li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <ul class="bullet">
+                      <li>Item</li>
+                      <li>Item</li>
+                      <li>Item</li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <ol>
+                      <li>Item</li>
+                      <li>Item</li>
+                      <li>Item</li>
+                    </ol>
+                  </div>
+                  <div class="col">
+                    <ul class="inline">
+                      <li>Item</li>
+                      <li>Item</li>
+                      <li>Item</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="gist-code"><script src="https://gist.github.com/aaronconway7/4569a613f84aa3bfe26e75b03387c887.js"></script></div>
               </div>
             </div>
             <div id="nav-component" class="component">
               <div class="container">
                 <p class="heading uppercase space">Nav.<a href="#nav-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
                 <p>The navigation bar is one of, if not the most complex and feature rich component of the framework. Both horizontal and vertical navigation bars are potential options as well as sidebars that can be pulled out.</p>
-                <p>You start of with a <span class="code light">.nav</span> class where colour themes can also be given ( <span class="code light">.light</span> & <span class="code light">.dark</span> ). Sizes can also be specified ( <span class="code light">.skinny</span>, <span class="code light">.fat</span>, <span class="code light">.short</span> & <span class="code light">.tall</span> ) which affects the height and width of the nav bars. Alignment and position changes can also be made. Adding the classes <span class="code light">fixed</span> to <span class="code light">.nav</span> will make it stick to the top of your viewport. Adding <span class="code light">.centered</span> and <span class="code light">.padded</span> can center the text in the menu and also pad the sides respectively.</p>
-                <p>Within the <span class="code light">.nav</span> class, seperate your menu items with a <span class="code light">ul</span> tag with a <span class="code light">.nav-options</span> class.</p>
+                <p>Within the <span class="code light">.nav</span> tags, <span class="code light">.brand</span>, <span class="code light">.nav-options</span> list(s), and/or <span class="code light">.mob-nav</span> can be specified.</p>
               </div>
               <div class="nav clear light">
-                <div class="brand float-left"><a href="#"><img alt="" src="assets/img/eden.png" class="logo"><span>brand</span></a></div>
+                <div class="brand float-left"><a href="#"><img alt="" src="assets/img/logos/acme-logos-1.png" class="logo"><span>brand</span></a></div>
                 <ul class="nav-options float-left">
                   <li><a href="#">option</a></li>
                   <li class="dropdown">LOST
@@ -999,7 +1047,11 @@
                 <div class="mob-nav float-right">
                   <input id="mob-toggle" type="checkbox" name="mob-toggle" class="mob-toggle">
                   <label for="mob-toggle">
-                    <div class="hamburger"></div>
+                    <div class="bun dark">
+                      <div class="hamburger"></div>
+                      <div class="hamburger"></div>
+                      <div class="hamburger"></div>
+                    </div>
                   </label>
                   <ul class="nav-options text-center">
                     <li><a href="#">option</a></li>
@@ -1022,7 +1074,11 @@
                 <div class="mob-nav float-right">
                   <input id="mob-toggle" type="checkbox" name="mob-toggle" class="mob-toggle">
                   <label for="mob-toggle">
-                    <div class="hamburger"></div>
+                    <div class="bun dark thin short fat">
+                      <div class="hamburger"></div>
+                      <div class="hamburger"></div>
+                      <div class="hamburger"></div>
+                    </div>
                   </label>
                   <ul class="nav-options text-center">
                     <li><a href="#">option</a></li>
@@ -1042,7 +1098,7 @@
                   </li>
                   <li><a href="#">option</a></li>
                 </ul>
-                <div class="brand"><a href="index.html"><img alt="" src="assets/img/eden.png" class="logo"></a></div>
+                <div class="brand"><a href="index.html"><img alt="" src="assets/img/logos/acme-logos-10.png" class="logo"></a></div>
                 <ul class="nav-options">
                   <li><a href="#">option</a></li>
                   <li class="dropdown">option
@@ -1057,7 +1113,11 @@
                 <div class="mob-nav float-right">
                   <input id="mob-toggle" type="checkbox" name="mob-toggle" class="mob-toggle">
                   <label for="mob-toggle">
-                    <div class="hamburger"></div>
+                    <div class="bun light thin skinny">
+                      <div class="hamburger"></div>
+                      <div class="hamburger"></div>
+                      <div class="hamburger"></div>
+                    </div>
                   </label>
                   <ul class="nav-options text-center">
                     <li><a href="#">option</a></li>
@@ -1067,18 +1127,7 @@
                 </div>
               </div>
               <div class="nav clear mobile transparent">
-                <div class="brand float-left"><a href="index.html"><img alt="" src="assets/img/eden.png" class="logo"><span>brand</span></a></div>
-                <div class="mob-nav float-right">
-                  <input id="mob-toggle" type="checkbox" name="mob-toggle" class="mob-toggle">
-                  <label for="mob-toggle">
-                    <div class="hamburger"></div>
-                  </label>
-                  <ul class="nav-options text-center">
-                    <li><a href="#">option</a></li>
-                    <li><a href="#">option</a></li>
-                    <li><a href="#">option</a></li>
-                  </ul>
-                </div>
+                <div class="brand float-left"><a href="index.html"><img alt="" src="assets/img/logos/acme-logos-4.png" class="logo"></a></div>
               </div>
               <div class="container second">
                 <div class="gist-code"><script src="https://gist.github.com/aaronconway7/a27cd3974cc8698fff95e72c75471f57.js"></script></div>
@@ -1087,8 +1136,11 @@
             <div id="hero-component" class="component">
               <div class="container">
                 <p class="heading uppercase space">Hero.<a href="#hero-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <div class="row badges">
+                  <div class="badge js"><span class="uppercase">js</span></div>
+                </div>
                 <p>Hero images are a very popular and modern trend of web design. They are generally the first thing you see on a webpage and are used to grab your attention.</p>
-                <p>The Eden hero comes in all the sizes, <span class="code light">.short</span>, <span class="code light">.tall</span>, <span class="code light">.skinny</span> and <span class="code light">.fat</span>. The deafult will take up the entire height of your viewport and the entire width of the parent element. By adding a <span class="code light">.row</span> element immediataely inside, you have the ability to position an element in 9 places covering left, right and center along the x-axis and top, center, bottom along the y. So if you want some text in the bottom-right you would simply give your <span class="code light">.row</span>, a class of <span class="code light">.bottom-right</span>. Simples no?</p>
+                <p>The Eden hero comes in all the sizes. The deafult will take up the entire height of your viewport and the entire width of the parent element.</p>
               </div>
               <div class="hero">
                 <div class="row content center-center fill-y">
@@ -1096,24 +1148,27 @@
                 </div>
               </div>
               <div class="container second">
-                <div class="gist-code">
-                  <script src="https://gist.github.com/aaronconway7/b24a91266b10de91b67a6bc213ad1878.js"></script>
-                  <script src="https://gist.github.com/aaronconway7/a505d0f9e1394c5a61854e2006bc37a5.js"></script>
-                </div>
+                <div class="gist-code"><script src="https://gist.github.com/aaronconway7/b24a91266b10de91b67a6bc213ad1878.js"></script></div>
+                <p>Parallax scrolling is a very new and modern technique used in web design and with Eden we now make it so easy to achieve this by just including the following in your js file! Check out an example <a href="parallax.html" target="_blank">here</a>.</p>
+                <div class="gist-code"><script src="https://gist.github.com/aaronconway7/a505d0f9e1394c5a61854e2006bc37a5.js"></script></div>
                 <p>Eden heroes also support colour overlays which are great when you are looking to match your brand's theme or even to cover up a pixelated image. Adding a <span class="code light">.overlay</span> class to your <span class="code light">.hero</span> will automatically apply the effect. You can then choose your own colour by overriding the <span class="code light">.overlay:after</span> property in your CSS or you can apply Eden's <span class="code light">.dark</span> or <span class="code light">.light</span> theme. </p>
+                <div class="gist-code"><script src="https://gist.github.com/aaronconway7/bfe9b94ad26725908e0e48b959dcbfcc.js"></script></div>
               </div>
-              <div class="hero short fat overlay dark fill-y">
-                <div class="col content right-bottom">
-                  <h1>goals                    </h1>
+              <div class="hero short fat overlay">
+                <div class="col content top-right fill-y">
+                  <h1 class="space">hero                    </h1>
                 </div>
               </div>
             </div>
             <div id="modal-component" class="component">
               <div class="container">
                 <p class="heading uppercase space">Modal.<a href="#modal-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
-                <p>Modals are pop-up dialog boxes that are a nice and tidy way to present iformation without the need to open another page. Just make a <span class="code light">.modal</span> div as the next sibling of the element that you want to activate it. This must then contain two immediate children being, <span class="code light">.content</span> and <span class="code light">.close</span>. Inside <span class="code light">.content</span> you can do whatever you like and style it however you want. <span class="code light">.close</span> however should contain what you want to use to close the modal.</p>
+                <div class="row badges">
+                  <div class="badge js"><span class="uppercase">js</span></div>
+                </div>
+                <p>Modals are pop-up dialog boxes that are a nice and tidy way to present information without the need to open another page. Just make a <span class="code light">.modal</span> div as the next sibling of the element that you want to activate it.</p>
                 <div class="row center-center">
-                  <div class="modal light shadow dark-bg is-open">
+                  <div class="modal light shadow dark-bg is-open eg">
                     <div class="content">
                       <div class="container">
                         <h1>Modal</h1>
@@ -1127,6 +1182,18 @@
                   <script src="https://gist.github.com/aaronconway7/449501b9182005bbdc4b470fb3dbe769.js"></script>
                   <script src="https://gist.github.com/aaronconway7/34e0813ab98e859c5d25a82d6dd078fa.js"></script>
                 </div>
+                <div class="row center-center">
+                  <button type="button fat tall" class="open-modal">Open Modal</button>
+                  <div class="modal light shadow dark-bg">
+                    <div class="content">
+                      <div class="container">
+                        <h1>Ta-da!</h1>
+                        <p>You just opened a modal designed by Eden.</p>
+                      </div>
+                      <div class="close inside"><span class="close-modal">✕</span></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div id="button-component" class="component">
@@ -1135,8 +1202,11 @@
                 <p>Buttons come in two forms in Eden. They can either be the standard <span class="code light">button</span> tags or attached to <span class="code light">a</span> tags with the <span class="code light">.button</span> class.</p>
                 <div class="buttons row center-center">
                   <button type="button" class="light">Button</button>
-                  <button type="button" class="dark uppercase space">Button</button>
+                  <button type="button" class="pill fat button-1 transparent border">Button</button>
                   <button type="button" class="transparent border">Button</button>
+                </div>
+                <div class="buttons row center-center">
+                  <button type="button" class="button-2 rounded dark uppercase space fill-x shadow">Button</button>
                 </div>
                 <div class="gist-code"><script src="https://gist.github.com/aaronconway7/e1dafa088d051eef9795dd9092f07399.js"></script></div>
               </div>
@@ -1144,17 +1214,76 @@
             <div id="form-component" class="component">
               <div class="container">
                 <p class="heading uppercase space">Forms.<a href="#form-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <div class="form row center-center">
-                  <form>
-                    <input type="text" placeholder="Input Text Light" class="light">
-                    <input type="text" placeholder="Input Text Dark" class="dark">
-                    <input type="text" placeholder="Input Text Border-Bottom" class="transparent border-bottom">
-                    <div class="row form-controls">
-                      <input type="submit" value="submit" class="transparent border uppercase space">
-                      <input type="reset" value="reset" class="transparent border uppercase space">
-                    </div>
-                  </form>
+                <div class="row badges">
+                  <div class="badge font-awesome"><span class="uppercase">fontawesome</span></div>
+                  <div class="badge js"><span class="uppercase">js</span></div>
+                </div>
+                <p>Forms play a key role in web developement and especially in the development of sites requiring a back-end.</p>
+                <input type="text" placeholder="Search..." class="round border animated-search">
+                <div class="forms row">
+                  <div class="col form">
+                    <form class="first">
+                      <input type="text" placeholder="Input Text Light" class="light">
+                      <label class="select">
+                        <select class="sharp light">
+                          <option value="placeholder" disabled selected>Select</option>
+                          <option value="volvo">Volvo</option>
+                          <option value="saab">Saab</option>
+                          <option value="opel">Opel</option>
+                        </select>
+                      </label>
+                      <label class="checkbox">
+                        <input type="checkbox"><span class="label-text">Checkbox</span>
+                      </label>
+                      <label class="checkbox">
+                        <input type="checkbox" disabled><span class="label-text">Checkbox</span>
+                      </label>
+                      <textarea placeholder="Description goes here..." class="light"></textarea>
+                      <label class="toggle light">
+                        <input type="checkbox">
+                        <div class="toggle-control">
+                          <div class="option-1">Option 1</div>
+                          <div class="option-1">Option 2</div>
+                          <div class="handle"></div>
+                        </div>
+                      </label>
+                      <div class="row form-controls">
+                        <input type="submit" value="submit" class="transparent border uppercase space round">
+                        <input type="reset" value="reset" class="transparent border uppercase space round">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col form">
+                    <form class="second">
+                      <input type="text" placeholder="Input Text Light" class="border-bottom">
+                      <label class="select">
+                        <select class="sharp border-bottom">
+                          <option value="placeholder" disabled selected>Select</option>
+                          <option value="volvo">Volvo</option>
+                          <option value="saab">Saab</option>
+                          <option value="opel">Opel</option>
+                        </select>
+                      </label>
+                      <label class="checkbox">
+                        <input type="checkbox"><span class="label-text">Checkbox</span>
+                      </label>
+                      <label class="checkbox">
+                        <input type="checkbox" disabled><span class="label-text">Checkbox</span>
+                      </label>
+                      <textarea placeholder="Description goes here..." class="border"></textarea>
+                      <label class="toggle dark">
+                        <input type="checkbox">
+                        <div class="toggle-control">
+                          <div class="option-1">Option 1</div>
+                          <div class="option-1">Option 2</div>
+                          <div class="handle shadow"></div>
+                        </div>
+                      </label>
+                      <div class="row form-controls">
+                        <input type="submit" value="submit" class="transparent uppercase space">
+                      </div>
+                    </form>
+                  </div>
                 </div>
                 <div class="gist-code"><script src="https://gist.github.com/aaronconway7/093d9a598318fe5538ded76851b664fa.js"></script></div>
               </div>
@@ -1162,7 +1291,9 @@
             <div id="slider-component" class="component">
               <div class="container">
                 <p class="heading uppercase space">Slider.<a href="#slider-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="row badges">
+                  <div class="badge js"><span class="uppercase">js</span></div>
+                </div>
               </div>
               <div class="slider tall">
                 <div class="slides">
@@ -1192,7 +1323,9 @@
             <div id="lightbox-component" class="component">
               <div class="container">
                 <p class="heading uppercase space">Lightbox.<a href="#lightbox-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="row badges">
+                  <div class="badge js"><span class="uppercase">js</span></div>
+                </div>
                 <div class="lightbox row wrap center-center"><img src="assets/img/bg/lightbox1.jpg"><img src="assets/img/bg/lightbox2.jpg">
                   <p class="caption">St. Paul's Cathedral</p><img src="assets/img/bg/lightbox3.jpg"><img src="assets/img/bg/lightbox4.jpg"><img src="assets/img/bg/lightbox5.jpg">
                 </div>
@@ -1205,7 +1338,6 @@
             <div id="masonry-component" class="component">
               <div class="container">
                 <p class="heading uppercase space">Masonry.<a href="#masonry-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="masonry col-3 tab-col-2"><img src="assets/img/bg/masonry1.jpg" class="item"><img src="assets/img/bg/masonry2.jpg" class="item"><img src="assets/img/bg/masonry8.jpg" class="item"><img src="assets/img/bg/masonry4.jpg" class="item"><img src="assets/img/bg/masonry5.jpg" class="item"><img src="assets/img/bg/masonry6.jpg" class="item"><img src="assets/img/bg/masonry7.jpg" class="item"><img src="assets/img/bg/masonry3.jpg" class="item"><img src="assets/img/bg/masonry9.jpg" class="item"></div>
                 <div class="gist-code"><script src="https://gist.github.com/aaronconway7/653b47e42b106a9ec6658a93e5262d18.js"></script></div>
               </div>
@@ -1213,7 +1345,6 @@
             <div id="overlay-component" class="component">
               <div class="container">
                 <p class="heading uppercase space">Overlay.<a href="#overlay-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="row center-center">
                   <div class="img-1 overlay"></div>
                   <div class="img-2 overlay dark"></div>
@@ -1254,7 +1385,9 @@
             <div id="video-component" class="component">
               <div class="container">
                 <p class="heading uppercase space">Video.<a href="#video-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="row badges">
+                  <div class="badge js"><span class="uppercase">js</span></div>
+                </div>
                 <div class="video overlay">
                   <video>
                     <source src="assets/video/frecibo.mp4" type="video/mp4">
@@ -1279,6 +1412,9 @@
             <div id="tab-component" class="component">
               <div class="container">
                 <p class="heading uppercase space">Tabs.<a href="#tab-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <div class="row badges">
+                  <div class="badge js"><span class="uppercase">js</span></div>
+                </div>
                 <div class="tab outline">
                   <div class="tab-headings row"><span class="tab-heading transition is-active">One</span><span class="tab-heading transition">Two</span><span class="tab-heading transition">Three</span></div>
                   <div class="tab-contents">
@@ -1329,11 +1465,15 @@
                     </div>
                   </div>
                 </div>
+                <div class="gist-code"><script src="https://gist.github.com/aaronconway7/07d9e78e712f1cb1fa1e9e64b0aafdb5.js"></script></div>
               </div>
             </div>
             <div id="collapsible-component" class="component">
               <div class="container">
                 <p class="heading uppercase space">Collapsible.<a href="#collapsible-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <div class="row badges">
+                  <div class="badge js"><span class="uppercase">js</span></div>
+                </div>
                 <div class="collapsible">
                   <div class="panel">
                     <div class="show-content light border transition"><span>Section 1</span></div>
@@ -1354,15 +1494,33 @@
                     </div>
                   </div>
                 </div>
+                <div class="gist-code">
+                  <script src="https://gist.github.com/aaronconway7/3c4967c9a34987a9a224c8bdf4de96dc.js"></script>
+                  <script src="https://gist.github.com/aaronconway7/5717a5a0071469a4a38a4f7a6e0df9f7.js"></script>
+                </div>
               </div>
             </div>
             <div id="animations-component" class="component">
               <div class="container">
                 <p class="heading uppercase space animation on-scroll fade-in-up">Animations.<a href="#animations-media-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
-                <p class="animation on-scroll fade-in-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <div class="gist-code">
+                <div class="row badges amimation on-scroll fade-in-up">
+                  <div class="badge js"><span class="uppercase">js</span></div>
+                </div>
+                <div class="gist-code animation on-scroll fade-in-right">
                   <script src="https://gist.github.com/aaronconway7/f45c9e91987ee6806aeb795bea08d975.js"></script>
                   <script src="https://gist.github.com/aaronconway7/4b92f5b1673af78dcb9670e7b6f9640c.js"></script>
+                </div>
+              </div>
+            </div>
+            <div id="footer-component" class="component">
+              <div class="container">   
+                <p class="heading uppercase space">Footer.<a href="#footer-component" class="link transition"><i aria-hidden="true" class="fa fa-link"></i></a></p>
+                <div class="row badges">
+                  <div class="badge js"><span class="uppercase">js</span></div>
+                </div>
+                <div class="gist-code">
+                  <script src="https://gist.github.com/aaronconway7/5d64c1c353fbbeca4e329f9b6e80efcc.js"></script>
+                  <script src="https://gist.github.com/aaronconway7/2d420561d274a001bec8a2d8ca0bbc93.js"></script>
                 </div>
               </div>
             </div>

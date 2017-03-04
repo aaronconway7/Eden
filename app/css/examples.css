@@ -1,0 +1,5 @@
+#parallax-pg {
+  height: 200vh; }
+  #parallax-pg .hero {
+    background-image: url("../assets/img/bg/lightbox3.jpg");
+    color: #eee; }

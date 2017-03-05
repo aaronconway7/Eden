@@ -4,6 +4,11 @@
 .bold {
   font-weight: 900; }
 
+.reference {
+  font-size: 0.7em;
+  font-style: italic;
+  margin-top: 20px; }
+
 .section {
   font-size: 1.5rem; }
   .section .title {
@@ -66,6 +71,47 @@ header .nav {
     #presentation #the-solution .eden-slide img {
       height: 100px;
       margin-right: 10px; }
+  #presentation #methodology .img {
+    background-image: url("../assets/img/presentation/code.jpg"); }
+  #presentation #methodology .facts {
+    padding-left: 100px; }
+    #presentation #methodology .facts .fact {
+      margin-bottom: 75px; }
+      #presentation #methodology .facts .fact:last-of-type {
+        margin-bottom: 0px; }
+    #presentation #methodology .facts .bold {
+      font-weight: 900; }
+    #presentation #methodology .facts hr {
+      opacity: 0.2; }
+  #presentation #methodology .sass-slide {
+    background-color: #cc6699; }
+    #presentation #methodology .sass-slide img {
+      height: 300px; }
+  #presentation #methodology .pug-slide {
+    background-color: #a86454; }
+  #presentation #methodology .jquery-slide {
+    background-color: #0769ad; }
+  #presentation #methodology .gulp-slide {
+    background-color: #e84c50; }
+  #presentation #case-study iframe {
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75); }
+  #presentation #case-study .logos img {
+    height: 50px;
+    margin-right: 50px;
+    opacity: 0.5; }
+    #presentation #case-study .logos img.ndorsa {
+      opacity: 0.3; }
+    #presentation #case-study .logos img:last-of-type {
+      margin-right: 0px; }
+  #presentation #project-management .github-graphs img {
+    border-radius: 5px;
+    border: 1px solid #bbbbbb; }
+    #presentation #project-management .github-graphs img:first-of-type {
+      margin-bottom: 10px; }
+  #presentation #project-management .slide.trello {
+    background-color: #026aa7; }
+    #presentation #project-management .slide.trello .logo {
+      height: 100px; }
 
 footer p {
   opacity: 0.75;

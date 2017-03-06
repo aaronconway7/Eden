@@ -110,22 +110,67 @@ html(lang="en")
                         .container
                             h4.title.thin How was Eden built?
                     .slide
+                        .container
+                            .row.center-center
+                                img(src="assets/img/presentation/uml.svg", alt="UML")
+                    .slide.research
                         .row.fill-y.fluid
                             .col
                                 .content.row.center-center.fill-y.facts
                                     .container
+                                        h4.title.thin Research
                                         .fact
-                                            h6.thin Research
+                                            h6.thin Self Knowledge
                                             hr.quarter
-                                            p.bold Self Knowledge
+                                            p.bold Experience
                                         .fact
-                                            h6.thin Development Methodology
+                                            h6.thin Existing Software
                                             hr.quarter
-                                            p.bold Agile
+                                            p.bold Bootstrap, Skeleton, Foundation, Pure
                                         .fact
-                                            h6.thin Testing
+                                            h6.thin Tools
                                             hr.quarter
-                                            p.bold Peer
+                                            p.bold Sass, Jade/Pug, Gulp
+                            .col
+                                .img.fill-y.bg-center
+                    .slide.design
+                        .row.fill-y.fluid
+                            .col
+                                .content.row.center-center.fill-y.facts
+                                    .container
+                                        h4.title.thin Design
+                                        .fact
+                                            h6.thin Sketches
+                                            hr.quarter
+                                            p.bold Drawing out designs for potential components
+                                        .fact
+                                            h6.thin Mockups
+                                            hr.quarter
+                                            p.bold Photoshop
+                                        .fact
+                                            h6.thin Faster Development
+                                            hr.quarter
+                                            p.bold Already know what I want to produce
+                            .col
+                                .img.fill-y.bg-center
+                    .slide.coding
+                        .row.fill-y.fluid
+                            .col
+                                .content.row.center-center.fill-y.facts
+                                    .container
+                                        h4.title.thin Development
+                                        .fact
+                                            h6.thin Pre-processing
+                                            hr.quarter
+                                            p.bold Jade/Pug, SASS, JQuery
+                                        .fact
+                                            h6.thin Compilation
+                                            hr.quarter
+                                            p.bold Jade/Pug -> HTML, SASS -> CSS
+                                        .fact
+                                            h6.thin Optimisation
+                                            hr.quarter
+                                            p.bold Minifing Files
                             .col
                                 .img.fill-y
                     .slide.sass-slide
@@ -144,6 +189,64 @@ html(lang="en")
                         .container
                             .row.center-center
                                 img(alt="Gulp", src="assets/img/presentation/gulp.jpg")
+                    .slide.coding
+                        .row.fill-y.fluid
+                            .col
+                                .content.row.center-center.fill-y.facts
+                                    .container
+                                        h4.title.thin Development
+                                        .fact
+                                            h6.thin Pre-processing
+                                            hr.quarter
+                                            p.bold Jade/Pug, SASS, JQuery
+                                        .fact
+                                            h6.thin Compilation
+                                            hr.quarter
+                                            p.bold Jade/Pug -> HTML, SASS -> CSS
+                                        .fact
+                                            h6.thin Optimisation
+                                            hr.quarter
+                                            p.bold Minifing Files
+                            .col
+                                .img.fill-y
+                    .slide.testing
+                        .row.fill-y.fluid
+                            .col
+                                .content.row.center-center.fill-y.facts
+                                    .container
+                                        h4.title.thin Testing
+                                        .fact
+                                            h6.thin Unit
+                                            hr.quarter
+                                            p.bold Self Knowledge
+                                        .fact
+                                            h6.thin System
+                                            hr.quarter
+                                            p.bold Agile
+                                        .fact
+                                            h6.thin Feedback
+                                            hr.quarter
+                                            p.bold Peer
+                            .col
+                                .img.fill-y.bg-center
+                    .slide.documentation
+                        .row.fill-y.fluid
+                            .col
+                                .content.row.center-center.fill-y.facts
+                                    .container
+                                        h4.title.thin Documentation
+                                        .fact
+                                            h6.thin Instructions
+                                            hr.quarter
+                                            p.bold How would they know what to do?
+                                        .fact
+                                            h6.thin Support
+                                            hr.quarter
+                                            p.bold Clear, Easy, Simple.
+                                        .fact
+                                            a.button.dark.fat.bold(href="http://designofeden.com/", target="_blank") Take a read!
+                            .col
+                                .img.fill-y.bg-center
                 #case-study.section
                     .slide
                         .container
@@ -169,6 +272,7 @@ html(lang="en")
                                 img(alt="Frecibo", src="assets/img/frecibo-b&w.png")
                                 img.ndorsa(alt="NDORSA", src="assets/img/ndorsa.png")
                                 img(alt="WES", src="assets/img/wes.png")
+                                img(alt="Co-Code", src="assets/img/co-code.png")
                 #demo.section
                     .container
                         h4.title.thin Demo
@@ -202,18 +306,24 @@ html(lang="en")
                             h4.title.thin Further Work
                     .slide
                         .container
-                            p.bold The end is not nigh.
-                            p.thin (There is no end.)
+                            h4.bold The end is not nigh.
+                            h4.thin (There is no end.)
                     .slide
                         .container
                             .row.center-center
                                 img(alt="Youtube Playlist", src="assets/img/presentation/youtube-playlist.png")
                     .slide
                         .container
+                            h4.thin More components?
+                    .slide
+                        .container
                             .row.center-center
                                 video(data-autoplay, loop)
                                     source(data-src="assets/video/presentation/touch-events.mp4", type="video/mp4")
                             p.thin.text-right.reference (Álvaro Trigo, https://twitter.com/IMAC2/status/796070516004192256)
+                    .slide
+                        .container
+                            h4.thin A back-end?
                 #thank-you.section
                     .slide
                         .container

@@ -71,8 +71,16 @@ header .nav {
     #presentation #the-solution .eden-slide img {
       height: 100px;
       margin-right: 10px; }
-  #presentation #methodology .img {
-    background-image: url("../assets/img/presentation/code.jpg"); }
+  #presentation #methodology .research .img {
+    background-image: url("../assets/img/presentation/research.jpg"); }
+  #presentation #methodology .design .img {
+    background-image: url("../assets/img/presentation/design.jpg"); }
+  #presentation #methodology .coding .img {
+    background-image: url("../assets/img/presentation/coding.jpg"); }
+  #presentation #methodology .testing .img {
+    background-image: url("../assets/img/presentation/testing.jpg"); }
+  #presentation #methodology .documentation .img {
+    background-image: url("../assets/img/presentation/documentation.jpg"); }
   #presentation #methodology .facts {
     padding-left: 100px; }
     #presentation #methodology .facts .fact {

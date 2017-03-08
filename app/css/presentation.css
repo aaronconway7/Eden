@@ -109,6 +109,16 @@ header .nav {
     #presentation #the-solution .eden-slide img {
       height: 100px;
       margin-right: 10px; }
+    #presentation #the-solution .eden-slide .responsive {
+      height: 500px; }
+    #presentation #the-solution .eden-slide.grid .row {
+      margin-bottom: 10px; }
+    #presentation #the-solution .eden-slide.grid .col {
+      background-color: #eee;
+      opacity: 0.75;
+      transition: all 0.3s ease-in-out; }
+      #presentation #the-solution .eden-slide.grid .col:hover {
+        opacity: 1; }
   #presentation #methodology .research .img {
     background-image: url("../assets/img/presentation/research.jpg"); }
   #presentation #methodology .design .img {

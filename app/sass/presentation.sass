@@ -3,6 +3,25 @@ $eden-charcoal: rgb(47, 47, 47)
 $eden-dark-grey: rgb(187, 187, 187)
 $eden-light-grey: rgb(236, 236, 236)
 
+\:root
+    font-size: 15pt
+
+.fp-viewing-1-0, .fp-viewing-1-1, .fp-viewing-1-2, .fp-viewing-1-3, .fp-viewing-1-4, .fp-viewing-1-5, .fp-viewing-1-6, .fp-viewing-1-7,
+.fp-viewing-2-0, .fp-viewing-2-1, .fp-viewing-2-2, .fp-viewing-2-5, .fp-viewing-2-6, .fp-viewing-2-7,
+.fp-viewing-3-0,
+.fp-viewing-4-0, .fp-viewing-4-1, .fp-viewing-4-2, .fp-viewing-4-7, .fp-viewing-4-8, .fp-viewing-4-9, .fp-viewing-4-10,
+.fp-viewing-5-0, .fp-viewing-5-1, .fp-viewing-5-2, .fp-viewing-5-3, .fp-viewing-5-4, .fp-viewing-5-5,
+.fp-viewing-6,
+.fp-viewing-7-0, .fp-viewing-7-1, .fp-viewing-7-2,
+.fp-viewing-8-0, .fp-viewing-8-1, .fp-viewing-8-2, .fp-viewing-8-3, .fp-viewing-8-4, .fp-viewing-8-5,
+.fp-viewing-9-0, .fp-viewing-9-1
+    .nav .brand span
+        color: #2f2f2f
+
+.am-chart
+    height: 60vh !important
+    font-weight: 900
+
 .thin
     font-weight: 100
 .bold
@@ -72,6 +91,19 @@ header
             background-position: top
             margin-right: 50px
 
+        .lightbox
+
+            .modal
+                margin-left: 50%
+                width: 50%
+
+            & > img
+                height: 100px
+                margin: 10px
+
+            .active-img
+                max-width: 75vw
+
     #the-problem
 
         .bootstrap-slide
@@ -81,12 +113,32 @@ header
                 border: 1px solid #eee
                 border-radius: 15px
 
+            &.comparision
+
+                img
+                    height: 75px
+                    margin-bottom: 25px
+
+                .table-heading, .table-body
+                    color: #eee
+
         .skeleton-slide
             background-color: white
 
-            h1
+            h1, h4
                 font-family: Raleway
                 font-weight: 100
+
+            &.comparision
+
+                h4
+                    margin-bottom: 25px
+
+        .style
+            font-family: Pacifico
+            margin-right: 15px
+        .substance
+            font-family: Times New Roman
 
     #the-solution
 
@@ -138,6 +190,9 @@ header
 
                 &:last-of-type
                     margin-bottom: 0px
+
+                img
+                    margin-top: 50px
 
             .bold
                 font-weight: 900
@@ -196,6 +251,9 @@ header
 
                 .logo
                     height: 100px
+
+        .timetable
+            width: 100%
 
 
 

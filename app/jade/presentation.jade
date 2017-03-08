@@ -13,7 +13,7 @@ html(lang="en")
                     span Eden.
         main#presentation
             #fullpage
-                .hero.overlay.section
+                #hero.hero.overlay.section
                     .content.row.left-center.fill-y
                         .col
                             .container
@@ -24,40 +24,22 @@ html(lang="en")
                 #me.section
                     .slide
                         .container
-                            h4.title.thin A little bit about myslef...
+                            h4.title.thin A little bit about myself...
                             .row.left-center
                                 .img.dark.bg-center
                                 ul.bullet
                                     li My name is Aaron Conway
-                                    li I'm a pure CS student
+                                    li I'm a straight CS student
                                     li I'm a freelance designer and front-end web developer
                     .slide
                         .container
-                            .row.center-center
-                                img(src="assets/img/presentation/moneywise.png", alt="MoenywiseQuoteMe Website")
-                    .slide
-                        .container
-                            .row.center-center
+                            .lightbox.row.wrap.center-center
+                                img(src="assets/img/presentation/moneywise.png", alt="MoneywiseQuoteMe Website")
                                 img(src="assets/img/presentation/tutorial.png", alt="Tutorial Website")
-                    .slide
-                        .container
-                            .row.center-center
                                 img(src="assets/img/presentation/lush-heat.png", alt="Lush Heat Treatment Website")
-                    .slide
-                        .container
-                            .row.center-center
                                 img(src="assets/img/presentation/fdis.png", alt="FDIS Website")
-                    .slide
-                        .container
-                            .row.center-center
                                 img.shadow(src="assets/img/presentation/fdis-logo.jpg", alt="FDIS Logo")
-                    .slide
-                        .container
-                            .row.center-center
                                 img.shadow(src="assets/img/presentation/raw.jpg", alt="RAW Logo")
-                    .slide
-                        .container
-                            .row.center-center
                                 img(src="assets/img/presentation/theboar.png", alt="The Boar")
                 #the-problem.section
                     .slide
@@ -76,18 +58,69 @@ html(lang="en")
                                                 li Lengthy (mundane) process
                                         .table-cell
                                             ul.bullet
-                                                li Prioritising design over functionality
                                                 li Poorly designed websites
                                                 li Similarity of websites
+                    .slide
+                        .container
+                            h4.title.thin What is a front-end framework?
+                            ul.bullet
+                                li A package made up of a structure of files and folders of standardized code which can be used to support the development of websites, as a basis to start building a site.
+                            p.thin.text-right.reference (https://www.awwwards.com/what-are-frameworks-22-best-responsive-css-frameworks-for-web-design.html)
+                    .slide
+                        .container
+                            h4.title.thin Why a front-end framework?
+                            ul.bullet
+                                li Provides a common structure so that developers don’t have to redo it from scratch and can reuse the code provided.
+                                li Allow us to cut out much of the work and save a lot of time.
+                            p.thin.text-right.reference (https://www.awwwards.com/what-are-frameworks-22-best-responsive-css-frameworks-for-web-design.html)
                     .slide.bootstrap-slide
                         .container
                             .row.center-center
                                 img(src="assets/img/presentation/bootstrap.svg", alt="Bootstrap")
+                    .slide.bootstrap-slide.comparision
+                        .container
+                            img(src="assets/img/presentation/bootstrap.svg", alt="Bootstrap")
+                            .table
+                                .table-heading.transparent
+                                    .table-row
+                                        .table-cell Advantages
+                                        .table-cell Disadvantages
+                                .table-body.transparent
+                                    .table-row
+                                        .table-cell 
+                                            ul.bullet
+                                                li Most popular front-end framework available
+                                                li Large collection of components
+                                        .table-cell
+                                            ul.bullet
+                                                li Heavy file size (>180kb)
+                                                li Hard to fully customise
                     .slide.skeleton-slide
                         .container
                             .row.center-center
                                 h1 Skeleton
-                                    
+                    .slide.skeleton-slide.comparision
+                        .container
+                            h4 Skeleton
+                            .table
+                                .table-heading.transparent
+                                    .table-row
+                                        .table-cell Advantages
+                                        .table-cell Disadvantages
+                                .table-body.transparent
+                                    .table-row
+                                        .table-cell 
+                                            ul.bullet
+                                                li Extremeley lightweight (~400 lines)
+                                                li Very easy to customise
+                                        .table-cell
+                                            ul.bullet
+                                                li Very few features
+                                                li Not widely used
+                    .slide
+                        .container
+                            .col.center-center
+                                h1.thin #[span.style Style] .v. #[span.substance Substance]                    
                 #the-solution.section
                     .slide
                         .container
@@ -102,17 +135,42 @@ html(lang="en")
                             h4.thin The #[span.bold front-end framework] for beautiful design.
                     .slide.eden-slide
                         .container
+                            h4.thin.title Why Eden?
+                            ul.bold.bullet
+                                li Easy to use & customise
+                                li Takes pride in design
+                                li Useful, modern components
+                                li Not heavy
+                    .slide.eden-slide
+                        .container
+                            <div id="chartdiv-size" class="am-chart" style="width: 100%; height: 400px; background-color: #52ae76;" ></div>
+                    .slide.eden-slide
+                        .container
                             .row.center-center
                                 video(data-autoplay, loop)
                                     source(data-src="assets/video/presentation/components.mp4", type="video/mp4")
+                    .slide.eden-slide
+                        .container
+                            .row.center-center
+                                <div id="chartdiv-ratio" class="am-chart" style="width: 100%; height: 400px; background-color: #52AE76;"></div>
                 #methodology.section
                     .slide
                         .container
                             h4.title.thin How was Eden built?
                     .slide
                         .container
-                            .row.center-center
-                                img(src="assets/img/presentation/uml.svg", alt="UML")
+                            .row.fill-y
+                                .col.third
+                                    .row.center-center
+                                        img(src="assets/img/presentation/uml.svg", alt="UML")
+                                .col.two-thirds
+                                    .content.row.center-center.fill-y.facts
+                                        .container
+                                            .fact
+                                                h6.thin Methodology
+                                                hr.quarter
+                                                p.bold Incremental Software Development with re-use
+                                                img(src="assets/img/presentation/incremental.png", alt="Incremental Software Development")
                     .slide.research
                         .row.fill-y.fluid
                             .col
@@ -133,6 +191,22 @@ html(lang="en")
                                             p.bold Sass, Jade/Pug, Gulp
                             .col
                                 .img.fill-y.bg-center
+                    .slide.sass-slide
+                        .container
+                            .row.center-center
+                                img(alt="Sass", src="assets/img/presentation/sass.png")
+                    .slide.pug-slide
+                        .container
+                            .row.center-center
+                                img(alt="Pug", src="assets/img/presentation/pug.svg")
+                    .slide.jquery-slide
+                        .container
+                            .row.center-center
+                                img(alt="JQuery", src="assets/img/presentation/jquery.png")
+                    .slide.gulp-slide
+                        .container
+                            .row.center-center
+                                img(alt="Gulp", src="assets/img/presentation/gulp.jpg")
                     .slide.design
                         .row.fill-y.fluid
                             .col
@@ -173,42 +247,6 @@ html(lang="en")
                                             p.bold Minifing Files
                             .col
                                 .img.fill-y
-                    .slide.sass-slide
-                        .container
-                            .row.center-center
-                                img(alt="Sass", src="assets/img/presentation/sass.png")
-                    .slide.pug-slide
-                        .container
-                            .row.center-center
-                                img(alt="Pug", src="assets/img/presentation/pug.svg")
-                    .slide.jquery-slide
-                        .container
-                            .row.center-center
-                                img(alt="JQuery", src="assets/img/presentation/jquery.png")
-                    .slide.gulp-slide
-                        .container
-                            .row.center-center
-                                img(alt="Gulp", src="assets/img/presentation/gulp.jpg")
-                    .slide.coding
-                        .row.fill-y.fluid
-                            .col
-                                .content.row.center-center.fill-y.facts
-                                    .container
-                                        h4.title.thin Development
-                                        .fact
-                                            h6.thin Pre-processing
-                                            hr.quarter
-                                            p.bold Jade/Pug, SASS, JQuery
-                                        .fact
-                                            h6.thin Compilation
-                                            hr.quarter
-                                            p.bold Jade/Pug -> HTML, SASS -> CSS
-                                        .fact
-                                            h6.thin Optimisation
-                                            hr.quarter
-                                            p.bold Minifing Files
-                            .col
-                                .img.fill-y
                     .slide.testing
                         .row.fill-y.fluid
                             .col
@@ -218,15 +256,15 @@ html(lang="en")
                                         .fact
                                             h6.thin Unit
                                             hr.quarter
-                                            p.bold Self Knowledge
+                                            p.bold Individual Pages
                                         .fact
                                             h6.thin System
                                             hr.quarter
-                                            p.bold Agile
+                                            p.bold Building Websites
                                         .fact
                                             h6.thin Feedback
                                             hr.quarter
-                                            p.bold Peer
+                                            p.bold Self, Peer, Industry
                             .col
                                 .img.fill-y.bg-center
                     .slide.documentation
@@ -255,11 +293,15 @@ html(lang="en")
                         .container
                             .row-center-center
                                 .responsive-media
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6SMyko6VAx8?rel=0&amp;controls=0&amp;showinfo=0&amp;start=140" frameborder="0" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6SMyko6VAx8?rel=0&amp;showinfo=0&amp;start=140" frameborder="0" allowfullscreen></iframe>
                     .slide
                         .container
                             .row.center-center
                                 img(alt="Aaron Conway Website", src="assets/img/presentation/aaronconway.png")
+                    .slide
+                        .container
+                            .row.center-center
+                                <div id="chartdiv" class="am-chart" style="width: 100%; height: 400px; background-color: #EEE;" ></div>
                     .slide
                         .container
                             .row.center-center
@@ -290,7 +332,7 @@ html(lang="en")
                     .slide
                         .container
                             .row.center-center
-                                img(alt="Specification Timetable", src="assets/img/presentation/timetable.png")
+                                img.timetable(alt="Specification Timetable", src="assets/img/presentation/timetable.png")
                     .slide.trello
                         .container
                             .row.center-center
@@ -298,12 +340,11 @@ html(lang="en")
                     .slide.trello
                         .container
                             .row.center-center
-                                img(alt="Eden Trello Board", src="assets/img/presentation/trello-board.png")
-                                    
+                                img(alt="Eden Trello Board", src="assets/img/presentation/trello-board.png")                        
                 #further-work.section
                     .slide
                         .container
-                            h4.title.thin Further Work
+                            h4.title.thin What does the future hold?
                     .slide
                         .container
                             h4.bold The end is not nigh.
@@ -333,5 +374,9 @@ html(lang="en")
                             h4.title.thin Questions?
         include include/footer
         include include/foot
-        script(src="js/pages/presentation.js")
         script(src="js/jquery.fullpage.js")
+        //- amCharts javascript sources
+        script(type="application/javascript", src="https://www.amcharts.com/lib/3/amcharts.js")
+        script(type="application/javascript", src="https://www.amcharts.com/lib/3/serial.js")
+        script(type="text/javascript", src="https://www.amcharts.com/lib/3/pie.js")
+        script(src="js/pages/presentation.js")

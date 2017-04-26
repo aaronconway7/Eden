@@ -21,12 +21,12 @@ html(lang="en")
                         section.get-the-code
                             p.heading.uppercase.space Get The Code.
                             p There are a number of ways you can get your hands quickly on Eden and integreate into your workflow:
-                            p Download the Zip file.
-                            p Clone the repo.
+                            p.bold #[a.transition(href="https://github.com/aaronconway7/Eden/releases/download/v1.1.7/eden.zip") Download the Zip file.]
+                            p.bold Clone the repo.
                                 span.code.light git clone https://github.com/aaronconway7/eden.git
-                            p Install via npm.
+                            p.bold Install via npm.
                                 span.code.light npm install @aaronconway7/eden
-                            p Install via Bower.
+                            p.bold Install via Bower.
                                 span.code.light bower install eden
                         section.what-do-you-get
                             p.heading.uppercase.space What do you get?
@@ -34,32 +34,15 @@ html(lang="en")
                             .code.block.short.light
                                 span eden/
                                 span ├── css/
-                                span │   ├── eden.css
-                                span │   └── eden.min.css
+                                span │&nbsp;&nbsp;├── eden.css
+                                span │&nbsp;&nbsp;└── eden.min.css
                                 span |
                                 span └── js/
-                                span     ├── eden.js
-                                span     └── eden.min.js
+                                span &nbsp;&nbsp;&nbsp;├── eden.js
+                                span &nbsp;&nbsp;&nbsp;└── eden.min.js
                         section.workflow
                             p.heading.uppercase.space Including it in your workflow.
                             p Copy and paste the following snippers at the bottom of your #[span.code.light &lt;head&gt;] tag, and #[span.code.light &lt;body&gt;] tag respectively.
-                            .code.block.short
-                                span.comment Eden Stylesheet goes at the bottom of your &lt;head&gt; tag respectively
-                                br
-                                span.tag link 
-                                    span.attr rel
-                                    span.val stylesheet
-                                    span.attr type
-                                    span.val text/css
-                                    span.attr href
-                                    span.val path/to/eden.min.css
-                                br
-                                br
-                                span.comment Eden JS script goes at the bottom of your &lt;body&gt; tag after your JQuery script
-                                br
-                                span.tag script 
-                                    span.attr src
-                                    span.val path/to/eden.min.js
-                                span.tag.close script
+                            <script src="https://gist.github.com/aaronconway7/f23e26fa703ac97ba8b1cd769e90e8db.js"></script>
                                 
             include include/footer

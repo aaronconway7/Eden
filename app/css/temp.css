@@ -39,6 +39,9 @@
     background-color: #1d9d74;
     color: white; }
 
+.bold {
+  font-weight: 600; }
+
 .code.transparent {
   background-color: transparent;
   color: #2f2f2f; }
@@ -273,6 +276,10 @@
   margin-bottom: 1em; }
   #get-started-pg .get-started p span {
     margin-left: 5px; }
+  #get-started-pg .get-started p a {
+    opacity: 0.5; }
+    #get-started-pg .get-started p a:hover {
+      opacity: 1; }
 
 #get-started-pg .get-started .what-do-you-get .code span {
   display: block; }

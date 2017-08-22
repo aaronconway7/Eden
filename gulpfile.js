@@ -1,9 +1,8 @@
 var gulp            = require('gulp');
-var browserSync     = require('browser-sync');
+var browserSync     = require('browser-sync').create();
 var sass            = require('gulp-sass');
-var jade            = require('gulp-jade');
+var pug             = require('gulp-pug');
 var reload          = browserSync.reload;
-var imagemin        = require('gulp-imagemin');
 var cache           = require('gulp-cache');
 var uglify          = require('gulp-uglify');
 var prefix          = require('gulp-autoprefixer');
@@ -16,16 +15,14 @@ gulp.task('sass', function(){
         .pipe(sass()) // Using gulp-sass
         .pipe(prefix('last 2 versions'))
         .pipe(gulp.dest('app/css'))
-        .pipe(browserSync.reload({
-            stream: true
-        }))
+        .pipe(browserSync.stream())
 });
 
-gulp.task('jade', function() {
-    return gulp.src('app/jade/*.jade')
-        .pipe(jade({
+gulp.task('pug', function() {
+    return gulp.src('app/pug/*.pug')
+        .pipe(pug({
             pretty: true
-        })) // pipe to jade plugin
+        })) // pipe to pug plugin
         .pipe(gulp.dest('app')) // tell gulp our output folder
 });
 
@@ -47,72 +44,30 @@ gulp.task('css-nano', function(){
         .pipe(gulp.dest('css'))
 });
 
-gulp.task('image-optimise', function(){
-    return gulp.src('app/assets/img/**/*.+(png|jpg|gif|svg|ico)')
-        .pipe(cache(imagemin({
-            optimizationLevel: 5,
-            progressive: true,
-            interlaced: true
-        })))
-        .pipe(gulp.dest('assets/img'))
+gulp.task('assets', function(){
+    return gulp.src('app/assets/**/*')
+        .pipe(gulp.dest('assets'))
 });
 
-gulp.task('eden-css', function() {
-    return gulp.src('app/bower_components/eden/dist/css/eden.css')
-        .pipe(gulp.dest('app/css'))
+gulp.task('font-awesome', function(){
+    return gulp.src('app/css/font-awesome/**/*')
+        .pipe(gulp.dest('css/font-awesome'))
 });
 
-gulp.task('eden-js', function() {
-    return gulp.src('app/bower_components/eden/dist/js/eden.js')
-        .pipe(gulp.dest('app/js'))
-});
+gulp.task('minify', ['html-min', 'uglify', 'css-nano']);
 
-gulp.task('fonts', function() {
-    return gulp.src('app/assets/fonts/**/*')
-        .pipe(gulp.dest('assets/fonts'))
-});
-
-gulp.task('docs', function() {
-    return gulp.src('app/assets/docs/**/*')
-        .pipe(gulp.dest('assets/docs'))
-});
-
-gulp.task('video', function() {
-    return gulp.src('app/assets/video/**/*')
-        .pipe(gulp.dest('assets/video'))
-});
-
-gulp.task('minify', ['html-min', 'uglify', 'css-nano', 'image-optimise']);
-
-gulp.task('eden', ['eden-css', 'eden-js'])
-
-gulp.task('transfer', ['fonts', 'docs', 'video'])
-
-gulp.task('jade-watch', ['jade'], reload);
-
-gulp.task('jquery-watch', ['uglify'], reload);
-
-gulp.task('live', ['browserSync', 'sass', 'jade'], function (){
-    gulp.watch('app/sass/*.sass', ['sass']);
-    gulp.watch('./app/jade/**/*.jade', ['jade-watch']);
-    gulp.watch('./app/js/**/*.js', ['jquery-watch']);
-    // Other watchers
-});
-
-gulp.task('browserSync', function() {
+gulp.task('serve', ['pug', 'sass'], function() {
     browserSync.init({
         server: {
             baseDir: 'app'
         },
-    })
+    });
+
+    gulp.watch('app/pug/**/*.pug', ['pug']);
+    gulp.watch('app/*.html').on('change', browserSync.reload);
+    gulp.watch('app/sass/**/*.sass', ['sass']);
 });
 
-gulp.task('compile', ['minify', 'transfer']);
+gulp.task('compile', ['pug', 'sass', 'minify', 'assets', 'font-awesome']);
 
-gulp.task('default', function () {
-    runSequence(
-        ['jade', 'sass'],
-        'compile',
-        'live'
-    )
-});
+gulp.task('default', ['serve']);

@@ -1,0 +1,262 @@
+doctype html
+html(lang="en")
+    head
+        include include/head
+        title="Eden Components"
+        link(rel='stylesheet', href='css/prism.css')
+        link(rel='stylesheet', href='css/style.css')
+    body#components-pg
+        .row.main-row
+            .sidebar.light
+                input.component-search(type="text", placeholder="Search")
+                ul
+                    li.brand Eden
+                    li.menu-item 
+                        a.transition(href="#container-component") Container
+                    li.menu-item
+                        a.transition(href="#grid-component") Grid
+                    li.menu-item
+                        a.transition(href="#typography-component") Typography
+                    li.menu-item
+                        a.transition(href="#lists-component") Lists
+                    li.menu-item
+                        a.transition(href="#tables-component") Tables
+            .page-content.fill-x
+                span.sidebar-toggle.transition ☰
+                .container
+                    h4.page-title Eden
+                    .component#container-component
+                        h6.component-title Container
+                            a.link.transition(href="#container-component")
+                                i.fa.fa-link(aria-hidden="true")
+                        .component-group
+                            p Surround your content in a #[span.code.light .container] to provide responsive padding on either side.
+                            .component-code
+                                pre.language-markup
+                                    code.
+                                        &lt;div class='container'&gt;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;...
+                                        &lt;/div&gt;
+                            .component-example
+                                .wrapper
+                                    .container.tool-tip.transition
+                                        .tool-tip-text.dark.center 
+                                            .code.dark .container
+                    .component#grid-component
+                        h6.component-title Grid
+                            a.link.transition(href="#grid-component")
+                                i.fa.fa-link(aria-hidden="true")
+                        .row.badges
+                            .badge.js
+                                span.uppercase js
+                        .component-group
+                            p Start the grid with a #[span.code.light .row] and fill it with #[span.code.light .col] with a specific size from the table below.
+                            p The grid is split into 12 columns where the whole number specified in the size spans that number of columns. If a fraction is used to measure the size, this column occupies that fraction of its parents width.
+                            .component-code
+                                pre.language-markup
+                                    code.
+                                        &lt;div class='row'&gt;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class='col half'&gt;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class='col quarter'&gt;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class='col quarter'&gt;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                                        &lt;/div&gt;
+                            .component-example.grid-example
+                                .row
+                                    .col.one.tool-tip &nbsp;
+                                        .tool-tip-text.dark.skinny 
+                                            .code .one
+                                    .col.eleven.tool-tip &nbsp;
+                                        .tool-tip-text.dark.center
+                                            .code .eleven
+                                .row
+                                    .col.two.tool-tip &nbsp;
+                                        .tool-tip-text.dark 
+                                            .code .two, .sixth
+                                    .col.ten.tool-tip &nbsp;
+                                        .tool-tip-text.dark.center
+                                            .code .ten, .five-sixths
+                                .row
+                                    .col.three.tool-tip &nbsp;
+                                        .tool-tip-text.dark
+                                            .code .three, .quarter
+                                    .col.nine.tool-tip &nbsp;
+                                        .tool-tip-text.dark.center
+                                            .code .nine, .three-quarters
+                                .row
+                                    .col.four.tool-tip &nbsp;
+                                        .tool-tip-text.dark
+                                            .code .four, .third
+                                    .col.eight.tool-tip &nbsp;
+                                        .tool-tip-text.dark.right
+                                            .code .eight, .two-thirds
+                                .row
+                                    .col.five.tool-tip &nbsp;
+                                        .tool-tip-text.dark
+                                            .code .five
+                                    .col.seven.tool-tip &nbsp;
+                                        .tool-tip-text.dark.right
+                                            .code .seven
+                                .row
+                                    .col.six.tool-tip &nbsp;
+                                        .tool-tip-text.dark.left
+                                            .code .six, .half
+                                    .col.six.tool-tip &nbsp;
+                                        .tool-tip-text.dark.right
+                                            .code .six, .half
+                        .component-group
+                            p #[span.code.light .row] positions every immediate child within it side by side whereas a #[span.code.light .col] positions every immediate child below eachother.
+                            p Immediate children of #[span.code.light .row] and #[span.code.light .col] can be positioned within the parent by attaching the appropriate postion class.
+                            .component-code
+                                pre.language-markup
+                                    code.
+                                        &lt;div class='row center-center'&gt;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Centred Title&lt;/h1&gt;
+                                        &lt;/div&gt;
+                            .component-example.position-example
+                                .row.position-grid.wrap.fluid
+                                    .col.tool-tip.transition &nbsp;
+                                        .tool-tip-text.dark
+                                            .code .top-left
+                                    .col.tool-tip.transition &nbsp;
+                                        .tool-tip-text.dark.center
+                                            .code .center-top
+                                    .col.tool-tip.transition &nbsp;
+                                        .tool-tip-text.dark.right
+                                            .code .top-right
+                                    .col.tool-tip.transition &nbsp;
+                                        .tool-tip-text.dark
+                                            .code .left-center
+                                    .col.tool-tip.transition &nbsp;
+                                        .tool-tip-text.dark.center
+                                            .code .center-center
+                                    .col.tool-tip.transition &nbsp;
+                                        .tool-tip-text.dark.right
+                                            .code .right-center
+                                    .col.tool-tip.transition &nbsp;
+                                        .tool-tip-text.dark
+                                            .code .bottom-left
+                                    .col.tool-tip.transition &nbsp;
+                                        .tool-tip-text.dark.center
+                                            .code .center-bottom
+                                    .col.tool-tip.transition &nbsp;
+                                        .tool-tip-text.dark.right
+                                            .code .bottom-right
+                    .component#typography-component
+                        h6.component-title Typography
+                            a.link.transition(href="#typography-component")
+                                i.fa.fa-link(aria-hidden="true")
+                        .component-group
+                            p The following classes can be added to any HTML5 typography element and achieve the desired effect.
+                            .table
+                                .table-heading
+                                    .table-row
+                                        span.table-cell Class
+                                        span.table-cell Description
+                                .table-body
+                                    .table-row
+                                        .table-cell
+                                            span.code.light .text-left
+                                        span.table-cell.description Left align text.
+                                    .table-row
+                                        .table-cell
+                                            span.code.light .text-center
+                                        span.table-cell.description Centrally align text.
+                                    .table-row
+                                        .table-cell
+                                            span.code.light .text-right
+                                        span.table-cell.description Right align text.
+                                    .table-row
+                                        .table-cell
+                                            span.code.light .text-justify
+                                        span.table-cell.description Jusify align text.
+                                    .table-row
+                                        .table-cell
+                                            span.code.light .uppercase
+                                        span.table-cell.description Transforms the text to uppercase.
+                                    .table-row
+                                        .table-cell
+                                            span.code.light .lowercase
+                                        span.table-cell.description Transforms the text to lowercase.
+                                    .table-row
+                                        .table-cell
+                                            span.code.light .space
+                                        span.table-cell.description Adds spacing between letters in text.
+                            .component-code
+                                pre.language-markup
+                                    code.
+                                        &lt;h1 class='uppercase space text-center'&gt;Uppercased and spaced heading&lt;/h1&gt;
+                                        &lt;p class='text-justify'&gt;Justified Text&lt;/p&gt;
+                    .component#lists-component
+                        h6.component-title Lists
+                            a.link.transition(href="#lists-component")
+                                i.fa.fa-link(aria-hidden="true")      
+                        .component-group
+                            p By default the #[span.code.light &lt;ul&gt;] list is not bulleted.
+                            .table
+                                .table-heading
+                                    .table-row
+                                        span.table-cell Class
+                                        span.table-cell Description
+                                .table-body
+                                    .table-row
+                                        .table-cell
+                                            span.code.light .bullet
+                                        span.table-cell.description Adds bullet points to your #[span.code.light &lt;ul&gt;] list.
+                                    .table-row
+                                        .table-cell
+                                            span.code.light .inline
+                                        span.table-cell.description Displays the items in your #[span.code.light &lt;ul&gt;] and #[span.code.light &lt;ol&gt;] lists horizontally rather than vertically.
+                                    .table-row
+                                        .table-cell
+                                            span.code.light .indent
+                                        span.table-cell.description Bullets or nubers become postioned inside your element.
+                            .component-code
+                                pre.language-markup
+                                    code.
+                                        &lt;ul class='bullet indent'&gt;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;First item&lt;/li&gt;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Third item&lt;/li&gt;
+                                        &lt;/ul&gt;
+                    .component#tables-component
+                        h6.component-title Tables
+                            a.link.transition(href="#tables-component")
+                                i.fa.fa-link(aria-hidden="true")      
+                        .component-group
+                            p By default the #[span.code.light &lt;ul&gt;] list is not bulleted.
+                            .table
+                                .table-heading
+                                    .table-row
+                                        span.table-cell Class
+                                        span.table-cell Description
+                                .table-body
+                                    .table-row
+                                        .table-cell
+                                            span.code.light .bullet
+                                        span.table-cell.description Adds bullet points to your #[span.code.light &lt;ul&gt;] list.
+                                    .table-row
+                                        .table-cell
+                                            span.code.light .inline
+                                        span.table-cell.description Displays the items in your #[span.code.light &lt;ul&gt;] and #[span.code.light &lt;ol&gt;] lists horizontally rather than vertically.
+                                    .table-row
+                                        .table-cell
+                                            span.code.light .indent
+                                        span.table-cell.description Bullets or nubers become postioned inside your element.
+                            .component-code
+                                pre.language-markup
+                                    code.
+                                        &lt;ul class='bullet indent'&gt;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;First item&lt;/li&gt;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Third item&lt;/li&gt;
+                                        &lt;/ul&gt;
+                            
+        include include/foot
+        script(src="js/prism.js")
+        script(src="js/pages/components-2.js")

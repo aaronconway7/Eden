@@ -1,0 +1,22 @@
+$eden-green: rgb(95, 174, 115)
+
+*
+    &::selection
+        background-color: $eden-green
+        color: white
+
+pre.code-toolbar
+
+    & > .toolbar
+        top: 0px
+        right: 0px
+        background-color: rgba(0, 0, 0, 0.05)
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+        border-left: 1px solid rgba(0, 0, 0, 0.2)
+
+        a, button, span
+            border-radius: 0px
+            box-shadow: none
+
+//pages
+@import pages/components

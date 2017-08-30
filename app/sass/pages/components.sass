@@ -1,0 +1,184 @@
+#components-pg
+
+    .main-row
+        height: 100vh
+        overflow: auto
+
+        .sidebar
+            min-width: 200px
+            overflow-y: auto
+            font-weight: 400
+            transition: margin-left 250ms ease
+
+            &.is-closed
+                margin-left: -200px
+
+                &~.page-content
+
+                    .sidebar-toggle
+                        left: 30px
+
+            .component-search
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+
+            ul
+                padding: 20px
+                line-height: 1.5em
+
+                .brand
+                    font-weight: 900
+
+                li
+
+                    a
+
+                        &:hover
+                            text-decoration: line-through
+
+        .page-content
+            position: relative
+            height: 100vh
+            overflow-y: auto
+
+            .sidebar-toggle
+                position: fixed
+                top: 15px
+                left: 230px
+                opacity: 0.2
+                cursor: pointer
+
+                &:hover
+                    opacity: 0.75
+
+            &>.container
+                max-width: 800px
+
+            .page-title
+                margin-bottom: 50px
+
+            p
+                font-size: 1.2em
+                line-height: 1.7em
+                margin-bottom: 1em
+
+            .component
+                padding: 50px 0
+
+                &:last-of-type
+                    padding-bottom: 0px
+
+                .component-title
+                    position: relative
+                    margin-bottom: 20px
+                    font-weight: 700
+
+                    .link
+                        position: absolute
+                        top: 5px
+                        left: -1.5em
+                        font-size: 0.8em
+                        opacity: 0.1
+
+                        &:hover
+                            opacity: 0.5
+
+                .badges
+                    margin-bottom: 20px
+                    margin-top: -15px
+
+                    .badge
+                        padding: 0.2em 1.2em 0.2em 0.5em
+                        border: 1px solid black
+                        border-radius: 0.3em
+                        font-weight: 700
+                        font-size: 0.7rem
+                        margin-right: 5px
+
+                        &:last-of-type
+                            margin-right: 0px
+
+                        &.js
+                            background-color: #f0db4f
+                        &.font-awesome
+                            background-color: #1d9d74
+                            color: white
+
+                .component-group
+                    margin-bottom: 50px
+
+                    &:last-of-type
+                        margin-bottom: 0px
+
+                    .table
+
+                        .table-cell
+                            border: 1px solid #ddd
+
+                            &:last-child
+                                border-left: none
+
+                        .table-heading
+                            background-color: white
+                            color: black
+
+                            .table-cell
+                                line-height: 2.5em
+
+                        .table-body
+                            font-size: 0.9em
+
+                            .table-row
+                                background-color: #f8f8f8
+
+                                &:nth-of-type(even)
+                                    background-color: white
+
+                                .table-cell
+                                    line-height: 2em
+
+                                    &.description
+                                        font-weight: 400
+
+                    .component-code
+                        font-size: 0.8em
+                        margin-bottom: 1em
+
+                &#container-component
+
+                    .wrapper
+                        background-color: #eeeeee
+
+                        .container
+                            background-color: darken(#eeeeee, 5)
+
+                            &:hover
+                                background-color: darken(#eeeeee, 10)
+
+                &#grid-component
+
+                    .grid-example
+
+                        .row
+                            margin-bottom: 20px
+
+                            &:last-of-type
+                                margin-bottom: 0px
+
+                            .col
+                                background-color: #eeeeee
+
+                                &:hover
+                                    background-color: darken(#eeeeee, 5)
+
+                    .position-example
+
+                        .position-grid
+
+                            .col
+                                height: 150px
+                                width: 33.333%
+                                background-color: #eeeeee
+                                border: 1px solid darken(#eeeeee, 5)
+
+                                &:hover
+                                    background-color: darken(#eeeeee, 5)

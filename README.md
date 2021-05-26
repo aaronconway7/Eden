@@ -1,13 +1,16 @@
-![Eden Logo](https://github.com/aaronconway7/Eden/blob/gh-pages/app/assets/img/eden-with-name.png)
+# [Eden](https://geteden.netlify.app)
 
-[![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)]()
+![Eden Logo](https://github.com/aaronconway7/Eden/blob/website/assets/img/eden-with-name.png?raw=true)
 
-# [Eden](http://designofeden.com)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/95300f50-b6e4-49f7-953f-63c9dafb76ec/deploy-status)](https://app.netlify.com/sites/geteden/deploys) [![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)]()
+
+> ⚠️ Eden was made as a 3rd year Univeristy project in 2017 and is now very much out-of-date! It is unlikely that further work will be will be made on it!
+
 Eden is a front-end framework focused on beautiful and unique web development, started and created by
-[Aaron Conway](http://aaronconway.co.uk) as a 3rd Year Project in Computer Science at The University
+[Aaron Conway](https://aaronconway.co.uk) as a 3rd Year Project in Computer Science at The University
 of Warwick.
 
-Check out <http://designofeden.com> for more details and documentation!
+Check out https://geteden.netlify.app for more details and documentation! You can find code for the website in the `website` branch of this repo.
 
 ## Table of Contents
 
@@ -45,7 +48,7 @@ Copy and paste the following snippets at the bottom of your `<head>` tag, and `<
 ```
 
 ## Creator
-[Aaron Conway](http://www.aaronconway.co.uk)
+[Aaron Conway](https://www.aaronconway.co.uk)
 
 ## License
 Eden is 100% free to use under the open-source MIT license.
